@@ -22,7 +22,7 @@
 author:
     # Site's author name
     # Default: not set (author name is not displayed)
-    name: "Antônio Vinícius"
+    name: "Antônio Medeiros"
 
     # Site's author email
     # Default: not set (author email is not displayed)
@@ -30,7 +30,7 @@ author:
 
     # Site's author website, profile
     # Default: not set (author site is not displayed)
-    site: "https://vinyanalista.github.io"
+    site: "https://antoniomedeiros.dev"
 
 ############
 # Building #
@@ -226,13 +226,13 @@ jekyll-archives:
 # Site URL
 # The base protocol and hostname for the website
 # Default: not set (this variable is only necessary for external systems)
-url: "https://vinyanalista.github.io"
+url: "https://antoniomedeiros.dev"
 
 # Enforce the use of HTTPS on production domain
 # The hostname (does not include protocol, just the domain) for which the use of
 # HTTPS should be enforced
 # Default: not set (the use of HTTPS is never enforced)
-enforce_https: "vinyanalista.github.io"
+enforce_https: "antoniomedeiros.dev"
 
 ###########
 # Serving #
@@ -251,7 +251,7 @@ baseurl: ""
 #################
 
 # Site title
-title: "Antônio Vinícius"
+title: "Antônio Medeiros"
 
 # Site description
 description: "Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)"
