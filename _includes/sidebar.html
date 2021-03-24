@@ -42,11 +42,17 @@
                 {% if site.youtube.profile and site.youtube.name %}
                     <a href="https://youtube.com/{{ site.youtube.profile }}/{{ site.youtube.name }}" class="addthis_button_youtube_follow" addthis:userid="{{ site.youtube.name }}" itemprop="sameAs"></a>
                 {% endif %}
+                {% if site.telegram_username %}
+                    <a href="https://t.me/{{ site.telegram_username }}" class="addthis_button_telegram_follow" addthis:userid="{{ site.telegram_username }}" itemprop="sameAs"></a>
+                {% endif %}
                 {% if site.foursquare_username %}
                     <a href="https://foursquare.com/{{ site.foursquare_username }}" class="addthis_button_foursquare_follow" addthis:userid="{{ site.foursquare_username }}" itemprop="sameAs"></a>
                 {% endif %}
                 {% if site.github_username %}
                     <a href="https://github.com/{{ site.github_username }}" class="addthis_button_github_follow" addthis:userid="{{ site.github_username }}" itemprop="sameAs"></a>
+                {% endif %}
+                {% if site.gitlab_username %}
+                    <a href="https://gitlab.com/{{ site.gitlab_username }}" class="addthis_button_gitlab_follow" addthis:userid="{{ site.gitlab_username }}" itemprop="sameAs"></a>
                 {% endif %}
                 <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="addthis_button_rss_follow"></a>
             </div>
@@ -88,6 +94,13 @@
                         </a>
                     </li>
                 {% endif %}
+                {% if site.telegram_username %}
+                    <li>
+                        <a href="https://t.me/{{ site.telegram_username }}" itemprop="sameAs">
+                            <i class="fab fa-telegram"></i> {{ site.telegram_username }}
+                        </a>
+                    </li>
+                {% endif %}
                 {% if site.foursquare_username %}
                     <li>
                         <a href="https://foursquare.com/{{ site.foursquare_username }}" itemprop="sameAs">
@@ -99,6 +112,13 @@
                     <li>
                         <a href="https://github.com/{{ site.github_username }}" itemprop="sameAs">
                             <i class="fab fa-github"></i> {{ site.github_username }}
+                        </a>
+                    </li>
+                {% endif %}
+                {% if site.gitlab_username %}
+                    <li>
+                        <a href="https://gitlab.com/{{ site.gitlab_username }}" itemprop="sameAs">
+                            <i class="fab fa-gitlab"></i> {{ site.gitlab_username }}
                         </a>
                     </li>
                 {% endif %}
