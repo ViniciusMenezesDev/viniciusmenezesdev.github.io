@@ -115,6 +115,8 @@ Foi o que aconteceu com [esse usuário][support-google-5] e também comigo com o
 
 Esse processo do Google AdSense é burocrático, manual, ineficiente e burro. Não houve mudança no conteúdo do _site_, apenas no endereço, o _site_ já exibia anúncios há anos, não havia porque recusar a exibição de anúncios no endereço novo. Já estou pesquisando redes de anúncios alternativas, se encontrar uma bacana compartilho aqui.
 
+{% include update.html date='03/04/2021' message='Após revisão, o Google AdSense considerou o _site_ do Linux Kamarada pronto para exibir anúncios. No entanto, aconteceu o mesmo com este _site_ (antoniomedeiros.dev), que também foi reprovado, com a mesma justificativa, embora também já exibisse anúncios desde 2015. Vou solicitar revisão, agora deste _site_.' %}
+
 Para exibir anúncios do AdSense no novo endereço do seu _site_, adicione o novo endereço como se estivesse [adicionando um _site_ novo][support-google-4]:
 
 {% include image.html src='/files/2021/03/mudanca-de-endereco-adsense-novo-site.jpg' %}
@@ -152,6 +154,9 @@ Observe que a pesquisa dentro do _site_ depende da pesquisa maior, do Google. Ac
 Como o texto é grande, decidi dividi-lo em duas partes. Nessa primeira parte, vimos como redirecionar os visitantes e os serviços do Google para o novo endereço. Na segunda parte, veremos o que fazer com outros serviços, a exemplo dos já citados Disqus e AddThis.
 
 A segunda parte deve ser publicada em breve. Siga-me para saber assim que for liberada.
+
+{% capture atualizacao %}[A segunda parte já está aqui! (clique para acessá-la)]({%post_url 2021-04-03-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-2-disqus-addthis-e-outros-servicos %}){% endcapture %}
+{% include update.html date="03/04/2021" message=atualizacao %}
 
 ## Referências dessa primeira parte
 
