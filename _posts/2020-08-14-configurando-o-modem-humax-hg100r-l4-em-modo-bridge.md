@@ -107,7 +107,7 @@ Não sei como a _bridge_ responde por esse endereço IP, dado que ela não atua 
 
 ## Notas sobre carrier-grade NAT
 
-O endereço IP `100.64.198.110/19` pertence à rede `100.64.192.0`. Não se trata de um endereço IP "real" (ou público), como seria de se esperar há alguns anos, mas de um [endereço IP privado][rede-privada] dentro da rede da operadora. Endereços IP como esse passaram a ser distribuídos para roteadores domésticos após o [esgotamento dos endereços IPv4][exaustao-ipv4]. As operadoras adotaram uma prática chamada de [_carrier-grade_ NAT (CGN)][cgn], que reserva o bloco `100.64.0.0/10` para a atribuição de endereços IP às residências.
+O endereço IP `100.64.198.110/19` pertence à rede `100.64.192.0`. Não se trata de um endereço IP "real" (ou público), como seria de se esperar há alguns anos, mas de um [endereço IP privado][rede-privada] dentro da rede da operadora. Endereços IP como esse passaram a ser distribuídos para roteadores domésticos após o [esgotamento dos endereços IPv4][exaustao-ipv4]. As operadoras adotaram uma prática chamada de [_carrier-grade_ NAT (CGNAT)][cgnat], que reserva o bloco `100.64.0.0/10` para a atribuição de endereços IP às residências.
 
 A _carrier-grade_ NAT impossibilita a hospedagem de serviços e o redirecionamento de portas (com isso, você não pode servir um _site_ para o mundo a partir do seu computador de casa, por exemplo), mas é um "mal necessário" para viabilizar o uso de redes IPv4 hoje em dia, dado que os endereços IPv4 já se esgotaram. Caso você precise de um endereço IP público, uma alternativa é verificar junto à operadora a possibilidade de alugar um (a um custo adicional). Outra alternativa é ativar o [IPv6], que veremos oportunamente como fazer.
 
@@ -152,7 +152,7 @@ Desde 2016, quando comprei o MikroTik, já me mudei algumas vezes e sempre o dei
 [cidr]:                 https://www.hardware.com.br/dicas/entendendo-cidr.html
 [rede-privada]:         https://pt.wikipedia.org/wiki/Rede_privada
 [exaustao-ipv4]:        https://pt.wikipedia.org/wiki/Exaustão_do_IPv4
-[cgn]:                  https://pt.wikipedia.org/wiki/Carrier_Grade_NAT
+[cgnat]:                https://pt.wikipedia.org/wiki/Carrier_Grade_NAT
 [ipv6]:                 http://ipv6.br/
 [analytics]:            https://analytics.google.com/
 [google]:               https://google.com/
