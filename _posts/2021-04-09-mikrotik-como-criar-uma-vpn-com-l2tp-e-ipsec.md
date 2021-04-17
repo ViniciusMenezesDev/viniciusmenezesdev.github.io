@@ -1,6 +1,6 @@
 ---
 date: 2021-04-09 10:00:00 GMT-3
-image: /files/2021/03/mikrotik-vpn-depois.jpg
+image: /files/2021/04/mikrotik-vpn-depois.jpg
 layout: post
 title: 'MikroTik: como criar uma VPN com L2TP e IPsec'
 ---
@@ -9,9 +9,9 @@ Final de semana chegando, você quer jogar com seus amigos, mas estão todos em 
 
 Uma **[VPN]** (do inglês _Virtual Private Network_, rede privada virtual) simula uma rede local entre dois ou mais computadores que estão fisicamente distantes, mas conectados pela Internet. Ela cria túneis entre os computadores, criptografando a comunicação — que ocorre, portanto, de forma privada e segura. Já expliquei [o que é VPN][vpn] em [outro texto][vpn].
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-antes.jpg' caption='Antes da VPN, diversos dispositivos conectados à Internet' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-antes.jpg' caption='Antes da VPN, diversos dispositivos conectados à Internet' %}
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-depois.jpg' caption='Depois da VPN, eles parecem estar na mesma rede local' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-depois.jpg' caption='Depois da VPN, eles parecem estar na mesma rede local' %}
 
 Hoje, veremos como criar uma VPN no roteador MikroTik usando o protocolo [L2TP] (do inglês _Layer 2 Tunnelling Protocol_, Protocolo de Tunelamento de Camada 2) em conjunto com o protocolo [IPsec] (do inglês _IP Security Protocol_, Protocolo de Segurança IP).
 
@@ -31,23 +31,23 @@ Note que se seu roteador MikroTik não possui um IP "real" (ou público), você 
 
 Acesse o MikroTik pelo WinBox. No menu à esquerda, expanda **IP** e clique em **Pool**:
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-01.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-01.jpg' %}
 
 Clique no botão de adicionar. No campo **Name** (nome), dê um nome para a fila de IPs, pode ser o nome que você quiser (eu vou usar `vpn`):
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-02.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-02.jpg' %}
 
 Em **Addresses** (endereços), informe a faixa de endereços IP que o MikroTik deve fornecer para os computadores que se conectarem à VPN. Essa faixa deve ser necessariamente diferente da faixa da rede local. No meu caso, eu já havia definido a rede local como `10.0.0.0/24`, vou definir a VPN como `10.0.1.0/24`, para isso vou informar a faixa `10.0.1.2-10.0.1.254`. O primeiro endereço (`10.0.1.1`) será o do roteador e o último é sempre o de _broadcast_ (`10.0.1.255`). Quando terminar, clique em **OK**.
 
 Depois, no menu à esquerda, clique em **PPP** e, na janela que abre, selecione a aba **Profiles** (perfis). Dê duplo-clique no perfil já existente **default-encryption**:
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-03.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-03.jpg' %}
 
 Em **Local Address** (endereço local), informe o endereço que o roteador terá dentro da VPN (no meu caso, `10.0.1.1`). Em **Remote Address** (endereço remoto), expanda o menu e selecione a fila de endereços criada antes (`vpn`). Quando terminar, clique em **OK**.
 
 Ainda na janela **PPP**, mude para a aba **Secrets** (a tradução ao pé da letra seria "segredos", mas a ideia aqui é algo como "usuários e senhas") e clique no botão de adicionar:
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-04.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-04.jpg' %}
 
 Em **Name**, informe um nome de usuário (_login_). Para o teste, vou usar `teste`.
 
@@ -59,7 +59,7 @@ Em **Profile** (perfil), selecione **default-encryption**. Quando terminar, cliq
 
 Ainda na janela **PPP**, mude para a aba **Interface** e clique no botão **L2TP Server** (servidor L2TP):
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-05.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-05.jpg' %}
 
 Marque **Enabled** para habilitar o servidor L2TP.
 
@@ -75,7 +75,7 @@ No menu à esquerda, expanda **IP** e clique em **Firewall**. Normalmente a aba 
 
 Clique no botão de adicionar:
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-07.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-07.jpg' %}
 
 No campo **Chain**, selecione **input** (esse é o mesmo [conceito de _chain_ do iptables][iptables]).
 
@@ -83,13 +83,13 @@ Em **Protocol** (protocolo), expanda o menu e selecione **ipsec-esp**. Com isso,
 
 Mude para a aba **Action** (ação) e no campo **Action** certifique-se de que a opção **accept** está selecionada (já vem por padrão). Quando terminar, clique em **OK**:
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-08.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-08.jpg' %}
 
 Perceba que a regra é adicionada ao final da fila. No momento, ela é a regra de número 11.
 
 Clique no botão de adicionar para adicionar mais uma regra.
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-09.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-09.jpg' %}
 
 No campo **Chain**, selecione **input**.
 
@@ -107,9 +107,9 @@ Assim como o [_firewall_ iptables][iptables] do [Linux], o _firewall_ do MikroTi
 
 Identifique na fila de regras a regra que bloqueia todo o tráfego que não vem da rede local (no meu caso, ela é a regra de número 4) e mova as regras recém-criadas (no meu caso, elas são as regras de números 11 e 12) acima dessa regra:
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-10.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-10.jpg' %}
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-11.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-11.jpg' %}
 
 ## Opcional: DDNS
 
@@ -123,7 +123,7 @@ Note que o DDNS, assim como a VPN, depende de o roteador ter um endereço IP pú
 
 Caso você queira ativar o DDNS, no menu à esquerda, expanda **IP** e clique em **Cloud**. Marque a opção **DDNS Enabled** (habilitar DDNS) e clique em **OK**. Abra mais uma vez essa janela seguindo o mesmo caminho para ver o endereço atribuído ao roteador em **DNS Name**:
 
-{% include image.html src='/files/2021/03/mikrotik-vpn-06.jpg' %}
+{% include image.html src='/files/2021/04/mikrotik-vpn-06.jpg' %}
 
 No meu caso, o endereço ficou assim: `6bxxxxxxxxc2.sn.mynetname.net`.
 
@@ -136,6 +136,7 @@ Pronto! Feito isso, nossa VPN está pronta para uso e os clientes já conseguem 
 Para conectar um dispositivo à VPN, siga um dos tutoriais a seguir, conforme o sistema operacional do dispositivo em questão:
 
 - [Como conectar à VPN a partir do Windows][vpn-windows]
+- [Como conectar à VPN a partir do Android][vpn-android]
 
 (mais tutoriais por vir)
 
@@ -160,6 +161,7 @@ Para conectar um dispositivo à VPN, siga um dos tutoriais a seguir, conforme o 
 [linux]:            https://linuxkamarada.com/
 [ddns]:             https://pt.wikipedia.org/wiki/DNS_din%C3%A2mico
 [vpn-windows]:      {% post_url 2021-04-09-mikrotik-como-conectar-a-vpn-a-partir-do-windows %}
+[vpn-android]:      {% post_url 2021-04-17-mikrotik-como-conectar-a-vpn-a-partir-do-android %}
 [mikrotik-l2tp]:    https://wiki.mikrotik.com/wiki/Manual:Interface/L2TP
 [wikipedia]:        https://pt.wikipedia.org/wiki/Lista_de_portas_dos_protocolos_TCP_e_UDP
 [mikrotik-cloud]:   https://wiki.mikrotik.com/wiki/Manual:IP/Cloud
