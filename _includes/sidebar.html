@@ -132,18 +132,10 @@
     </div><!-- .card-body -->
 </div><!-- .card -->
 
-
-{% if jekyll.environment == "production" %}
+{% if site.google.adsense.sidebar_ad_unit and jekyll.environment == "production" %}
     <div class="card mb-3">
-        <div class="card-header">
-            <h3>Anúncios</h3>
-        </div>
-         <div class="card-body">
-            {% if site.google.adsense.sidebar_ad_unit %}
-                {% include adsense.html id="sidebar_ad_unit" ad_slot=site.google.adsense.sidebar_ad_unit %}
-            {% endif %}
-
-            {% include a-ads.html id="1597342" %}
-        </div><!-- .card-body -->
-    </div><!-- .card -->
+        <div class="card-body">
+            {% include adsense.html id="sidebar_ad_unit" ad_slot=site.google.adsense.sidebar_ad_unit %}
+        </div><!-- .col-xs-12 -->
+    </div><!-- .row -->
 {% endif %}
