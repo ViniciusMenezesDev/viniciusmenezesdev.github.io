@@ -137,8 +137,18 @@ Para conectar um dispositivo à VPN, siga um dos tutoriais a seguir, conforme o 
 
 - [Como conectar à VPN a partir do Windows][vpn-windows]
 - [Como conectar à VPN a partir do Android][vpn-android]
+- [Como conectar à VPN a partir do iOS (iPhone e iPad)][vpn-ios]
 
 (mais tutoriais por vir)
+
+{% capture atualizacao %}
+No WinBox, você pode verificar que um cliente se conectou ao MikroTik indo em **PPP** > **Interface** ou em **Log**:
+
+{% include image.html src='/files/2021/06/mikrotik-vpn-12.jpg' %}
+
+{% endcapture %}
+
+{% include update.html date="17/06/2021" message=atualizacao %}
 
 ## Referências
 
@@ -162,6 +172,7 @@ Para conectar um dispositivo à VPN, siga um dos tutoriais a seguir, conforme o 
 [ddns]:             https://pt.wikipedia.org/wiki/DNS_din%C3%A2mico
 [vpn-windows]:      {% post_url 2021-04-09-mikrotik-como-conectar-a-vpn-a-partir-do-windows %}
 [vpn-android]:      {% post_url 2021-04-17-mikrotik-como-conectar-a-vpn-a-partir-do-android %}
+[vpn-ios]:          {% post_url 2021-06-17-mikrotik-como-conectar-a-vpn-a-partir-do-ios-iphone-e-ipad %}
 [mikrotik-l2tp]:    https://wiki.mikrotik.com/wiki/Manual:Interface/L2TP
 [wikipedia]:        https://pt.wikipedia.org/wiki/Lista_de_portas_dos_protocolos_TCP_e_UDP
 [mikrotik-cloud]:   https://wiki.mikrotik.com/wiki/Manual:IP/Cloud
