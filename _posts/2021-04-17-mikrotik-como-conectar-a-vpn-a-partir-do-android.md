@@ -16,6 +16,8 @@ Abra o aplicativo **Configurar** (ou **Configurações**):
 
 {% include image.html src='/files/2021/04/android-vpn-01.jpg' %}
 
+{% include ad1.html %}
+
 Entre na seção **Rede e Internet**:
 
 {% include image.html src='/files/2021/04/android-vpn-02.jpg' %}
@@ -38,6 +40,8 @@ Preencha as informações sobre a VPN de acordo com as orientações a seguir, m
 - Informe a **Chave pré-compartilhada IPSec** (exemplo: `12345678`)
 - Informe seu **Nome de usuário** para conectar à VPN (exemplo: `teste`)
 - Informe sua **Senha** para conectar à VPN (exemplo: `testando`)
+
+{% include ad2.html %}
 
 Quando terminar, toque em **Salvar**. Feito isso, a VPN passa a aparecer na lista de VPNs:
 

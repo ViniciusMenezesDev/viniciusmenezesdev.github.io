@@ -18,6 +18,8 @@ Na tela seguinte, à esquerda, selecione **VPN**. À direita, clique em **Adicio
 
 {% include image.html src='/files/2021/04/windows-vpn-02.jpg' %}
 
+{% include ad1.html %}
+
 Preencha as informações sobre a VPN de acordo com as orientações a seguir, mas também de acordo com as orientações de quem configurou a VPN (os exemplos se referem ao tutorial sobre [como configurar VPN no roteador MikroTik][vpn]):
 
 {% include image.html src='/files/2021/04/windows-vpn-03.jpg' %}
@@ -32,6 +34,8 @@ Preencha as informações sobre a VPN de acordo com as orientações a seguir, m
 - Informe sua **Senha** para conectar à VPN (exemplo: `testando`)
 
 Quando terminar, clique em **Salvar**.
+
+{% include ad2.html %}
 
 De volta às **Configurações**, clique na conexão recém-criada e depois em **Conectar**:
 

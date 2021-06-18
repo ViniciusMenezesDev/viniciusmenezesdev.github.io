@@ -115,6 +115,24 @@ layout: default
                 {% include adsense.html id="content_ad_unit_1" ad_slot=site.google.adsense.content_ad_unit_1 %}
             {% endif %}
 
+            {% if p == 1 %}
+                <div class="row">
+                    <div class="col-12">
+                        {% include a-ads.html id=site.a_ads_1 %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if paginator and site.paginate %}
+                {% if p == site.paginate %}
+                    <div class="row">
+                        <div class="col-12">
+                            {% include a-ads.html id=site.a_ads_2 %}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+
         </div><!-- .blog-post-content -->
     </div><!-- .blog-post -->
 {% endfor %}

@@ -24,6 +24,8 @@ Acesse **Ajustes** > **Geral** > **VPN**:
 
 {% include image.html src='/files/2021/06/ios-vpn-01.jpg' %}
 
+{% include ad1.html %}
+
 Toque em **Adicionar Configuração de VPN**:
 
 {% include image.html src='/files/2021/06/ios-vpn-02.jpg' %}
@@ -39,6 +41,8 @@ Preencha as informações sobre a VPN de acordo com as orientações a seguir, m
 - Informe sua **Senha** para conectar à VPN (exemplo: `testando`)
 - Em **Segredo**, informe a chave pré-compartilhada IPSec (exemplo: `12345678`)
 - Opcionalmente, ative a opção **Enviar Todo Tráfego** para que todo o tráfego de Internet passe por dentro da VPN, ou desative essa opção para que apenas o que for realmente destinado à rede local da VPN passe por dentro da VPN
+
+{% include ad2.html %}
 
 Quando terminar, toque em **OK**. Feito isso, a VPN passa a aparecer na lista de VPNs:
 

@@ -17,6 +17,8 @@ Hoje, veremos como criar uma VPN no roteador MikroTik usando o protocolo [L2TP] 
 
 Esse texto é baseado em grande parte no excelente [tutorial em vídeo do Leonardo Vieira][leonardo-vieira], que segui para configurar a VPN na minha casa. Meu texto será focado em como configurar uma VPN que permite a computadores de fora se conectarem à rede de casa (uma VPN do tipo _point-to-site_). O procedimento é parecido se você usa roteadores MikroTik em uma empresa com filiais e quer criar VPNs para conectar os MikroTiks das filiais ao MikroTik da sede (uma VPN do tipo _site-to-site_). Se esse é o seu caso, recomendo ver o vídeo.
 
+{% include ad1.html %}
+
 ## Pré-requisitos
 
 O ponto de partida desse tutorial é um roteador MikroTik configurado como mostrado nos tutoriais anteriores:
@@ -68,6 +70,8 @@ Em **Authentication**, desmarque o protocolo **[PAP]** (do inglês _Password Aut
 Em **Use IPsec**, selecione **required** para obrigar que os clientes usem IPsec.
 
 Em **IPsec Secret**, digite um texto que será o segredo do IPsec, também conhecido por **chave pré-compartilhada do IPsec**. Isso é uma espécie de senha que o cliente informa ao servidor ao se conectar à VPN, antes de propriamente informar o _login_ e senha do usuário. Fornece uma camada a mais de segurança. Nesse teste, vou usar `12345678`, mas claro que na verdade o ideal é usar um segredo mais seguro que esse. Quando terminar, clique em **OK**.
+
+{% include ad2.html %}
 
 O que falta para a VPN estar pronta é liberar as portas necessárias no _firewall_ do MikroTik.
 
