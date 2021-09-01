@@ -369,7 +369,7 @@ gitlab_username: "antoniomedeiros"
 # Example: username, if your LinkedIn public profile URL is
 # https://www.linkedin.com/in/username
 # Default: not set (LinkedIn public profile URL is not displayed)
-linkedin_username: "vinyanalista"
+linkedin_username: "AntonioMedeirosDev"
 
 # Telegram username
 # Example: username, if your Telegram link is https://t.me/username
@@ -384,7 +384,7 @@ twitter_username: "vinyanalista"
 youtube:
     # What kind of YouTube profile you have (it can be "user" or "channel")
     # Default: not set (YouTube URL is not displayed)
-    profile: "user"
+    # profile: "user"
 
     # YouTube user or channel name
     # Examples:
@@ -393,7 +393,7 @@ youtube:
     # channelname, if your YouTube channel is at
     # https://www.youtube.com/channel/channelname
     # Default: not set (YouTube URL is not displayed)
-    name: "viniciusifse"
+    # name: "viniciusifse"
 
 #####################
 # YAML Front Matter #
