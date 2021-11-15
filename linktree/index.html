@@ -16,8 +16,8 @@
             </a>
         </p>
 
-        <h5>Latest article:</h5>
-        {% for post in site.posts limit:1 %}
+        <h5>Últimos posts:</h5>
+        {% for post in site.posts limit:2 %}
             <div class="card mb-3">
                 <div class="row no-gutters">
                     <div class="col-4">
@@ -39,7 +39,7 @@
         {% endfor %}
 
         <a href="{{ site.baseurl | prepend: site.url }}" class="btn btn-block btn-lg btn-outline-primary active mb-3">
-            Go to website
+            Ir para o site
         </a>
 
         {% if site.addthis_profile_id %}
