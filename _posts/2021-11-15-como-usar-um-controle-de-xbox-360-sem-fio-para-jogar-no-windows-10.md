@@ -37,7 +37,7 @@ O receptor veio com um CD com um _driver_ e um programa para [Windows]. No entan
 
 Nesse tutorial, você verá como instalar o _driver_ e testar o controle sem fio para Xbox 360 no Windows 10. Para referência, estou usando o Windows 10 Edição Home, Versão 20H2.
 
-Caso você tenha se esbarrado nesse tutorial, mas esteja na verdade procurando como usar esse controle no [Linux], confira o _site_ do [Linux Kamarada][linuxkamarada]:
+Caso você tenha se esbarrado nesse tutorial, mas esteja na verdade procurando como usar esse controle no [Linux], confira uma versão desse mesmo tutorial para Linux no _site_ do [Linux Kamarada][linuxkamarada]:
 
 [Linux]: https://www.vivaolinux.com.br/linux/
 
