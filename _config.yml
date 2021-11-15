@@ -363,7 +363,7 @@ gitlab_username: "antoniomedeiros"
 # Instagram username
 # Example: username, if your Instagram URL is https://instagram.com/username
 # Default: not set (Instagram URL is not displayed)
-# instagram_username: "username"
+instagram_username: "AntonioMedeirosDev"
 
 # LinkedIn username
 # Example: username, if your LinkedIn public profile URL is
