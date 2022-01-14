@@ -137,11 +137,6 @@ Se tiver curiosidade de ler mais sobre o ocorrido, aqui vão alguns _links_ da �
 
 Desde 2016, quando comprei o MikroTik, já me mudei algumas vezes e sempre o deixo como o roteador da casa, sempre configuro o modem da operadora em modo _bridge_. Com isso, tenho maior controle sobre a rede da minha casa e mais segurança.
 
-## Referências
-
-- [Manual de usuário do Sagemcom Fast 3184][sagemcom] (modelo parecido)
-- [Colocar o modem da net Sagemcom F@ST3486 NET DOCSIS 3.0 em modo brigge][youtube]
-
 [bridge]:               https://pt.wikipedia.org/wiki/Bridge_(redes_de_computadores)
 [osi]:                  https://pt.wikipedia.org/wiki/Modelo_OSI
 [roteador]:             https://pt.wikipedia.org/wiki/Roteador
@@ -161,5 +156,3 @@ Desde 2016, quando comprei o MikroTik, já me mudei algumas vezes e sempre o dei
 [malware-5]:            https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/
 [malware-6]:            https://www.theverge.com/2015/3/25/8290277/router-hack-adware-porn-security-ara-labs
 [malware-7]:            https://uwnthesis.wordpress.com/2015/03/26/ad-fraud-malware-hijacks-router-dns-injects-ads-via-google-analytics/
-[sagemcom]:                https://www.net.com.br/documento/2019/07/01/hg100rl4_user_guide.pdf
-[youtube]:              https://www.youtube.com/watch?v=k7uDrhdEPTI
