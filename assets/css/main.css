@@ -21,21 +21,8 @@ table:not(.rouge-table) th {
     padding: 0.25rem;
 }
 
-#main-container {
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
-    }
+#main-container-row {
+    margin-top: 5.5rem !important;
 }
 
 .gap {
@@ -53,53 +40,16 @@ table:not(.rouge-table) th {
 /* Header */
 
 .navbar {
-    z-index: 2;
-}
-
-@media (min-width: 576px) {
-    .navbar-toggler {
-        margin-left: 1rem;
-    }
-}
-
-@media (min-width: 320px) {
-    a.navbar-brand {
-        background: url(../favicons/favicon-32x32.png) 0px no-repeat;
-        padding-left: 45px !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar > .container {
-        justify-content: flex-start;
-    }
-
-    .navbar .navbar-brand {
-        margin-left: 1rem;
-        margin-right: 0;
-    }
-
-    .navbar-nav .nav-link {
-        padding-right: 0;
-        padding-left: 0;
-    }
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 #navbar-search-field {
-    background-image: linear-gradient(0deg,#009688 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,hsla(0,0%,100%,.5) 1px,transparent 0);
-}
-
-#navbar-search-form .is-focused .form-control {
-    background-image: linear-gradient(0deg,hsla(0,0%,100%,.75) 2px,rgba(63,81,181,0) 0),linear-gradient(0deg,hsla(0,0%,100%,.5) 1px,transparent 0);
+    padding: 0.25rem;
 }
 
 #navbar-search-button {
-    color: hsla(0,0%,100%,.5);
-    padding: .5rem;
-}
-
-#navbar-search-field, #navbar-search-button:focus, #navbar-search-button:hover {
-    color: hsla(0,0%,100%,.75);
+    padding: 0.5rem;
 }
 
 /* Navigation drawer */
@@ -160,65 +110,6 @@ table:not(.rouge-table) th {
 .pagination .disabled.page-item {
     color: #777;
     cursor: not-allowed;
-}
-
-/* Footer */
-
-.footer {
-    background-color: #009688;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
-.footer, .footer a {
-    color: rgba(255, 255, 255, 0.84);
-}
-
-.footer > .container {
-    padding: 15px;
-}
-
-@media (max-width: 469px) {
-    #main-container {
-        /* Margin bottom by footer height */
-        margin-bottom: 150px;
-    }
-
-    .footer {
-        /* Set the fixed height of the footer here */
-        height: 150px;
-    }
-}
-
-@media (min-width: 470px) and (max-width: 767px) {
-    #main-container {
-        margin-bottom: 130px;
-    }
-
-    .footer {
-        height: 130px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    #main-container {
-        margin-bottom: 110px;
-    }
-
-    .footer {
-        height: 110px;
-    }
-}
-
-@media (min-width: 992px) {
-    #main-container {
-        margin-bottom: 60px;
-    }
-
-    .footer {
-        height: 60px;
-    }
 }
 
 /* Blog posts */
