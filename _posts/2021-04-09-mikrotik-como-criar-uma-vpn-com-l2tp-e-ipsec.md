@@ -142,8 +142,8 @@ Para conectar um dispositivo à VPN, siga um dos tutoriais a seguir, conforme o 
 - [Como conectar à VPN a partir do Windows][vpn-windows]
 - [Como conectar à VPN a partir do Android][vpn-android]
 - [Como conectar à VPN a partir do iOS (iPhone e iPad)][vpn-ios]
-
-(mais tutoriais por vir)
+- Como conectar à VPN a partir do Linux: consulte o tutorial no _site_ do Linux Kamarada:
+  - [Como conectar a uma VPN do tipo L2TP com IPsec - Linux Kamarada][vpn-linux]
 
 {% capture atualizacao %}
 No WinBox, você pode verificar que um cliente se conectou ao MikroTik indo em **PPP** > **Interface** ou em **Log**:
@@ -177,6 +177,7 @@ No WinBox, você pode verificar que um cliente se conectou ao MikroTik indo em *
 [vpn-windows]:      {% post_url 2021-04-09-mikrotik-como-conectar-a-vpn-a-partir-do-windows %}
 [vpn-android]:      {% post_url 2021-04-17-mikrotik-como-conectar-a-vpn-a-partir-do-android %}
 [vpn-ios]:          {% post_url 2021-06-17-mikrotik-como-conectar-a-vpn-a-partir-do-ios-iphone-e-ipad %}
+[vpn-linux]:        https://linuxkamarada.com/pt/2022/02/15/como-conectar-a-uma-vpn-do-tipo-l2tp-com-ipsec/
 [mikrotik-l2tp]:    https://wiki.mikrotik.com/wiki/Manual:Interface/L2TP
 [wikipedia]:        https://pt.wikipedia.org/wiki/Lista_de_portas_dos_protocolos_TCP_e_UDP
 [mikrotik-cloud]:   https://wiki.mikrotik.com/wiki/Manual:IP/Cloud
