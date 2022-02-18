@@ -1,13 +1,22 @@
-html {
-    min-height: 100%;
-    position: relative;
+:root {
+    --bs-body-bg: #E0E0E0; /* Gray 300 */
 }
 
-body {
-    background-color: #E5E5E5;
+a {
+    text-decoration: none;
 }
 
-#main-container-row {
+a:hover {
+    text-decoration: underline;
+}
+
+.btn:hover,
+.navbar-brand:hover,
+.nav-link:hover {
+    text-decoration: none;
+}
+
+#main-container > .row {
     margin-top: 5.5rem !important;
 }
 
@@ -20,7 +29,7 @@ body {
 }
 
 .card > .card-header {
-    background-color: #F5F5F5;
+    background-color: #F5F5F5; /* Gray 100 */
 }
 
 /* Header */
@@ -38,63 +47,26 @@ body {
     padding: 0.5rem;
 }
 
-/* Navigation drawer */
-
-.bmd-layout-drawer {
-    position: fixed;
-    z-index: 1000201; /* WTF AddThis? */
-}
-
-.bmd-drawer-f-l > .bmd-layout-drawer {
-    width: 250px;
-}
-
-#drawer-search-form {
-    padding: 1.125rem 1.125rem 0 1.125rem;
-}
-
 /* About and Author */
 
 #about img,
 #author img {
-    max-width: 150px;
+    max-width: min(75%, 150px);
+}
+
+@media (min-width: 991px) {
+    #about img {
+        max-width: 200px;
+    }
 }
 
 /* Pagination */
 
-.pagination {
-    display: block;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .pagination {
-        margin-bottom: 60px;
-    }
-}
-
-.pagination > li {
-    display: inline;
-}
-
-.pagination .page-item.latest {
-    float: left;
-}
-
-.pagination .page-item.earliest {
-    float: right;
-}
-
 .pagination .page-item > .page-link {
-    display: inline-block !important;
-    padding: 5px 14px;
-    background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 15px;
 }
 
 .pagination .disabled.page-item {
-    color: #777;
     cursor: not-allowed;
 }
 
@@ -103,36 +75,12 @@ body {
 .blog-post-link,
 .blog-post-link:focus,
 .blog-post-link:hover {
-    color: #444;
-}
-
-.blog-post-date a, .blog-post-meta {
-    color: #999;
+    color: var(--bs-body-color);
 }
 
 @media (max-width: 767px) {
-    .blog-post-date, .blog-post-share {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
     .blog-post-share {
-        width: 140px;
-    }
-}
-
-@media (min-width: 768px) {
-    .blog-post-date {
-        text-align: left;
-    }
-
-    .blog-post-share {
-        float: right !important;
-    }
-
-    .pager {
-        margin-bottom: 60px;
+        max-width: 140px;
     }
 }
 
@@ -231,72 +179,6 @@ em.caption {
 
 h2.blog-archive-title a {
     color: #FFF;
-}
-
-/* Blockquote
-Borrowed from the Bootswatch Paper theme
-https://bootswatch.com/3/paper/bootstrap.css */
-
-/* Line 219 */
-blockquote {
-    /*border: 1px solid #999;*/
-    page-break-inside: avoid;
-}
-
-/* Line 1469 */
-blockquote {
-  padding: 11.5px 23px;
-  margin: 0 0 23px;
-  font-size: 16.25px;
-  border-left: 5px solid #eeeeee;
-}
-blockquote p:last-child,
-blockquote ul:last-child,
-blockquote ol:last-child {
-  margin-bottom: 0;
-}
-blockquote footer,
-blockquote small,
-blockquote .small {
-  display: block;
-  font-size: 80%;
-  line-height: 1.846;
-  color: #bbbbbb;
-}
-blockquote footer:before,
-blockquote small:before,
-blockquote .small:before {
-  content: "\2014 \00A0";
-}
-.blockquote-reverse,
-blockquote.pull-right {
-  padding-right: 15px;
-  padding-left: 0;
-  text-align: right;
-  border-right: 5px solid #eeeeee;
-  border-left: 0;
-}
-.blockquote-reverse footer:before,
-blockquote.pull-right footer:before,
-.blockquote-reverse small:before,
-blockquote.pull-right small:before,
-.blockquote-reverse .small:before,
-blockquote.pull-right .small:before {
-  content: "";
-}
-.blockquote-reverse footer:after,
-blockquote.pull-right footer:after,
-.blockquote-reverse small:after,
-blockquote.pull-right small:after,
-.blockquote-reverse .small:after,
-blockquote.pull-right .small:after {
-  content: "\00A0 \2014";
-}
-
-/* Line 5742 */
-.well blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
 }
 
 /* Floating Action Button

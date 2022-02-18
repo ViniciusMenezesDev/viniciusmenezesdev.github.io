@@ -19,8 +19,8 @@ autogen: 'jekyll-paginate-v2'
             </h2>
             <div class="blog-post-meta row">
                 <div class='col-sm-6'>
-                    <p class="blog-post-date" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">
-                        <a href="{{ post.date | date: '/%Y/%m/%d/' | prepend: site.baseurl | replace: '//', '/' }}">
+                    <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">
+                        <a class='text-muted' href="{{ post.date | date: '/%Y/%m/%d/' | prepend: site.baseurl | replace: '//', '/' }}">
                             {{ post.date | date: "%b %-d, %Y" }}
                         </a>
                     </p>
@@ -28,7 +28,7 @@ autogen: 'jekyll-paginate-v2'
                 </div>
                 <div class='col-sm-6'>
                     {% if site.addthis_profile_id %}
-                        <div class='blog-post-share'>
+                        <div class='blog-post-share ms-auto me-auto float-sm-end'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="{{ post.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" addthis:title="{{ post.title }}" addthis:description="{{ post.excerpt | strip_html | strip_html | truncatewords: 55 }}">
                                 <a class="addthis_button_facebook"></a>
@@ -105,49 +105,49 @@ autogen: 'jekyll-paginate-v2'
 
 {% if paginator and paginator.total_pages > 1 %}
     <nav aria-label="Page navigation">
-        <ul class="pagination">
+        <ul class="pagination d-block mb-5 text-center">
             {% if paginator.previous_page %}
-                <li class="latest page-item">
-                    <a class="page-link" href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Latest">
+                <li class="latest page-item d-inline float-start">
+                    <a class="page-link d-inline-block bg-white border-1" href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Latest">
                         &laquo;<span class="hidden-xs"> Latest</span>
                     </a>
                 </li>
-                <li class="page-item">
-                    <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}" aria-label="Later">
+                <li class="page-item d-inline">
+                    <a class="page-link d-inline-block bg-white border-1" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}" aria-label="Later">
                         &lsaquo;<span class="hidden-xs"> Later</span>
                     </a>
                 </li>
             {% else %}
-                <li class="disabled latest page-item">
-                    <span class="page-link">
+                <li class="disabled text-muted latest page-item d-inline float-start">
+                    <span class="page-link d-inline-block bg-white border-1">
                         &laquo;<span class="hidden-xs"> Latest</span>
                     </span>
                 </li>
-                <li class="disabled page-item">
-                    <span class="page-link">
+                <li class="disabled text-muted page-item d-inline">
+                    <span class="page-link d-inline-block bg-white border-1">
                         &lsaquo;<span class="hidden-xs"> Later</span>
                     </span>
                 </li>
             {% endif %}
             {% if paginator.next_page %}
-                <li class="page-item">
-                    <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Earlier">
+                <li class="page-item d-inline">
+                    <a class="page-link d-inline-block bg-white border-1" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Earlier">
                         <span class="hidden-xs">Earlier </span>&rsaquo;
                     </a>
                 </li>
-                <li class="earliest page-item">
-                    <a class="page-link" href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Earliest">
+                <li class="earliest page-item d-inline float-end">
+                    <a class="page-link d-inline-block bg-white border-1" href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Earliest">
                         <span class="hidden-xs">Earliest </span>&raquo;
                     </a>
                 </li>
             {% else %}
-                <li class="page-item disabled">
-                    <span class="page-link">
+                <li class="disabled text-muted page-item d-inline">
+                    <span class="page-link d-inline-block bg-white border-1">
                         <span class="hidden-xs">Earlier </span>&rsaquo;
                     </span>
                 </li>
-                <li class="disabled earliest page-item">
-                    <span class="page-link">
+                <li class="disabled text-muted earliest page-item d-inline float-end">
+                    <span class="page-link d-inline-block bg-white border-1">
                         <span class="hidden-xs">Earliest </span>&raquo;
                     </span>
                 </li>

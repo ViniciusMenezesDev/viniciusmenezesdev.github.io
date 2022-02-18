@@ -11,8 +11,8 @@ layout: default
         </h1>
         <div class="blog-post-meta row">
             <div class='col-sm-6'>
-                <p class="blog-post-date" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">
-                    <a href="{{ page.date | date: '/%Y/%m/%d/' | prepend: site.baseurl | replace: '//', '/' }}">
+                <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}">
+                    <a class='text-muted' href="{{ page.date | date: '/%Y/%m/%d/' | prepend: site.baseurl | replace: '//', '/' }}">
                         {{ page.date | date: "%b %-d, %Y" }}
                     </a>
                 </p>
@@ -20,7 +20,7 @@ layout: default
             </div>
             <div class='col-sm-6'>
                 {% if site.addthis_profile_id %}
-                    <div class='blog-post-share'>
+                    <div class='blog-post-share ms-auto me-auto float-sm-end'>
                         <!-- AddThis Sharing Buttons -->
                         <div class="addthis_toolbox addthis_default_style">
                             <a class="addthis_button_facebook"></a>
