@@ -12,4 +12,7 @@ $(document).ready(function(){
     // Bootstrap's tables are opt-in
     // https://stackoverflow.com/a/39703599/1657502
     $('table:not(.rouge-table)').addClass('table');
+
+    // Bootstrap's blockquotes are opt-in as well
+    $('blockquote').addClass('blockquote py-2 px-4 mb-4 border-0 border-start border-5');
 });
