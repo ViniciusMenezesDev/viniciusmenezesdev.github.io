@@ -10,6 +10,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.alert a {
+    text-decoration: underline;
+}
+
 .btn:hover,
 .navbar-brand:hover,
 .nav-link:hover {
@@ -84,29 +88,11 @@ a:hover {
     }
 }
 
-/* https://getbootstrap.com/docs/4.0/getting-started/introduction/#box-sizing */
+/* Prevent problems with Google Custom Search Engine */
+/* https://getbootstrap.com/docs/5.1/getting-started/introduction/#box-sizing */
 
-.reset-box-sizing,
-.reset-box-sizing *,
-.reset-box-sizing *:before,
-.reset-box-sizing *:after {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-/* Google AdSense */
-
-.adsbygoogle {
-    display: block;
-    margin: 1em;
-}
-
-/* Images */
-
-em.caption {
-    display: block;
-    margin-top: 1em;
+.reset-box-sizing {
+    box-sizing: content-box;
 }
 
 /* Embed Responsively */
@@ -131,43 +117,28 @@ em.caption {
 }
 
 /* AddThis */
-
 /* https://stackoverflow.com/a/49396341/1657502 */
+
 .addthis_follow_buttons a {
     float: none !important;
 }
 
 /* Code highlighting */
 
-/* https://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html */
-
 .highlight .lineno {
     -moz-user-select: none;
     -o-user-select: none;
     -webkit-user-select: none;
+    border-right: 1px solid var(--material-color-blue-gray-100);
     color: var(--material-color-blue-gray-100);
+    padding-right: 10px;
 }
 
-.highlight .lineno::-moz-selection,
-.highlight .lineno::selection {
-    background-color: transparent;
+.rouge-code {
+    padding-left: 10px;
 }
 
-.highlight .lineno {
-    border-right:1px solid var(--material-color-blue-gray-100);
-    display: inline-block;
-    padding: 0 5px;
-}
-
-.highlight pre code {
-    display: block;
-    overflow-x: auto;
-    white-space: pre;
-    word-wrap: normal;
-}
-
-/* http://zpao.com/posts/adding-line-highlights-to-markdown-code-fences/ */
-
+/* I hope someday we will get line highlights back */
 .highlight .hll {
     background-color: var(--material-color-yellow-a100);
 }
@@ -193,6 +164,8 @@ https://pro.propeller.in/components/floating-button.php
 
 div.follow-buttons a {
     color: var(--material-color-white) !important;
+    height: 50px;
+    width: 50px;
 }
 
 div.follow-buttons .btn-facebook {

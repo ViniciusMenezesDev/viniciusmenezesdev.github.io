@@ -3,7 +3,7 @@
 <img src='{{ include.src }}' alt='{{ include.caption }}' class='img-fluid img-thumbnail' itemprop='contentUrl'{% if include.style %} style="{{ include.style }}"{% endif %}>
 </a>
 {% if include.caption %}
-<em class='caption' itemprop='description'>
+<em class='caption d-block mt-3' itemprop='description'>
 {{ include.caption | markdownify }}
 </em>
 {% endif %}
