@@ -1,5 +1,5 @@
 :root {
-    --bs-body-bg: #E0E0E0; /* Gray 300 */
+    --bs-body-bg: var(--material-color-gray-300);
 }
 
 a {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 .card > .card-header {
-    background-color: #F5F5F5; /* Gray 100 */
+    background-color: var(--material-color-gray-100);
 }
 
 /* Header */
@@ -148,7 +148,7 @@ em.caption {
     -moz-user-select: none;
     -o-user-select: none;
     -webkit-user-select: none;
-    color: #ccc;
+    color: var(--material-color-blue-gray-100);
 }
 
 .highlight .lineno::-moz-selection,
@@ -157,7 +157,7 @@ em.caption {
 }
 
 .highlight .lineno {
-    border-right:1px solid #ccc;
+    border-right:1px solid var(--material-color-blue-gray-100);
     display: inline-block;
     padding: 0 5px;
 }
@@ -172,13 +172,13 @@ em.caption {
 /* http://zpao.com/posts/adding-line-highlights-to-markdown-code-fences/ */
 
 .highlight .hll {
-    background-color: #FFFF96;
+    background-color: var(--material-color-yellow-a100);
 }
 
 /* Archives */
 
 h2.blog-archive-title a {
-    color: #FFF;
+    color: var(--material-color-white);
 }
 
 /* Floating Action Button
@@ -195,47 +195,47 @@ https://pro.propeller.in/components/floating-button.php
 /* Follow Buttons */
 
 div.follow-buttons a {
-    color: #fff !important;
+    color: var(--material-color-white) !important;
 }
 
 div.follow-buttons .btn-facebook {
-    background-color: #3949AB; /* Indigo 600 */
+    background-color: var(--material-color-indigo-600);
 }
 
 div.follow-buttons .btn-twitter {
-    background-color: #2196f3; /* Blue 500 */
+    background-color: var(--material-color-blue-500);
 }
 
 div.follow-buttons .btn-instagram {
-    background-color: #e91e63; /* Pink 500 */
+    background-color: var(--material-color-pink-500);
 }
 
 div.follow-buttons .btn-linkedin {
-    background-color: #1565c0; /* Blue 800 */
+    background-color: var(--material-color-blue-800);
 }
 
 div.follow-buttons .btn-youtube {
-    background-color: #d50000; /* Red A700 */
+    background-color: var(--material-color-red-a700);
 }
 
 div.follow-buttons .btn-telegram {
-    background-color: #0288d1; /* Light Blue 700 */
+    background-color: var(--material-color-light-blue-700);
 }
 
 div.follow-buttons .btn-foursquare {
-    background-color: #ff4081; /* Pink A200 */
+    background-color: var(--material-color-pink-a200);
 }
 
 div.follow-buttons .btn-github {
-    background-color: #212121; /* Gray 900 */
+    background-color: var(--material-color-gray-900);
 }
 
 div.follow-buttons .btn-gitlab {
-    background-color: #e64a19; /* Deep Orange 700 */
+    background-color: var(--material-color-deep-orange-700);
 }
 
 div.follow-buttons .btn-rss {
-    background-color: #f57c00; /* Orange 700 */
+    background-color: var(--material-color-orange-700);
 }
 
 /* Linktree */
