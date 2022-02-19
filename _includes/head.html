@@ -110,7 +110,7 @@
 
     {% if site.addthis_profile_id and jekyll.environment == "production" %}
         <!-- AddThis -->
-        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"></script>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"></script>
         <script type="text/javascript">
             var addthis_config = {
                 data_track_clickback: true,
