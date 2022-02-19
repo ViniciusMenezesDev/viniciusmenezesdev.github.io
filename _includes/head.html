@@ -105,7 +105,7 @@
 
     {% if site.google.adsense.publisher_id and jekyll.environment == "production" %}
         <!-- Google AdSense -->
-        <script data-ad-client="ca-{{ site.google.adsense.publisher_id }}" async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-{{ site.google.adsense.publisher_id }}' crossorigin='anonymous'></script>
     {% endif %}
 
     {% if site.addthis_profile_id and jekyll.environment == "production" %}
