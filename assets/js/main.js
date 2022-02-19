@@ -4,9 +4,12 @@ function random_number(first, last) {
 
 $(document).ready(function(){
     $('#fab').click(function(){
-        var enterDesignMode = ($('#fab button i').text() == "visibility");
-        $('#fab button i').text(enterDesignMode ? "edit" : "visibility");
-        document.designMode = enterDesignMode ? "on" : "off";
+        var $fabButton = $('#fab button');
+        var enterDesignMode = $fabButton.hasClass('btn-fab-view');
+        $fabButton.removeClass(enterDesignMode ? 'btn-fab-view' : 'btn-fab-edit');
+        $fabButton.addClass(enterDesignMode ? 'btn-fab-edit' : 'btn-fab-view');
+        $fabButton.html('<i class="fas fa-' + (enterDesignMode ? 'edit' : 'eye') + '"></i>');
+        document.designMode = enterDesignMode ? 'on' : 'off';
     });
 
     // Bootstrap's tables are opt-in
