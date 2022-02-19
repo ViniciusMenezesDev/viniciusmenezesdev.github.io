@@ -109,7 +109,8 @@ em.caption {
     margin-top: 1em;
 }
 
-/* Embed Responsively (embedresponsively.com) */
+/* Embed Responsively */
+/* https://embedresponsively.com */
 
 .embed-container {
     position: relative;
@@ -127,10 +128,6 @@ em.caption {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-.embed-responsive {
-    margin: 0px 0px 1em;
 }
 
 /* AddThis */
