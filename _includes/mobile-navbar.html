@@ -1,0 +1,42 @@
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-navbar">
+    <div class="offcanvas-header">
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+            <img src="{{ '/assets/favicons/favicon.svg' | prepend: site.baseurl }}" alt="" width="28" height="28" class="d-inline-block align-text-top">
+            {{ site.title }}
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="navbar-search-form" method="get" role="search">
+            {% if site.google.cse_id %}
+            {% else %}
+                <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
+            {% endif %}
+            <div class="input-group">
+                <input class="form-control me-2 search-field" id="navbar-search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary btn-number my-2 my-sm-0 search-button" id="navbar-search-button" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <ul class="nav flex-column mt-3">
+            {% if site.navigation %}
+                {% for link in site.navigation %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                    </li>
+                {% endfor %}
+            {% else %}
+                {% for page in site.pages %}
+                    {% if page.title and page.autogen == nil %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </div><!-- .offcanvas-body -->
+</div><!-- .offcanvas -->

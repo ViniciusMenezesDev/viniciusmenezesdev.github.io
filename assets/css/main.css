@@ -51,6 +51,19 @@ a:hover {
     padding: 0.5rem;
 }
 
+/* Mobile Navbar */
+
+#mobile-navbar {
+    max-width: 80%;
+}
+
+#mobile-navbar .btn-close {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1045; /* same z-index as .offcanvas */
+}
+
 /* About and Author */
 
 #about img,
