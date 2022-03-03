@@ -64,6 +64,12 @@ a:hover {
     z-index: 1045; /* same z-index as .offcanvas */
 }
 
+/* Collapsible Search */
+
+#collapsible-search {
+    height: 14vh;
+}
+
 /* About and Author */
 
 #about img,

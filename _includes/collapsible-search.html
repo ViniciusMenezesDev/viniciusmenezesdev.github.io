@@ -1,0 +1,23 @@
+<div class="offcanvas offcanvas-top" tabindex="-1" id="collapsible-search">
+    <div class="offcanvas-body">
+        <div class="container">
+            <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="collapsible-search-search-form" method="get" role="search">
+                {% if site.google.cse_id %}
+                {% else %}
+                    <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
+                {% endif %}
+                <div class="input-group">
+                    <input class="form-control me-2" id="collapsible-search-search-field" name="q" placeholder="Search" type="text" aria-label="Search">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary my-2 my-sm-0" id="collapsible-search-search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary my-2 my-sm-0" id="collapsible-search-close-button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div><!-- .container -->
+    </div><!-- .offcanvas-body -->
+</div>

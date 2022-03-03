@@ -29,22 +29,12 @@
                         {% endfor %}
                     {% endif %}
                 </ul>
-
-                <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="navbar-search-form" method="get" role="search">
-                    {% if site.google.cse_id %}
-                    {% else %}
-                        <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
-                    {% endif %}
-                    <div class="input-group">
-                        <input class="form-control me-2 search-field" id="navbar-search-field" name="q" placeholder="Search" type="text" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-secondary btn-number my-2 my-sm-0 search-button" id="navbar-search-button" type="submit">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
             </div><!--#navbarCollapse-->
+
+            <button class="btn btn-primary d-none d-lg-inline-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#collapsible-search" aria-controls="collapsible-search">
+                <i class="fa fa-search"></i>
+            </button>
+
         </div><!--.container-->
     </nav>
 </header>

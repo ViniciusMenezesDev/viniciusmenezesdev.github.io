@@ -10,6 +10,7 @@
 <body class="d-flex flex-column h-100" itemscope itemtype="http://schema.org/{% if page.is_post %}{{ "BlogPosting" }}{% else %}{{ "WebPage" }}{% endif %}">
     {% include header.html %}
     {% include mobile-navbar.html %}
+    {% include collapsible-search.html %}
 
     <main class="flex-shrink-0">
         <div class="container" id="main-container">
