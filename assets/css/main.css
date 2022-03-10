@@ -38,6 +38,14 @@ a:hover {
 
 /* Header */
 
+/* Fix for websites with a long name */
+@media (max-width: 399px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+/* END Fix */
+
 #navbar-search-button:hover {
     cursor: pointer;
 }
