@@ -1,6 +1,6 @@
 <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary pt-2 pb-2">
         <div class="container justify-content-start">
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-navbar" aria-controls="mobile-navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -11,8 +11,8 @@
                 {{ site.title }}
             </a>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav m-auto">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav">
                     {% if site.navigation %}
                         {% for link in site.navigation %}
                             <li class="nav-item">
@@ -28,13 +28,13 @@
                             {% endif %}
                         {% endfor %}
                     {% endif %}
+                    <li class="nav-item">
+                        <a class="nav-link d-none d-lg-inline-block" id="navbar-search-button" data-bs-toggle="offcanvas" data-bs-target="#collapsible-search" aria-controls="collapsible-search">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
                 </ul>
             </div><!--#navbarCollapse-->
-
-            <button class="btn btn-primary d-none d-lg-inline-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#collapsible-search" aria-controls="collapsible-search">
-                <i class="fa fa-search"></i>
-            </button>
-
         </div><!--.container-->
     </nav>
 </header>

@@ -7,15 +7,15 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body pt-0">
-        <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="navbar-search-form" method="get" role="search">
+        <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="mobile-navbar-search-form" method="get" role="search">
             {% if site.google.cse_id %}
             {% else %}
                 <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
             {% endif %}
             <div class="input-group">
-                <input class="form-control me-2" id="navbar-search-field" name="q" placeholder="Search" type="text" aria-label="Search">
+                <input class="form-control me-2" id="mobile-navbar-search-field" name="q" placeholder="Search" type="text" aria-label="Search">
                 <div class="input-group-append">
-                    <button type="submit" class="btn btn-secondary my-2 my-sm-0" id="navbar-search-button">
+                    <button type="submit" class="btn btn-primary my-2 my-sm-0" id="mobile-navbar-search-button">
                         <i class="fa fa-search"></i>
                     </button>
                 </div>
@@ -25,14 +25,14 @@
             {% if site.navigation %}
                 {% for link in site.navigation %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                        <a class="nav-link ps-0" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
                     </li>
                 {% endfor %}
             {% else %}
                 {% for page in site.pages %}
                     {% if page.title and page.autogen == nil %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            <a class="nav-link ps-0" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                         </li>
                     {% endif %}
                 {% endfor %}

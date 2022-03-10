@@ -38,17 +38,8 @@ a:hover {
 
 /* Header */
 
-.navbar {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-#navbar-search-field {
-    padding: 0.25rem;
-}
-
-#navbar-search-button {
-    padding: 0.5rem;
+#navbar-search-button:hover {
+    cursor: pointer;
 }
 
 /* Mobile Navbar */
@@ -67,7 +58,7 @@ a:hover {
 /* Collapsible Search */
 
 #collapsible-search {
-    height: 14vh;
+    height: 90px;
 }
 
 /* About and Author */
