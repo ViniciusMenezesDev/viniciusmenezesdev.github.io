@@ -1,0 +1,36 @@
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-navbar">
+    <div class="offcanvas-header">
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+            <img src="{{ '/favicon-32x32.png' | prepend: site.baseurl }}" alt="" width="28" height="28" class="d-inline-block align-text-top">
+            {{ site.title }}
+        </a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body pt-0">
+        <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="mobile-navbar-search-form" method="get" role="search">
+            {% if site.google.cse_id %}
+            {% else %}
+                <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
+            {% endif %}
+            <div class="input-group">
+                <input class="form-control me-2" id="mobile-navbar-search-field" name="q" placeholder="Pesquisar" type="text" aria-label="Pesquisar">
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary my-2 my-sm-0" id="mobile-navbar-search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <ul class="nav flex-column mt-3">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/blog/category/trabalhos/">Trabalhos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://lattes.cnpq.br/2162371468280338">Currículo</a>
+            </li>
+        </ul>
+    </div><!-- .offcanvas-body -->
+</div><!-- .offcanvas -->

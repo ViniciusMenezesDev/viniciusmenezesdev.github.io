@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html{% if site.lang %} lang="{{ site.lang }}"{% endif %} prefix="
+<html{% if site.lang %} lang="{{ site.lang }}"{% endif %} class="h-100" prefix="
     {% if site.addthis_profile_id %}addthis: http://www.addthis.com/help/api-spec{% endif %}
     og: http://ogp.me/ns#
     fb: http://ogp.me/ns/fb#
@@ -7,33 +7,32 @@
 
 {% include head.html %}
 
-<body itemscope itemtype="http://schema.org/{% if page.is_post %}{{ "BlogPosting" }}{% else %}{{ "WebPage" }}{% endif %}">
-    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
-        {% include header.html %}
-        {% include drawer.html %}
+<body class="d-flex flex-column h-100" itemscope itemtype="http://schema.org/{% if page.is_post %}{{ "BlogPosting" }}{% else %}{{ "WebPage" }}{% endif %}">
+    {% include header.html %}
+    {% include mobile-navbar.html %}
+    {% include collapsible-search.html %}
 
-        <main class="bmd-layout-content">
-            <div class="container" id="main-container">
-                <div class="row">
-                    <div class='col-sm-8'>
-                        {{ content }}
-                    </div>
-                    <div class="col-sm-4">
-                        {% include sidebar.html %}
-                    </div>
+    <main class="flex-shrink-0">
+        <div class="container" id="main-container">
+            <div class="row">
+                <div class='col-sm-8'>
+                    {{ content }}
+                </div>
+                <div class="col-sm-4">
+                    {% include sidebar.html %}
                 </div>
             </div>
+        </div>
 
-            {% include footer.html %}
+        {% include footer.html %}
 
-            {% if jekyll.environment != "production" %}
-                <div id="fab">
-                    <button type="button" class="btn btn-primary bmd-btn-fab">
-                        <i class="material-icons">visibility</i>
-                    </button>
-                </div>
-            {% endif %}
-        </main>
-    </div><!-- .bmd-layout-container -->
+        {% if jekyll.environment != "production" %}
+            <div id='fab'>
+                <button type='button' class='btn btn-primary btn-fab-view rounded-circle'>
+                    <i class='fas fa-eye'></i>
+                </button>
+            </div>
+        {% endif %}
+    </main>
 </body>
 </html>

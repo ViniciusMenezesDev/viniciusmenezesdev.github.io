@@ -1,10 +1,10 @@
 ---
 ---
 <!DOCTYPE html>
-<html{% if site.lang %} lang="{{ site.lang }}" {% endif %}{% if site.addthis_profile_id %} prefix="addthis: http://www.addthis.com/help/api-spec" {% endif %}>
+<html{% if site.lang %} lang="{{ site.lang }}" {% endif %}{% if site.addthis_profile_id %} class="h-100" prefix="addthis: http://www.addthis.com/help/api-spec" {% endif %}>
 {% include head.html %}
-<body>
-    <div class="container mt-3 mb-3">
+<body class="d-flex flex-column h-100">
+    <div class="container mt-4 mb-4">
         <p class="mb-1 text-center">
             <a href="{{ site.baseurl | prepend: site.url }}">
                 <img src="{{ site.image | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}" id="linktree-logo" class="img-fluid img-thumbnail rounded-circle">
@@ -38,9 +38,11 @@
             </div>
         {% endfor %}
 
-        <a href="{{ site.baseurl | prepend: site.url }}" class="btn btn-block btn-lg btn-outline-primary active mb-3">
-            Ir para o site
-        </a>
+        <div class="d-grid">
+            <a href="{{ site.baseurl | prepend: site.url }}" class="btn btn-lg btn-primary mb-3">
+                Ir para o site
+            </a>
+        </div>
 
         {% if site.addthis_profile_id %}
             {% include follow-buttons-addthis.html %}
