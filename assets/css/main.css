@@ -82,6 +82,7 @@ a:hover {
 }
 
 .btn:hover,
+.dropdown-item,
 .navbar-brand:hover,
 .nav-link:hover {
     text-decoration: none;
@@ -89,6 +90,11 @@ a:hover {
 
 #main-container > .row {
     margin-top: 5.5rem !important;
+}
+
+.form-label {
+    font-weight: 700 !important; /* same font-weight as .fw-bold */
+    margin-bottom: 0.25rem;
 }
 
 .gap {
@@ -296,11 +302,12 @@ div.follow-buttons .btn-rss {
 /* Linktree */
 
 #linktree-logo {
-    max-width: 96px
+    max-width: 96px;
 }
 
 #linktree-brand {
-    font-weight: 400;
+    font-size: calc(1.275rem + .3vw); /* Same as h4 */
+    font-weight: 500;
 }
 
 .atualizacao a {
