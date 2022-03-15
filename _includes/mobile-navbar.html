@@ -7,7 +7,7 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body pt-0">
-        <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="mobile-navbar-search-form" method="get" role="search">
+        <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline" id="mobile-navbar-search-form" method="get" role="search">
             {% if site.google.cse_id %}
             {% else %}
                 <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
