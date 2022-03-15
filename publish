@@ -3,6 +3,7 @@ USER="vinyanalista"
 SOURCE="vinyanalista-website"
 TARGET="vinyanalista.github.io"
 
+set -e
 git add --all .
 git stash
 LAST_COMMIT_HASH=`git rev-parse HEAD`
