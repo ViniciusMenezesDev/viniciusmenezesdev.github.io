@@ -4,7 +4,7 @@
             <img src="{{ '/favicon-32x32.png' | prepend: site.baseurl }}" alt="" width="28" height="28" class="d-inline-block align-text-top">
             {{ site.title }}
         </a>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
     </div>
     <div class="offcanvas-body pt-0">
         <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="form-inline d-flex" id="mobile-navbar-search-form" method="get" role="search">
