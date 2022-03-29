@@ -14,13 +14,21 @@ Se por qualquer motivo você for impedido de usar o [Telegram] -- por exemplo, s
 [Rede Tor]:             https://www.torproject.org/
 [Android]:              https://www.android.com/
 
+{% capture outros_sos %}
+
 Se, por um acaso, você procurava instruções para outro sistema operacional, mas caiu nessa página, consulte os _links_ a seguir:
 
 - Windows: [Como usar o Telegram via Tor no Windows][windows]
+- iOS (iPhone e iPad): [Como usar o Telegram via Tor no iOS (iPhone e iPad)][ios]
 - Linux: [Dica: como usar o Telegram via Tor no Linux - Linux Kamarada][linux]
 
 [windows]: {% post_url 2022-03-23-como-usar-o-telegram-via-tor-no-windows %}
+[ios]: {% post_url 2022-03-29-como-usar-o-telegram-via-tor-no-iphone %}
 [linux]: https://linuxkamarada.com/pt/2022/02/26/dica-como-usar-o-telegram-via-tor/
+
+{% endcapture %}
+
+{% include update.html date="29/03/2022" message=outros_sos %}
 
 Infelizmente, o Brasil chegou a ser adicionado à [lista de países que censuram o Telegram][telegram-censorship], porque houve uma ordem judicial para bloquear o Telegram na sexta-feira passada, [18 de março de 2022][tecmundo-1]. Mas, felizmente, essa ordem foi revogada 2 dias depois, no [domingo 20][tecmundo-2]. No momento em que escrevo esta dica, o uso do Telegram é, legalmente falando, permitido no Brasil, e espero que continue assim.
 
