@@ -1,5 +1,5 @@
 ---
-date: '2022-03-29 09:20:00 GMT-3'
+date: '2022-03-29 09:30:00 GMT-3'
 image: '/files/2022/03/telegram-tor-ios.png'
 layout: post
 title: 'Como usar o Telegram via Tor no iOS (iPhone e iPad)'

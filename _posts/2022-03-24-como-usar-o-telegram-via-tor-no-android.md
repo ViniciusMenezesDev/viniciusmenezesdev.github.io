@@ -23,7 +23,7 @@ Se, por um acaso, você procurava instruções para outro sistema operacional, m
 - Linux: [Dica: como usar o Telegram via Tor no Linux - Linux Kamarada][linux]
 
 [windows]: {% post_url 2022-03-23-como-usar-o-telegram-via-tor-no-windows %}
-[ios]: {% post_url 2022-03-29-como-usar-o-telegram-via-tor-no-iphone %}
+[ios]: {% post_url 2022-03-29-como-usar-o-telegram-via-tor-no-ios-iphone-e-ipad %}
 [linux]: https://linuxkamarada.com/pt/2022/02/26/dica-como-usar-o-telegram-via-tor/
 
 {% endcapture %}
