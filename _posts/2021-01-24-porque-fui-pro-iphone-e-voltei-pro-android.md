@@ -4,7 +4,16 @@ image: '/files/2021/01/iphone-vs-android-01.jpg'
 layout: post
 published: true
 title: 'Porque fui pro iPhone e voltei pro Android'
+excerpt: 'Se você está pensando em comprar um celular novo, pode ser que esteja se perguntando: compro um smartphone com Android ou um iPhone? Durante um tempo eu usei Android, depois passei um tempo usando iPhone, e agora estou voltando para o Android. Então decidi escrever esse texto para compartilhar minha experiência e possivelmente ajudar quem está em dúvida a se decidir por um ou por outro.'
 ---
+
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
 {% include image.html src="/files/2021/01/iphone-vs-android-01.jpg" %}
 
@@ -123,7 +132,7 @@ Quanto ao iPhone 8, ainda vou segurar mais um pouco. Vai levar um tempo até eu 
 [ipod]:                     https://pt.wikipedia.org/wiki/IPod_touch
 [iphone-6s]:                https://www.tudocelular.com/Apple/fichas-tecnicas/n2968/Apple-iPhone-6S.html
 [icloud]:                   https://www.apple.com/br/icloud/
-[linux]:                    https://kamarada.github.io/pt/
+[linux]:                    https://linuxkamarada.com/pt/
 [windows]:                  https://www.microsoft.com/pt-br/windows
 [jpg]:                      https://pt.wikipedia.org/wiki/JPEG
 [heic]:                     https://pt.wikipedia.org/wiki/High_Efficiency_Image_File_Format#HEIC:_HEVC_em_HEIF
@@ -146,7 +155,7 @@ Quanto ao iPhone 8, ainda vou segurar mais um pouco. Vai levar um tempo até eu 
 [play]:                     https://play.google.com/store
 [appstore]:                 https://www.apple.com/br/app-store/
 [mobilegrowthassociation]:  https://www.mobilegrowthassociation.com/blog/apple-app-store-vs.-google-play-store-what-app-publishers-need-to-know
-[parler]:                   https://parler.com/
+[parler]:                   https://en.wikipedia.org/wiki/Parler
 [parler-appstore]:          https://www.tudocelular.com/curiosidade/noticias/n168788/parler-banido-playstore-app-store.html
 [gab]:                      https://gab.com/
 [gab-appstore]:             https://www.breitbart.com/tech/2016/12/17/apple-rejects-gab-from-app-store-over-content-posted-by-users/

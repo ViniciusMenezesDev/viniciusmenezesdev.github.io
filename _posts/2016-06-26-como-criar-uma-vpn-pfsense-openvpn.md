@@ -4,7 +4,16 @@ layout: post
 published: true
 title: Como criar uma VPN utilizando pfSense e OpenVPN
 image: /files/2016/06/pfsense-vpn-01.png
+excerpt: 'O pfSense é uma solução de firewall incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o OpenVPN, que é livre, versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido.'
 ---
+
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
 {% include image.html src="/files/2016/06/pfsense-vpn-01.png" %}
 
@@ -44,7 +53,7 @@ A ideia de escrever foi compartilhar a experiência vivida onde eu trabalho.
 
 Quero citar o excelente tutorial passo a passo do [Thiago Melo][thiago-melo], que aqui utilizo como base para escrever uma versão um pouco mais atual e acrescentando alguns comentários meus.
 
-Para referência futura, a versão do pfSense utilizado aqui é a 2.3, lançada em [abril de 2016][pfsense-2.3], e a do OpenVPN é a 2.1.11, lançada em [maio de 2016][openvpn-2.3.11].
+Para referência futura, a versão do pfSense utilizado aqui é a 2.3, lançada em [abril de 2016][pfsense-2.3], e a do OpenVPN é a 2.3.11, lançada em [maio de 2016][openvpn-2.3.11].
 
 ## Criando a VPN no pfSense
 
@@ -322,7 +331,6 @@ Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em **Disc
 É isso. Espero que esse texto possa te ajudar caso necessite. A seguir, listo algumas referências que utilizei além dos *links* que já apareceram por todo o texto:
 
 - [O que é VPN? - TecMundo][referencia-1]
-- [O que é e para que serve uma VPN? - Olhar Digital][referencia-2]
 - [O que é VPN? - TechNet][referencia-3]
 - [VPN e IPsec - UFRJ][referencia-4]
 - [OpenVPN Errors - TLS handshake failed - fórum do pfSense][referencia-5]
@@ -331,25 +339,23 @@ Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em **Disc
 
 [pfsense]: https://www.pfsense.org/
 [openvpn]: https://openvpn.net/
-[software-livre]: http://softwarelivre.org/portal/o-que-e
+[software-livre]: https://www.gnu.org/philosophy/free-sw.pt-br.html
 [psiphon]: {% post_url 2015-12-17-acesse-sites-e-aplicativos-censurados-com-o-psiphon %}
 [whatsapp]: http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html
 [china]: http://tecnologia.terra.com.br/internet/pai-da-censura-na-china-e-surpreendido-burlando-a-mesma-em-publico,1d6ba1d9b58468d4df30fb84daf29ee6e3c193t0.html
 [protocolos]: https://technet.microsoft.com/pt-br/library/cc771298(v=ws.10).aspx
 [windows]: https://www.microsoft.com/pt-br/windows/
 [android]: https://www.android.com/intl/pt-BR_br/
-[thiago-melo]: http://thiago.oxente.org/2011/11/09/pfsense-2-0-e-openvpn-e-autenticando-no-windows-2008/
+[thiago-melo]: https://thiago.oxente.org/2011/11/09/pfsense-2-0-e-openvpn-e-autenticando-no-windows-2008/
 [pfsense-2.3]: https://blog.pfsense.org/?p=2008
-[openvpn-2.3.11]: http://swupdate.openvpn.org/community/releases/
+[openvpn-2.3.11]: https://build.openvpn.net/downloads/releases/
 [cidr]: https://pt.wikipedia.org/wiki/CIDR
 [play-store]: https://play.google.com/store/
 [bug]: https://community.openvpn.net/openvpn/ticket/68
 [download-openvpn]: https://openvpn.net/index.php/open-source/downloads.html
 [referencia-1]: http://www.tecmundo.com.br/1427-o-que-e-vpn-.htm
-[referencia-2]: http://olhardigital.uol.com.br/noticia/o-que-e-e-para-que-serve-uma-vpn/37913
 [referencia-3]: https://technet.microsoft.com/pt-br/library/cc731954(v=ws.10).aspx
 [referencia-4]: http://www.gta.ufrj.br/grad/13_1/vpn_ipsec/
-[referencia-5]: https://forum.pfsense.org/index.php?topic=81287.0
+[referencia-5]: https://forum.netgate.com/topic/73188/openvpn-errors-tls-handshake-failed?lang=pt-BR
 [referencia-6]: https://www.vivaolinux.com.br/topico/servidores-VPN/OPENVPN-no-pfsense-conectando-cliente-windows
 [referencia-7]: https://openvpn.net/index.php/open-source/faq/79-client/253-tls-error-tls-key-negotiation-failed-to-occur-within-60-seconds-check-your-network-connectivity.html
-

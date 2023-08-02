@@ -4,7 +4,16 @@ layout: post
 published: true
 title: 'Bom senso na web: tratando imagens para publicação em sites'
 image: '/files/2019/09/famdetodos-01.jpg'
+excerpt: 'Eu fico indignado com páginas que demoram pra carregar devido ao tamanho das imagens. Não o tamanho que elas aparentam ter na página, mas o tamanho que elas realmente tem: muitas vezes na página a imagem ocupa um espaço pequeno, mas como é inserida grande do jeito que veio da câmera ou do profissional que fez a arte digital, acaba sendo um arquivo pesado que soma no tempo de carregamento da página.'
 ---
+
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
 Eu fico indignado com páginas que demoram pra carregar devido ao tamanho das imagens. Não o tamanho que elas aparentam ter na página, mas o tamanho que elas realmente tem: muitas vezes na página a imagem ocupa um espaço pequeno, mas como é inserida grande do jeito que veio da câmera ou do profissional que fez a arte digital, acaba sendo um arquivo pesado que soma no tempo de carregamento da página.
 
@@ -161,7 +170,7 @@ Se você é grato por eu ter poupado a franquia do seu prezão nesse tutorial, c
 [irfanview]:        https://www.irfanview.com/
 [freeware]:         https://pt.wikipedia.org/wiki/Software_gratuito
 [windows]:          https://www.microsoft.com/pt-br/windows/
-[linux]:            https://kamarada.github.io/
+[linux]:            https://linuxkamarada.com/
 [wine]:             https://www.winehq.org/
 [dicas-prints]:     {% post_url 2016-02-18-dicas-para-bater-bons-prints %}
 [instalador]:       https://www.fosshub.com/IrfanView.html?dwl=iview453_x64_setup.exe

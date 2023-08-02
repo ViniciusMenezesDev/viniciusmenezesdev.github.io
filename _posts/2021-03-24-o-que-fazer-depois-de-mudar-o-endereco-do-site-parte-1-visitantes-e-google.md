@@ -3,11 +3,20 @@ date: 2021-03-24 10:00:00 GMT-3
 image: '/files/2021/03/mudanca-de-endereco.jpg'
 layout: post
 title: 'O que fazer depois de mudar o endereço do site — parte 1: visitantes e Google'
+excerpt: 'Mudar um site de endereço não é fácil se esse site já existe há algum tempo e já tem alguma presença na busca do Google e nas redes sociais. Recentemente mudei dois dos meus sites de hospedagem, do GitHub Pages para o GitLab Pages, e também de endereço: o site do Linux Kamarada mudou de kamarada.github.io para linuxkamarada.com e este site mudou de vinyanalista.github.io para antoniomedeiros.dev. Registrei ambos os domínios pela Namecheap. No site do Linux Kamarada fiz um texto explicando essa mudança.'
 ---
+
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
 {% include image.html src='/files/2021/03/mudanca-de-endereco.jpg' %}
 
-Mudar um _site_ de endereço não é fácil se esse _site_ já existe há algum tempo e já tem alguma presença na busca do [Google] e nas redes sociais. Recentemente mudei dois dos meus _sites_ de hospedagem, do [GitHub Pages][github-pages] para o [GitLab Pages][gitlab-pages], e também de endereço: o _site_ do [Linux Kamarada][linuxkamarada.com] mudou de [kamarada.github.io] para [linuxkamarada.com] e este _site_ mudou de [vinyanalista.github.io] para [antoniomedeiros.dev]. Registrei ambos os domínios pela [Namecheap]. No _site_ do Linux Kamarada fiz [um texto explicando essa mudança][moving-to-gitlab].
+Mudar um _site_ de endereço não é fácil se esse _site_ já existe há algum tempo e já tem alguma presença na busca do [Google] e nas redes sociais. Recentemente mudei dois dos meus _sites_ de hospedagem, do [GitHub Pages][github-pages] para o [GitLab Pages][gitlab-pages], e também de endereço: o _site_ do [Linux Kamarada][linuxkamarada.com] mudou de `kamarada.github.io` para [linuxkamarada.com] e este _site_ mudou de `vinyanalista.github.io` para [antoniomedeiros.dev]. Registrei ambos os domínios pela [Namecheap]. No _site_ do Linux Kamarada fiz [um texto explicando essa mudança][moving-to-gitlab].
 
 Meus _sites_ usam alguns serviços de terceiros: [Google Search Console][search], [Google AdSense][adsense], [Google Analytics][analytics-1], [Google Programmable Search Engine][cse-1], [Disqus], [AddThis], [A-ADS] e [Brave Rewards][brave-rewards]. Depois de providenciar que as páginas fossem servidas nos novos endereços, tive que comunicar a mudança aos visitantes e também a cada um desses serviços.
 
@@ -166,7 +175,6 @@ A segunda parte deve ser publicada em breve. Siga-me para saber assim que for li
 - [Permanent redirect from Github gh-pages - Stack Overflow][stackoverflow-2]
 - [Changing Domain Names? Learn How To Tell Google About Site Address Change - ShoutMeLoud][shoutmeloud]
 - [Ferramenta Alteração de endereço - Ajuda do Google Search Console][support-google-3]
-- [How to change my AdSense website's URL - Quora][quora]
 - [Changing a Domain in Google Analytics \| Zanzi Digital][zanzidigital]
 - [How to Migrate Disqus Comments after Changing URL Structure - Journey Bytes][journeybytes]
 
@@ -174,8 +182,6 @@ A segunda parte deve ser publicada em breve. Siga-me para saber assim que for li
 [github-pages]: https://pages.github.com/
 [gitlab-pages]: https://docs.gitlab.com/ee/user/project/pages/
 [linuxkamarada.com]: https://linuxkamarada.com/
-[kamarada.github.io]: https://kamarada.github.io/
-[vinyanalista.github.io]: https://vinyanalista.github.io/
 [antoniomedeiros.dev]: https://antoniomedeiros.dev/
 [namecheap]: https://bit.ly/kamarada-namecheap
 [moving-to-gitlab]: https://linuxkamarada.com/pt/2021/03/10/linux-kamarada-esta-migrando-para-o-gitlab/
@@ -211,6 +217,5 @@ A segunda parte deve ser publicada em breve. Siga-me para saber assim que for li
 [stackoverflow-1]: https://stackoverflow.com/a/66601856/
 [stackoverflow-2]: https://stackoverflow.com/a/66602291/
 [shoutmeloud]: https://www.shoutmeloud.com/site-address-change-google-search.html
-[quora]: https://www.quora.com/How-do-I-change-my-AdSense-website's-URL
 [zanzidigital]: https://zanzidigital.co.uk/analytics-measurement/how-to-change-website-domain-in-google-analytics/
 [journeybytes]: https://www.journeybytes.com/migrate-disqus-comments-after-changing-url-structure/

@@ -7,6 +7,14 @@ title: 'Com horário de verão confuso, hora de computadores e celulares foi adi
 excerpt: 'Do sábado para o domingo muita gente viu os relógios do computador e do celular se adiantarem em 1 hora sozinhos, com o suposto início do horário de verão. Ocorre que desde o ano passado já é a terceira vez que o governo brasileiro altera a data de início do horário de verão em 2018. Quem estava com seus dispositivos devidamente configurados e atualizados não teve problemas. Nesse post você vai entender o que aconteceu e como se prevenir.'
 ---
 
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
+
 {% include image.html src="/files/2018/10/data-hora.jpg" %}
 
 Do sábado para o domingo muita gente viu [os relógios do computador e do celular se adiantarem em 1 hora sozinhos][cb], com o suposto início do horário de verão. Ocorre que desde o ano passado já [é a terceira vez que o governo brasileiro altera a data de início do horário de verão em 2018][g1]. Quem estava com seus dispositivos devidamente configurados e atualizados não teve problemas. Nesse *post* você vai entender o que aconteceu e como se prevenir.
@@ -44,7 +52,7 @@ A razão para essa última decisão foi um protesto da Associação Brasileira d
 
 Portanto, desde o ano passado, o início do horário de verão no Brasil em 2018 já teve 3 mudanças: passou de 21/10 para 04/11, depois para 18/11, e por fim foi mantido em 04/11.
 
-{% include image.html src="/files/2018/10/mapa-horario-de-verao-2018-2019.jpg" caption="Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa emprestado do *blog* [Linux Kamarada](https://kamarada.github.io/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/) e derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))" %}
+{% include image.html src="/files/2018/10/mapa-horario-de-verao-2018-2019.jpg" caption="Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa emprestado do *blog* [Linux Kamarada](https://linuxkamarada.com/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/) e derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))" %}
 
 ## Como saber a hora certa
 
@@ -94,7 +102,7 @@ Clique em **OK** para sair da caixa de diálogo **Configurações de Horário na
 
 Pronto! Seu computador já está com data e hora corretas e configurado para sincronizá-las com a Internet. Com isso, nunca mais você terá que se preocupar em ajustar manualmente a data e a hora no início e no fim do horário de verão.
 
-Além disso, há outro detalhe que você precisa se atentar: **atualizações**. Como vimos, as datas de início e fim do horário de verão podem mudar. Embora a data e hora possam ser obtidas da Internet, o início e o fim do horário de verão são programados no sistema operacional. Por isso, é importante regularmente verificar atualizações para o Windows. 
+Além disso, há outro detalhe que você precisa se atentar: **atualizações**. Como vimos, as datas de início e fim do horário de verão podem mudar. Embora a data e hora possam ser obtidas da Internet, o início e o fim do horário de verão são programados no sistema operacional. Por isso, é importante regularmente verificar atualizações para o Windows.
 
 Normalmente, o Windows já instala quaisquer atualizações disponíveis em um horário que você não costuma utilizar o computador, se ele estiver ligado.
 
@@ -213,9 +221,9 @@ Você pode usar o mapa de fusos horários disponível em [timeanddate.com][timea
 [ipod-touch]:       https://www.apple.com/br/ipod-touch/
 [linux]:            https://www.vivaolinux.com.br/linux/
 [android]:          https://www.android.com/
-[kamarada]:         https://kamarada.github.io/
-[kamarada-linux]:   https://kamarada.github.io/pt/2018/10/21/acordou-com-a-hora-do-computador-errada-entenda-o-que-aconteceu/
-[kamarada-android]: https://kamarada.github.io/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/
+[kamarada]:         https://linuxkamarada.com/
+[kamarada-linux]:   https://linuxkamarada.com/pt/2018/10/21/acordou-com-a-hora-do-computador-errada-entenda-o-que-aconteceu/
+[kamarada-android]: https://linuxkamarada.com/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/
 [horario-de-verao]: https://pt.wikipedia.org/wiki/Hor%C3%A1rio_de_ver%C3%A3o
 [r7]:               https://noticias.r7.com/sao-paulo/senado-propoe-acabar-com-o-horario-de-verao-no-brasil-20092018
 [oglobo]:           https://oglobo.globo.com/economia/governo-voltara-discutir-se-acaba-com-horario-de-verao-22397585

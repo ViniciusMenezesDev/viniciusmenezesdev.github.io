@@ -4,7 +4,16 @@ image: '/files/2020/07/kingston-a400-480gb.jpg'
 layout: post
 published: true
 title: 'Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)'
+excerpt: 'Mês passado eu estava usando meu notebook quando de repente os programas começaram a apresentar diversas mensagens de erro. Reiniciei o computador e, para minha surpresa, o sistema operacional não iniciou, apresentando mensagem de erro relacionada ao meu SSD Kingston A400 de 480GB, que agora era reconhecido como SATAFIRM S11. Nesse post, vou mostrar como resolvi esse problema e informações que podem te ajudar, caso você também possua um SSD desse modelo e tenha se deparado com o mesmo erro.'
 ---
+
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
 {% include image.html src="/files/2020/07/kingston-a400-480gb.jpg" %}
 
@@ -141,9 +150,9 @@ Eu soube dos comandos para Linux mostrados acima nessas páginas:
 [ksm]:              https://www.kingston.com/br/support/technical/ssdmanager
 [linux]:            https://www.vivaolinux.com.br/linux/
 [gnome]:            https://br.gnome.org/
-[kamarada-15.1]:    https://kamarada.github.io/pt/2020/02/24/kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia/
+[kamarada-15.1]:    https://linuxkamarada.com/pt/2020/02/24/kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia/
 [ubuntu]:           https://ubuntu.com/
-[liveusb]:          https://kamarada.github.io/pt/2016/02/21/como-preparar-um-liveusb/
+[liveusb]:          https://linuxkamarada.com/pt/2016/02/21/como-preparar-um-liveusb/
 [fdisk]:            https://man7.org/linux/man-pages/man8/fdisk.8.html
 [hdparm]:           https://man7.org/linux/man-pages/man8/hdparm.8.html
 [smartctl]:         https://linux.die.net/man/8/smartctl

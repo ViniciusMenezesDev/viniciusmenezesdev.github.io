@@ -4,7 +4,16 @@ image: '/files/2020/07/mikrotik-hap.jpg'
 layout: post
 published: true
 title: 'Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede de casa'
+excerpt: 'Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidade de conhecer os equipamentos da MikroTik, uma fabricante de dispositivos de redes, tais como switches, antenas, roteadores, etc. Provavelmente a MikroTik é mais conhecida pela sua linha de roteadores RouterBOARD. Mas eu fiquei empolgado quando descobri que eles tinham também uma linha doméstica e logo comprei um roteador MikroTik pra mim.'
 ---
+
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
 Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidade de conhecer os equipamentos da [MikroTik], uma fabricante de dispositivos de redes, tais como _switches_, antenas, roteadores, etc. Provavelmente a MikroTik é mais conhecida pela sua linha de roteadores [RouterBOARD]. Mas eu fiquei empolgado quando descobri que eles tinham também uma linha doméstica e logo comprei um roteador MikroTik pra mim.
 
@@ -44,7 +53,7 @@ Uma vez conectado à rede Wi-Fi, note que você já consegue até mesmo acessar 
 
 Mas não queremos deixar a rede aberta assim. Vamos ajustar algumas configurações básicas do MikroTik. Para isso, vamos usar sua interface _web_.
 
-Abra o navegador e acesse [192.168.88.1](http://192.168.88.1/).
+Abra o navegador e acesse `192.168.88.1`.
 
 No primeiro acesso, a tela **Quick Set** (configuração rápida) já vem selecionada:
 
@@ -180,7 +189,7 @@ Para gerar tráfego de rede, abra um vídeo no [YouTube] ou [Netflix], ou use se
 
 Uma vez, eu já usei uma captura dessa tela para reclamar de conexão lenta à operadora:
 
-<blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr"><a href="https://twitter.com/Vivoemrede?ref_src=twsrc%5Etfw">@Vivoemrede</a> cadê a Internet de 15Mbps que eu pago? A média aqui não chega a 1! <a href="https://twitter.com/NetflixBrasil?ref_src=twsrc%5Etfw">@NetflixBrasil</a> tá ruim parecendo visão de míope! <a href="https://t.co/Z9xXEZcFQj">pic.twitter.com/Z9xXEZcFQj</a></p>&mdash; Antônio Vinícius (@vinyanalista) <a href="https://twitter.com/vinyanalista/status/898726026787700736?ref_src=twsrc%5Etfw">19 de agosto de 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr"><a href="https://twitter.com/Vivoemrede?ref_src=twsrc%5Etfw">@Vivoemrede</a> cadê a Internet de 15Mbps que eu pago? A média aqui não chega a 1! <a href="https://twitter.com/NetflixBrasil?ref_src=twsrc%5Etfw">@NetflixBrasil</a> tá ruim parecendo visão de míope! <a href="https://twitter.com/vinyanalista/status/898726026787700736">pic.twitter.com/Z9xXEZcFQj</a></p>&mdash; Antônio Vinícius (@vinyanalista) <a href="https://twitter.com/vinyanalista/status/898726026787700736?ref_src=twsrc%5Etfw">19 de agosto de 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Dispositivos conectados à rede Wi-Fi
 
@@ -205,19 +214,19 @@ Nos próximos dias, compartilharei outros tutoriais que mostram outras funcional
 [mikrotik]:         https://mikrotik.com/
 [routerboard]:      https://mikrotik.com/product/RB2011UiAS-RM
 [mikrotik-hap]:     https://mikrotik.com/product/RB952Ui-5ac2nD-TC
-[kamarada-15.1]:    https://kamarada.github.io/pt/2020/02/24/kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia/
+[kamarada-15.1]:    https://linuxkamarada.com/pt/2020/02/24/kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia/
 [windows]:          https://www.microsoft.com/pt-br/windows/
 [rede-privada]:     https://pt.wikipedia.org/wiki/Rede_privada
 [linux]:            https://www.vivaolinux.com.br/linux/
 [wine]:             https://www.winehq.org/
 [gedit]:            https://wiki.gnome.org/Apps/Gedit
-[broadcast-domain]: https://pt.wikipedia.org/wiki/Domínio_de_broadcast
+[broadcast-domain]: https://pt.wikipedia.org/wiki/Dom%C3%ADnio_de_broadcast
 [youtube]:          https://br.youtube.com/
 [netflix]:          https://www.netflix.com/br/
 [minhaconexao]:     https://www.minhaconexao.com.br/
 [speedtest]:        https://www.speedtest.net/pt
 [mac-vendors]:      https://macvendors.com/
-[mac]:              https://pt.wikipedia.org/wiki/Endereço_MAC
+[mac]:              https://pt.wikipedia.org/wiki/Endere%C3%A7o_MAC
 [hexadecimal]:      https://pt.wikipedia.org/wiki/Hexadecimal
 [apple]:            https://www.apple.com/br/
 [iphone]:           https://www.apple.com/br/iphone/

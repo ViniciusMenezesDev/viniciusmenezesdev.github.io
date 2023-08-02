@@ -4,7 +4,16 @@ image: '/files/2020/08/modem-bridge.jpg'
 layout: post
 published: true
 title: 'Configurando o modem HUMAX HG100R-L4 em modo bridge'
+excerpt: 'Uma bridge (“ponte”, em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do modelo OSI (camada de enlace). Normalmente, o modem da operadora atua como roteador (router), ou seja, atua na camada 3 (camada de rede), separando a rede de casa e a rede da operadora em espaços de endereços IP diferentes.'
 ---
+
+{% capture revisao_links_quebrados %}
+
+O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publicação podem ter sido removidos ou atualizados.
+
+{% endcapture %}
+
+{% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
 Uma _**[bridge]**_ ("ponte", em inglês) é um dispositivo de rede que une duas redes a nível de camada 2 do [modelo OSI][osi] (camada de enlace). Normalmente, o modem da operadora atua como **[roteador]** (_router_), ou seja, atua na camada 3 (camada de rede), separando a rede de casa e a rede da operadora em espaços de endereços IP diferentes.
 
@@ -39,7 +48,7 @@ Caso seu roteador seja um MikroTik como o meu e você tenha caído nessa página
 
 Abra o navegador e acesse a interface _web_ do _modem_ da operadora. O endereço IP, assim como o _login_ e senha que você vai usar para acessar essa interface comumente podem ser encontrados em uma etiqueta no próprio modem ou fazendo uma pesquisa na Internet.
 
-No caso do modem HUMAX HG100R-L4, o endereço IP é [192.168.0.1](http://192.168.0.1) e o _login_ e senha estão em uma etiqueta no próprio modem:
+No caso do modem HUMAX HG100R-L4, o endereço IP é `192.168.0.1` e o _login_ e senha estão em uma etiqueta no próprio modem:
 
 {% include image.html src="/files/2020/08/modem-bridge-01.png" %}
 
@@ -101,7 +110,7 @@ No meu exemplo, o MikroTik obteve o endereço IP `100.64.198.110/19`:
 
 ## Acessando a interface web da bridge
 
-No futuro, caso precise usar a interface _web_ do modem, que agora está em modo _bridge_ — por exemplo, para restaurar o _backup_ das configurações do modem, desativando assim o modo _bridge_ — abra o navegador e acesse o endereço IP [192.168.100.1](http://192.168.100.1).
+No futuro, caso precise usar a interface _web_ do modem, que agora está em modo _bridge_ — por exemplo, para restaurar o _backup_ das configurações do modem, desativando assim o modo _bridge_ — abra o navegador e acesse o endereço IP `192.168.100.1`.
 
 Não sei como a _bridge_ responde por esse endereço IP, dado que ela não atua na camada 3 (camada de rede) do modelo OSI. Só sei que funciona. Parece mágica...
 
@@ -115,7 +124,7 @@ A _carrier-grade_ NAT impossibilita a hospedagem de serviços e o redirecionamen
 
 Em 2015, eu tive um problema com o modem ARRIS TG862 da NET: um vírus invadiu o modem e mudou os endereços dos servidores DNS. Com isso, vários _sites_ passaram a exibir anúncios bastante irritantes e inconvenientes em russo, como os das imagens abaixo.
 
-{% include image.html src="/files/2020/08/arris-tg862-malware-1.jpg" caption="(fonte da imagem: [Clube do Hardware](https://www.clubedohardware.com.br/topic/1114991-adware-russo-que-nenhum-antiv%C3%ADrus-elimina/))" %}
+{% include image.html src="/files/2020/08/arris-tg862-malware-1.jpg" caption="(fonte da imagem: Clube do Hardware)" %}
 
 {% include image.html src="/files/2020/08/arris-tg862-malware-2.jpg" caption="(fonte da imagem: [Comunidade do Hardware.com.br](https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/))" %}
 
@@ -146,14 +155,14 @@ Desde 2016, quando comprei o MikroTik, já me mudei algumas vezes e sempre o dei
 [dhcp]:                 https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
 [cidr]:                 https://www.hardware.com.br/dicas/entendendo-cidr.html
 [rede-privada]:         https://pt.wikipedia.org/wiki/Rede_privada
-[exaustao-ipv4]:        https://pt.wikipedia.org/wiki/Exaustão_do_IPv4
+[exaustao-ipv4]:        https://pt.wikipedia.org/wiki/Exaust%C3%A3o_do_IPv4
 [cgnat]:                https://pt.wikipedia.org/wiki/Carrier_Grade_NAT
 [ipv6]:                 http://ipv6.br/
 [analytics]:            https://analytics.google.com/
 [google]:               https://google.com/
 [malware-1]:            https://www.tecmundo.com.br/malware/77194-novo-malware-sequestra-roteador-enche-sites-propagandas.htm
 [malware-2]:            http://g1.globo.com/tecnologia/blog/seguranca-digital/post/android-infectado-e-anuncios-estranhos-sao-sinais-de-ataque-roteador.html
-[malware-3]:            https://www.clubedohardware.com.br/topic/1114991-adware-russo-que-nenhum-antivírus-elimina/
+[malware-3]:            #
 [malware-4]:            https://www.clubedohardware.com.br/topic/1116552-abrindo-propagandas-e-links-sozinho/
 [malware-5]:            https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/
 [malware-6]:            https://www.theverge.com/2015/3/25/8290277/router-hack-adware-porn-security-ara-labs
