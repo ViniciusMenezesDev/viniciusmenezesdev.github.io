@@ -26,7 +26,7 @@ author:
 
     # Site's author email
     # Default: not set (author email is not displayed)
-    email: "vinyanalista@gmail.com"
+    #email: your-email@yourdomain.com
 
     # Site's author website, profile
     # Default: not set (author site is not displayed)
@@ -293,7 +293,7 @@ lang: "pt"
 # website with social networks. An AddThis profile contains configuration
 # options and analytics data for a website.
 # Default: not set (AddThis is not used to handle social networks integration)
-addthis_profile_id: "ra-4f7774466af48b4f"
+#addthis_profile_id: "ra-4f7774466af48b4f"
 
 # If you do not know your AddThis profile ID, you can find it at
 # https://www.addthis.com/settings/publisher
