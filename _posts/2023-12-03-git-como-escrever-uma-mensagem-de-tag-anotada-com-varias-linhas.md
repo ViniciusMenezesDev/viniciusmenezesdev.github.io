@@ -1,5 +1,5 @@
 ---
-date: 2023-12-03 12:50:00 GMT-3
+date: 2023-12-03 13:00:00 GMT-3
 image: '/files/2023/12/multiline-git-tag-messages.jpg'
 layout: post
 published: true
@@ -7,7 +7,7 @@ title: 'Git: como escrever uma mensagem de tag anotada com várias linhas'
 excerpt: 'Sempre que lanço uma nova versão de um projeto cujo código-fonte é controlado pelo Git, costumo criar uma tag anotada para marcar o commit daquela versão, e geralmente essa tag contém uma mensagem curta de apenas uma linha. Veja, por exemplo, as tags do projeto material-jekyll, que é o modelo que eu uso para fazer este site e o site do Linux Kamarada'
 ---
 
-**[TL;DR] (resumo):** use o comando `git tag -a v3.0.0` (sem a opção `-m`)
+**[TL;DR] (resumo):** use o comando `git tag -a v3.0.0` (sem a opção `-m`) e o editor de texto será aberto, então você poderá escrever uma mensagem de _tag_ com quantas linhas você quiser.
 
 [TL;DR]: https://www.significados.com.br/tl-e-dr/
 
@@ -40,8 +40,11 @@ Para criar uma _tag_ leve:
 $ git tag v3.0.0
 ```
 
-Eis que me veio a pergunta que dá o título deste _post_. Como bom programador que sou, fiz uma pesquisa no Google e achei alguém com a mesma dúvida no [Stack Overflow]. Mas, depois, voltando na [documentação do Git][git-book] e lendo-a mais atentamente, percebi que a solução também era dita lá, só não tinha um exemplo:
+Eis que me veio a pergunta que dá título a este _post_: **como escrever uma mensagem de _tag_ anotada com várias linhas?**
 
+Como bom programador que sou, fiz uma pesquisa no [Google] e achei alguém com a mesma dúvida no [Stack Overflow]. Mas, depois, voltando na [documentação do Git][git-book] e lendo-a mais atentamente, percebi que a solução também era dita lá, só não tinha um exemplo acompanhando:
+
+[Google]: https://www.google.com/search?q=git+multi+line+tag+message
 [Stack Overflow]: https://stackoverflow.com/a/59551505/1657502
 
 > Se você não especificar uma mensagem para uma tag anotada, o Git abre seu editor para que você possa digitar nele.
