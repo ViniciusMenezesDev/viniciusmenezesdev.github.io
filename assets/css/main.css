@@ -2,6 +2,15 @@
     --bs-body-bg: var(--material-color-gray-300);
 }
 
+.card {
+    --bs-card-bg: var(--material-color-white);
+    --bs-card-cap-bg: var(--material-color-gray-100);
+}
+
+.offcanvas {
+    --bs-offcanvas-bg: var(--material-color-white);
+}
+
 a {
     text-decoration: none;
 }
@@ -15,7 +24,6 @@ a:hover {
 }
 
 .btn:hover,
-.dropdown-item,
 .navbar-brand:hover,
 .nav-link:hover {
     text-decoration: none;
@@ -38,8 +46,8 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.card > .card-header {
-    background-color: var(--material-color-gray-100);
+.img-thumbnail {
+    background-color: var(--material-color-white);
 }
 
 /* Header */
@@ -187,7 +195,6 @@ https://pro.propeller.in/components/floating-button.php
 /* Follow Buttons */
 
 div.follow-buttons a {
-    color: var(--material-color-white) !important;
     height: 50px;
     width: 50px;
 }
