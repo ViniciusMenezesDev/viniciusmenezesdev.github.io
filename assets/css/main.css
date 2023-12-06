@@ -1,5 +1,14 @@
+/* Custom colors BEGIN */
+/* TODO Implement a dark mode - Bootstrap now supports color modes as of v5.3.0 */
+/* https://getbootstrap.com/docs/5.3/customize/color-modes/ */
+
 :root {
     --bs-body-bg: var(--material-color-gray-300);
+    /* Change the following to use different colors on your website */
+    --bs-primary: var(--material-color-blue-500);
+    --bs-primary-rgb: 33, 150, 243;
+    --bs-link-hover-color: var(--material-color-blue-700);
+    --bs-link-hover-color-rgb: 25, 118, 210;
 }
 
 .card {
@@ -7,9 +16,56 @@
     --bs-card-cap-bg: var(--material-color-gray-100);
 }
 
-.offcanvas {
+.dropdown-menu {
+    --bs-dropdown-bg: var(--material-color-white);
+    --bs-dropdown-link-hover-bg: var(--material-color-gray-200);
+}
+
+.img-thumbnail {
+    background-color: var(--material-color-white);
+}
+
+.offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
     --bs-offcanvas-bg: var(--material-color-white);
 }
+
+/* Custom colors END */
+
+/* Suggest to Bootswatch Materia: changes to make it easier to customize colors */
+
+:root { /* Line 15 of bootstrap.css */
+    --bs-link-color: var(--bs-primary);
+    --bs-link-color-rgb: var(--bs-primary-rgb);
+}
+
+.btn-primary { /* Line 3071 */
+    --bs-btn-bg: var(--bs-primary);
+}
+
+.dropdown-menu { /* Line 3443 */
+    --bs-dropdown-link-active-bg: var(--bs-link-hover-color);
+}
+
+.btn-primary:hover, .btn-primary:active:hover { /* Line 12164 */
+    background-color: var(--bs-link-hover-color);
+}
+
+textarea:focus, /* Line 12806 */
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: inset 0 -2px 0 var(--bs-primary);
+}
+
+/* Suggest to Bootswatch Materia END */
 
 a {
     text-decoration: none;
@@ -24,6 +80,7 @@ a:hover {
 }
 
 .btn:hover,
+.dropdown-item:hover,
 .navbar-brand:hover,
 .nav-link:hover {
     text-decoration: none;
@@ -44,10 +101,6 @@ a:hover {
 
 .gap-small {
     margin-bottom: 15px;
-}
-
-.img-thumbnail {
-    background-color: var(--material-color-white);
 }
 
 /* Header */
