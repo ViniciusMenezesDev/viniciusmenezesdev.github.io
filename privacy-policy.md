@@ -6,7 +6,7 @@ title: 'Privacy Policy'
 
 _This is just a Privacy Policy template that has been created with the help of the [Free Privacy Policy Generator](https://privacypolicies.in/). Adapt it according to your website. Seek legal advice if necessary._
 
-Your privacy is important to us. It is **{{ site.title }}**'s policy to respect your privacy regarding any information we may collect from you across our website, **[{{ site.title }}]({{ prepend: site.baseurl | prepend: site.url }})**, and other sites we own and operate.
+Your privacy is important to us. It is **{{ site.title }}**'s policy to respect your privacy regarding any information we may collect from you across our website, **[{{ site.title }}]({{ site.baseurl | prepend: site.url }})**, and other sites we own and operate.
 
 We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used.
 
@@ -22,7 +22,7 @@ Your continued use of our website will be regarded as acceptance of our practice
 
 ## Cookie Policy for **{{ site.title }}**
 
-This is the Cookie Policy for {{ site.title }}, accessible from URL <{{ prepend: site.baseurl | prepend: site.url }}>.
+This is the Cookie Policy for {{ site.title }}, accessible from URL <{{ site.baseurl | prepend: site.url }}>.
 
 ### What Are Cookies
 
