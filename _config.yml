@@ -101,7 +101,7 @@ google:
     # Google Analytics Property ID
     # Allows tracking site pageviews and other events using Google Analytics.
     # Default: not set (Google Analytics is not used to track site pageviews)
-    analytics_property_id: "UA-65333685-1"
+    #analytics_property_id: "UA-65333685-1"
 
     # If you do not know your Property ID, take a look at
     # https://support.google.com/analytics/answer/1032385
@@ -152,6 +152,10 @@ google:
 
     # For more info on Google AdSense, please refer to
     # https://support.google.com/adsense/
+
+    # Google Tag Manager
+    # https://developers.google.com/tag-platform/tag-manager
+    tag_id: "G-D2R5BBD31G"
 
 # A-ADS
 a_ads_1: 1673149
