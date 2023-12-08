@@ -4,7 +4,7 @@ layout: page
 title: 'Política de privacidade'
 ---
 
-A sua privacidade é importante para nós. É política do **{{ site.title }}** respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no _site_ **[{{ site.title }}]({{ prepend: site.baseurl | prepend: site.url }})**, e outros _sites_ que possuímos e operamos.
+A sua privacidade é importante para nós. É política do **{{ site.title }}** respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no _site_ **[{{ site.title }}]({{ site.baseurl | prepend: site.url }})**, e outros _sites_ que possuímos e operamos.
 
 Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.
 
@@ -37,4 +37,4 @@ C) Não causar danos aos sistemas físicos (_hardwares_) e lógicos (_softwares_
 
 Esperamos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os _cookies_ ativados, caso interaja com um dos recursos que você usa em nosso _site_.
 
-Esta política é efetiva a partir de 08 de Dezembro de 2023 às {{ page.date | date: "%R" }}.
+Esta política é efetiva a partir de {{ page.date | dataEmPortugues }} às {{ page.date | date: "%R" }}.

@@ -29,24 +29,7 @@ sitemap: false
                         {% endcase %}
                         {{ page.date | date: "de %Y" }}
                     {% when 'day' %}
-                        Posts publicados em
-                        {{ page.date | date: "%d de " }}
-                        {% assign m = page.date | date: "%-m" %}
-                        {% case m %}
-                        {% when '1' %}janeiro
-                        {% when '2' %}fevereiro
-                        {% when '3' %}março
-                        {% when '4' %}abril
-                        {% when '5' %}maio
-                        {% when '6' %}junho
-                        {% when '7' %}julho
-                        {% when '8' %}agosto
-                        {% when '9' %}setembro
-                        {% when '10' %}outubro
-                        {% when '11' %}novembro
-                        {% when '12' %}dezembro
-                        {% endcase %}
-                        {{ page.date | date: "de %Y" }}
+                        Posts publicados em {{ page.date | dataEmPortugues }}
                     {% when 'category' %}
                         Posts na categoria {{ page.title }}
                     {% when 'tag' %}
@@ -73,23 +56,7 @@ sitemap: false
                 <div class='col-sm-6'>
                     <p class="blog-post-date ms-auto me-auto text-center text-sm-start" itemprop="datePublished" content="{{ post.date | date: "%Y-%m-%d" }}">
                         <a class='text-muted' href="{{ post.date | date: '/blog/%Y/%m/%d/' | prepend: site.baseurl | replace: '//', '/' }}">
-                            {{ post.date | date: "%d de" }}
-                            {% assign m = post.date | date: "%-m" %}
-                            {% case m %}
-                            {% when '1' %}Janeiro
-                            {% when '2' %}Fevereiro
-                            {% when '3' %}Março
-                            {% when '4' %}Abril
-                            {% when '5' %}Maio
-                            {% when '6' %}Junho
-                            {% when '7' %}Julho
-                            {% when '8' %}Agosto
-                            {% when '9' %}Setembro
-                            {% when '10' %}Outubro
-                            {% when '11' %}Novembro
-                            {% when '12' %}Dezembro
-                            {% endcase %}
-                            {{ post.date | date: "de %Y" }}
+                            {{ post.date | dataEmPortugues }}
                         </a>
                     </p>
                     <meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%Y-%m-%d" }}" />
