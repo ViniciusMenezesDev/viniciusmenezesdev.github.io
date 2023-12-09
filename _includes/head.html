@@ -84,17 +84,16 @@
     {% endif %}
     <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 
-    {% if site.google.analytics_property_id and jekyll.environment == "production" %}
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google.analytics_property_id }}"></script>
+    {% if site.google.tag_id and jekyll.environment == "production" %}
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google.tag_id }}"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '{{ site.google.analytics_property_id }}');
+            gtag('config', '{{ site.google.tag_id }}');
         </script>
-        <!-- End Google Analytics -->
     {% endif %}
 
     {% if site.google.tag_id and jekyll.environment == "production" %}
