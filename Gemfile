@@ -22,7 +22,7 @@ group :jekyll_plugins do
     gem 'jekyll-archives', '2.2.1'
     gem 'jekyll-auto-image', '1.1.3'
     gem 'jekyll-feed', '~> 0.17.0'
-    gem 'jekyll-last-modified-at', '1.1.0'
+    gem 'jekyll-last-modified-at', '1.3.2'
     gem 'jekyll-paginate-v2', '3.0.0'
     gem 'jekyll-sitemap', '~> 1.4.0'
 end
@@ -40,3 +40,12 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+
+# From https://jekyllrb.com/docs/
+# If you are using Ruby version 3.0.0 or higher, bundle exec jekyll serve may
+# fail. You may fix it by adding webrick to your dependencies:
+gem "webrick"
+
+# Arch Linux related bug
+# https://github.com/jekyll/jekyll/issues/9545
+gem "json"
