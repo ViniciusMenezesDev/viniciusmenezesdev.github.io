@@ -49,3 +49,8 @@ gem "webrick"
 # Arch Linux related bug
 # https://github.com/jekyll/jekyll/issues/9545
 gem "json"
+
+# openSUSE Leap 15.6 related bug
+# ffi-1.17.0-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the current version, 2.7.6.3
+# https://github.com/ffi/ffi/issues/1103
+ gem 'ffi', '1.16.3'
