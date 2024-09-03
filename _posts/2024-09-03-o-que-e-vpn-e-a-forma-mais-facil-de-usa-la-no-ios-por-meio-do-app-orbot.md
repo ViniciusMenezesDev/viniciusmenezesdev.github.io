@@ -1,12 +1,12 @@
 ---
-date: '2024-09-03 11:30:00 GMT-3'
-image: '/files/2024/09/tor-android.jpg'
+date: '2024-09-03 19:13:00 GMT-3'
+image: '/files/2024/09/tor-ios.jpg'
 layout: post
-title: 'O que é VPN e a forma mais fácil de usá-la no Android: por meio do app Orbot'
-excerpt: 'Entenda o que é VPN, porque usá-la, conheça a Rede Tor e veja como usá-la no Android por meio do app Orbot.'
+title: 'O que é VPN e a forma mais fácil de usá-la no iOS: por meio do app Orbot'
+excerpt: 'Entenda o que é VPN, porque usá-la, conheça a Rede Tor e veja como usá-la no iOS (iPhone e iPad) por meio do app Orbot.'
 ---
 
-{% include image.html src='/files/2024/09/tor-android.jpg' %}
+{% include image.html src='/files/2024/09/tor-ios.jpg' %}
 
 A busca por VPNs [cresceu recentemente][poder360] no Brasil, segundo dados do [Google Trends]. Mas afinal, o que é VPN, e por que alguém iria quer usar isso?
 
@@ -34,25 +34,25 @@ O **[Projeto Tor]** (sigla de _The Onion Router_, "o roteador cebola", em uma tr
 
 {% include image.html src='/files/2024/09/how-tor-works.png' caption='Fonte da imagem: [manual do Navegador Tor](https://tb-manual.torproject.org/pt-BR/about/)' %}
 
-A forma mais fácil de se conectar à Rede Tor e usá-la no [Android] é por meio do aplicativo **[Orbot]**, que não faz parte oficialmente do Projeto Tor, mas é [recomendado] por este, porque é desenvolvido por [algumas][orbot-team] das mesmas [pessoas que participam do Projeto Tor][tor-people]. Após se conectar à Rede Tor, o Orbot faz com que o tráfego de Internet de todos os aplicativos do Android passem por dentro da rede Tor.
+A forma mais fácil de se conectar à Rede Tor e usá-la em dispositivos móveis com [iOS] ([iPhone] e [iPad]) é por meio do aplicativo **[Orbot]**, que não faz parte oficialmente do Projeto Tor, mas é [recomendado] por este, porque é desenvolvido por [algumas][orbot-team] das mesmas [pessoas que participam do Projeto Tor][tor-people]. Após se conectar à Rede Tor, o Orbot faz com que o tráfego de Internet de todos os aplicativos do iOS passem por dentro da rede Tor.
 
-A seguir, você verá como instalar e usar o Orbot no Android.
+A seguir, você verá como instalar e usar o Orbot no iOS.
 
 **Nota:** se, por um acaso, você procurava instruções para outro sistema, mas caiu nesta página, consulte versões deste mesmo tutorial para outros sistemas:
 
+- Android: [O que é VPN e a forma mais fácil de usá-la no Android: por meio do app Orbot]({% post_url 2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-android-por-meio-do-app-orbot %})
 - Windows: [O que é VPN e a forma mais fácil de usá-la no Windows: por meio do Navegador Tor]({% post_url 2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-windows-por-meio-do-navegador-tor %})
-- iOS (iPhone e iPad): [O que é VPN e a forma mais fácil de usá-la no iOS: por meio do app Orbot]({% post_url 2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-ios-por-meio-do-app-orbot %})
 - Linux: [O que é VPN e a forma mais fácil de usá-la no Linux: por meio do Navegador Tor - Linux Kamarada](https://linuxkamarada.com/pt/2024/09/02/o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-linux-por-meio-do-navegador-tor/)
 
 ## Instalando o Orbot
 
-Para instalar o Orbot no Android, você pode abrir o aplicativo da **Play Store** e pesquisar por [**Orbot**][play-store], ou usar o _link_ a seguir:
+Para instalar o Orbot no iOS, você pode abrir a **App Store** e pesquisar por [**Orbot**][app-store], ou usar o _link_ a seguir:
 
 <div class="row">
     <div class="col-md">
         <div class="image no-ads-here text-center mb-3">
-            <a href="https://play.google.com/store/apps/details?id=org.torproject.android" title="">
-                <img src="/assets/img/download-google-play.png" alt="" class="img-fluid" style="width: 200px;">
+            <a href="https://apps.apple.com/us/app/orbot/id1609461599" title="">
+                <img src="/assets/img/download-app-store.svg" alt="" class="img-fluid" style="width: 200px;">
             </a>
         </div>
     </div>
@@ -60,65 +60,68 @@ Para instalar o Orbot no Android, você pode abrir o aplicativo da **Play Store*
 
 ## Iniciando o Orbot
 
-Para iniciar o Orbot no Android, abra o menu de aplicativos e toque em seu ícone:
+Para iniciar o Orbot no iOS, toque em seu ícone na tela de início:
 
-{% include image.html src='/files/2024/09/tor-android-01.jpg' %}
+{% include image.html src='/files/2024/09/tor-ios-01.jpg' %}
 
-Opcionalmente (mas eu recomendo), permita que o Orbot mostre notificações:
+No primeiro uso, ele vai pedir para adicioná-lo como uma VPN ao iOS. Toque em **Instalar** e, depois, em **Permitir**:
 
-{% include image.html src='/files/2024/09/tor-android-02.jpg' %}
+<div class="row">
+    <div class="col-md">
+        <div class="image no-ads-here text-center mb-3">
+            {% include image.html src='/files/2024/09/tor-ios-02.jpg' %}
+        </div>
+    </div>
+    <div class="col-md">
+        <div class="image no-ads-here text-center mb-3">
+            {% include image.html src='/files/2024/09/tor-ios-03.jpg' %}
+        </div>
+    </div>
+</div>
 
-Essa é a tela inicial do Orbot, ainda não conectado à Rede Tor. Portanto, a VPN ainda não está pronta para ser usada. Toque no botão **Iniciar a VPN**:
+Essa é a tela inicial do Orbot, ainda não conectado à Rede Tor. Portanto, a VPN ainda não está pronta para ser usada. Toque no botão **Começar**:
 
-{% include image.html src='/files/2024/09/tor-android-03.jpg' %}
+{% include image.html src='/files/2024/09/tor-ios-04.jpg' %}
 
 Aguarde a conexão com a Rede Tor ser estabelecida:
 
-{% include image.html src='/files/2024/09/tor-android-04.jpg' %}
+{% include image.html src='/files/2024/09/tor-ios-05.jpg' %}
 
 A tela seguinte indica que o Orbot está **Conectado** à Rede Tor e, portanto, a VPN está pronta para ser usada:
 
-{% include image.html src='/files/2024/09/tor-android-05.jpg' %}
+{% include image.html src='/files/2024/09/tor-ios-06.jpg' %}
 
 Note que você não precisa fazer nenhuma configuração adicional no sistema ou nos aplicativos para que eles passem a trafegar seus dados pela Rede Tor.
 
 ## Testando a conexão com a Rede Tor
 
-Sempre antes de começar a usar a Rede Tor, convém testar se o sistema está de fato conectado à Rede Tor. Para isso, usando o seu navegador preferido (por exemplo, eu usei o [Firefox]), acesse:
+Sempre antes de começar a usar a Rede Tor, convém testar se o sistema está de fato conectado à Rede Tor. Para isso, usando o seu navegador preferido (por exemplo, eu usei o [Safari] mesmo, que já vem de fábrica), acesse:
 
 - <https://check.torproject.org/>
 
-{% include image.html src='/files/2024/09/tor-android-06.jpg' %}
+{% include image.html src='/files/2024/09/tor-ios-07.jpg' %}
 
 A página deve informar: **"Parabéns. Este navegador está configurado para usar Tor."** (ou o equivalente a isso em inglês, como na imagem) Se essa mensagem aparece para você, já é seguro usar a Rede Tor para acessar os _sites_ que você precisa acessar.
 
 Se aparecer uma mensagem diferente dessa, seu celular não está conectado adequadamente à Rede Tor e, portanto, a VPN não está pronta para ser usada. Navegar assim é inseguro. Para mais informações sobre o que pode ser feito para solucionar isso, consulte o [suporte] da Rede Tor.
 
-Conforme você navega na Internet usando aplicativos, perceba pela notificação do Orbot que há tráfego de rede passando pelo túnel estabelecido:
-
-{% include image.html src='/files/2024/09/tor-android-07.jpg' %}
-
 ## Alterando a saída
 
-Por padrão, o túnel criado pelo Orbot e pela Rede Tor pode sair por qualquer país do mundo, escolhido aleatoriamente.
+Por padrão, o túnel criado pelo Orbot e pela Rede Tor pode sair por qualquer país do mundo, escolhido aleatoriamente. Mas você pode, opcionalmente, selecionar por qual país (ou quais países) deseja sair do túnel.
 
-Opcionalmente, você pode, na tela inicial do Orbot, tocar em **Altere a saída** e selecionar por qual país deseja sair do túnel:
+Para isso, na tela inicial do Orbot, abra o menu no canto superior direito da tela e toque em **Limitar países de saída**:
 
-{% include image.html src='/files/2024/09/tor-android-08.jpg' %}
+{% include image.html src='/files/2024/09/tor-ios-08.jpg' %}
 
-# Tunelando apenas alguns aplicativos
+Selecione um ou mais países na lista:
 
-Por padrão, o Orbot roteia todo o tráfego de rede do sistema operacional Android (incluindo o tráfego de rede dos aplicativos) para dentro do túnel.
+{% include image.html src='/files/2024/09/tor-ios-09.jpg' %}
 
-Se você deseja que somente alguns aplicativos usem o túnel, enquanto outros aplicativos e o sistema usam a conexão convencional, na tela inicial do Orbot, toque em **Escolha os aplicativos** e selecione quais aplicativos devem ter seu tráfego de rede redirecionado para a Rede Tor:
-
-{% include image.html src='/files/2024/09/tor-android-09.jpg' %}
-
-Note que você não precisa fazer nenhuma configuração adicional nesses aplicativos para que eles passem a trafegar seus dados pela Rede Tor.
+Feito isso, a partir de agora as conexões feitas pelo Orbot sairão por um desses países que você selecionou.
 
 ## Encerrando o Orbot
 
-Quando não precisar usar mais a Rede Tor, volte ao Orbot e toque em **Desligar o Tor**.
+Quando não precisar usar mais a Rede Tor, volte ao Orbot e toque em **Parar**.
 
 ## Leitura adicional recomendada
 
@@ -140,11 +143,13 @@ Conhecimento é poder. E o que você leu neste artigo é o tipo de conhecimento 
 [Jordan Peterson]:              https://www.jordanbpeterson.com/about/
 [free-sw]:                      https://www.gnu.org/philosophy/free-sw.pt-br.html
 [Projeto Tor]:                  https://www.torproject.org/
-[Android]:                      https://www.android.com/intl/pt_br/
+[iOS]:                          https://www.apple.com/br/ios/
+[iPhone]:                       https://www.apple.com/br/iphone/
+[iPad]:                         https://www.apple.com/br/ipad/
 [Orbot]:                        https://orbot.app/
-[recomendado]:                  https://support.torproject.org/pt-BR/tormobile/#tormobile_tormobile-1
+[recomendado]:                  https://support.torproject.org/pt-BR/tormobile/#tormobile_tormobile-3
 [orbot-team]:                   https://guardianproject.info/team/
 [tor-people]:                   https://www.torproject.org/about/people/
-[play-store]:                   https://play.google.com/store/apps/details?id=org.torproject.android
-[Firefox]:                      https://play.google.com/store/apps/details?id=org.mozilla.firefox
+[app-store]:                    https://apps.apple.com/us/app/orbot/id1609461599
+[Safari]:                       https://apps.apple.com/br/app/safari/id1146562112
 [suporte]:                      https://support.torproject.org/pt-BR/
