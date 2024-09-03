@@ -120,7 +120,7 @@ No meu exemplo, o MikroTik obteve o endereço IP `100.64.174.102/19`:
 
 {% include image.html src="/files/2022/10/modem-bridge-sagemcom-08.jpg" %}
 
-(se a notação `/19` é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 21 _bits_ do endereço IP identificam a rede, para mais informações procure saber sobre [CIDR])
+(se a notação `/19` é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 19 _bits_ do endereço IP identificam a rede, para mais informações procure saber sobre [CIDR])
 
 ## Acessando a interface web da bridge
 
@@ -130,7 +130,7 @@ Não sei como a _bridge_ responde por esse endereço IP, dado que ela não atua 
 
 ## Notas sobre carrier-grade NAT
 
-O endereço IP `100.64.174.102/19` pertence à rede `100.64.192.0`. Não se trata de um endereço IP "real" (ou público), como seria de se esperar há alguns anos, mas de um [endereço IP privado][rede-privada] dentro da rede da operadora. Endereços IP como esse passaram a ser distribuídos para roteadores domésticos após o [esgotamento dos endereços IPv4][exaustao-ipv4]. As operadoras adotaram uma prática chamada de [_carrier-grade_ NAT (CGNAT)][cgnat], que reserva o bloco `100.64.0.0/10` para a atribuição de endereços IP às residências.
+O endereço IP `100.64.174.102/19` pertence à rede `100.64.160.0`. Não se trata de um endereço IP "real" (ou público), como seria de se esperar há alguns anos, mas de um [endereço IP privado][rede-privada] dentro da rede da operadora. Endereços IP como esse passaram a ser distribuídos para roteadores domésticos após o [esgotamento dos endereços IPv4][exaustao-ipv4]. As operadoras adotaram uma prática chamada de [_carrier-grade_ NAT (CGNAT)][cgnat], que reserva o bloco `100.64.0.0/10` para a atribuição de endereços IP às residências.
 
 A _carrier-grade_ NAT impossibilita a hospedagem de serviços e o redirecionamento de portas (com isso, você não pode servir um _site_ para o mundo a partir do seu computador de casa, por exemplo), mas é um "mal necessário" para viabilizar o uso de redes IPv4 hoje em dia, dado que os endereços IPv4 já se esgotaram. Caso você precise de um endereço IP público, uma alternativa é verificar junto à operadora a possibilidade de alugar um (a um custo adicional). Outra alternativa é ativar o [IPv6], que veremos oportunamente como fazer.
 
