@@ -41,18 +41,26 @@ A forma mais fácil de se conectar à Rede Tor no iOS é usar o aplicativo [Orbo
 
 Caso você ainda não tenha o aplicativo do **Telegram** para iOS, pode instalá-lo por meio da App Store:
 
-<div class='no-ads-here text-center mb-3'>
-<a href='https://apps.apple.com/br/app/telegram-messenger/id686449807'>
-<img src='/assets/img/download-app-store.png' class='img-fluid'>
-</a>
+<div class="row">
+    <div class="col-md">
+        <div class="image no-ads-here text-center mb-3">
+            <a href="https://apps.apple.com/br/app/telegram-messenger/id686449807" title="">
+                <img src="/assets/img/download-app-store.svg" alt="" class="img-fluid" style="width: 200px;">
+            </a>
+        </div>
+    </div>
 </div>
 
 O **Orbot** também pode ser instalado pela App Store:
 
-<div class='no-ads-here text-center mb-3'>
-<a href='https://apps.apple.com/us/app/orbot/id1609461599'>
-<img src='/assets/img/download-app-store.png' class='img-fluid'>
-</a>
+<div class="row">
+    <div class="col-md">
+        <div class="image no-ads-here text-center mb-3">
+            <a href="https://apps.apple.com/us/app/orbot/id1609461599" title="">
+                <img src="/assets/img/download-app-store.svg" alt="" class="img-fluid" style="width: 200px;">
+            </a>
+        </div>
+    </div>
 </div>
 
 Para acessar o Telegram via Tor, primeiro abra o Orbot e toque em **Start** ("começar"):

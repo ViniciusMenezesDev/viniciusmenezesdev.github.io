@@ -43,10 +43,14 @@ A forma mais fácil de se conectar à Rede Tor no Android é usar o aplicativo [
 
 Caso você ainda não tenha o aplicativo do **Telegram** para Android, você pode instalá-lo por meio da Google Play:
 
-<div class='no-ads-here text-center mb-3'>
-<a href='https://play.google.com/store/apps/details?id=org.telegram.messenger'>
-<img src='/assets/img/download-google-play.png' class='img-fluid' style='max-width: 300px;'>
-</a>
+<div class="row">
+    <div class="col-md">
+        <div class="image no-ads-here text-center mb-3">
+            <a href="https://play.google.com/store/apps/details?id=org.telegram.messenger" title="">
+                <img src="/assets/img/download-google-play.png" alt="" class="img-fluid" style="width: 200px;">
+            </a>
+        </div>
+    </div>
 </div>
 
 Ou pode baixá-lo diretamente do [_site_ do Telegram (como APK)][apk-telegram].
@@ -55,10 +59,14 @@ Ou pode baixá-lo diretamente do [_site_ do Telegram (como APK)][apk-telegram].
 
 Já o **Navegador Tor** também pode ser instalado pela Google Play:
 
-<div class='no-ads-here text-center mb-3'>
-<a href='https://play.google.com/store/apps/details?id=org.torproject.torbrowser'>
-<img src='/assets/img/download-google-play.png' class='img-fluid' style='max-width: 300px;'>
-</a>
+<div class="row">
+    <div class="col-md">
+        <div class="image no-ads-here text-center mb-3">
+            <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser" title="">
+                <img src="/assets/img/download-google-play.png" alt="" class="img-fluid" style="width: 200px;">
+            </a>
+        </div>
+    </div>
 </div>
 
 Também pode ser instalado pela loja [F-Droid] ou baixado diretamente do [_site_ do Projeto Tor (como APK)][apk-tor].
