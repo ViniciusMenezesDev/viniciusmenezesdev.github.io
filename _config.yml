@@ -110,34 +110,16 @@ google:
     # For more info on Google Custom Search Engine, please refer to
     # https://support.google.com/customsearch/
 
-    # Google AdSense settings
+    # Google AdSense publisher ID
     # Allows to earn money by showing ads on the website.
-    adsense:
-        # Google AdSense publisher ID
-        # Your publisher ID is the unique identifier for your AdSense account.
-        # Default: not set (Google AdSense is not used to show ads)
-        publisher_id: "pub-5193467168351289"
+    # Default: not set (Google AdSense is not used to show ads)
+    adsense_publisher_id: "pub-5193467168351289"
 
-        # If you do not know your publisher ID, take a look at
-        # https://support.google.com/adsense/answer/105516
+    # If you do not know your publisher ID, take a look at
+    # https://support.google.com/adsense/answer/105516
 
-        # Ad unit ID for the ad displayed at the top of the page content, bellow
-        # the title, if in a page or post, or after the first post, if in a post
-        # listing
-        # Default: not set (no ad is displayed at the top)
-        # content_ad_unit_1: 5988452654
-
-        # Ad unit ID for the ad displayed inside the page content, randomly
-        # placed between paragraphs, if in a page or post, or between posts, if
-        # in a post listing
-        # Default: not set (no ad is displayed in the page content)
-        # content_ad_unit_2: 7465185857
-
-        # Ad unit ID for the ad displayed in the sidebar
-        # Default: not set (no ad is displayed in the sidebar)
-        # sidebar_ad_unit: 4511719452
-
-        # Note: use only responsive ad units
+    # Enable auto ads for your site
+    # https://support.google.com/adsense/answer/9261805
 
     # For more info on Google AdSense, please refer to
     # https://support.google.com/adsense/
@@ -284,18 +266,14 @@ lang: "pt"
 # Social networks #
 ###################
 
-# AddThis profile ID
-# AddThis is a content sharing platform. It can be used to better integrate the
-# website with social networks. An AddThis profile contains configuration
-# options and analytics data for a website.
-# Default: not set (AddThis is not used to handle social networks integration)
-#addthis_profile_id: "ra-4f7774466af48b4f"
-
-# If you do not know your AddThis profile ID, you can find it at
-# https://www.addthis.com/settings/publisher
-
-# For more info on AddThis, please refer to
-# http://support.addthis.com/
+# Shareaholic
+# https://www.shareaholic.com/
+shareaholic:
+    # site_id: "abcdefghijklmnopqrstuv1234567890"
+    # follow_buttons_app_id: "12345678"
+    # share_buttons_post_meta_app_id: "12345678"
+    # share_buttons_post_comments_app_id: "12345678"
+    # related_content_app_id: "12345678"
 
 # Disqus shortname
 # Disqus is a blog comment hosting service for websites. A Disqus shortname is

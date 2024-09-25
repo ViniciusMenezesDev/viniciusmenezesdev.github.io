@@ -96,38 +96,16 @@
         </script>
     {% endif %}
 
-    {% if site.google.tag_id and jekyll.environment == "production" %}
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google.tag_id }}"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '{{ site.google.tag_id }}');
-        </script>
-    {% endif %}
-
-    {% if site.google.adsense.publisher_id and jekyll.environment == "production" %}
+    {% if site.google.adsense_publisher_id and jekyll.environment == "production" %}
         <!-- Google AdSense -->
-        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-{{ site.google.adsense.publisher_id }}' crossorigin='anonymous'></script>
+        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-{{ site.google.adsense_publisher_id }}' crossorigin='anonymous'></script>
     {% endif %}
 
-    {% if site.addthis_profile_id and jekyll.environment == "production" %}
-        <!-- AddThis -->
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"></script>
-        <script type="text/javascript">
-            var addthis_config = {
-                data_track_clickback: true,
-                data_track_addressbar: true,
-                ui_language: '{{ site.lang }}'
-            };
-            var addthis_share = {
-                url: '{{ page.url | prepend: site.baseurl | replace: "//", "/"" | prepend: site.url }}',
-                title: document.title,
-                description: '{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncatewords: 55 }}{% else %}{{ site.description }}{% endif %}'
-            };
-        </script>
-        <!-- End AddThis -->
+    {% if site.shareaholic.site_id and jekyll.environment == "production" %}
+        <!-- Shareaholic -->
+        <link rel="preload" href="https://cdn.shareaholic.net/assets/pub/shareaholic.js" as="script" />
+        <meta name="shareaholic:site_id" content="{{ site.shareaholic.site_id }}" />
+        <script data-cfasync="false" async src="https://cdn.shareaholic.net/assets/pub/shareaholic.js"></script>
+        <!-- End Shareaholic -->
     {% endif %}
 </head>

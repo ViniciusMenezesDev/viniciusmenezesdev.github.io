@@ -20,26 +20,10 @@
                 <img src='{{ "/assets/img/curriculo_lattes.png" | prepend: site.baseurl | replace: "//", "/" }}' alt='Currículo Lattes' class='img-fluid d-inline'>
             </a>
         </p>
-        {% if site.addthis_profile_id %}
-            {% include follow-buttons-addthis.html %}
+        {% if site.shareaholic.site_id and site.shareaholic.follow_buttons_app_id and jekyll.environment == "production" %}
+            <div class="shareaholic-canvas" data-app="follow_buttons" data-app-id="{{ site.shareaholic.follow_buttons_app_id }}"></div>
         {% else %}
             {% include follow-buttons.html %}
         {% endif %}
     </div><!-- .card-body -->
 </div><!-- .card -->
-
-
-{% if jekyll.environment == "production" %}
-    <div class="card mb-3">
-        <div class="card-header">
-            <h3>Anúncio</h3>
-        </div>
-         <div class="card-body">
-            {% if site.google.adsense.sidebar_ad_unit %}
-                {% include adsense.html id="sidebar_ad_unit" ad_slot=site.google.adsense.sidebar_ad_unit %}
-            {% endif %}
-
-            {% include a-ads.html id=site.a_ads_sidebar %}
-        </div><!-- .card-body -->
-    </div><!-- .card -->
-{% endif %}

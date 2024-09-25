@@ -44,8 +44,8 @@
             </a>
         </div>
 
-        {% if site.addthis_profile_id %}
-            {% include follow-buttons-addthis.html %}
+        {% if site.shareaholic.site_id and site.shareaholic.follow_buttons_app_id and jekyll.environment == "production" %}
+            <div class="shareaholic-canvas" data-app="follow_buttons" data-app-id="{{ site.shareaholic.follow_buttons_app_id }}"></div>
         {% else %}
             {% include follow-buttons.html %}
         {% endif %}
