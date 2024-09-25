@@ -269,7 +269,7 @@ lang: "pt"
 # Shareaholic
 # https://www.shareaholic.com/
 shareaholic:
-    # site_id: "abcdefghijklmnopqrstuv1234567890"
+    site_id: "3ef965565c8fe37ffff0f45c6569ab41"
     # follow_buttons_app_id: "12345678"
     # share_buttons_post_meta_app_id: "12345678"
     # share_buttons_post_comments_app_id: "12345678"

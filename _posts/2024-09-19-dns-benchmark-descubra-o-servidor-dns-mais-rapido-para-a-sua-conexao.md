@@ -2,7 +2,6 @@
 date: '2024-09-19 22:00:00 GMT-3'
 image: '/files/2024/09/dns-benchmark-06.jpg'
 layout: post
-nickname: 'dns-benchmark'
 title: 'DNS Benchmark: descubra o servidor DNS mais rápido para a sua conexão'
 excerpt: 'Se você já usa a Internet há algum tempo, já deve ter ouvido falar em "DNS" ou "servidores DNS". Mas você sabe exatamente o que é isso e como isso impacta na velocidade da sua conexão? Confira nesse artigo o que é DNS e como você pode tornar sua conexão mais rápida.'
 ---
