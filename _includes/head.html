@@ -100,9 +100,9 @@
         </script>
     {% endif %}
 
-    {% if site.google.adsense.publisher_id and jekyll.environment == "production" %}
+    {% if site.google.adsense_publisher_id and jekyll.environment == "production" %}
         <!-- Google AdSense -->
-        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-{{ site.google.adsense.publisher_id }}' crossorigin='anonymous'></script>
+        <script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-{{ site.google.adsense_publisher_id }}' crossorigin='anonymous'></script>
     {% endif %}
 
     {% if site.addthis_profile_id and jekyll.environment == "production" %}
