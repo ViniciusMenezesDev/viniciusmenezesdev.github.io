@@ -201,13 +201,6 @@ a:hover {
     height: 100%;
 }
 
-/* AddThis */
-/* https://stackoverflow.com/a/49396341/1657502 */
-
-.addthis_follow_buttons a {
-    float: none !important;
-}
-
 /* Code highlighting */
 
 .highlight .lineno {
