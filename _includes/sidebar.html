@@ -15,7 +15,7 @@
                 <span itemprop="name">{{ site.title }}</span>
             </a>
         </p>
-        <p class="text" itemprop="description">
+        <p class="text-center" itemprop="description">
             {{ site.description }}
         </p>
     </div><!-- .card-body -->
@@ -46,8 +46,8 @@
                 <li><a href="mailto:{{ site.author.email }}" itemprop="email"><i class="fas fa-envelope"></i> {{ site.author.email }}</a></li>
             {% endif %}
         </ul>
-        {% if site.addthis_profile_id %}
-            {% include follow-buttons-addthis.html %}
+        {% if site.shareaholic.site_id and site.shareaholic.follow_buttons_app_id and jekyll.environment == "production" %}
+            <div class="shareaholic-canvas" data-app="follow_buttons" data-app-id="{{ site.shareaholic.follow_buttons_app_id }}"></div>
         {% else %}
             {% include follow-buttons.html %}
         {% endif %}

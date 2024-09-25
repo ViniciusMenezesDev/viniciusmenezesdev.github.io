@@ -257,18 +257,14 @@ lang: en
 # Social networks #
 ###################
 
-# AddThis profile ID
-# AddThis is a content sharing platform. It can be used to better integrate the
-# website with social networks. An AddThis profile contains configuration
-# options and analytics data for a website.
-# Default: not set (AddThis is not used to handle social networks integration)
-# addthis_profile_id: "ra-example123456789"
-
-# If you do not know your AddThis profile ID, you can find it at
-# https://www.addthis.com/settings/publisher
-
-# For more info on AddThis, please refer to
-# http://support.addthis.com/
+# Shareaholic
+# https://www.shareaholic.com/
+shareaholic:
+    # site_id: "abcdefghijklmnopqrstuv1234567890"
+    # follow_buttons_app_id: "12345678"
+    # share_buttons_post_meta_app_id: "12345678"
+    # share_buttons_post_comments_app_id: "12345678"
+    # related_content_app_id: "12345678"
 
 # Disqus shortname
 # Disqus is a blog comment hosting service for websites. A Disqus shortname is
