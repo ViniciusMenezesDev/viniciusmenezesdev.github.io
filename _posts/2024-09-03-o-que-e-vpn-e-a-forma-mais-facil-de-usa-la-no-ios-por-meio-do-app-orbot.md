@@ -149,7 +149,7 @@ Conhecimento é poder. E o que você leu neste artigo é o tipo de conhecimento 
 [Orbot]:                        https://orbot.app/
 [recomendado]:                  https://support.torproject.org/pt-BR/tormobile/#tormobile_tormobile-3
 [orbot-team]:                   https://guardianproject.info/team/
-[tor-people]:                   https://www.torproject.org/about/people/
-[app-store]:                    https://apps.apple.com/us/app/orbot/id1609461599
+[tor-people]:                   https://www.torproject.org/pt-BR/about/people/
+[app-store]:                    https://apps.apple.com/br/app/orbot/id1609461599
 [Safari]:                       https://apps.apple.com/br/app/safari/id1146562112
 [suporte]:                      https://support.torproject.org/pt-BR/
