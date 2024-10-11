@@ -27,3 +27,14 @@
         {% endif %}
     </div><!-- .card-body -->
 </div><!-- .card -->
+
+{% if jekyll.environment == "production" %}
+    <div class="card mb-3">
+        <div class="card-header">
+            <h3>Anúncio</h3>
+        </div>
+         <div class="card-body">
+            {% include a-ads.html id=site.a_ads_sidebar %}
+        </div><!-- .card-body -->
+    </div><!-- .card -->
+{% endif %}
