@@ -20,6 +20,8 @@ Recentemente [registrei][whois] o domínio `renatamonte.com.br` no Registro.br p
 
 Este tutorial é baseado em grande parte no excelente tutorial em vídeo do [Renato Faria - Negócio Digital Produtivo][youtube]. Se você gosta mais de vídeos, talvez prefira seguir o tutorial dele. Mas se você, assim como eu, prefere textos, siga aqui comigo.
 
+Você pode seguir este tutorial mesmo que tenha registrado o domínio em outro lugar que não o Registro.br. Nesse caso, o que pode mudar é a configuração do DNS no seu _registrar_, mas a configuração do Zoho Mail permanece igual. 
+
 ## DNS avançado no Registro.br
 
 Acesse sua conta no [Registro.br] e, no **Painel**, clique no domínio:
