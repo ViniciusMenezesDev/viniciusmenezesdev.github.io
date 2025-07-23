@@ -50,7 +50,10 @@ gem "webrick"
 # https://github.com/jekyll/jekyll/issues/9545
 gem "json"
 # Maybe this is an Arch issue as well:
+gem "base64"
+gem "csv"
 gem "erb"
+gem "logger"
 
 # openSUSE Leap 15.6 related bug
 # ffi-1.17.0-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the current version, 2.7.6.3

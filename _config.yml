@@ -270,7 +270,7 @@ lang: "pt"
 # https://www.shareaholic.com/
 shareaholic:
     site_id: "3ef965565c8fe37ffff0f45c6569ab41"
-    follow_buttons_app_id: "28705385"
+    # follow_buttons_app_id: "28705385"
     share_buttons_post_meta_app_id: "33220124"
     share_buttons_post_comments_app_id: "33220123"
     # related_content_app_id: "12345678"
@@ -324,7 +324,7 @@ facebook:
 # GitHub username
 # Example: jekyll, if your GitHub URL is https://github.com/jekyll
 # Default: not set (GitHub URL is not displayed)
-github_username: "vinyanalista"
+github_username: "antoniomedeirosdev"
 
 # GitLab username
 # Example: username, if your GitLab URL is https://gitlab.com/username
