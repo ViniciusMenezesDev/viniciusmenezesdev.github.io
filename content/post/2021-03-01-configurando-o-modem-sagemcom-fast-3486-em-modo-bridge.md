@@ -150,9 +150,9 @@ Desde 2016, quando comprei o MikroTik, já me mudei algumas vezes e sempre o dei
 [bridge]:               https://pt.wikipedia.org/wiki/Bridge_(redes_de_computadores)
 [osi]:                  https://pt.wikipedia.org/wiki/Modelo_OSI
 [roteador]:             https://pt.wikipedia.org/wiki/Roteador
-[mikrotik]:             {% post_url 2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa %}
+[mikrotik]:             {{% ref "post/2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa" %}}
 [claro]:                https://www.claro.com.br/
-[safe-mode]:            {% post_url 2020-07-21-mikrotik-modo-de-seguranca-safe-mode %}
+[safe-mode]:            {{% ref "post/2020-07-21-mikrotik-modo-de-seguranca-safe-mode" %}}
 [ping]:                 https://man7.org/linux/man-pages/man8/ping.8.html
 [google-public-dns]:    https://developers.google.com/speed/public-dns/docs/using
 [dhcp]:                 https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol

@@ -45,9 +45,9 @@ Note que, em geral, os *tablets* e *smartphones* requerem menos poder computacio
 
 ## 2. Processador
 
-Começarei a falar agora sobre como avaliar os componentes do computador. Se algo aqui não é familiar, recomendo que leia [um *post* meu que fala sobre esses componentes]({% post_url 2012-04-09-componentes-de-um-computador-hardware-e-software %}). Se prepare para aprender mais algumas coisas.
+Começarei a falar agora sobre como avaliar os componentes do computador. Se algo aqui não é familiar, recomendo que leia [um *post* meu que fala sobre esses componentes]({{% ref "post/2012-04-09-componentes-de-um-computador-hardware-e-software" %}}). Se prepare para aprender mais algumas coisas.
 
-Como [sabemos]({% post_url 2012-04-09-componentes-de-um-computador-hardware-e-software %}), o processador é o principal componente de um computador. Não apenas o principal, ele é também o mais rápido. Assim, ele é o maior (porém não o único) responsável pelo desempenho do computador. Não podemos esperar muito de um computador se seu processador é lento.
+Como [sabemos]({{% ref "post/2012-04-09-componentes-de-um-computador-hardware-e-software" %}}), o processador é o principal componente de um computador. Não apenas o principal, ele é também o mais rápido. Assim, ele é o maior (porém não o único) responsável pelo desempenho do computador. Não podemos esperar muito de um computador se seu processador é lento.
 
 {% include image.html src="/files/2012/04/processador.jpg" caption="Processador: o componente do computador que mais influencia no seu desempenho" %}
 

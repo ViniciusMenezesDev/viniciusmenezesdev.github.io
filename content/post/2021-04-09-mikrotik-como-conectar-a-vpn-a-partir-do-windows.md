@@ -60,4 +60,4 @@ Uma vez configurada a VPN, outra forma de conectar e desconectar é usando o íc
 {% include image.html src='/files/2021/04/windows-vpn-08.jpg' %}
 
 [windows]:  https://www.microsoft.com/pt-br/windows/
-[vpn]:      {% post_url 2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec %}
+[vpn]:      {{% ref "post/2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec" %}}

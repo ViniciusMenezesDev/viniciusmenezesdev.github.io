@@ -153,14 +153,14 @@ Caso você trabalhe profissionalmente com suporte ou manutenção de computadore
 
 O que achou dos programas? Gostou? Você adicionaria algum programa a essa lista? Ficou alguma dúvida? Comenta aí! Até a próxima!
 
-[hardware]:                 {% post_url 2012-04-09-componentes-de-um-computador-hardware-e-software %}
+[hardware]:                 {{% ref "post/2012-04-09-componentes-de-um-computador-hardware-e-software" %}}
 [Windows]:                  https://www.microsoft.com/pt-br/windows/
 [acer]:                     https://www.acer.com/br-pt/predator/laptops/helios/helios-neo-16
-[comprar]:                  {% post_url 2015-11-27-como-escolher-um-bom-computador-para-comprar %}
+[comprar]:                  {{% ref "post/2015-11-27-como-escolher-um-bom-computador-para-comprar" %}}
 [Qual Notebook Comprar]:    https://quenotebookcomprar.com.br/acer-predator-helios-neo-phn16-72-99my/
 [Notebook Check]:           https://www.notebookcheck.net/Acer-Predator-Helios-Neo-16-2024-review-Gaming-laptop-with-RTX-4070-and-DCI-P3-panel.834996.0.html
 [CPU-Z]:                    https://www.cpuid.com/softwares/cpu-z.html
-[processador]:              {% post_url 2012-04-08-minha-pesquisa-cientifica-sobre-processadores %}
+[processador]:              {{% ref "post/2012-04-08-minha-pesquisa-cientifica-sobre-processadores" %}}
 [zip]:                      https://support.microsoft.com/pt-br/windows/compactar-e-descompactar-arquivos-8d28fa72-f2f9-712f-67df-f80cf89fd4e5
 [relatorio-cpu-z]:          /files/2025/01/relatorio-cpu-z.html
 [GPU-Z]:                    https://www.techpowerup.com/download/techpowerup-gpu-z/

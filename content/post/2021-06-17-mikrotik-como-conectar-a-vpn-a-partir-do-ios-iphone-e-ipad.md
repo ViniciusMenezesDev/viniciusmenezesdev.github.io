@@ -14,7 +14,7 @@ Se você usa um dispositivo com [iOS] (um [iPhone] ou um [iPad]) e deseja conect
 [iOS]: https://www.apple.com/br/ios/
 [iPhone]: https://www.apple.com/br/iphone/
 [iPad]: https://www.apple.com/br/ipad/
-[vpn]:              {% post_url 2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec %}
+[vpn]:              {{% ref "post/2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec" %}}
 
 Aqui, estou usando um [iPhone 8][iphone-8] com [iOS 14.6]. As telas podem ser um pouco diferentes no seu dispositivo, mas a ideia é a mesma.
 

@@ -16,7 +16,7 @@ Nesse post, demonstrarei como instalar o Maven e como criar um pequeno projeto, 
 
 <!--more-->
 
-Antes de começarmos, é necessário que o Java Development Kit (JDK) esteja instalado no computador onde se deseja executar o Maven. Em [outro post]({% post_url 2012-07-10-instalacao-do-java-development-kit-jdk %}) nesse blog expliquei como instalar o JDK e verificar que ele está funcionando perfeitamente. Se você ainda não possui o JDK, prossiga à leitura daquela página primeiro. Se você não tem certeza se o JDK está instalado em seu computador, execute os testes propostos naquela mesma página e, se for o caso, instale-o.
+Antes de começarmos, é necessário que o Java Development Kit (JDK) esteja instalado no computador onde se deseja executar o Maven. Em [outro post]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}) nesse blog expliquei como instalar o JDK e verificar que ele está funcionando perfeitamente. Se você ainda não possui o JDK, prossiga à leitura daquela página primeiro. Se você não tem certeza se o JDK está instalado em seu computador, execute os testes propostos naquela mesma página e, se for o caso, instale-o.
 
 Só prossiga à leitura desta página quando tiver certeza de que o JDK está instalado e funcionando no seu computador. Também é importante que a variável de ambiente JAVA_HOME esteja configurada.
 
@@ -34,9 +34,9 @@ $ wget http://ftp.unicamp.br/pub/apache/maven/binaries/apache-maven-3.0.4-bin.ta
 
 ### Instalação do Maven
 
-Tanto no Windows quanto no Linux basta descompactar o arquivo baixado que o Maven já pode ser executado a partir daquele local. Assim como acontece com o [JDK]({% post_url 2012-07-10-instalacao-do-java-development-kit-jdk %}), é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “apache-maven-3.0.4″ e pode ser excluído após a extração.
+Tanto no Windows quanto no Linux basta descompactar o arquivo baixado que o Maven já pode ser executado a partir daquele local. Assim como acontece com o [JDK]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}), é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “apache-maven-3.0.4″ e pode ser excluído após a extração.
 
-É necessário prestar atenção a esse local pois, assim como fizemos na [instalação do JDK]({% post_url 2012-07-10-instalacao-do-java-development-kit-jdk %}), aqui vamos configurar uma variável de ambiente que aponte para a localização do Maven, chamada de M2_HOME.
+É necessário prestar atenção a esse local pois, assim como fizemos na [instalação do JDK]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}), aqui vamos configurar uma variável de ambiente que aponte para a localização do Maven, chamada de M2_HOME.
 
 No Windows, fiz a extração do arquivo na raiz do disco “C:\” e renomeei a pasta “apache-maven-3.0.4″ para apenas “maven”. O caminho para o Maven no meu sistema é, então, “C:\maven”.
 
@@ -68,9 +68,9 @@ Usuários do Debian podem obter nos repositórios oficiais da versão estável (
 
 ### Configuração da variável M2_HOME
 
-De maneira análoga à [instalação do JDK]({% post_url 2012-07-10-instalacao-do-java-development-kit-jdk %}), aqui vamos criar uma variável de ambiente M2_HOME que informe para os demais aplicativos do sistema a localização do Maven. Depois vamos atualizar o valor da variável de ambiente PATH para que possamos invocar o Maven diretamente da linha de comando, sem precisar informar sua localização completa sempre que quisermos fazer isso.
+De maneira análoga à [instalação do JDK]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}), aqui vamos criar uma variável de ambiente M2_HOME que informe para os demais aplicativos do sistema a localização do Maven. Depois vamos atualizar o valor da variável de ambiente PATH para que possamos invocar o Maven diretamente da linha de comando, sem precisar informar sua localização completa sempre que quisermos fazer isso.
 
-No Windows, o procedimento é bem semelhante ao [descrito no post anterior]({% post_url 2012-07-10-instalacao-do-java-development-kit-jdk %}), só mudando os nomes das variáveis e os valores:
+No Windows, o procedimento é bem semelhante ao [descrito no post anterior]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}), só mudando os nomes das variáveis e os valores:
 
 {% include image.html src="/files/2012/07/maven2.jpg" %}
 

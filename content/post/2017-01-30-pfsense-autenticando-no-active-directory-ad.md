@@ -220,7 +220,7 @@ Muito do que escrevi aqui aprendi na tentativa e erro e evoluindo conforme as de
 [random.org]:                   https://www.random.org/passwords/?num=5&len=15&format=html
 [how-secure-is-my-password]:    https://howsecureismypassword.net/
 [wake-on-lan]:                  https://pt.wikipedia.org/wiki/Wake-on-LAN
-[vpn]:                          {% post_url 2016-06-26-como-criar-uma-vpn-pfsense-openvpn %}
+[vpn]:                          {{% ref "post/2016-06-26-como-criar-uma-vpn-pfsense-openvpn" %}}
 [windows]:                      https://www.microsoft.com/pt-br/windows/
 [openvpn]:                      https://openvpn.net/index.php/download/community-downloads.html
 [openvpn-2.4.0]:                https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn24

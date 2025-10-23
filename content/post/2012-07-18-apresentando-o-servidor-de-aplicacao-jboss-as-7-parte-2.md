@@ -10,7 +10,7 @@ O [JBoss Application Server](http://www.jboss.org/jbossas/) (ou, abreviadamente,
 
 {% include image.html src="/files/2012/07/jboss_as_01.jpg" %}
 
-Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, [clique aqui]({% post_url 2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7 %}). Senão, continue lendo.
+Essa é a segunda parte de dois posts que visam apresentar o JBoss AS 7. Se você desejava acessar a primeira parte, [clique aqui]({{% ref "post/2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7" %}}). Senão, continue lendo.
 
 <!--more-->
 

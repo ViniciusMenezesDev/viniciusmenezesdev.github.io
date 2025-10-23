@@ -142,10 +142,10 @@ Se você está recorrendo ao Tor para vencer censura, observe que pode acontecer
 - [python - How to configure a tor proxy on windows? - Stack Overflow](https://stackoverflow.com/a/61306130)
 - [proxy - How to configure Tor as service on windows? - Super User](https://superuser.com/a/1631196)
 
-[VPN]:                  {% post_url 2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-windows-por-meio-do-navegador-tor %}
+[VPN]:                  {{% ref "post/2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-windows-por-meio-do-navegador-tor" %}}
 [Windows]:              https://www.microsoft.com/pt-br/windows/
 [Mozilla Firefox]:      https://www.mozilla.org/pt-BR/firefox/
-[telegram-tor]:         {% post_url 2022-03-23-como-usar-o-telegram-via-tor-no-windows %}
+[telegram-tor]:         {{% ref "post/2022-03-23-como-usar-o-telegram-via-tor-no-windows" %}}
 [Microsoft Edge]:       https://www.microsoft.com/pt-br/edge
 [tor-with-a-browser]:   https://support.torproject.org/pt-BR/tbb/#tbb_tbb-9
 [Google Chrome]:        https://www.google.com/chrome/

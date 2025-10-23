@@ -14,9 +14,9 @@ O [JBoss Application Server](http://www.jboss.org/jbossas/) (ou, abreviadamente,
 
 O JBoss AS 7 é completamente compatível com a especificação Java EE 6 (diz-se “Java EE 6 Full Profile”), tendo recebido inclusive [certificação da Oracle](http://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html). Assim, ao executar nossas aplicações Web nesse servidor, se elas foram desenvolvidas obedecendo aos padrões da plataforma, teremos a certeza de que elas funcionarão como desejamos (é claro que eventualmente erros de lógica podem ser cometidos por programadores, o fato de uma aplicação atender à especificação não garante que ela esteja livre desses erros, rsrsrs).
 
-É necessário que o Java Development Kit (JDK) esteja instalado no computador para que o JBoss AS possa ser executado. Também é importante que a variável de ambiente JAVA_HOME esteja configurada, o JBoss AS obtém o valor dessa variável e o utiliza para saber a localização do JDK no sistema. Se precisar de ajuda com relação a isso, leia [esse outro post]({% post_url 2012-07-10-instalacao-do-java-development-kit-jdk %}), no qual explico como instalar e testar o JDK.
+É necessário que o Java Development Kit (JDK) esteja instalado no computador para que o JBoss AS possa ser executado. Também é importante que a variável de ambiente JAVA_HOME esteja configurada, o JBoss AS obtém o valor dessa variável e o utiliza para saber a localização do JDK no sistema. Se precisar de ajuda com relação a isso, leia [esse outro post]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}), no qual explico como instalar e testar o JDK.
 
-Precisaremos também do Maven, que já foi abordado em [outro post]({% post_url 2012-07-18-instalacao-do-apache-maven %}). Ele não é necessário à execução do JBoss AS, mas precisaremos dele nesse passo-a-passo para implantar uma aplicação de exemplo no servidor.
+Precisaremos também do Maven, que já foi abordado em [outro post]({{% ref "post/2012-07-18-instalacao-do-apache-maven" %}}). Ele não é necessário à execução do JBoss AS, mas precisaremos dele nesse passo-a-passo para implantar uma aplicação de exemplo no servidor.
 
 ### Download do JBoss AS
 
@@ -32,7 +32,7 @@ $ wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1
 
 ### Instalação do JBoss AS
 
-Tanto no Windows quanto no Linux, basta descompactar o arquivo baixado que o JBoss AS já pode ser executado a partir daquele local. Assim como acontece com o [JDK]({% post_url 2012-07-10-instalacao-do-java-development-kit-jdk %}), é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “jboss-as-7.1.1.Final? e pode ser excluído após a extração.
+Tanto no Windows quanto no Linux, basta descompactar o arquivo baixado que o JBoss AS já pode ser executado a partir daquele local. Assim como acontece com o [JDK]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}), é possível instalar em uma localização visível a todos os usuários (como “C:\” no Windows ou “/opt/” no Linux) ou visível apenas ao seu usuário (no meu caso, “C:\Users\Vinicius\Documents” ou “/home/vinicius”). Em ambos os casos, o arquivo descompactado gera uma pasta chamada “jboss-as-7.1.1.Final? e pode ser excluído após a extração.
 
 É necessário prestar atenção a esse local pois sempre que quisermos invocar o JBoss AS, digitaremos o caminho para esse local. Assim, recomendo renomear a pasta para algo menor, como “jboss-as”.
 
@@ -134,7 +134,7 @@ Tanto no Windows quanto no Linux, após iniciado o servidor, abra seu navegador 
 
 Para verificar o funcionamento do JBoss AS, vamos instalar e executar (diz-se fazer deploy no servidor) de uma das [aplicações de exemplo oferecidas no site do servidor](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/). No caso, vou utilizar a [helloworld-jsf](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/), que é simples, mas um pouco mais interessante que a tradicional [helloworld](http://jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld/).
 
-As instruções fornecidas aqui se aplicam tanto ao Windows quanto ao Linux, mas vou utilizar o Linux para explicar as etapas. Necessitaremos do [Maven](http://maven.apache.org/) para compilar, empacotar e fazer deploy da aplicação. Se você ainda não possui o Maven em seu computador, prossiga à leitura [dessa página]({% post_url 2012-07-18-instalacao-do-apache-maven %}) antes de continuar.
+As instruções fornecidas aqui se aplicam tanto ao Windows quanto ao Linux, mas vou utilizar o Linux para explicar as etapas. Necessitaremos do [Maven](http://maven.apache.org/) para compilar, empacotar e fazer deploy da aplicação. Se você ainda não possui o Maven em seu computador, prossiga à leitura [dessa página]({{% ref "post/2012-07-18-instalacao-do-apache-maven" %}}) antes de continuar.
 
 Vá até a [página das aplicações de exemplo do JBoss AS](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/) e clique em “Get the source”. Depois, clique em “Source zip”:
 
@@ -211,4 +211,4 @@ Se quisermos, podemos remover a aplicação do servidor (diz-se fazer o undeploy
 $ mvn jboss-as:undeploy
 ```
 
-Também podemos fazer deploy e undeploy de aplicações no servidor, entre outras configurações, usando o console de administração do JBoss AS. Examinaremos esse console na [segunda parte desse post]({% post_url 2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2 %}).
+Também podemos fazer deploy e undeploy de aplicações no servidor, entre outras configurações, usando o console de administração do JBoss AS. Examinaremos esse console na [segunda parte desse post]({{% ref "post/2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2" %}}).

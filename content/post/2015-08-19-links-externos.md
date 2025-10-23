@@ -10,7 +10,7 @@ Você já reparou que na [Wikipédia](https://pt.wikipedia.org/) todos os *links
 
 [Milan Aryal em seu *blog*](http://milanaryal.com/2015/making-external-links-open-in-a-new-browser-tab/) mostra diversas maneiras de conseguir isso: HTML, JS, jQuery, CSS... aqui vou mostrar [como fiz](https://github.com/vinyanalista/vinyanalista-website/commit/706b8b9ec3cf8089f66afbeff771bb6fa2892e3a) neste *site*.
 
-Meu *site* utiliza [jQuery](https://jquery.com/) e [Bootstrap](http://getbootstrap.com/) (veja o [*post* sobre Bootstrap]({% post_url 2015-07-02-bootstrap %})). Eu simplesmente adicionei as seguintes linhas de código ao arquivo JavaScript que é carregado em todas as páginas do *site*:
+Meu *site* utiliza [jQuery](https://jquery.com/) e [Bootstrap](http://getbootstrap.com/) (veja o [*post* sobre Bootstrap]({{% ref "post/2015-07-02-bootstrap" %}})). Eu simplesmente adicionei as seguintes linhas de código ao arquivo JavaScript que é carregado em todas as páginas do *site*:
 
 ```js
 $('div.blog-post a').filter(function() {

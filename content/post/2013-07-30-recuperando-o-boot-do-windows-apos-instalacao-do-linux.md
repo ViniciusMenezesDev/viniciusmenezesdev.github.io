@@ -10,7 +10,7 @@ title: Recuperando o boot do Windows após instalação do Linux
 
 ### Instalação do openSUSE
 
-A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi [outro post]({% post_url 2012-04-21-problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes %}) sobre problemas com *dual boot*. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que [essa não é a primeira vez que tenho problemas em relação ao *dual boot* com openSUSE]({% post_url 2012-04-21-problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes %}).
+A configuração dos meus HDs é bastante semelhante àquela encontrada ano passado quando escrevi [outro post]({{% ref "post/2012-04-21-problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes" %}}) sobre problemas com *dual boot*. Naquela época, usava Debian e estava pensando em migrar pro openSUSE, o que de fato aconteceu e desde então é a distribuição que uso. Aliás, foi bom reler aquele post e perceber que [essa não é a primeira vez que tenho problemas em relação ao *dual boot* com openSUSE]({{% ref "post/2012-04-21-problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes" %}}).
 
 Executando o comando **fdisk**, obtenho o seguinte:
 
@@ -44,7 +44,7 @@ Durante a instalação do openSUSE 12.3, não alterei as configurações do *boo
 
 ### Recuperação do bootloader do Windows
 
-Na busca por soluções, encontrei [este site](http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/) e tentei algumas alternativas nele apresentadas, que descrevo a seguir (só depois vim perceber que já havia as listado no [post anterior]({% post_url 2012-04-21-problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes %}), mas tudo bem, não custa repetir):
+Na busca por soluções, encontrei [este site](http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/) e tentei algumas alternativas nele apresentadas, que descrevo a seguir (só depois vim perceber que já havia as listado no [post anterior]({{% ref "post/2012-04-21-problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes" %}}), mas tudo bem, não custa repetir):
 
 1. Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer [o crédito do autor das imagens](http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/)) e cliquei em “Avançar”:
 

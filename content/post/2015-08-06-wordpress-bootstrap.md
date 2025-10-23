@@ -6,7 +6,7 @@ title: Como criar um tema responsivo do WordPress com o Bootstrap
 
 Nesse tutorial, você aprenderá a criar um tema responsivo do [WordPress](https://br.wordpress.org/) usando o [Bootstrap](http://getbootstrap.com/). Com um tema responsivo, seu *blog* ou *site* com WordPress aparecerá bem na grande variedade de dispositivos (computadores, *smartphones* e *tablets*) e navegadores existentes.
 
-O Bootstrap é um *framework* para o desenvolvimento de *sites* e aplicações *web* responsivos e foi apresentado no [*post* anterior]({% post_url 2015-07-02-bootstrap %}).
+O Bootstrap é um *framework* para o desenvolvimento de *sites* e aplicações *web* responsivos e foi apresentado no [*post* anterior]({{% ref "post/2015-07-02-bootstrap" %}}).
 
 Recentemente eu desenvolvi um tema responsivo para o WordPress usando o [excelente tutorial apresentado no Treehouse Blog](http://blog.teamtreehouse.com/responsive-wordpress-bootstrap-theme-tutorial). Como aquele tutorial parecia estar desatualizado (pelo código dos exemplos, muito provavelmente eles utilizaram [uma versão anterior do Bootstrap](http://getbootstrap.com/2.3.2/)), tive a ideia de escrever uma versão atualizada e em português. Para referência, aqui utilizo o Bootstrap 3.3.5 e o WordPress 4.2.3, as versões mais recentes até o momento da escrita.
 
@@ -393,7 +393,7 @@ add_action('wp_enqueue_scripts', 'scripts_do_template');
 
 Aqui utilizamos uma chamada à função [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) para apresentar ao WordPress um novo *script*, que será incluído posteriormente na página com uma chamada à função [wp_enqueue_script()](https://developer.wordpress.org/reference/functions/wp_enqueue_script/).
 
-Observe que nos preocupamos em registrar apenas o Bootstrap. A biblioteca [jQuery](https://jquery.com/), um [requisito para o Bootstrap]({% post_url 2015-07-02-bootstrap %}), [acompanha o WordPress](https://codex.wordpress.org/Function_Reference/wp_enqueue_script#Default_Scripts_Included_and_Registered_by_WordPress), de modo que não precisamos registra-la, apenas inclui-la.
+Observe que nos preocupamos em registrar apenas o Bootstrap. A biblioteca [jQuery](https://jquery.com/), um [requisito para o Bootstrap]({{% ref "post/2015-07-02-bootstrap" %}}), [acompanha o WordPress](https://codex.wordpress.org/Function_Reference/wp_enqueue_script#Default_Scripts_Included_and_Registered_by_WordPress), de modo que não precisamos registra-la, apenas inclui-la.
 
 Por fim, com a chamada à função [add_action()](https://developer.wordpress.org/reference/functions/add_action/), determinamos que a nossa função `scripts_do_template()` implementa a ação [wp_enqueue_scripts](https://developer.wordpress.org/reference/hooks/wp_enqueue_scripts/), invocada pelo WordPress no momento de enfileirar o *scripts* para renderização.
 
@@ -414,7 +414,7 @@ Seu arquivo `footer.php` deve ficar [assim](https://github.com/vinyanalista/wpbo
 </html>
 ```
 
-Por último, vamos rever nossos arquivos `header.php`, `index.php` e `footer.php` de modo que tenhamos uma `div.container` em volta do conteúdo, [como manda o Bootstrap]({% post_url 2015-07-02-bootstrap %}). Ao final, eles devem ficar assim (você pode ver as mudanças destacadas [aqui](https://github.com/vinyanalista/wpbootstrap/commit/c5c456b119200ce82b6ce6d5b56b6be9ae05bb0b)):
+Por último, vamos rever nossos arquivos `header.php`, `index.php` e `footer.php` de modo que tenhamos uma `div.container` em volta do conteúdo, [como manda o Bootstrap]({{% ref "post/2015-07-02-bootstrap" %}}). Ao final, eles devem ficar assim (você pode ver as mudanças destacadas [aqui](https://github.com/vinyanalista/wpbootstrap/commit/c5c456b119200ce82b6ce6d5b56b6be9ae05bb0b)):
 
 - `header.php`
 
@@ -637,7 +637,7 @@ Agora, visite o *site*. Você perceberá as alterações que fez no editor.
 
 Gostou? Está começando a funcionar? Como esse tutorial é muito grande, decidi dividi-lo em partes. Não deixe de acompanhar o *blog* para ver as próximas partes!
 
-{% capture mensagem_2a_parte %}A segunda parte do tutorial já se encontra disponível [aqui]({% post_url 2015-08-20-wordpress-bootstrap-parte2 %}).{% endcapture %}
+{% capture mensagem_2a_parte %}A segunda parte do tutorial já se encontra disponível [aqui]({{% ref "post/2015-08-20-wordpress-bootstrap-parte2" %}}).{% endcapture %}
 {% include update.html date="20/08/2015" message=mensagem_2a_parte %}
 
 Se você teve problemas em seguir o tutorial, pode verificar o que fizemos até agora [aqui](https://github.com/vinyanalista/wpbootstrap/tree/af163c63bcffdfe256e66c30f3bd18b2e03fba72). Também pode deixar sua dúvida nos comentários.

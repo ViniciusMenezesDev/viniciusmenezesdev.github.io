@@ -174,7 +174,7 @@ Se você é grato por eu ter poupado a franquia do seu prezão nesse tutorial, c
 [windows]:          https://www.microsoft.com/pt-br/windows/
 [linux]:            https://linuxkamarada.com/
 [wine]:             https://www.winehq.org/
-[dicas-prints]:     {% post_url 2016-02-18-dicas-para-bater-bons-prints %}
+[dicas-prints]:     {{% ref "post/2016-02-18-dicas-para-bater-bons-prints" %}}
 [instalador]:       https://www.fosshub.com/IrfanView.html?dwl=iview453_x64_setup.exe
 [plugins]:          https://www.fosshub.com/IrfanView.html?dwl=iview453_plugins_x64_setup.exe
 [traducao]:         http://www.irfanview.net/lang/irfanview_lang_portugues-brasil.exe

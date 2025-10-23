@@ -12,7 +12,7 @@ Foram também as máquinas que mais evoluíram desde a sua criação, adquirindo
 
 Pode-se definir então **computador** como uma máquina que trabalha com grande quantidade de informações, capaz de receber, processar, armazenar e transmitir dados.
 
-Nesse post, veremos rapidamente quais são os principais componentes de um computador e como eles são organizados. Esse post é um resumo do primeiro capítulo de um trabalho mais completo, que visa apresentar os componentes do computador, em especial o processador, e que pode ser acessado [aqui]({% post_url 2012-04-08-minha-pesquisa-cientifica-sobre-processadores %}).
+Nesse post, veremos rapidamente quais são os principais componentes de um computador e como eles são organizados. Esse post é um resumo do primeiro capítulo de um trabalho mais completo, que visa apresentar os componentes do computador, em especial o processador, e que pode ser acessado [aqui]({{% ref "post/2012-04-08-minha-pesquisa-cientifica-sobre-processadores" %}}).
 
 <!--more-->
 
@@ -84,12 +84,12 @@ Podemos então classificar o software de um computador em dois grupos, diferente
 
 Os **softwares básicos** de um computador são aqueles essenciais ao seu funcionamento, como o sistema operacional, o BIOS e os programas fornecidos pelo fabricante junto com a máquina. Já os **softwares aplicativos**, ou simplesmente aplicativos, são desenvolvidos para auxiliar o usuário na execução de alguma tarefa ou na obtenção da solução para algum problema, ou seja, são softwares desenvolvidos para uma aplicação específica. Quase todos os programas que não são softwares básicos são softwares aplicativos.
 
-{% capture mensagem_novo_post %}Agora que você já conhece os componentes básicos dos computadores, que tal aprender [como escolher um bom computador para comprar]({% post_url 2015-11-27-como-escolher-um-bom-computador-para-comprar %})?{% endcapture %}
+{% capture mensagem_novo_post %}Agora que você já conhece os componentes básicos dos computadores, que tal aprender [como escolher um bom computador para comprar]({{% ref "post/2015-11-27-como-escolher-um-bom-computador-para-comprar" %}})?{% endcapture %}
 {% include update.html date="27/11/2015" message=mensagem_novo_post %}
 
 ### Referências
 
-Como esse post é uma parte (na verdade, o resumo de uma parte) da [minha pesquisa científica sobre processadores]({% post_url 2012-04-08-minha-pesquisa-cientifica-sobre-processadores %}), pode-se dizer que utiliza as mesmas referências dela. Em especial, posso citar esses livros:
+Como esse post é uma parte (na verdade, o resumo de uma parte) da [minha pesquisa científica sobre processadores]({{% ref "post/2012-04-08-minha-pesquisa-cientifica-sobre-processadores" %}}), pode-se dizer que utiliza as mesmas referências dela. Em especial, posso citar esses livros:
 
 MONTEIRO, Mário A. *Introdução à Organização de Computadores*. 4ª Edição. Rio de Janeiro: LTC Editora, 2001.
 

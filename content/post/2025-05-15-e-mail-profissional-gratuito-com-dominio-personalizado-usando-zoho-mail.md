@@ -185,7 +185,7 @@ Espero que esse tutorial tenha sido útil para você. Se ficou com alguma dúvid
 [tecnoblog]:        https://tecnoblog.net/guias/6-opcoes-para-criar-um-e-mail-com-dominio-proprio/
 [Google]:           https://workspace.google.com/intl/pt-BR/lp/gmail/
 [Microsoft]:        https://learn.microsoft.com/pt-br/microsoft-365/admin/email/change-email-address?view=o365-worldwide
-[ProtonMail]:       {% post_url 2021-08-31-protonmail-e-mail-com-privacidade-e-dominio-personalizado %}
+[ProtonMail]:       {{% ref "post/2021-08-31-protonmail-e-mail-com-privacidade-e-dominio-personalizado" %}}
 [Zoho Mail]:        https://www.zoho.com/pt-br/mail/
 [whois]:            https://registro.br/tecnologia/ferramentas/whois?search=renatamonte.com.br
 [renatamonte]:      https://www.instagram.com/renatamonte.adv/

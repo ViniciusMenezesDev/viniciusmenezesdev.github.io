@@ -160,22 +160,22 @@ No WinBox, você pode verificar que um cliente se conectou ao MikroTik indo em *
 - [Lista de portas dos protocolos TCP e UDP - Wikipédia][wikipedia]
 - [Manual:IP/Cloud - MikroTik Wiki][mikrotik-cloud]
 
-[mikrotik]:         {% post_url 2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa %}
-[vpn]:              {% post_url 2016-06-26-como-criar-uma-vpn-pfsense-openvpn %}#o-que-é-uma-vpn
+[mikrotik]:         {{% ref "post/2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa" %}}
+[vpn]:              {{% ref "post/2016-06-26-como-criar-uma-vpn-pfsense-openvpn" %}}#o-que-é-uma-vpn
 [l2tp]:             https://pt.wikipedia.org/wiki/Layer_2_Tunneling_Protocol
 [ipsec]:            https://pt.wikipedia.org/wiki/IPsec
 [leonardo-vieira]:  https://www.youtube.com/watch?v=uyMDvBfNMec
-[safe-mode]:        {% post_url 2020-07-21-mikrotik-modo-de-seguranca-safe-mode %}
-[bridge]:           {% post_url 2021-03-01-configurando-o-modem-sagemcom-fast-3486-em-modo-bridge %}
-[cgnat]:            {% post_url 2020-08-14-configurando-o-modem-humax-hg100r-l4-em-modo-bridge %}#notas-sobre-carrier-grade-nat
+[safe-mode]:        {{% ref "post/2020-07-21-mikrotik-modo-de-seguranca-safe-mode" %}}
+[bridge]:           {{% ref "post/2021-03-01-configurando-o-modem-sagemcom-fast-3486-em-modo-bridge" %}}
+[cgnat]:            {{% ref "post/2020-08-14-configurando-o-modem-humax-hg100r-l4-em-modo-bridge" %}}#notas-sobre-carrier-grade-nat
 [pap]:              https://pt.wikipedia.org/wiki/Password_authentication_protocol
 [iptables]:         https://linuxkamarada.com/pt/2019/11/18/proteja-se-com-o-firewall-iptables/#conceitos-básicos
 [ike]:              https://en.wikipedia.org/wiki/Internet_Key_Exchange
 [linux]:            https://linuxkamarada.com/
 [ddns]:             https://pt.wikipedia.org/wiki/DNS_din%C3%A2mico
-[vpn-windows]:      {% post_url 2021-04-09-mikrotik-como-conectar-a-vpn-a-partir-do-windows %}
-[vpn-android]:      {% post_url 2021-04-17-mikrotik-como-conectar-a-vpn-a-partir-do-android %}
-[vpn-ios]:          {% post_url 2021-06-17-mikrotik-como-conectar-a-vpn-a-partir-do-ios-iphone-e-ipad %}
+[vpn-windows]:      {{% ref "post/2021-04-09-mikrotik-como-conectar-a-vpn-a-partir-do-windows" %}}
+[vpn-android]:      {{% ref "post/2021-04-17-mikrotik-como-conectar-a-vpn-a-partir-do-android" %}}
+[vpn-ios]:          {{% ref "post/2021-06-17-mikrotik-como-conectar-a-vpn-a-partir-do-ios-iphone-e-ipad" %}}
 [vpn-linux]:        https://linuxkamarada.com/pt/2022/02/15/como-conectar-a-uma-vpn-do-tipo-l2tp-com-ipsec/
 [mikrotik-l2tp]:    https://wiki.mikrotik.com/wiki/Manual:Interface/L2TP
 [wikipedia]:        https://pt.wikipedia.org/wiki/Lista_de_portas_dos_protocolos_TCP_e_UDP

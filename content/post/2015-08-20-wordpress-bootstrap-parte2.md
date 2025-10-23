@@ -4,9 +4,9 @@ image: /files/2015/08/wordpress-bootstrap-0.png
 title: Como criar um tema responsivo do WordPress com o Bootstrap (parte 2)
 ---
 
-Nesse tutorial, você aprenderá a criar um tema responsivo do [WordPress](https://br.wordpress.org/) usando o [Bootstrap]({% post_url 2015-07-02-bootstrap %}). Com um tema responsivo, seu *blog* ou *site* com WordPress aparecerá bem na grande variedade de dispositivos (computadores, *smartphones* e *tablets*) e navegadores existentes.
+Nesse tutorial, você aprenderá a criar um tema responsivo do [WordPress](https://br.wordpress.org/) usando o [Bootstrap]({{% ref "post/2015-07-02-bootstrap" %}}). Com um tema responsivo, seu *blog* ou *site* com WordPress aparecerá bem na grande variedade de dispositivos (computadores, *smartphones* e *tablets*) e navegadores existentes.
 
-Essa é a segunda parte do tutorial. Se você deseja acessar a primeira parte, então [clique aqui]({% post_url 2015-08-06-wordpress-bootstrap %}). Senão, continue lendo.
+Essa é a segunda parte do tutorial. Se você deseja acessar a primeira parte, então [clique aqui]({{% ref "post/2015-08-06-wordpress-bootstrap" %}}). Senão, continue lendo.
 
 Assumirei que seu código está [como o deixamos no *post* anterior](https://github.com/vinyanalista/wpbootstrap/tree/af163c63bcffdfe256e66c30f3bd18b2e03fba72).
 
@@ -82,7 +82,7 @@ Abra o arquivo `index.php` e salve-o como `page.php`. Assim, poupamos muita digi
 
 Primeiro, vamos mudar o texto "Desculpe, não há *posts* a exibir" para "Desculpe, essa página não existe".
 
-Em seguida, vamos criar um [*layout* de duas colunas com o Bootstrap]({% post_url 2015-07-02-bootstrap %}). Modifique o arquivo `page.php` para incluir uma `div.row` com uma `div.col-md-8` e uma `div.col-md-4`. Vamos utilizar a `div.col-md-8` para o conteúdo da página e a `div.col-md-4` para a barra lateral:
+Em seguida, vamos criar um [*layout* de duas colunas com o Bootstrap]({{% ref "post/2015-07-02-bootstrap" %}}). Modifique o arquivo `page.php` para incluir uma `div.row` com uma `div.col-md-8` e uma `div.col-md-4`. Vamos utilizar a `div.col-md-8` para o conteúdo da página e a `div.col-md-4` para a barra lateral:
 
 ```html
 <?php get_header(); ?>

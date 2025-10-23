@@ -78,7 +78,7 @@ Não encerre o assunto por aqui. Pesquise sobre VPN, inclusive sobre VPNs altern
 
 Se você está recorrendo ao Tor para vencer censura, observe que pode acontecer de seu país passar a censurar a Rede Tor. Talvez você queira consultar antecipadamente a seção sobre [Censura] da documentação do Tor.
 
-[VPN]:                  {% post_url 2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-ios-por-meio-do-app-orbot %}
+[VPN]:                  {{% ref "post/2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-ios-por-meio-do-app-orbot" %}}
 [iOS]:                  https://www.apple.com/br/ios/
 [iPhone]:               https://www.apple.com/br/iphone/
 [iPad]:                 https://www.apple.com/br/ipad/

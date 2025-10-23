@@ -23,7 +23,7 @@ Foi o que eu fiz para mim e venho aqui hoje compartilhar um tutorial mostrando c
 
 Lembrando que eu [registrei meu domínio][mudança] pela [Namecheap], então vou usar esse registrar como exemplo. Mas o que eu vou mostrar você deve ser igualmente capaz de fazer -- talvez um pouco diferente, claro -- se usa outro registrar ou seus próprios servidores de DNS.
 
-[mudança]: {% post_url 2021-03-24-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-1-visitantes-e-google %}
+[mudança]: {{% ref "post/2021-03-24-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-1-visitantes-e-google" %}}
 [Namecheap]: https://bit.ly/kamarada-namecheap
 
 ## Assinando o ProtonMail
@@ -108,7 +108,7 @@ Para referência, eis como ficou a minha configuração de DNS no final:
 (lembrando que nem todas essas entradas são relacionadas ao ProtonMail, algumas são referentes ao [GitLab Pages], [onde hospedo meus _sites_][onde-hospedo])
 
 [GitLab Pages]: https://docs.gitlab.com/ee/user/project/pages/
-[onde-hospedo]: {% post_url 2021-03-24-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-1-visitantes-e-google %}
+[onde-hospedo]: {{% ref "post/2021-03-24-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-1-visitantes-e-google" %}}
 
 ## Configurando o endereço
 

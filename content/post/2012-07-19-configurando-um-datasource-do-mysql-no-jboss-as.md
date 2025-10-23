@@ -14,7 +14,7 @@ Aqui também há uma dica para usuários do banco de dados [PostgreSQL](http://w
 
 <!--more-->
 
-No [post anterior]({% post_url 2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7 %}), você foi apresentado ao JBoss AS. Nesse post, veremos como configurar nele uma conexão com o MySQL, e veremos também como configurar uma aplicação Java EE para utilizar essa conexão. Para fins didáticos, vou supor que você possui o JBoss AS e o MySQL instalados em seu computador, e que você criou uma base de dados chamada “teste” (para esse passo-a-passo a estrutura da base de dados não é importante, focaremos na conexão).
+No [post anterior]({{% ref "post/2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7" %}}), você foi apresentado ao JBoss AS. Nesse post, veremos como configurar nele uma conexão com o MySQL, e veremos também como configurar uma aplicação Java EE para utilizar essa conexão. Para fins didáticos, vou supor que você possui o JBoss AS e o MySQL instalados em seu computador, e que você criou uma base de dados chamada “teste” (para esse passo-a-passo a estrutura da base de dados não é importante, focaremos na conexão).
 
 Há outras páginas na Internet que explicam exatamente o que vou explicar aqui (como [essa](https://zorq.net/b/2011/07/12/adding-a-mysql-datasource-to-jboss-as-7/), [essa](http://www.messiasbittencourt.com/168/jboss-7-mysql/), [essa](http://filosofisto.wordpress.com/2012/02/13/configurando-mysql-no-jboss-7-as/) e [essa](http://jbossdivers.wordpress.com/2012/01/20/introducao-ao-jboss-as-7-parte-2/), e aproveito para dizer que essas foram algumas das minhas referências na elaboração desse post), porém aqui proponho uma abordagem diferente, que só percebi que era possível quando li mais atentamente o [guia de administração do JBoss AS](https://docs.jboss.org/author/display/AS7/Admin+Guide#AdminGuide-Datasources) (a referência que encerra a lista): realizar toda a configuração da conexão pelo console Web de administração do servidor.
 
@@ -26,9 +26,9 @@ Em primeiro lugar, precisamos do driver JDBC do MySQL. Ele é distribuído como 
 
 Entre na [página de downloads do MySQL Connector/J](http://www.mysql.com/downloads/connector/j/) e baixe um dos pacotes disponíveis. Para os usuários de Windows, eu recomendo o download do arquivo **.zip**, e para os usuários de Linux, eu recomendo o download do arquivo **.tar.gz**. Descompacte o conteúdo do arquivo baixado para uma pasta de fácil acesso. Para demonstração, utilizarei o Linux, e baixarei o arquivo para minha pasta pessoal (“/home/vinicius/”):
 
-Quando o conteúdo do arquivo é extraído, é criada uma pasta “mysql-connector-java-5.1.21″. Dentro dessa pasta, está o arquivo “mysql-connector-java-5.1.21-bin.jar”. Implante esse arquivo no servidor utilizando o console Web de administração do JBoss AS, exatamente como descrito na [segunda parte do post anterior]({% post_url 2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2 %}).
+Quando o conteúdo do arquivo é extraído, é criada uma pasta “mysql-connector-java-5.1.21″. Dentro dessa pasta, está o arquivo “mysql-connector-java-5.1.21-bin.jar”. Implante esse arquivo no servidor utilizando o console Web de administração do JBoss AS, exatamente como descrito na [segunda parte do post anterior]({{% ref "post/2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2" %}}).
 
-Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a [aplicação de exemplo](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/) que implantamos [naquele post]({% post_url 2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2 %}) ainda está no servidor):
+Ao final do processo, o driver JDBC do MySQL deve aparecer habilitado na lista de aplicações implantadas, como mostra a figura (curiosamente, a [aplicação de exemplo](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/) que implantamos [naquele post]({{% ref "post/2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7-parte-2" %}}) ainda está no servidor):
 
 {% include image.html src="/files/2012/07/jboss_as_mysql_02.jpg" %}
 
@@ -115,7 +115,7 @@ EntityManager entityManager;
 
 ### Aplicação de exemplo
 
-Uma boa pedida é escolher uma das [aplicações de exemplo do JBoss AS](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/), alterar suas configurações e executá-la. No [post anterior]({% post_url 2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7 %}), nós compilamos, empacotamos, implantamos e executamos a aplicação de exemplo [helloworld-jsf](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/). Vou aproveitar o arquivo que já baixei e extraí naquele post, mas aqui vamos utilizar a aplicação [greeter](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/greeter/).
+Uma boa pedida é escolher uma das [aplicações de exemplo do JBoss AS](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/), alterar suas configurações e executá-la. No [post anterior]({{% ref "post/2012-07-18-apresentando-o-servidor-de-aplicacao-jboss-as-7" %}}), nós compilamos, empacotamos, implantamos e executamos a aplicação de exemplo [helloworld-jsf](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/helloworld-jsf/). Vou aproveitar o arquivo que já baixei e extraí naquele post, mas aqui vamos utilizar a aplicação [greeter](http://www.jboss.org/jdf/quickstarts/jboss-as-quickstart/greeter/).
 
 Entre na pasta da aplicação (no meu caso, “/home/vinicius/jboss-jdf-jboss-as-quickstart-8505020/greeter/”), exclua o arquivo “greeter-quickstart-ds.xml” que está na pasta “src/main/webapp/WEB-INF/” e altere o arquivo “persistence.xml” dentro da pasta “src/main/resources/META-INF/” para que tenha o conteúdo acima.
 

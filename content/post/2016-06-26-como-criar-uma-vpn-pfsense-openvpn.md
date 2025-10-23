@@ -341,7 +341,7 @@ Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em **Disc
 [pfsense]: https://www.pfsense.org/
 [openvpn]: https://openvpn.net/
 [software-livre]: https://www.gnu.org/philosophy/free-sw.pt-br.html
-[psiphon]: {% post_url 2015-12-17-acesse-sites-e-aplicativos-censurados-com-o-psiphon %}
+[psiphon]: {{% ref "post/2015-12-17-acesse-sites-e-aplicativos-censurados-com-o-psiphon" %}}
 [whatsapp]: http://g1.globo.com/tecnologia/noticia/2015/12/operadoras-sao-intimadas-bloquear-whatsapp-no-brasil-por-48-horas.html
 [china]: http://tecnologia.terra.com.br/internet/pai-da-censura-na-china-e-surpreendido-burlando-a-mesma-em-publico,1d6ba1d9b58468d4df30fb84daf29ee6e3c193t0.html
 [protocolos]: https://technet.microsoft.com/pt-br/library/cc771298(v=ws.10).aspx

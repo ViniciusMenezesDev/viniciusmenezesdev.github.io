@@ -40,8 +40,8 @@ A seguir, você verá como instalar e usar o Orbot no Android.
 
 **Nota:** se, por um acaso, você procurava instruções para outro sistema, mas caiu nesta página, consulte versões deste mesmo tutorial para outros sistemas:
 
-- Windows: [O que é VPN e a forma mais fácil de usá-la no Windows: por meio do Navegador Tor]({% post_url 2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-windows-por-meio-do-navegador-tor %})
-- iOS (iPhone e iPad): [O que é VPN e a forma mais fácil de usá-la no iOS: por meio do app Orbot]({% post_url 2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-ios-por-meio-do-app-orbot %})
+- Windows: [O que é VPN e a forma mais fácil de usá-la no Windows: por meio do Navegador Tor]({{% ref "post/2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-windows-por-meio-do-navegador-tor" %}})
+- iOS (iPhone e iPad): [O que é VPN e a forma mais fácil de usá-la no iOS: por meio do app Orbot]({{% ref "post/2024-09-03-o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-ios-por-meio-do-app-orbot" %}})
 - Linux: [O que é VPN e a forma mais fácil de usá-la no Linux: por meio do Navegador Tor - Linux Kamarada](https://linuxkamarada.com/pt/2024/09/02/o-que-e-vpn-e-a-forma-mais-facil-de-usa-la-no-linux-por-meio-do-navegador-tor/)
 
 ## Instalando o Orbot

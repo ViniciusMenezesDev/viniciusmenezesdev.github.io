@@ -88,14 +88,14 @@ Por último, mas não menos importante, eu não poderia deixar de lembrar: não 
 - [How to Migrate Disqus Comments after Changing URL Structure - Journey Bytes][journeybytes]
 - [addthis preserving social sharing counters - Stack Overflow][stackoverflow]
 
-[parte-1]: {% post_url 2021-03-24-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-1-visitantes-e-google %}
+[parte-1]: {{% ref "post/2021-03-24-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-1-visitantes-e-google" %}}
 
 [disqus]: https://disqus.com/
 [jekyll]: https://jekyllrb.com/
 [gitlab-pages]: https://docs.gitlab.com/ee/user/project/pages/
 
 [addthis-1]: https://www.addthis.com/
-[addthis-2]: {% post_url 2015-08-29-addthis %}
+[addthis-2]: {{% ref "post/2015-08-29-addthis" %}}
 [addthis-academy]: https://www.addthis.com/academy/how-counter-values-work/
 [nrave]: https://nrave.com/2016/10/lost-addthis-social-share-button-counts-after-moving-to-https/
 [social-warfare]: https://warfareplugins.com/

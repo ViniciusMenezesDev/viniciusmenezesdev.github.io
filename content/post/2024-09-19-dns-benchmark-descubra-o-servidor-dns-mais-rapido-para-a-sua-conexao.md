@@ -110,5 +110,5 @@ Até a próxima!
 [macOS]:                https://www.apple.com/br/macos/
 [Wine]:                 https://www.winehq.org/
 [Linux Kamarada 15.5]:  https://linuxkamarada.com/pt/2024/05/27/linux-kamarada-15-5-mais-alinhado-com-o-opensuse-leap-e-com-outras-distribuicoes/
-[MikroTik]:             {% post_url 2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa %}
+[MikroTik]:             {{% ref "post/2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa" %}}
 [YouTube]:              https://www.youtube.com/

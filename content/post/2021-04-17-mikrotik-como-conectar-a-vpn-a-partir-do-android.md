@@ -66,7 +66,7 @@ Quando não precisar mais usar a VPN, volte às configurações de **VPN**, toqu
 {% include image.html src='/files/2021/04/android-vpn-10.jpg' %}
 
 [android]:          https://www.android.com/
-[vpn]:              {% post_url 2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec %}
+[vpn]:              {{% ref "post/2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec" %}}
 [multilaser-ms80x]: https://www.tudocelular.com/Multilaser/fichas-tecnicas/n5075/Multilaser-MS80X.html
 [oreo]:             https://www.android.com/versions/oreo-8-0/
 [apache]:           https://httpd.apache.org/

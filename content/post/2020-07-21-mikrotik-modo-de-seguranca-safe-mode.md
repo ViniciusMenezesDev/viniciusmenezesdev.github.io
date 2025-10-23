@@ -105,6 +105,6 @@ Tome cuidado para não fechar a janela do WinBox com o modo de segurança ativad
 
 {% include image.html src="/files/2020/07/mikrotik-safe-mode-10.jpg" %}
 
-[mikrotik]: {% post_url 2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa %}
+[mikrotik]: {{% ref "post/2020-07-20-primeiros-passos-com-o-mikrotik-hap-ac-roteador-profissional-para-a-rede-de-casa" %}}
 [dhcp]:     https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
 [ping]:     https://man7.org/linux/man-pages/man8/ping.8.html
