@@ -80,7 +80,7 @@ Da parte do servidor está tudo OK. Agora é só configurar a aplicação para u
 
 Agora nós precisamos configurar nossa aplicação para se comunicar com a base de dados utilizando o datasource configurado no servidor de aplicação. O arquivo central da configuração da JPA ([Java Persistence API](http://docs.oracle.com/javaee/6/tutorial/doc/bnbpy.html)) no projeto, o “META-INF/persistence.xml”, vai sofrer algumas alterações. Observe as linhas destacadas:
 
-```xml{6,8}
+```xml {linenos=inline hl_lines=[6,8]}
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

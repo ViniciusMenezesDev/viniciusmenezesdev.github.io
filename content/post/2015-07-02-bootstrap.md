@@ -79,7 +79,7 @@ Vamos partir do modelo de página em conformidade com o [HTML 5](http://www.tecm
 
 Vamos [começar](http://getbootstrap.com/getting-started/) adicionando o Bootstrap a essa página. Vale observar que o Bootstrap 3.3.4 requer a biblioteca [jQuery](https://jquery.com/) versão 1.9.1 ou mais recente. Para começar a usar o jQuery e o Bootstrap, vamos adicionar as seguintes linhas (em destaque):
 
-```html{20,21,23-28,56-59}
+```html {linenos=inline hl_lines=[20,21,"23-28","56-59"]}
 <!DOCTYPE html>
 <html lang="en">
     <head>
