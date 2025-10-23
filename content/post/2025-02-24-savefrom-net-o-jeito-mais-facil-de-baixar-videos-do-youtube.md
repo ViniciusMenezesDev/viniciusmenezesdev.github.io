@@ -27,7 +27,6 @@ Vou te mostrar como você pode usar esse serviço. Aqui, estou usando meu _noteb
 [iOS]:                  https://www.apple.com/br/ios/
 
 <div class="alert alert-warning" role="alert">
-{% markdown %}
 
 **Isenção de responsabilidade:** este artigo foi escrito e publicado estritamente para fins informativos. Baixar vídeos de _sites_ pode ser contra seus termos de uso e/ou violar os direitos autorais de quem produziu e/ou publicou os vídeos. Se você não tem certeza se um vídeo é protegido por direitos autorais, é melhor pecar pelo excesso de cautela e não baixá-lo. Cabe a você decidir se quer/deve (ou não) baixar vídeos. Use a tecnologia apresentada neste artigo de forma legal e responsável. O autor não aceita qualquer responsabilidade por eventuais danos resultantes da utilização das informações aqui contidas de forma indevida. Se quiser saber mais sobre o assunto, sugiro a leitura:
 
@@ -35,7 +34,6 @@ Vou te mostrar como você pode usar esse serviço. Aqui, estou usando meu _noteb
 
 [uol]: https://www.uol.com.br/tilt/noticias/redacao/2022/08/16/e-crime-baixar-filmes-online-o-que-a-lei-diz-e-o-que-realmente-acontece.htm
 
-{% endmarkdown %}
 </div>
 
 Continuando... por exemplo, suponhamos que você queira baixar este vídeo:
