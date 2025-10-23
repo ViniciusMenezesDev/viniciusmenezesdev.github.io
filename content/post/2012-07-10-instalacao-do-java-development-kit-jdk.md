@@ -10,7 +10,7 @@ Para começar a programar em [Java](http://www.oracle.com/technetwork/java/index
 
 A seguir, forneço instruções para instalar, configurar e executar a versão mais recente do JDK (atualmente, a **1.7.0_05**) em sistemas Windows e Linux.
 
-{% include image.html src="/files/2012/07/java.jpg" %}
+{{< image src="/files/2012/07/java.jpg" >}}
 
 <!--more-->
 

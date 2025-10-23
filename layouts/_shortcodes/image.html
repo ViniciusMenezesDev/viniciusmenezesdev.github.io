@@ -1,0 +1,10 @@
+<div class='image no-ads-here text-center mb-3' itemscope itemtype='http://schema.org/ImageObject'>
+<a href='{{ if .Get "link" }}{{ .Get "link" }}{{ else }}{{ .Get "src" }}{{ end }}' title='{{ .Get "caption" }}'>
+<img src='{{ .Get "src" }}' alt='{{ .Get "caption" }}' class='img-fluid img-thumbnail' itemprop='contentUrl'{{ if .Get "style" }} style="{{ .Get "style" }}"{{ end }}>
+</a>
+{{ if .Get "caption" }}
+<em class='caption d-block mt-3' itemprop='description'>
+{{ .Get "caption" }}
+</em>
+{{ end }}
+</div>

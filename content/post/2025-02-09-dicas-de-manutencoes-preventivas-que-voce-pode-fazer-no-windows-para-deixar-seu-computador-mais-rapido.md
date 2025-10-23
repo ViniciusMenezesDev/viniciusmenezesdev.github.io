@@ -43,7 +43,7 @@ Com o passar do tempo, pode ser que programas que instalamos lá atrás já não
 
 Vá no **menu Iniciar > Configurações > Aplicativos**, verifique na lista quais programas você não reconhece ou não usa e desintale-os:
 
-{% include image.html src="/files/2025/02/aplicativos.jpg" %}
+{{< image src="/files/2025/02/aplicativos.jpg" >}}
 
 ## 3) Fazer uma faxina nos arquivos
 
@@ -53,7 +53,7 @@ Um programa que pode te ajudar a identificar quais arquivos e pastas ocupam mais
 
 Gratuito e escrito na linguagem de programação [Java], esse programa pequeno e leve analisa seu disco (ou qualquer caminho que você peça para ele analisar) e mostra suas pastas como uma lista e como um gráfico de pizza, começando pelas que mais ocupam espaço:
 
-{% include image.html src="/files/2025/02/jdiskreport.jpg" %}
+{{< image src="/files/2025/02/jdiskreport.jpg" >}}
 
 **Observação:** você deve ter o [Java] instalado no seu computador **antes** de instalar o JDiskReport.
 
@@ -71,7 +71,7 @@ Normalmente, o **[Microsoft Defender]**, que já vem com o próprio [Windows][Wi
 
 Se você precisa de ainda mais proteção, pode instalar outro antivírus, e o Windows passará a usar este antivírus em vez do Microsoft Defender. Três antivírus que estão sempre entre os melhores e tem versões gratuitas são o **[Avast]**, o **[AVG]** e o **[Avira]**.
 
-{% include image.html src="/files/2025/02/avast.jpg" %}
+{{< image src="/files/2025/02/avast.jpg" >}}
 
 Normalmente os antivírus incluem alguma opção para escanear arquivos e pastas quando você clica neles com o botão direito no **Explorador de Arquivos**:
 

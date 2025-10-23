@@ -10,7 +10,7 @@ Esse recurso, apesar de ajudar bastante, pode se mostrar insuficiente quando o s
 
 Felizmente, o XenServer nos permite configurá-lo para iniciar máquinas virtuais logo após a inicialização do virtualizador. Como fazer isso é o que você verá nesse *post*.
 
-{% include image.html src="/files/2017/07/xenserver.jpg" %}
+{{< image src="/files/2017/07/xenserver.jpg" >}}
 
 Se você está acostumado com a interface gráfica de gerenciamento do XenServer para [Windows][windows], o [XenCenter][xencenter], saiba que não contará com sua conveniência dessa vez. A [documentação do XenServer][documentacao-xenserver] informa que essa configuração foi removida do XenCenter na versão 6.0 por interferir de forma imprevisível em funcionalidades de [alta disponibilidade (*high availability*)][ha]. Mas você verá como é fácil fazer essa configuração pela linha de comando.
 

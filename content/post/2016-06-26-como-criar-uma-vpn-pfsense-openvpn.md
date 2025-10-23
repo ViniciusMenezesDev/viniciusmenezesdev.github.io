@@ -40,7 +40,7 @@ Com VPNs, podemos fazer algumas coisas interessantes, como por exemplo: em casa 
 
 O Psiphon, que apresentei em [outro post][psiphon], é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima.
 
-{% include image.html src="/files/2015/12/vpn.png" %}
+{{< image src="/files/2015/12/vpn.png" >}}
 
 Um uso prático disso é burlar bloqueios e censuras. Recentemente, [o WhatsApp foi bloqueado no Brasil][whatsapp] e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a [China][china].
 

@@ -6,7 +6,7 @@ title: Dicas de Git
 
 Quem não já teve dúvidas ao usar o [sistema de controle de versão Git](https://git-scm.com/)? Aqui apresento uma compilação de algumas dúvidas que já tive e das soluções que eu encontrei.
 
-{% include image.html src="/files/2015/09/git.png" %}
+{{< image src="/files/2015/09/git.png" >}}
 
 Quase sempre quando tenho uma dúvida, faço uma busca no [Google](https://www.google.com.br/) e encontro outras pessoas que já tiveram a mesma dúvida que eu no [Stack Overflow](http://stackoverflow.com/). Lá, encontro outras pessoas que propoem soluções para a dúvida apresentada. Nem sempre a solução marcada como a correta é a que resolve meu problema. Aqui, mostrarei apenas as soluções que de fato me foram úteis.
 

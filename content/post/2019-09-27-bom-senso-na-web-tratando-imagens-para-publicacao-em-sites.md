@@ -53,7 +53,7 @@ Agora o tamanho em _bytes_: são 868,9 kB em uma única imagem!
 
 Sabe o Prezão da Claro com franquia diária de 100 MB? Aquele que a Anitta faz propaganda?
 
-{% include image.html src="/files/2019/09/prezao.jpg" %}
+{{< image src="/files/2019/09/prezao.jpg" >}}
 
 Nesse ritmo, não daria pra ver a sinopse dos 121 filmes da programação em um dia só...
 

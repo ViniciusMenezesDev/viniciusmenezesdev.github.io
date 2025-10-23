@@ -12,7 +12,7 @@ As funcionalidades de captura de tela que acompanham o [Windows][windows] são u
 
 É possível capturar a tela sem utilizar programa algum no Windows. Para isso, temos a tecla **Print Screen**. Ela geralmente fica no canto superior direito do teclado. Pode ser que no seu teclado ela esteja abreviada, como, por exemplo, **Prt Sc**:
 
-{% include image.html src="/files/2016/02/printscreen01.jpg" %}
+{{< image src="/files/2016/02/printscreen01.jpg" >}}
 
 A título de curiosidade, nos computadores mais antigos, que não dispunham de interface gráfica, mas apenas de interface textual, [a tecla **Print Screen** enviava o conteúdo da tela para a impressora][printscreen]. Hoje ela tem outra função, a de "bater uma foto" da tela (*screenshot*), o que ficou conhecido, graças a essa tecla, como "bater um *print*" ou "tirar um *print*" da tela.
 
@@ -36,7 +36,7 @@ Observe também que capturar a tela dessa forma, apesar de eficaz, não é efici
 
 Algo que costumo fazer antes de capturar uma tela é deixar uma janela maximizada do Paint por trás com um desenho em branco que preenche toda a tela, especialmente se pretendo mostrar um menu ou dica (*hint*) que foge à janela do aplicativo.
 
-{% include image.html src="/files/2016/02/printscreen05.jpg" %}
+{{< image src="/files/2016/02/printscreen05.jpg" >}}
 
 Assim, evito que conteúdo indesejado que está por trás do aplicativo apareça na captura.
 
@@ -52,13 +52,13 @@ A qualquer momento você pode habilitar ou desabilitar esse recurso nas preferê
 4. Marque ou desmarque a opção **Compartilhar capturas de tela usando o Dropbox**;
 5. Clique em **OK** para aplicar sua configuração e sair das Preferências do Dropbox.
 
-{% include image.html src="/files/2016/02/printscreen06.jpg" %}
+{{< image src="/files/2016/02/printscreen06.jpg" >}}
 
-{% include image.html src="/files/2016/02/printscreen07.jpg" %}
+{{< image src="/files/2016/02/printscreen07.jpg" >}}
 
 Agora sempre que você apertar **Print Screen** ou **Alt + Print Screen**, a captura de tela será automaticamente salva no seu Dropbox.
 
-{% include image.html src="/files/2016/02/printscreen08.jpg" %}
+{{< image src="/files/2016/02/printscreen08.jpg" >}}
 
 ## OneDrive para salvar as capturas
 
@@ -72,13 +72,13 @@ Para habilitar ou desabilitar esse recurso do OneDrive:
 4. Marque ou desmarque a opção **Salvar automaticamente no OneDrive as telas que eu capturar**;
 5. Clique em **OK** para aplicar sua configuração e sair das configurações do OneDrive.
 
-{% include image.html src="/files/2016/02/printscreen09.jpg" %}
+{{< image src="/files/2016/02/printscreen09.jpg" >}}
 
-{% include image.html src="/files/2016/02/printscreen10.jpg" %}
+{{< image src="/files/2016/02/printscreen10.jpg" >}}
 
 Agora sempre que você apertar **Print Screen** ou **Alt + Print Screen**, a captura de tela será automaticamente salva no seu OneDrive.
 
-{% include image.html src="/files/2016/02/printscreen11.jpg" %}
+{{< image src="/files/2016/02/printscreen11.jpg" >}}
 
 ## Ferramenta de Captura do Windows
 
@@ -86,11 +86,11 @@ As versões mais atuais do Windows (do Windows 7 em diante) vêm com a Ferrament
 
 Para iniciar a Ferramenta de Captura, abra o **menu Iniciar**, digite **captura** na caixa de pesquisa e depois clique em **Ferramenta de Captura**.
 
-{% include image.html src="/files/2016/02/printscreen12.jpg" %}
+{{< image src="/files/2016/02/printscreen12.jpg" >}}
 
 Para capturar a tela, clique em **Novo** e, em seguida, selecione a parte da tela que você deseja capturar:
 
-{% include image.html src="/files/2016/02/printscreen13.jpg" %}
+{{< image src="/files/2016/02/printscreen13.jpg" >}}
 
 A captura da tela aparece na janela da ferramenta. Então, você pode desenhar sobre a captura usando a caneta, salvá-la, copiá-la ou enviá-la por *email*.
 
@@ -104,7 +104,7 @@ O [IrfanView][irfanview] é um pequeno visualizador de imagens para Windows. Ele
 
 Depois que descobri a funcionalidade de captura de tela do IrfanView, passei a utilizá-lo para capturar telas. Vejamos como ele pode nos ajudar com essa tarefa.
 
-{% include image.html src="/files/2016/02/irfanview01.gif" %}
+{{< image src="/files/2016/02/irfanview01.gif" >}}
 
 Primeiro, baixe o IrfanView do seu [*site* oficial][irfanview], na página *Download*. Observe que há uma versão portátil que dispensa instalação. Ela pode ser obtida clicando no *link Other download sites (Mirrors)*, no final da página de *download*.
 
@@ -114,19 +114,19 @@ Se você utiliza uma versão de 64 *bits* do Windows, talvez prefira baixar a ve
 
 Para iniciar o IrfanView, abra o **menu Iniciar**, digite **irfanview** na caixa de pesquisa e depois clique em **IrfanView** (no meu computador, utilizo a versão de 64 *bits*):
 
-{% include image.html src="/files/2016/02/irfanview02.jpg" %}
+{{< image src="/files/2016/02/irfanview02.jpg" >}}
 
 Aqui está a tela inicial do IrfanView:
 
-{% include image.html src="/files/2016/02/irfanview03.jpg" %}
+{{< image src="/files/2016/02/irfanview03.jpg" >}}
 
 Para começar a captura de tela, clique no menu **Options** e depois no item **Capture/Screenshot**:
 
-{% include image.html src="/files/2016/02/irfanview04.jpg" %}
+{{< image src="/files/2016/02/irfanview04.jpg" >}}
 
 Aparece uma caixa de diálogo na qual é possível configurar vários aspectos da captura de tela:
 
-{% include image.html src="/files/2016/02/irfanview05.jpg" %}
+{{< image src="/files/2016/02/irfanview05.jpg" >}}
 
 Observe que a maioria dos comandos do IrfanView possui teclas de atalho (do inglês *shortcut keys* ou *hot keys*) associadas. A tecla de atalho para o comando **Capture/Screenshot** é **C**, ou seja, apertar a tecla **C** na tela principal produziria o mesmo efeito que clicar naquele item de menu: a exibição da caixa de diálogo **Capture Setup**.
 
@@ -154,7 +154,7 @@ Observe que o IrfanView some (na verdade, ele é minimizado) e permite que você
 
 O que acontece depois que a tela é capturada? Se você deixou marcada a opção **Show captured image in main window**, o IrfanView aparece novamente com a imagem capturada e você pode então trabalhar nela usando o IrfanView:
 
-{% include image.html src="/files/2016/02/irfanview06.jpg" %}
+{{< image src="/files/2016/02/irfanview06.jpg" >}}
 
 Para salvar a imagem, clique no ícone do disquete ou abra o menu **File** e clique em **Save as** (tecla de atalho: **S**).
 
@@ -169,17 +169,17 @@ Aqui vão algumas sugestões de ações que você pode realizar sobre a imagem n
 - Para redimensionar a imagem, abra o menu **Image** e clique em **Resize/Resample** (tecla de atalho: **Ctrl + R**), aparecerá uma caixa de diálogo com várias opções para redimensionar a imagem;
 - Para desenhar, abra o menu **Edit** e clique em **Show Paint dialog** (tecla de atalho: **F12**), uma caixa de ferramentas bastante semelhante com a do Paint aparecerá:
 
-{% include image.html src="/files/2016/02/irfanview07.jpg" %}
+{{< image src="/files/2016/02/irfanview07.jpg" >}}
 
 - Para aplicar efeitos à imagem, abra o menu **Image**, aponte para **Effects** e clique em *Effects browser*, aparecerá uma caixa de diálogo com várias opções de efeitos para aplicar à imagem.
 
 Uma dica para a hora de salvar: se você instalou os *plugins* do IrfanView, abra o menu **File** e, ao invés de clicar em **Save as**, clique em **Save for Web... (PlugIn)**:
 
-{% include image.html src="/files/2016/02/irfanview08.jpg" %}
+{{< image src="/files/2016/02/irfanview08.jpg" >}}
 
 Aparecerá então uma caixa de diálogo que oferecerá várias opções para comprimir a imagem:
 
-{% include image.html src="/files/2016/02/irfanview09.jpg" %}
+{{< image src="/files/2016/02/irfanview09.jpg" >}}
 
 Isso é bastante útil se o tamanho final do arquivo de imagem for importante (se ficou confuso, aqui estou falando de *bytes* e não de *pixels*). Exemplos desse caso incluem imagens que serão utilizadas em páginas da Internet, enviadas por *email* ou utilizadas em apresentações de *slides*.
 
