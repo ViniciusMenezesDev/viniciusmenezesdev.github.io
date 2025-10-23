@@ -2,7 +2,6 @@
 date: "2012-07-18T23:16:17Z"
 date_gmt: 2012-07-18 23:16:17 -0300
 image: /files/2012/07/jboss_as_01.jpg
-published: true
 status: publish
 title: Apresentando o servidor de aplicação JBoss AS 7 (parte 2)
 ---

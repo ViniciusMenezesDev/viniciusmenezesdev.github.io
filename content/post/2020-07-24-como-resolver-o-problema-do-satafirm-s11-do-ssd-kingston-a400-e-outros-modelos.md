@@ -8,7 +8,6 @@ excerpt: Mês passado eu estava usando meu notebook quando de repente os program
   te ajudar, caso você também possua um SSD desse modelo e tenha se deparado com o
   mesmo erro.
 image: /files/2020/07/kingston-a400-480gb.jpg
-published: true
 title: Como resolver o problema do SATAFIRM S11 do SSD Kingston A400 (e outros modelos)
 ---
 

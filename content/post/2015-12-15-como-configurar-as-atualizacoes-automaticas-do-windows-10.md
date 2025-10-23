@@ -5,7 +5,6 @@ excerpt: 'Precisou reiniciar o computador, estava com pressa e se esbarrou nas a
   falhou e passou mais outra eternidade desfazendo o trabalho? Veja aqui como ter
   um pouco mais de controle sobre as atualizações do Windows.'
 image: /files/2015/12/windows-atualizacoes-00.jpg
-published: true
 title: Como configurar as atualizações automáticas do Windows 10
 ---
 

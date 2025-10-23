@@ -2,7 +2,6 @@
 date: "2012-04-15T18:42:10Z"
 date_gmt: 2012-04-15 18:42:10 -0300
 image: /files/2012/04/reciclagem-de-pilhas.jpg
-published: true
 status: publish
 title: Onde reciclar pilhas, baterias e celulares em Aracaju
 ---

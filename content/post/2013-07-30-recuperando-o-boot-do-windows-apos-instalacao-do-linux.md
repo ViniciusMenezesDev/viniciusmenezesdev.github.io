@@ -2,7 +2,6 @@
 date: "2013-07-30T02:50:45Z"
 date_gmt: 2013-07-30 02:50:45 -0300
 image: /files/2013/07/windows-startup-recovery1.jpg
-published: true
 status: publish
 title: Recuperando o boot do Windows após instalação do Linux
 ---

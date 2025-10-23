@@ -2,7 +2,6 @@
 date: "2012-07-18T02:57:24Z"
 date_gmt: 2012-07-18 02:57:24 -0300
 image: /files/2012/07/maven1.gif
-published: true
 status: publish
 title: Instalação do Apache Maven
 ---

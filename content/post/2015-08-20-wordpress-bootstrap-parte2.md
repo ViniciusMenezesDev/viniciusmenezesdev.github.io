@@ -1,7 +1,6 @@
 ---
 date: "2015-08-20T07:00:00Z"
 image: /files/2015/08/wordpress-bootstrap-0.png
-published: true
 title: Como criar um tema responsivo do WordPress com o Bootstrap (parte 2)
 ---
 

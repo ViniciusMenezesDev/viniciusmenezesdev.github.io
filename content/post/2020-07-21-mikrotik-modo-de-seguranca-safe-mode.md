@@ -1,7 +1,6 @@
 ---
 date: "2020-07-21T09:00:00Z"
 image: /files/2020/07/RB952Ui-5ac2nD-TC.png
-published: true
 title: 'MikroTik: modo de segurança (Safe Mode)'
 ---
 

@@ -5,7 +5,6 @@ excerpt: O pfSense é uma solução de firewall incrível, não só pela quantid
   utilizando, dentre outros protocolos, o OpenVPN, que é livre, versátil e seguro
   sem abrir mão da praticidade, motivos pelos quais é amplamente difundido.
 image: /files/2016/06/pfsense-vpn-01.png
-published: true
 title: Como criar uma VPN utilizando pfSense e OpenVPN
 ---
 

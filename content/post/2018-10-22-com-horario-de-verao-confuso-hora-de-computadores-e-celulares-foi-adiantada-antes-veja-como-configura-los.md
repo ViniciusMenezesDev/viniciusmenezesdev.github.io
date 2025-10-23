@@ -7,7 +7,6 @@ excerpt: Do sábado para o domingo muita gente viu os relógios do computador e 
   configurados e atualizados não teve problemas. Nesse post você vai entender o que
   aconteceu e como se prevenir.
 image: /files/2018/10/data-hora.jpg
-published: true
 title: Com horário de verão confuso, hora de computadores e celulares foi adiantada
   antes, veja como configurá-los
 ---

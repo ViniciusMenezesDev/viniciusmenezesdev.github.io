@@ -1,7 +1,6 @@
 ---
 date: "2025-02-09T04:00:00Z"
 image: /files/2025/02/manutencao-preventiva-windows.jpg
-published: true
 title: Dicas de manutenções preventivas que você pode fazer no Windows para deixar
   seu computador mais rápido
 ---

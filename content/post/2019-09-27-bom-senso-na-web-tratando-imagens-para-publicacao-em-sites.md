@@ -6,7 +6,6 @@ excerpt: 'Eu fico indignado com páginas que demoram pra carregar devido ao tama
   é inserida grande do jeito que veio da câmera ou do profissional que fez a arte
   digital, acaba sendo um arquivo pesado que soma no tempo de carregamento da página.'
 image: /files/2019/09/famdetodos-01.jpg
-published: true
 title: 'Bom senso na web: tratando imagens para publicação em sites'
 ---
 

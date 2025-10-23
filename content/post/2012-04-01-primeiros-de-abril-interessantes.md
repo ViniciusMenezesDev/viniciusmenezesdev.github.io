@@ -2,7 +2,6 @@
 date: "2012-04-01T15:09:58Z"
 date_gmt: 2012-04-01 15:09:58 -0300
 image: /files/2012/04/dia-da-mentira.jpg
-published: true
 status: publish
 title: Primeiros de abril interessantes
 ---

@@ -2,7 +2,6 @@
 date: "2012-04-09T16:44:39Z"
 date_gmt: 2012-04-09 16:44:39 -0300
 image: /files/2012/04/componentes-do-computador.png
-published: true
 status: publish
 title: 'Componentes de um computador: hardware e software'
 ---

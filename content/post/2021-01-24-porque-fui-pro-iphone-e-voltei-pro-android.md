@@ -6,7 +6,6 @@ excerpt: 'Se você está pensando em comprar um celular novo, pode ser que estej
   o Android. Então decidi escrever esse texto para compartilhar minha experiência
   e possivelmente ajudar quem está em dúvida a se decidir por um ou por outro.'
 image: /files/2021/01/iphone-vs-android-01.jpg
-published: true
 title: Porque fui pro iPhone e voltei pro Android
 ---
 

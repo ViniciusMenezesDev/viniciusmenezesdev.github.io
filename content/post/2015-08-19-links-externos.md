@@ -1,7 +1,6 @@
 ---
 date: "2015-08-19T09:30:00Z"
 image: /files/2015/08/links-externos.png
-published: true
 title: Como realçar links externos e abri-los em uma nova janela
 ---
 

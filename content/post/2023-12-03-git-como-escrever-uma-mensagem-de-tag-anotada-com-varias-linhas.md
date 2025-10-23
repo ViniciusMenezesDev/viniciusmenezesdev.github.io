@@ -6,7 +6,6 @@ excerpt: Sempre que lanço uma nova versão de um projeto cujo código-fonte é 
   do projeto material-jekyll, que é o modelo que eu uso para fazer este site e o site
   do Linux Kamarada
 image: /files/2023/12/multiline-git-tag-messages.jpg
-published: true
 title: 'Git: como escrever uma mensagem de tag anotada com várias linhas'
 ---
 

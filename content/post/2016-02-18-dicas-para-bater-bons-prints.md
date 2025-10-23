@@ -1,7 +1,6 @@
 ---
 date: "2016-02-18T02:00:00Z"
 image: /files/2016/02/printscreen01.jpg
-published: true
 title: Dicas para bater bons prints
 ---
 

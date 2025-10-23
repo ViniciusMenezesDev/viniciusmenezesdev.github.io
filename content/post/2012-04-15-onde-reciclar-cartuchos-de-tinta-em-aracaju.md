@@ -2,7 +2,6 @@
 date: "2012-04-15T19:00:07Z"
 date_gmt: 2012-04-15 19:00:07 -0300
 image: /files/2012/04/reciclagem-de-cartuchos.jpg
-published: true
 status: publish
 title: Onde reciclar cartuchos de tinta em Aracaju
 ---

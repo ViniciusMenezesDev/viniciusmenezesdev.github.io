@@ -7,7 +7,6 @@ excerpt: Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidad
   que eles tinham também uma linha doméstica e logo comprei um roteador MikroTik pra
   mim.
 image: /files/2020/07/mikrotik-hap.jpg
-published: true
 title: 'Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede
   de casa'
 ---

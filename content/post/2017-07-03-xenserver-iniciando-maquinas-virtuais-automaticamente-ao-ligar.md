@@ -1,7 +1,6 @@
 ---
 date: "2017-07-03T01:25:00Z"
 image: /files/2017/07/xenserver.jpg
-published: true
 title: XenServer iniciando máquinas virtuais automaticamente ao ligar
 ---
 

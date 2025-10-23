@@ -1,7 +1,6 @@
 ---
 date: "2017-01-30T08:00:00Z"
 image: /files/2017/01/pfsense-ad-01.png
-published: true
 title: pfSense autenticando no Active Directory (AD)
 ---
 

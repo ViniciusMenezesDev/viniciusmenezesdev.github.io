@@ -2,7 +2,6 @@
 date: "2012-04-21T05:42:01Z"
 date_gmt: 2012-04-21 05:42:01 -0300
 image: /files/2012/04/computador-maluco.jpg
-published: true
 status: publish
 title: Problemas envolvendo bootloaders, MBR e tabela de partições
 ---

@@ -7,7 +7,6 @@ excerpt: Estava apenas aguardando uma oportunidade de divulgar a pesquisa cient�
   a prova de Arquitetura de Computadores I chegando aí, hein?), então disponibilizei
   o trabalho no Scribd e estou aqui para falar um pouco mais sobre ele.
 image: /files/2012/04/processador.jpg
-published: true
 title: Minha pesquisa científica sobre processadores
 ---
 

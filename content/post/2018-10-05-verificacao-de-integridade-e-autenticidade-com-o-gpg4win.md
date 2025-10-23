@@ -6,7 +6,6 @@ excerpt: Por vezes pode ser importante verificar um arquivo obtido da Internet. 
   verá como fazê-las com o Gpg4win, um software livre gratuito para Windows. Como
   exemplo, verificaremos uma imagem ISO da distribuição openSUSE Leap.
 image: /files/2018/10/gpg4win.png
-published: true
 title: Verificação de integridade e autenticidade com o Gpg4win
 ---
 

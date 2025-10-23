@@ -3,7 +3,6 @@ date: "2015-11-27T03:00:00Z"
 excerpt: Confira aqui algumas dicas de como avaliar as ofertas de computadores e faça
   uma boa compra!
 image: /files/2015/11/black-friday.jpg
-published: true
 title: Como escolher um bom computador para comprar?
 ---
  

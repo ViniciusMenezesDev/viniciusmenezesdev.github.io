@@ -1,7 +1,6 @@
 ---
 date: "2015-12-17T08:00:00Z"
 image: /files/2015/12/vpn.png
-published: true
 title: Acesse sites e aplicativos censurados com o Psiphon
 ---
 

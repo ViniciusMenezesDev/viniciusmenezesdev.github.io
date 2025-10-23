@@ -1,7 +1,6 @@
 ---
 date: "2024-05-28T11:40:00Z"
 image: /files/2024/05/gitlab-personal-access-tokens.jpg
-published: true
 title: Autenticando sem senha no GitLab por meio de Personal Access Token
 ---
 

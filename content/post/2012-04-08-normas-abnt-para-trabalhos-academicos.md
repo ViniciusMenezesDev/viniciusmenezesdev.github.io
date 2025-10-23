@@ -2,7 +2,6 @@
 date: "2012-04-08T16:33:07Z"
 date_gmt: 2012-04-08 16:33:07 -0300
 image: /files/2012/04/abnt2.jpg
-published: true
 status: publish
 title: Normas ABNT para trabalhos acadêmicos
 ---

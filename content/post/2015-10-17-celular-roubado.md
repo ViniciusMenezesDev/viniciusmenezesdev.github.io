@@ -1,7 +1,6 @@
 ---
 date: "2015-10-17T23:59:59Z"
 image: /files/2015/10/celular-roubado-00.jpg
-published: true
 title: 'Meu celular foi roubado: e agora, o que faço?'
 ---
 

@@ -2,7 +2,6 @@
 date: "2012-07-19T04:36:13Z"
 date_gmt: 2012-07-19 04:36:13 -0300
 image: /files/2012/07/jboss_as_mysql_01.jpg
-published: true
 status: publish
 title: Configurando um datasource do MySQL no JBoss AS
 ---

@@ -2,7 +2,6 @@
 date: "2014-01-20T03:53:32Z"
 date_gmt: 2014-01-20 03:53:32 -0300
 image: /files/2014/01/virtualbox.png
-published: true
 status: publish
 title: Reduzindo o tamanho de discos rígidos virtuais do VirtualBox
 ---

@@ -1,7 +1,6 @@
 ---
 date: "2015-07-02T02:05:00Z"
 image: /files/2015/07/bootstrap_0.jpg
-published: true
 title: Design multitelas com Bootstrap
 ---
 

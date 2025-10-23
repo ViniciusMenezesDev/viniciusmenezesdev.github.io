@@ -1,7 +1,6 @@
 ---
 date: "2015-09-27T16:00:00Z"
 image: /files/2015/09/git.png
-published: true
 title: Dicas de Git
 ---
 

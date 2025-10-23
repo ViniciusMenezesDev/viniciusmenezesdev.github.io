@@ -1,7 +1,6 @@
 ---
 date: "2015-09-16T21:30:00Z"
 image: /files/2015/09/inicializacao-rapida-0.png
-published: true
 title: Como desativar a inicialização rápida do Windows
 ---
 

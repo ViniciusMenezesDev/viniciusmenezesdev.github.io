@@ -2,7 +2,6 @@
 date: "2012-07-10T01:01:10Z"
 date_gmt: 2012-07-10 01:01:10 -0300
 image: /files/2012/07/java.jpg
-published: true
 status: publish
 title: Instalação do Java Development Kit (JDK)
 ---

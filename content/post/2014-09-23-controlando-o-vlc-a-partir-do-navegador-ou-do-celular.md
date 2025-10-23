@@ -2,7 +2,6 @@
 date: "2014-09-23T15:38:39Z"
 date_gmt: 2014-09-23 15:38:39 -0300
 image: /files/2014/09/vlc_remoto_00.jpg
-published: true
 status: publish
 title: Controlando o VLC a partir do navegador ou do celular
 ---
