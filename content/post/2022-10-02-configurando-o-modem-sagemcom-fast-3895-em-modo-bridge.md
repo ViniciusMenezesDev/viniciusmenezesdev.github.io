@@ -22,7 +22,7 @@ Se você tem outro roteador, como o [MikroTik] do qual já falei aqui em alguns 
 
 Tentando usar uma linguagem menos técnica, tornar o modem da operadora uma _bridge_ na prática seria como anulá-lo, ele passa a fazer apenas o "leva e traz" de dados na rede, enquanto quem faz o "trabalho pesado" mesmo é o roteador conectado a ele.
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-fast-3895.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-fast-3895.jpg" >}}
 
 Se você, assim como eu, confia mais no seu roteador do que no equipamento da operadora, configurar o modem em modo _bridge_ pode trazer mais segurança para a rede da sua casa.
 
@@ -53,7 +53,7 @@ Abra o navegador e acesse a interface _web_ do _modem_ da operadora. O endereço
 
 No caso do modem Sagemcom F@ST 3895, o endereço IP é `192.168.0.1`:
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-01.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-01.jpg" >}}
 
 O _login_ e a senha estavam em uma etiqueta no modem.
 
@@ -63,11 +63,11 @@ A tela inicial resume as informações da conexão e traz as configurações mai
 
 No menu à esquerda, expanda **Administração** e clique em **Backup**:
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-02.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-02.jpg" >}}
 
 Clique em **Backup** para baixar a configuração atual do modem:
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-03.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-03.jpg" >}}
 
 O navegador vai baixar um arquivo chamado `device.cfg`. Salve esse arquivo em um local seguro, que você se lembre depois, pro caso de precisar restaurar o _backup_.
 
@@ -77,11 +77,11 @@ No menu à esquerda, expanda **Wi-Fi** e clique em **Rádio**.
 
 Clique na rede de **2.4GHz** e desmarque a opção **Ativar**:
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-04.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-04.jpg" >}}
 
 Desça até o final da página e clique em **Aplicar Ajustes**:
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-05.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-05.jpg" >}}
 
 Depois, faça o mesmo para a rede de **5GHz**.
 
@@ -91,7 +91,7 @@ No menu à esquerda, expanda **Redes** e clique em **Configurações Básicas**.
 
 Role a página até encontrar a opção **Tipo de conexão WAN** e defina-a como **Modo Bridge**:
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-06.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-06.jpg" >}}
 
 Chegamos ao ponto de não retorno. Clique em **Aplicar Ajustes** para ativar o modo _bridge_.
 
@@ -115,11 +115,11 @@ Se seu roteador estava configurado para obter [DHCP], deve ter recebido um ender
 
 No caso do MikroTik, para verificar o endereço IP obtido, inicie o [WinBox][mikrotik]. Na janela do WinBox, à esquerda, expanda o menu **IP**, depois clique no item **Addresses** (endereços):
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-07.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-07.jpg" >}}
 
 No meu exemplo, o MikroTik obteve o endereço IP `100.64.174.102/19`:
 
-{% include image.html src="/files/2022/10/modem-bridge-sagemcom-08.jpg" %}
+{{< image src="/files/2022/10/modem-bridge-sagemcom-08.jpg" >}}
 
 (se a notação `/19` é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 19 _bits_ do endereço IP identificam a rede, para mais informações procure saber sobre [CIDR])
 
@@ -139,9 +139,9 @@ A _carrier-grade_ NAT impossibilita a hospedagem de serviços e o redirecionamen
 
 Em 2015, eu tive um problema com o modem ARRIS TG862 da NET: um vírus invadiu o modem e mudou os endereços dos servidores DNS. Com isso, vários _sites_ passaram a exibir anúncios bastante irritantes e inconvenientes em russo, como os das imagens abaixo.
 
-{% include image.html src="/files/2020/08/arris-tg862-malware-1.jpg" caption="(fonte da imagem: Clube do Hardware)" %}
+{{< image src="/files/2020/08/arris-tg862-malware-1.jpg" >}}
 
-{% include image.html src="/files/2020/08/arris-tg862-malware-2.jpg" caption="(fonte da imagem: [Comunidade do Hardware.com.br](https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/))" %}
+{{< image src="/files/2020/08/arris-tg862-malware-2.jpg" >}}
 
 Isso acontecia porque o servidor DNS farsante redirecionava as requisições ao [Google Analytics][analytics] (um serviço usado por muitos _sites_) para outro servidor que não era o do [Google], fazendo com que o navegador baixasse o _script_ dos anúncios em russo, em vez do _script_ requisitado pelo _site_, que era o do Google Analytics.
 

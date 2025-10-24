@@ -12,7 +12,7 @@ Se você já usa a Internet há algum tempo, já deve ter ouvido falar em "DNS" 
 
 ## O que é DNS?
 
-{% include image.html src='/files/2024/09/dns-funcionamento.jpg' caption='Crédito da imagem: [Oficina da Net](https://www.oficinadanet.com.br/internet/32378-os-6-melhores-servidores-dns-publicos-de-2021)' %}
+{{< image src="/files/2024/09/dns-funcionamento.jpg" >}}
 
 Se você entende minimamente como a Internet funciona, sabe que um computador se comunica com outro por meio do **endereço IP**, que é uma sequência de números que localiza o computador na Internet. Poderíamos fazer uma analogia com o número do celular ou telefone que você digita para ligar para alguém. Ou, se pensarmos na Internet como uma grande rua, o endereço IP seria análogo ao número da casa onde está o computador.
 
@@ -46,23 +46,23 @@ Para baixar o DNS Benchmark, acesse seu _site_ oficial em:
 
 E clique no _link_ **Download now** (Baixar agora):
 
-{% include image.html src='/files/2024/09/dns-benchmark-01.jpg' %}
+{{< image src="/files/2024/09/dns-benchmark-01.jpg" >}}
 
 Quando o _download_ do programa terminar, você já pode abri-lo:
 
-{% include image.html src='/files/2024/09/dns-benchmark-02.jpg' %}
+{{< image src="/files/2024/09/dns-benchmark-02.jpg" >}}
 
 ## Rodando o DNS Benchmark
 
 Essa é a tela inicial do DNS Benchmark, apresentando uma pequena introdução (**Introduction**) ao programa:
 
-{% include image.html src='/files/2024/09/dns-benchmark-03.jpg' %}
+{{< image src="/files/2024/09/dns-benchmark-03.jpg" >}}
 
 Se seu inglês for bom e você estiver com tempo, pode ser interessante lê-la.
 
 Para iniciar os testes, mude para a aba **Nameservers** (servidores de nomes):
 
-{% include image.html src='/files/2024/09/dns-benchmark-04.jpg' %}
+{{< image src="/files/2024/09/dns-benchmark-04.jpg" >}}
 
 Essa aba mostra a lista de servidores DNS que serão testados. Note que os servidores DNS atualmente usados pelo seu computador foram adicionados à lista, eles aparecem no topo e em negrito (no meu caso, o meu roteador [MikroTik], `10.0.0.1`) e também entrarão na comparação, para ver se você poderia estar usando um servidor DNS mais rápido. Opcionalmente, se você quiser adicionar ou remover um servidor DNS da lista, use o botão **Add/Remove**.
 
@@ -74,11 +74,11 @@ O teste pode demorar alguns segundos ou minutos. Aguarde sua conclusão.
 
 O teste padrão envolve 75 servidores DNS. Quando ele terminar, o programa vai sugerir fazer um teste mais completo, considerando quase 5 mil servidores DNS. Se você estiver com tempo e quiser fazê-lo, clique no botão **Build Custom List** (Criar Lista Personalizada). Senão, clique em **Not Now** (Não Agora):
 
-{% include image.html src='/files/2024/09/dns-benchmark-05.jpg' %}
+{{< image src="/files/2024/09/dns-benchmark-05.jpg" >}}
 
 Finalmente, os resultados do teste:
 
-{% include image.html src='/files/2024/09/dns-benchmark-06.jpg' %}
+{{< image src="/files/2024/09/dns-benchmark-06.jpg" >}}
 
 Os servidores DNS são ordenados pelo tempo de resposta, do menor (mais rápido) para o maior (mais lento).
 
@@ -92,7 +92,7 @@ Note que se você conectar seu computador a outra rede e repetir esse teste, o r
 
 Se seu inglês for bom e você estiver com tempo, mude para a aba **Conclusions** (Conclusões) e leia o diagnóstico que o programa fez sobre suas configurações de DNS, assim como recomendações do que você pode fazer para melhorá-la:
 
-{% include image.html src='/files/2024/09/dns-benchmark-07.jpg' %}
+{{< image src="/files/2024/09/dns-benchmark-07.jpg" >}}
 
 Espero que essa dica tenha sido útil para deixar sua Internet mais rápida. Se ficou com alguma dúvida, não hesite em comentar.
 

@@ -8,7 +8,7 @@ Nos dispositivos móveis ([Android](https://www.android.com/), [iOS](https://www
 
 Pensando em facilitar e agilizar a solução desses problemas, os desenvolvedores do [Twitter](https://twitter.com) lançaram o [Bootstrap](http://getbootstrap.com/), um *framework* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML), [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS), e [JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) que auxilia o desenvolvimento de *sites* e aplicações *web* responsivos, voltados principalmente aos dispositivos móveis.
 
-{% include image.html src="/files/2015/07/bootstrap_0.jpg" %}
+{{< image src="/files/2015/07/bootstrap_0.jpg" >}}
 
 Um <strong>*design* responsivo</strong>, explicado de maneira simples, é aquele que se adapta (responde) ao tamanho da tela do dispositivo em que é renderizado. Se um *site* é projetado tendo em vista tão somente dispositivos móveis, pode parecer muito grande ou espaçoso em um computador de mesa. Por outro lado, se projetado para computadores de mesa, pode parecer pequeno em dispositivos móveis. Um *site* responsivo exibe seu conteúdo de uma maneira em computadores de mesa e de outra maneira em dispositivos móveis, ajustando-se da melhor maneira ao espaço disponível na tela.
 
@@ -18,9 +18,9 @@ Não confunda *design* responsivo com projetar diferentes interfaces para difere
 
 Se você utiliza como navegador o [Mozilla Firefox](https://www.mozilla.org/pt-BR/firefox/), o [Google Chrome](http://www.google.com.br/chrome/) ou o [Opera](http://www.opera.com/pt-br), outra maneira de verificar como um *site* aparece em diversos dispositivos é instalar a extensão [Web Developer](http://chrispederick.com/work/web-developer/) e usar a opção **Resize**, **View Responsive Layouts**:
 
-{% include image.html src="/files/2015/07/bootstrap_1.jpg" %}
+{{< image src="/files/2015/07/bootstrap_1.jpg" >}}
 
-{% include image.html src="/files/2015/07/bootstrap_2.jpg" %}
+{{< image src="/files/2015/07/bootstrap_2.jpg" >}}
 
 Sem mais conversa, vejamos como utilizar esse *framework* que é uma verdadeira mão na roda! Não apenas responsividade, o Bootstrap provê componentes e estilos prontos, que podem ser utilizados para tornar o *site* ou aplicação *web* mais bonita e funcional.
 

@@ -8,7 +8,7 @@ title: Instalação do Apache Maven
 
 Olá, pessoal, nesse post vocês vão ver como instalar e executar pela primeira vez o [Apache Maven](http://maven.apache.org/) em seus computadores.
 
-{% include image.html src="/files/2012/07/maven1.gif" %}
+{{< image src="/files/2012/07/maven1.gif" >}}
 
 O Maven é uma ferramenta que facilita e automatiza bastante o gerenciamento de projetos em Java, auxiliando os desenvolvedores nas etapas de definição, codificação, compilação, testes, empacotamento, implantação, documentação e distribuição da aplicação.
 
@@ -72,9 +72,9 @@ De maneira análoga à [instalação do JDK]({{% ref "post/2012-07-10-instalacao
 
 No Windows, o procedimento é bem semelhante ao [descrito no post anterior]({{% ref "post/2012-07-10-instalacao-do-java-development-kit-jdk" %}}), só mudando os nomes das variáveis e os valores:
 
-{% include image.html src="/files/2012/07/maven2.jpg" %}
+{{< image src="/files/2012/07/maven2.jpg" >}}
 
-{% include image.html src="/files/2012/07/maven3.jpg" %}
+{{< image src="/files/2012/07/maven3.jpg" >}}
 
 No Linux, se você instalou o Maven apenas para o seu usuário,  abra com o seu editor de preferência o arquivo “~/.bashrc” e acrescente as seguintes linhas no final do arquivo (você deve substituir, se necessário, a localização do Maven, que no nosso exemplo foi “/home/vinicius/apache-maven-3.0.4″):
 

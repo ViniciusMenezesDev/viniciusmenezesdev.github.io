@@ -5,7 +5,7 @@ title: 'O que fazer depois de mudar o endereço do site — parte 2: Disqus, Add
   e outros serviços'
 ---
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco.jpg" >}}
 
 Esta é a segunda parte da lista de coisas a fazer depois de mudar um _site_ de endereço. Na [primeira parte][parte-1], vimos como redirecionar as páginas, avisar os visitantes e reconfigurar os serviços do Google: Search Console, AdSense, Analytics e Programmable Search Engine. Agora, veremos como reconfigurar outros serviços: Disqus, AddThis, A-ADS, Brave Rewards e redes sociais. Se você caiu aqui de paraquedas, sugiro que comece pela primeira parte:
 
@@ -19,21 +19,21 @@ Acesse o [Disqus] e clique em **Admin**. Em **Your Sites** (seus _sites_), selec
 
 Na barra do topo, clique em **Moderation** (moderação). À esquerda, em **Tools** (ferramentas), clique em **Migration Tools** (ferramentas de migração):
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-disqus-1.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-disqus-1.jpg" >}}
 
 Na página seguinte, em **Redirect Crawler** (rastreador de redirecionamentos), clique em **Start Crawler** (iniciar rastreador):
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-disqus-2.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-disqus-2.jpg" >}}
 
 O Disqus informa que iniciou o rastreamento das páginas:
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-disqus-3.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-disqus-3.jpg" >}}
 
 O rastreador do Disqus vai visitar todas as páginas com comentários e, se encontrar um redirecionamento HTTP 301, vai seguir esse redirecionamento e armazenar o endereço novo da página. O Disqus diz que essa atualização pode levar até 24 horas para ser concluída, mas dependendo do tamanho do seu _site_ pode levar mais ou menos tempo que isso.
 
 Você pode monitorar o progresso verificando os endereços nessa mesma aba **Moderation**, indo em **Tools** > **Discussions** (discussões):
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-disqus-4.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-disqus-4.jpg" >}}
 
 O Disqus também avisa o fim da migração por _e-mail_.
 
@@ -43,9 +43,9 @@ O [AddThis][addthis-1] é um serviço que facilita integrar o _site_ a diversas 
 
 Depois de mudar o _site_ de endereço, o AddThis segue funcionando no endereço novo, não é necessário fazer nenhuma mudança no código do _site_ ou na configuração no serviço, o que é muito bom e prático. A má notícia é que os contadores de compartilhamentos se perdem. E a notícia pior ainda é que não há o que fazer.
 
-{% include image.html src="/files/2021/04/mudanca-de-endereco-addthis-1.png" caption="O texto mais compartilhado daqui do site (Como criar uma VPN utilizando pfSense e OpenVPN) tinha cerca de 4.400 compartilhamentos antes da mudança." %}
+{{< image src="/files/2021/04/mudanca-de-endereco-addthis-1.png" >}}
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-addthis-2.png' caption='Com a mudança, o contador foi reiniciado, desde então já foi compartilhado 28 vezes.' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-addthis-2.png" >}}
 
 Isso acontece porque [esses contadores não são armazenados no próprio AddThis][addthis-academy], mas nas redes sociais. O AddThis obtém os contadores de cada rede social e calcula o total de compartilhamentos. Se o endereço da página muda, não há como atualizar esse contador em toda e cada rede social.
 
@@ -59,7 +59,7 @@ O _site_ [nRave] propõe uma solução de contorno. Como vimos no [tutorial do A
 
 Cada anúncio do A-ADS é vinculado a um _site_. Ao mudar o endereço do _site_, você pode acessar sua conta, editar o cadastro do anúncio, fornecer o novo endereço do _site_ e salvar:
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-a-ads.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-a-ads.jpg" >}}
 
 Mas observe também que sua conta do A-ADS pode ter vários anúncios, cada um vinculado a um _site_. Então, outra opção pode ser criar um novo anúncio para o _site_ no novo endereço. Assim, dependendo de como está o _site_ nos dois endereços (antigo e novo), você pode ter anúncios nos dois endereços, monetizando ambos.
 
@@ -71,17 +71,17 @@ O [Brave Rewards][brave-rewards] é o programa do navegador [Brave] para remuner
 
 Que nem no AdSense e no A-ADS, é possível ter vários _sites_ associados à mesma conta do [Brave Rewards para criadores de conteúdo][brave-creators]. Não é possível mudar o endereço de um _site_ já associado, mas é fácil adicionar o novo endereço do _site_ como se fosse um novo _site_. O processo de validação é simples, não há análise do conteúdo, o programa apenas verifica se você de fato é o dono do _site_ por meio do _upload_ de um arquivo para o _site_.
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-brave.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-brave.jpg" >}}
 
 ## Redes sociais
 
 Por último, mas não menos importante, eu não poderia deixar de lembrar: não se esqueça de atualizar o endereço do seu _site_ nos perfis nas redes sociais! (verifique inclusive as artes)
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-facebook.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-facebook.jpg" >}}
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-twitter-1.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-twitter-1.jpg" >}}
 
-{% include image.html src='/files/2021/04/mudanca-de-endereco-twitter-2.jpg' %}
+{{< image src="/files/2021/04/mudanca-de-endereco-twitter-2.jpg" >}}
 
 ## Referências dessa segunda parte
 

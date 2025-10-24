@@ -8,7 +8,7 @@ image: /files/2024/10/onion-browser.jpg
 title: 'Onion Browser: acessando sites pela Rede Tor com mais segurança no iOS'
 ---
 
-{% include image.html src='/files/2024/10/onion-browser.jpg' %}
+{{< image src="/files/2024/10/onion-browser.jpg" >}}
 
 Vimos o que é **[VPN]**, **[Rede Tor][VPN]** e a forma mais fácil de usá-la no [iOS], que é por meio do _app_ **[Orbot][VPN]**. Esse aplicativo roteia todo o tráfego de Internet de todos os aplicativos por dentro do túnel da Rede Tor. Como nos dispositivos móveis é mais comum usarmos aplicativos, em vez de acessar _sites_ pelo navegador, o _app_ Orbot é a melhor forma de começar a usar a Rede Tor no iOS.
 
@@ -40,23 +40,23 @@ Antes de iniciar o Onion Browser, inicie o Orbot e conecte-se à Rede Tor.
 
 Depois disso, para iniciar o Onion Browser, toque em seu ícone na tela de início:
 
-{% include image.html src='/files/2024/10/onion-browser-01.jpg' %}
+{{< image src="/files/2024/10/onion-browser-01.jpg" >}}
 
 No primeiro uso, o navegador apresenta uma mensagem de boas vindas. Toque em **Próximo**:
 
-{% include image.html src='/files/2024/10/onion-browser-02.jpg' %}
+{{< image src="/files/2024/10/onion-browser-02.jpg" >}}
 
 Também no primeiro uso, o Onion Browser explica que precisa ser usado junto do Orbot. Toque em **Solicitar acesso** para configurar essa integração:
 
-{% include image.html src='/files/2024/10/onion-browser-03.jpg' %}
+{{< image src="/files/2024/10/onion-browser-03.jpg" >}}
 
 O aplicativo do Orbot é aberto. Toque em **Subvenção**:
 
-{% include image.html src='/files/2024/10/onion-browser-04.jpg' %}
+{{< image src="/files/2024/10/onion-browser-04.jpg" >}}
 
 De volta ao Onion Browser, ele mostra sua tela inicial e está pronto para ser usado:
 
-{% include image.html src='/files/2024/10/onion-browser-05.jpg' %}
+{{< image src="/files/2024/10/onion-browser-05.jpg" >}}
 
 ## Testando a conexão com a Rede Tor
 
@@ -64,7 +64,7 @@ Sempre antes de começar a usar o Onion Browser, convém testar se ele está de 
 
 - <https://check.torproject.org/>
 
-{% include image.html src='/files/2024/10/onion-browser-06.jpg' %}
+{{< image src="/files/2024/10/onion-browser-06.jpg" >}}
 
 A página deve informar: **"Parabéns. Este navegador está configurado para usar Tor."** (ou o equivalente a isso em inglês, como na imagem) Se essa mensagem aparece para você, já é seguro usar o Onion Browser para acessar os _sites_ que você precisa acessar.
 

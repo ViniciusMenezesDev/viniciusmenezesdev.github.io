@@ -5,7 +5,7 @@ title: Dicas de manutenções preventivas que você pode fazer no Windows para d
   seu computador mais rápido
 ---
 
-{% include image.html src="/files/2025/02/manutencao-preventiva-windows.jpg" %}
+{{< image src="/files/2025/02/manutencao-preventiva-windows.jpg" >}}
 
 Você tem um computador velhinho com [Windows 10] mas que ainda dá conta do recado? Confira a seguir algumas dicas de manutenções preventivas que você pode fazer para deixá-lo mais rápido, como se fosse novinho em folha.&nbsp;
 
@@ -23,19 +23,19 @@ O CCleaner tem versões tanto gratuitas quanto pagas, mas a versão gratuita par
 
 Ao abrir o programa, a tela principal, **Health Check** (verificação de saúde), faz uma verificação de diversas limpezas de arquivos que podem ser feitas no computador. Clique em **Escaneamento do meu PC** para começar:
 
-{% include image.html src="/files/2025/02/ccleaner-tela-inicial.jpg" %}
+{{< image src="/files/2025/02/ccleaner-tela-inicial.jpg" >}}
 
 O CCleaner consegue limpar _cookies_, histórico do navegador, arquivos temporários da Internet e do sistema, lixeira e cache de aplicativos:
 
-{% include image.html src="/files/2025/02/ccleaner-limpar.jpg" %}
+{{< image src="/files/2025/02/ccleaner-limpar.jpg" >}}
 
 Indo em **Ferramentas > Registro**, é possível fazer outro tipo de limpeza, que é a limpeza do [registro do Windows]. O registro é um banco de dados onde o sistema e os aplicativos armazenam diversas configurações. Valores desatualizados e inválidos no registro podem fazer com que o computador perca tempo procurando arquivos que não existem e, portanto, fique mais lento. Felizmente, o CCleaner consegue procurar erros no registro do Windows e corrigi-los:
 
-{% include image.html src="/files/2025/02/ccleaner-registro.jpg" %}
+{{< image src="/files/2025/02/ccleaner-registro.jpg" >}}
 
 Você deve fazer essas limpezas de tempos em tempos para manter seu computador rápido. Uma dica é ir em **Opções > Programação de limpeza** e programar o CCleaner para te lembrar de fazer essas limpezas:
 
-{% include image.html src="/files/2025/02/ccleaner-programacao.jpg" %}
+{{< image src="/files/2025/02/ccleaner-programacao.jpg" >}}
 
 ## 2) Desinstalar programas
 
@@ -43,7 +43,7 @@ Com o passar do tempo, pode ser que programas que instalamos lá atrás já não
 
 Vá no **menu Iniciar > Configurações > Aplicativos**, verifique na lista quais programas você não reconhece ou não usa e desintale-os:
 
-{% include image.html src="/files/2025/02/aplicativos.jpg" %}
+{{< image src="/files/2025/02/aplicativos.jpg" >}}
 
 ## 3) Fazer uma faxina nos arquivos
 
@@ -53,13 +53,13 @@ Um programa que pode te ajudar a identificar quais arquivos e pastas ocupam mais
 
 Gratuito e escrito na linguagem de programação [Java], esse programa pequeno e leve analisa seu disco (ou qualquer caminho que você peça para ele analisar) e mostra suas pastas como uma lista e como um gráfico de pizza, começando pelas que mais ocupam espaço:
 
-{% include image.html src="/files/2025/02/jdiskreport.jpg" %}
+{{< image src="/files/2025/02/jdiskreport.jpg" >}}
 
 **Observação:** você deve ter o [Java] instalado no seu computador **antes** de instalar o JDiskReport.
 
 Para que o JDiskReport analise um disco ou pasta, abra o **Explorador de Arquivos**, localize o disco ou pasta a ser analisado, clique com o botão direito do _mouse_ e, depois, clique em **JDiskReport**:
 
-{% include image.html src="/files/2025/02/jdiskreport-explorer.jpg" %}
+{{< image src="/files/2025/02/jdiskreport-explorer.jpg" >}}
 
 ## 4) Instalar e/ou atualizar o antivírus
 
@@ -71,11 +71,11 @@ Normalmente, o **[Microsoft Defender]**, que já vem com o próprio [Windows][Wi
 
 Se você precisa de ainda mais proteção, pode instalar outro antivírus, e o Windows passará a usar este antivírus em vez do Microsoft Defender. Três antivírus que estão sempre entre os melhores e tem versões gratuitas são o **[Avast]**, o **[AVG]** e o **[Avira]**.
 
-{% include image.html src="/files/2025/02/avast.jpg" %}
+{{< image src="/files/2025/02/avast.jpg" >}}
 
 Normalmente os antivírus incluem alguma opção para escanear arquivos e pastas quando você clica neles com o botão direito no **Explorador de Arquivos**:
 
-{% include image.html src="/files/2025/02/avast-explorer.jpg" %}
+{{< image src="/files/2025/02/avast-explorer.jpg" >}}
 
 Se você precisa muito de um bom antivírus, considere pagar por um. Boas opções, além das versões pagas dos já citados, incluem **[ESET]**, **[Kaspersky]** e **[McAfee]**.
 
@@ -85,13 +85,13 @@ Com frequência, a [Microsoft] libera atualizações para o Windows, que podem t
 
 Normalmente, o Windows baixa e instala essas atualizações automaticamente em um horário que você não costuma usar o computador. Mas você pode de tempos em tempos verificar se há atualizações pendentes indo no **menu Iniciar > Configurações > Atualização e Segurança**:
 
-{% include image.html src="/files/2025/02/atualizacoes-01.jpg" %}
+{{< image src="/files/2025/02/atualizacoes-01.jpg" >}}
 
-{% include image.html src="/files/2025/02/atualizacoes-02.jpg" %}
+{{< image src="/files/2025/02/atualizacoes-02.jpg" >}}
 
 Faça essa verificação repetidas vezes até que essa tela diga que **Você está atualizado**:
 
-{% include image.html src="/files/2025/02/atualizacoes-03.jpg" %}
+{{< image src="/files/2025/02/atualizacoes-03.jpg" >}}
 
 ## Considere formatar o computador
 
@@ -103,7 +103,7 @@ Para formatar seu computador, você pode usar alguma mídia fornecida pelo fabri
 
 ## Considere migrar para o Linux
 
-{% include image.html src="/files/2025/02/fim-suporte-windows-10.jpg" %}
+{{< image src="/files/2025/02/fim-suporte-windows-10.jpg" >}}
 
 Talvez você já tenha se deparado com essa tela enquanto usa o Windows 10.
 

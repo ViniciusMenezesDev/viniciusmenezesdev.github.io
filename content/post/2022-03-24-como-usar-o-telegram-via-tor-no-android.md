@@ -4,7 +4,7 @@ image: /files/2022/03/telegram-tor-android.png
 title: Como usar o Telegram via Tor no Android
 ---
 
-{% include image.html src='/files/2022/03/telegram-tor-android.png' %}
+{{< image src="/files/2022/03/telegram-tor-android.png" >}}
 
 Se por qualquer motivo você for impedido de usar o [Telegram] -- por exemplo, se você está de mudança ou viajando para um dos [países que censuram o Telegram][telegram-censorship] -- você verá hoje nessa dica como pode usá-lo por meio da [Rede Tor] no [Android].&nbsp;
 
@@ -75,33 +75,33 @@ Também pode ser instalado pela loja [F-Droid] ou baixado diretamente do [_site_
 
 Para acessar o Telegram via Tor, primeiro abra o Navegador Tor e toque em **Conectar**:
 
-{% include image.html src='/files/2022/03/telegram-tor-android-01.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-01.jpg" >}}
 
 Aguarde-o conectar à Rede Tor e estar pronto para uso:
 
-{% include image.html src='/files/2022/03/telegram-tor-android-02.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-02.jpg" >}}
 
 Certifique-se de que o navegador está de fato conectado à Rede Tor acessando:
 
 - [https://check.torproject.org/](https://check.torproject.org/)
 
-{% include image.html src='/files/2022/03/telegram-tor-android-03.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-03.jpg" >}}
 
 Agora inicie o Telegram, abra o "menu hamburguer" (ícone com três linhas horizontais, no canto superior esquerdo da tela) e toque em **Configurações**:
 
-{% include image.html src='/files/2022/03/telegram-tor-android-04.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-04.jpg" >}}
 
 Nas configurações, vá em em **Dados e Armazenamento**:
 
-{% include image.html src='/files/2022/03/telegram-tor-android-05.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-05.jpg" >}}
 
 Deslize até o final da tela e toque em **Configurações de Proxy**:
 
-{% include image.html src='/files/2022/03/telegram-tor-android-06.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-06.jpg" >}}
 
 Ative a opção **Usar Proxy**:
 
-{% include image.html src='/files/2022/03/telegram-tor-android-07.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-07.jpg" >}}
 
 Na tela seguinte, preencha as configurações dessa forma:
 
@@ -111,17 +111,17 @@ Na tela seguinte, preencha as configurações dessa forma:
 
 Por fim, toque no ícone de _check_ no canto superior direito:
 
-{% include image.html src='/files/2022/03/telegram-tor-android-08.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-08.jpg" >}}
 
 De volta à tela anterior, certifique-se de que a opção **Usar Proxy** esteja ativada. Certifique-se também de que o Telegram conseguiu se conectar ao _proxy_ (note o **Conectado**):
 
-{% include image.html src='/files/2022/03/telegram-tor-android-09.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-09.jpg" >}}
 
 Pronto. Pode voltar à tela inicial do Telegram e seguir usando normalmente.
 
 Um ícone de escudo no canto superior direito da tela indica que o Telegram está conectado ao _proxy_ (nesse caso, à Rede Tor):
 
-{% include image.html src='/files/2022/03/telegram-tor-android-10.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-android-10.jpg" >}}
 
 Tocando nele, você pode facilmente acessar as configurações de _proxy_.
 

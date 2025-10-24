@@ -19,7 +19,7 @@ O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publ
 
 {% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco.jpg" >}}
 
 Mudar um _site_ de endereço não é fácil se esse _site_ já existe há algum tempo e já tem alguma presença na busca do [Google] e nas redes sociais. Recentemente mudei dois dos meus _sites_ de hospedagem, do [GitHub Pages][github-pages] para o [GitLab Pages][gitlab-pages], e também de endereço: o _site_ do [Linux Kamarada][linuxkamarada.com] mudou de `kamarada.github.io` para [linuxkamarada.com] e este _site_ mudou de `vinyanalista.github.io` para [antoniomedeiros.dev]. Registrei ambos os domínios pela [Namecheap]. No _site_ do Linux Kamarada fiz [um texto explicando essa mudança][moving-to-gitlab].
 
@@ -65,7 +65,7 @@ Veja esse exemplo:
 
 Perceba que eu defini o tempo como `10`, isso quer dizer que o navegador vai exibir a página e só 10 segundos depois redirecionar. Você pode deixar uma mensagem na página informando ao usuário do redirecionamento, mas isso é opcional, fica a seu critério.
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-aviso.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-aviso.jpg" >}}
 
 - Endereço novo: [https://linuxkamarada.com/pt/2021/03/05/tuxguitar-ja-pensou-aprender-guitarra-com-ajuda-do-linux/](https://linuxkamarada.com/pt/2021/03/05/tuxguitar-ja-pensou-aprender-guitarra-com-ajuda-do-linux/) (abra e inspecione para ver o código-fonte)
 
@@ -85,13 +85,13 @@ Podemos configurar um [domínio personalizado no GitHub Pages][github-domain]. N
 
 Acesse o repositório que hospeda seu _site_ no GitHub (por exemplo, [github.com/kamarada/kamarada.github.io](https://github.com/kamarada/kamarada.github.io)), clique em **Settings** (configurações) e na seção **GitHub Pages**, em **Custom domain** (domínio personalizado), insira seu domínio personalizado e clique em **Save** (salvar).
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-github-pages.png' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-github-pages.png" >}}
 
 O GitHub percebe que o domínio novo não aponta para o GitHub Pages e "reclama" que seu domínio não está configurado corretamente. Bem, isso não importa realmente. O que realmente importa é que de alguma forma você conseguiu fazer o redirecionamento 301.
 
 Vamos fazer um teste. Abra outra aba no navegador, abra as ferramentas do desenvolvedor (**DevTools**) teclando **F12** e selecione a aba de rede (**Network**). Tente acessar seu _site_ pelo endereço antigo e veja que acontece o redirecionamento 301 para o endereço novo.
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-devtools-301.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-devtools-301.jpg" >}}
 
 ## Google Search Console
 
@@ -103,19 +103,19 @@ Comece acessando o [Google Search Console][search], adicionando o novo endereço
 
 Depois, no menu à esquerda, selecione o _site_ antigo na lista de propriedades e clique em **Configurações**. À direita, clique na opção **Mudança de endereço**:
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-google-search-console-1.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-google-search-console-1.jpg" >}}
 
 Na tela seguinte, selecione o _site_ novo e clique em **Validar e atualizar**:
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-google-search-console-2.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-google-search-console-2.jpg" >}}
 
 O Google Search Console vai fazer uma verificação rápida e reportar quaisquer problemas encontrados. Para prosseguir, clique em **Confirmar mudança**:
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-google-search-console-3.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-google-search-console-3.jpg" >}}
 
 Feito isso, a ferramenta de mudança de endereço pelo Google Search Console é concluída:
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-google-search-console-4.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-google-search-console-4.jpg" >}}
 
 O processo de indexação do _site_ novo e de mudança dos _links_ na busca do Google, se eu entendi certo a [documentação da ferramenta de mudança de endereço][support-google-3], pode levar até 180 dias. É um processo demorado, é verdade, mas os redirecionamentos devem garantir que o tráfego para o _site_ não seja afetado durante esse período.
 
@@ -125,7 +125,7 @@ O Google AdSense não permite mudar o endereço de _sites_ que já estão cadast
 
 Foi o que aconteceu com [esse usuário][support-google-5] e também comigo com o _site_ do Linux Kamarada: não obstante o _site_ tenha sido aprovado no endereço anterior, já exibia anúncios desde 2015, quando enviado para aprovação no endereço novo, foi reprovado com a justificativa "Conteúdo de baixo valor". Solicitei revisão e no momento aguardo nova resposta.
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-adsense-kamarada.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-adsense-kamarada.jpg" >}}
 
 Esse processo do Google AdSense é burocrático, manual, ineficiente e burro. Não houve mudança no conteúdo do _site_, apenas no endereço, o _site_ já exibia anúncios há anos, não havia porque recusar a exibição de anúncios no endereço novo. Já estou pesquisando redes de anúncios alternativas, se encontrar uma bacana compartilho aqui.
 
@@ -133,7 +133,7 @@ Esse processo do Google AdSense é burocrático, manual, ineficiente e burro. N�
 
 Para exibir anúncios do AdSense no novo endereço do seu _site_, adicione o novo endereço como se estivesse [adicionando um _site_ novo][support-google-4]:
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-adsense-novo-site.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-adsense-novo-site.jpg" >}}
 
 Segundo o próprio Google AdSense, a verificação do (antigo) _site_ (com novo endereço) geralmente leva alguns dias, mas pode demorar até duas semanas. O resultado da verificação é informado por _e-mail_.
 
@@ -143,11 +143,11 @@ Mudar o endereço do _site_ no Google Analytics é fácil, rápido, tranquilo e 
 
 Acesse o [Google Analytics][analytics-2]. No menu à esquerda, clique na opção **Administrador**. À direita, em **Propriedade**, selecione o _site_ na lista e clique em **Configurações da propriedade**:
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-analytics-1.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-analytics-1.jpg" >}}
 
 No campo **URL padrão**, substitua o endereço antigo pelo novo:
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-analytics-2.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-analytics-2.jpg" >}}
 
 No final da página, clique no botão **Salvar**. Pronto, simples assim.
 
@@ -157,9 +157,9 @@ Se seu _site_ tem uma caixa de pesquisa programável do Google, você precisa ad
 
 Acesse o [Google Programmable Search Engine][cse-2]. À esquerda, em **Editar mecanismo de pesquisa**, selecione o seu _site_. À direita, em **Sites a pesquisar**, clique em **Adicionar**. Digite o endereço novo e clique em **Salvar**. Feito, é isso!
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-cse-1.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-cse-1.jpg" >}}
 
-{% include image.html src='/files/2021/03/mudanca-de-endereco-cse-2.jpg' %}
+{{< image src="/files/2021/03/mudanca-de-endereco-cse-2.jpg" >}}
 
 Observe que a pesquisa dentro do _site_ depende da pesquisa maior, do Google. Acompanhe a indexação do endereço novo pelo Google Search Console.
 

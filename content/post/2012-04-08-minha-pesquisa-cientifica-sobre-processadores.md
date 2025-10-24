@@ -18,7 +18,7 @@ O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publ
 
 {% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
-{% include image.html src="/files/2012/04/processador.jpg" %}
+{{< image src="/files/2012/04/processador.jpg" >}}
 
 Estava apenas aguardando uma oportunidade de divulgar a pesquisa científica que desenvolvi no IFS no período de 2007 a 2009, e penso que a hora é agora (com a prova de Arquitetura de Computadores I chegando aí, hein?), então disponibilizei o [trabalho no Scribd](http://pt.scribd.com/doc/88465424/) e estou aqui para falar um pouco mais sobre ele. O resumo do trabalho diz o seguinte:
 
@@ -52,19 +52,19 @@ Vale observar que como se tratava de um programa de iniciação científica jún
 
 Os principais livros utilizados nessa pesquisa foram:
 
-{% include image.html src="/files/2012/04/introducao-a-organizacao-de-computadores.jpg" %}
+{{< image src="/files/2012/04/introducao-a-organizacao-de-computadores.jpg" >}}
 
 MONTEIRO, Mário A. Introdução à Organização de Computadores. 4ªEdição. Rio de Janeiro: LTC Editora, 2001.
 
-{% include image.html src="/files/2012/04/hardware-manual-completo.gif" %}
+{{< image src="/files/2012/04/hardware-manual-completo.gif" >}}
 
 MORIMOTO, Carlos E. Manual de Hardware Completo. 3ª Edição. Junho de 2002. Disponível na Internet em: <http://www.hardware.com.br/livros/hardware-manual/>. Acessado em: 08/04/2012.
 
-{% include image.html src="/files/2012/04/hardware-curso-completo.gif" %}
+{{< image src="/files/2012/04/hardware-curso-completo.gif" >}}
 
 TORRES, Gabriel. HARDWARE Curso Completo. 4ª Edição. Editora AxcelBooks, 2001.
 
-{% include image.html src="/files/2012/04/hardware-total.jpg" %}
+{{< image src="/files/2012/04/hardware-total.jpg" >}}
 
 VASCONCELOS, Laércio. Hardware Total. 1ª Edição. Editora Makron Books,2002.
 

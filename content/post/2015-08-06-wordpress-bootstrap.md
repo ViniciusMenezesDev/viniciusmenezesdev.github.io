@@ -188,19 +188,19 @@ Este tema simples foi criado usando o exemplo Jumbotron encontrado no site do Bo
 
 A última coisa que precisamos fazer para que possamos selecionar e utilizar nosso tema é atribuir-lhe uma imagem. O WordPress [requer](https://codex.wordpress.org/Theme_Development#Screenshot) que essa imagem seja chamada `screenshot.png` (na verdade, os formatos `.jpg`, `.jpeg` e `.gif` também são suportados, embora não recomendados) e apresente resolução mínima de 387x290, sendo que o recomendado é 880x660 (aspecto 4:3). Você pode utilizar [esta imagem](https://raw.githubusercontent.com/vinyanalista/wpbootstrap/22981ee4247c8a4656fab44a38e9da94b6b51913/screenshot.png) ou outra de sua preferência:
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-1.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-1.png" >}}
 
 Salve essa imagem com o nome de `screenshot.png` na mesma pasta dos arquivos `index.php` e `style.css`.
 
 Agora estamos prontos para entrar na área de administração do WordPress e [selecionar nosso tema](https://codex.wordpress.org/Using_Themes/Theme_List#Selecting_the_Active_Theme). Entre na área administrativa e vá em **Aparência** > **Temas**. Você deve ver o nosso tema na lista de temas disponíveis:
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-2.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-2.png" >}}
 
 Clique no botão **Ativar** no tema **WP Bootstrap** (lembre-se de utilizar o [*plugin* Theme Test Drive](https://wordpress.org/plugins/theme-test-drive/) se estiver desenvolvendo o tema usando um *site* que já está no ar).
 
 Uma vez com o tema ativado, visite seu *site* no navegador e verá algo como isso:
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-3.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-3.png" >}}
 
 Agora vamos começar a transformar essa página estática em um verdadeiro tema do WordPress.
 
@@ -522,7 +522,7 @@ Por último, vamos rever nossos arquivos `header.php`, `index.php` e `footer.php
 
 Para testar se os arquivos CSS e JS estão sendo carregados adequadamente, abra seu *site* no navegador e redimensione a tela de modo a parecer um *tablet* ou *smartphone*. Clique no menu *dropdown* e ele deve aparecer assim:
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-4.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-4.png" >}}
 
 Se esse menu não estiver funcionando, significa que algo deu errado na hora de referenciar algum arquivo. Certifique-se de que os arquivos estão nos locais corretos e que seu código está correto. Afinal de contas, você não deseja que seu *site* responsivo não funcione nos *smartphones* e *tablets*, não é mesmo?
 
@@ -601,7 +601,7 @@ Aqui basicamente verificamos se há *posts* ou páginas a serem exibidos com a f
 
 Antes de testarmos nossa página inicial no navegador, vamos modificar uma configuração no WordPress para exibir a página que criamos como página inicial, ao invés das postagens mais recentes. Para isso, acesse a área administrativa e vá em **Configurações** > **Leitura** e na opção **A página inicial mostra** selecione **Uma página estática**. Em seguida, em **Página inicial**, selecione a página "Início":
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-5.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-5.png" >}}
 
 Clique em **Salvar alterações** e acesse o *site*. Você deve ver o conteúdo da página que criamos na área administrativa.
 
@@ -631,7 +631,7 @@ Para provar que tudo está realmente funcionando, vamos editar a página inicial
 
 Agora, visite o *site*. Você perceberá as alterações que fez no editor.
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-6.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-6.png" >}}
 
 ### Continua...
 

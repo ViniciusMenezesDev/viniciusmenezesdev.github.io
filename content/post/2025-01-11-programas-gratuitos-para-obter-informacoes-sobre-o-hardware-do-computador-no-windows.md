@@ -5,7 +5,7 @@ title: Programas gratuitos para obter informações sobre o hardware do computad
   Windows
 ---
 
-{% include image.html src='/files/2025/01/hardware-report.png' %}
+{{< image src="/files/2025/01/hardware-report.png" >}}
 
 Você está tentando resolver um problema com _[hardware]_ e precisa obter as especificações das peças do seu computador? Ou comprou um computador novo e quer verificar se está tudo no lugar conforme o anúncio? Seja qual for sua situação, confira a seguir alguns programas gratuitos para [Windows] que listam e descrevem o _hardware_ do seu computador e podem te ajudar.
 
@@ -19,7 +19,7 @@ Vá no **menu Iniciar > Configurações**. Na janela que se abre, vá em **Siste
 
 Esta tela traz algumas informações como modelo e frequência do processador, quantidade de memória RAM, edição e versão do Windows:
 
-{% include image.html src='/files/2025/01/windows-11-sobre.jpg' %}
+{{< image src="/files/2025/01/windows-11-sobre.jpg" >}}
 
 Use os botões **Copiar** para copiar facilmente essas informações e colá-las onde precisar (em um _chat_ de suporte, por exemplo).
 
@@ -45,38 +45,38 @@ Agora vamos aos programas.
 
 O [CPU-Z] é um programa pequeno, com interface simples e intuitiva, que mostra informações sobre o [processador] (CPU), placa-mãe, memória RAM e placa de vídeo e permite realizar testes de desempenho (_benchmarks_). Seu _site_ oferece um instalador, mas também o programa e seus arquivos compactados em um [arquivo ZIP][zip], de modo que você não precisa instalar o programa para usá-lo.
 
-{% include image.html src='/files/2025/01/cpu-z-01.jpg' %}
+{{< image src="/files/2025/01/cpu-z-01.jpg" >}}
 
 <div class="row">
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-02.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-02.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-03.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-03.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-04.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-04.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-05.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-05.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-06.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-06.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-07.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-07.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-08.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-08.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-09.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-09.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-10.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-10.jpg" >}}
     </div>
     <div class="col-md-3">
-        {% include image.html src='/files/2025/01/cpu-z-11.jpg' %}
+        {{< image src="/files/2025/01/cpu-z-11.jpg" >}}
     </div>
 </div>
 
@@ -88,16 +88,16 @@ O [GPU-Z] é igualmente simples, pequeno e intuitivo, mas focado na placa de ví
 
 <div class="row">
     <div class="col-lg-6">
-        {% include image.html src='/files/2025/01/gpu-z-1.gif' %}
+        {{< image src="/files/2025/01/gpu-z-1.gif" >}}
     </div>
     <div class="col-lg-6">
-        {% include image.html src='/files/2025/01/gpu-z-2.gif' %}
+        {{< image src="/files/2025/01/gpu-z-2.gif" >}}
     </div>
     <div class="col-lg-6">
-        {% include image.html src='/files/2025/01/gpu-z-3.gif' %}
+        {{< image src="/files/2025/01/gpu-z-3.gif" >}}
     </div>
     <div class="col-lg-6">
-        {% include image.html src='/files/2025/01/gpu-z-4.gif' %}
+        {{< image src="/files/2025/01/gpu-z-4.gif" >}}
     </div>
 </div>
 
@@ -107,21 +107,21 @@ Esse programa não conta com uma funcionalidade de relatório, mas ele facilita 
 
 Dos três programas listados até agora, o [HWiNFO] é o que fornece informações mais detalhadas sobre os componentes do computador. Também é o único com interface traduzida para o português, o que pode facilitar bastante a leitura das informações, se você não domina a língua inglesa. É possível baixar do seu _site_ um instalador ou uma versão portátil (_portable_) do programa, que é um arquivo ZIP, ou seja, dispensa instalação. Ao ser iniciado, o programa apresenta uma tela com informações resumidas sobre o computador, e outra bipartida mais completa, com os componentes organizados em uma árvore à esquerda e informações mais detalhadas sobre o componente selecionado à direita.
 
-{% include image.html src='/files/2025/01/hwinfo-1.jpg' %}
+{{< image src="/files/2025/01/hwinfo-1.jpg" >}}
 
-{% include image.html src='/files/2025/01/hwinfo-2.jpg' %}
+{{< image src="/files/2025/01/hwinfo-2.jpg" >}}
 
-{% include image.html src='/files/2025/01/hwinfo-3.jpg' %}
+{{< image src="/files/2025/01/hwinfo-3.jpg" >}}
 
 <div class="row">
     <div class="col-md-4">
-        {% include image.html src='/files/2025/01/hwinfo-4.jpg' %}
+        {{< image src="/files/2025/01/hwinfo-4.jpg" >}}
     </div>
     <div class="col-md-4">
-        {% include image.html src='/files/2025/01/hwinfo-5.jpg' %}
+        {{< image src="/files/2025/01/hwinfo-5.jpg" >}}
     </div>
     <div class="col-md-4">
-        {% include image.html src='/files/2025/01/hwinfo-6.jpg' %}
+        {{< image src="/files/2025/01/hwinfo-6.jpg" >}}
     </div>
 </div>
 
@@ -131,17 +131,17 @@ Assim como o CPU-Z, o HWiNFO permite salvar um relatório em formato HTML clican
 
 O [AIDA64] fornece informações detalhadas não apenas do _hardware_ mas também do _software_ instalado no computador. Também possui interface em português. Listo esse programa como um extra porque ele não é exatamente gratuito: é um programa comercial que é vendido em algumas edições com funcionalidades e preços diferentes. A edição mais simples, o AIDA64 Extreme, pode ser experimentada (_trial_) gratuitamente por 30 dias -- tempo mais que suficiente para você usá-lo para checar as informações sobre o seu computador e salvá-las em um relatório HTML caso queira conferi-las depois.
 
-{% include image.html src='/files/2025/01/aida64-1.jpg' %}
+{{< image src="/files/2025/01/aida64-1.jpg" >}}
 
 <div class="row">
     <div class="col-md-4">
-        {% include image.html src='/files/2025/01/aida64-2.jpg' %}
+        {{< image src="/files/2025/01/aida64-2.jpg" >}}
     </div>
     <div class="col-md-4">
-        {% include image.html src='/files/2025/01/aida64-3.jpg' %}
+        {{< image src="/files/2025/01/aida64-3.jpg" >}}
     </div>
     <div class="col-md-4">
-        {% include image.html src='/files/2025/01/aida64-4.jpg' %}
+        {{< image src="/files/2025/01/aida64-4.jpg" >}}
     </div>
 </div>
 

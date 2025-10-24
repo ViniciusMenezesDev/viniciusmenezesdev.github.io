@@ -6,7 +6,7 @@ image: /files/2024/09/tor-android.jpg
 title: 'O que é VPN e a forma mais fácil de usá-la no Android: por meio do app Orbot'
 ---
 
-{% include image.html src='/files/2024/09/tor-android.jpg' %}
+{{< image src="/files/2024/09/tor-android.jpg" >}}
 
 A busca por VPNs [cresceu recentemente][poder360] no Brasil, segundo dados do [Google Trends]. Mas afinal, o que é VPN, e por que alguém iria quer usar isso?
 
@@ -14,25 +14,25 @@ A sigla **[VPN]** vem do inglês _Virtual Private Network_, que quer dizer **Red
 
 A VPN funciona assim: dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo), mas ambos estão conectados à Internet. Então, eles estabelecem na rede mundial um circuito criptografado por onde trocam informações de forma privada. Seria como uma ligação telefônica que não pudesse ser grampeada.
 
-{% include image.html src='/files/2016/06/pfsense-vpn-02.jpg' caption='Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada' %}
+{{< image src="/files/2016/06/pfsense-vpn-02.jpg" >}}
 
 Para quem usa esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita **virtual**). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos demais computadores da rede, porque esses dois computadores usam criptografia para se comunicar (por isso, rede **privada**). Porque a informação trafega por esse circuito criptografado que não pode ser interceptado, a VPN também é conhecida como **túnel**.
 
-{% include image.html src='/files/2016/06/pfsense-vpn-03.png' caption='Um túnel é bem assim: só quem está dentro dele vê o que por ele passa' %}
+{{< image src="/files/2016/06/pfsense-vpn-03.png" >}}
 
 Um uso prático de VPNs é burlar censuras a _sites_. Normalmente, quando acessamos um _site_, nossa comunicação com o servidor desse _site_ é roteada pela infraestrutura de rede da operadora, que pode estar bloqueando o acesso ao _site_ (por ordem do governo, por exemplo). Tem VPNs que permitem que o computador na outra ponta, que pode estar em outro país, faça o trabalho do roteador da operadora, então conseguimos, assim, acessar o _site_ como se estivéssemos em outro país.
 
-{% include image.html src='/files/2015/12/vpn.png' %}
+{{< image src="/files/2015/12/vpn.png" >}}
 
 Essas VPNs são usadas sobretudo em [países com governos autoritários][china] em que os cidadãos são proibidos de ter acesso a _sites_ ou aplicativos considerados impróprios pelo ditador no poder. É preocupante que a busca por VPNs esteja crescendo no Brasil, assim como a menção ao nosso país na [Declaração de Westminster], assinada por vários ativistas defensores da [liberdade de expressão], incluindo [Julian Assange], [Edward Snowden], [Glenn Greenwald] e [Jordan Peterson].
 
 Se você sente necessidade de usar uma VPN, quero te apresentar hoje uma que é baseada em [_software_ livre][free-sw] e que pode ser usada gratuitamente por qualquer pessoa em qualquer lugar do mundo.
 
-{% include image.html src='/files/2024/09/tor.svg' %}
+{{< image src="/files/2024/09/tor.svg" >}}
 
 O **[Projeto Tor]** (sigla de _The Onion Router_, "o roteador cebola", em uma tradução livre) mantém uma rede de túneis ao redor do mundo -- a **Rede Tor** -- pela qual trafegam dados de seus usuários de forma anônima, criptografada, privada, segura e livre de censura. A menção à cebola vem do fato de que a informação dentro dessa rede circula de forma compartimentada. A Rede Tor emprega várias camadas de criptografia para garantir que cada computador no meio do caminho só saiba o suficiente para levar a informação adiante até o próximo:
 
-{% include image.html src='/files/2024/09/how-tor-works.png' caption='Fonte da imagem: [manual do Navegador Tor](https://tb-manual.torproject.org/pt-BR/about/)' %}
+{{< image src="/files/2024/09/how-tor-works.png" >}}
 
 A forma mais fácil de se conectar à Rede Tor e usá-la no [Android] é por meio do aplicativo **[Orbot]**, que não faz parte oficialmente do Projeto Tor, mas é [recomendado] por este, porque é desenvolvido por [algumas][orbot-team] das mesmas [pessoas que participam do Projeto Tor][tor-people]. Após se conectar à Rede Tor, o Orbot faz com que o tráfego de Internet de todos os aplicativos do Android passem por dentro da rede Tor.
 
@@ -62,23 +62,23 @@ Para instalar o Orbot no Android, você pode abrir o aplicativo da **Play Store*
 
 Para iniciar o Orbot no Android, abra o menu de aplicativos e toque em seu ícone:
 
-{% include image.html src='/files/2024/09/tor-android-01.jpg' %}
+{{< image src="/files/2024/09/tor-android-01.jpg" >}}
 
 Opcionalmente (mas eu recomendo), permita que o Orbot mostre notificações:
 
-{% include image.html src='/files/2024/09/tor-android-02.jpg' %}
+{{< image src="/files/2024/09/tor-android-02.jpg" >}}
 
 Essa é a tela inicial do Orbot, ainda não conectado à Rede Tor. Portanto, a VPN ainda não está pronta para ser usada. Toque no botão **Iniciar a VPN**:
 
-{% include image.html src='/files/2024/09/tor-android-03.jpg' %}
+{{< image src="/files/2024/09/tor-android-03.jpg" >}}
 
 Aguarde a conexão com a Rede Tor ser estabelecida:
 
-{% include image.html src='/files/2024/09/tor-android-04.jpg' %}
+{{< image src="/files/2024/09/tor-android-04.jpg" >}}
 
 A tela seguinte indica que o Orbot está **Conectado** à Rede Tor e, portanto, a VPN está pronta para ser usada:
 
-{% include image.html src='/files/2024/09/tor-android-05.jpg' %}
+{{< image src="/files/2024/09/tor-android-05.jpg" >}}
 
 Note que você não precisa fazer nenhuma configuração adicional no sistema ou nos aplicativos para que eles passem a trafegar seus dados pela Rede Tor.
 
@@ -88,7 +88,7 @@ Sempre antes de começar a usar a Rede Tor, convém testar se o sistema está de
 
 - <https://check.torproject.org/>
 
-{% include image.html src='/files/2024/09/tor-android-06.jpg' %}
+{{< image src="/files/2024/09/tor-android-06.jpg" >}}
 
 A página deve informar: **"Parabéns. Este navegador está configurado para usar Tor."** (ou o equivalente a isso em inglês, como na imagem) Se essa mensagem aparece para você, já é seguro usar a Rede Tor para acessar os _sites_ que você precisa acessar.
 
@@ -96,7 +96,7 @@ Se aparecer uma mensagem diferente dessa, seu celular não está conectado adequ
 
 Conforme você navega na Internet usando aplicativos, perceba pela notificação do Orbot que há tráfego de rede passando pelo túnel estabelecido:
 
-{% include image.html src='/files/2024/09/tor-android-07.jpg' %}
+{{< image src="/files/2024/09/tor-android-07.jpg" >}}
 
 ## Alterando a saída
 
@@ -104,7 +104,7 @@ Por padrão, o túnel criado pelo Orbot e pela Rede Tor pode sair por qualquer p
 
 Opcionalmente, você pode, na tela inicial do Orbot, tocar em **Altere a saída** e selecionar por qual país deseja sair do túnel:
 
-{% include image.html src='/files/2024/09/tor-android-08.jpg' %}
+{{< image src="/files/2024/09/tor-android-08.jpg" >}}
 
 # Tunelando apenas alguns aplicativos
 
@@ -112,7 +112,7 @@ Por padrão, o Orbot roteia todo o tráfego de rede do sistema operacional Andro
 
 Se você deseja que somente alguns aplicativos usem o túnel, enquanto outros aplicativos e o sistema usam a conexão convencional, na tela inicial do Orbot, toque em **Escolha os aplicativos** e selecione quais aplicativos devem ter seu tráfego de rede redirecionado para a Rede Tor:
 
-{% include image.html src='/files/2024/09/tor-android-09.jpg' %}
+{{< image src="/files/2024/09/tor-android-09.jpg" >}}
 
 Note que você não precisa fazer nenhuma configuração adicional nesses aplicativos para que eles passem a trafegar seus dados pela Rede Tor.
 

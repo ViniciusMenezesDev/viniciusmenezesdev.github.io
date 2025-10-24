@@ -19,11 +19,11 @@ O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publ
 
 {% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
-{% include image.html src="/files/2020/07/kingston-a400-480gb.jpg" %}
+{{< image src="/files/2020/07/kingston-a400-480gb.jpg" >}}
 
 Mês passado eu estava usando meu _notebook_ quando de repente os programas começaram a apresentar diversas mensagens de erro. Reiniciei o computador e, para minha surpresa, o sistema operacional não iniciou, apresentando mensagem de erro relacionada ao meu [SSD Kingston A400 de 480GB][ssd-kingston], que agora era reconhecido como **SATAFIRM S11**.
 
-{% include image.html src="/files/2020/07/satafirm-s11-erro.jpg" %}
+{{< image src="/files/2020/07/satafirm-s11-erro.jpg" >}}
 
 Nesse _post_, vou mostrar como resolvi esse problema e informações que podem te ajudar, caso você também possua um SSD desse modelo e tenha se deparado com o mesmo erro.
 
@@ -33,11 +33,11 @@ Você pode verificar de algumas formas que seu SSD é reconhecido como **SATAFIR
 
 Você pode ver essa informação acessando o _setup_ da [BIOS] do computador. Como fazer isso varia de modelo para modelo, você pode consultar o manual do seu computador. No caso do meu _notebook_, um [Acer Aspire E 15][acer], eu fico apertando **F2** assim que ele liga:
 
-{% include image.html src="/files/2020/07/satafirm-s11-bios.jpg" %}
+{{< image src="/files/2020/07/satafirm-s11-bios.jpg" >}}
 
 No [Windows], você pode ver essa informação abrindo o **Gerenciador de Dispositivos**:
 
-{% include image.html src="/files/2020/07/satafirm-s11-windows.jpg" %}
+{{< image src="/files/2020/07/satafirm-s11-windows.jpg" >}}
 
 Como eu não conseguia iniciar o sistema operacional, usei um _[case]_ para conectar o SSD a uma porta USB de outro computador com Windows. Se isso não é uma opção para você, pode manter o SSD no computador e usar o [Hiren's BootCD][hirensbootcd].
 
@@ -45,7 +45,7 @@ No outro computador com Windows, eu tentei usar o programa [Kingston SSD Manager
 
 Se você usa uma distribuição [Linux] com a área de trabalho [GNOME], como é o caso do [Linux Kamarada][kamarada-15.1], que eu uso, e também do [Ubuntu], que é uma das distribuições mais populares, pode ver essa informação abrindo o aplicativo **Discos**:
 
-{% include image.html src="/files/2020/07/satafirm-s11-linux.png" %}
+{{< image src="/files/2020/07/satafirm-s11-linux.png" >}}
 
 No caso do Linux, você não precisa remover o SSD do computador para diagnosticar o problema, você pode iniciar o Linux a partir de um [LiveUSB].
 
@@ -102,7 +102,7 @@ Nos exemplos acima, o aplicativo Discos do Linux, assim como os comandos **hdpar
 
 Você também pode ver a versão do _firmware_ que veio de fábrica na etiqueta no seu SSD:
 
-{% include image.html src="/files/2020/07/kingston-ssd.jpg" %}
+{{< image src="/files/2020/07/kingston-ssd.jpg" >}}
 
 Nessa etiqueta, você também pode ver o código do produto: no meu caso, **SA400S37/480G**.
 
@@ -130,7 +130,7 @@ Esse vídeo, da própria Kingston, mostra como acionar a garantia:
 
 A seguir, uma captura de tela do Kingston SSD Manager mostrando o SSD novo:
 
-{% include image.html src="/files/2020/07/kingston-ssd-manager.jpg" %}
+{{< image src="/files/2020/07/kingston-ssd-manager.jpg" >}}
 
 ## Soluções alternativas
 

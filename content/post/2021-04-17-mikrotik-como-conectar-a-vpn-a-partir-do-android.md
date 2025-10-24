@@ -6,7 +6,7 @@ image: /files/2021/04/android-vpn.jpg
 title: 'MikroTik: como conectar à VPN a partir do Android'
 ---
 
-{% include image.html src='/files/2021/04/android-vpn.jpg' %}
+{{< image src="/files/2021/04/android-vpn.jpg" >}}
 
 Se você usa [Android] e deseja conectar seu _smartphone_ ou _tablet_ à [VPN do roteador MikroTik][vpn] que configuramos em um [_post_ anterior][vpn], siga as instruções a seguir.
 
@@ -14,25 +14,25 @@ Aqui, estou usando um [Multilaser MS80X][multilaser-ms80x] com [Android 8.1.0 Or
 
 Abra o aplicativo **Configurar** (ou **Configurações**):
 
-{% include image.html src='/files/2021/04/android-vpn-01.jpg' %}
+{{< image src="/files/2021/04/android-vpn-01.jpg" >}}
 
 {% include ad1.html %}
 
 Entre na seção **Rede e Internet**:
 
-{% include image.html src='/files/2021/04/android-vpn-02.jpg' %}
+{{< image src="/files/2021/04/android-vpn-02.jpg" >}}
 
 Em seguida, entre em **VPN**:
 
-{% include image.html src='/files/2021/04/android-vpn-03.jpg' %}
+{{< image src="/files/2021/04/android-vpn-03.jpg" >}}
 
 Toque no botão de adicionar no canto superior direito da tela:
 
-{% include image.html src='/files/2021/04/android-vpn-04.jpg' %}
+{{< image src="/files/2021/04/android-vpn-04.jpg" >}}
 
 Preencha as informações sobre a VPN de acordo com as orientações a seguir, mas também de acordo com as orientações de quem configurou a VPN (os exemplos se referem ao tutorial sobre [como configurar VPN no roteador MikroTik][vpn]):
 
-{% include image.html src='/files/2021/04/android-vpn-05.jpg' %}
+{{< image src="/files/2021/04/android-vpn-05.jpg" >}}
 
 - Em **Nome**, forneça um nome que te permita identificar a VPN, pode ser o nome que você quiser (exemplo: `VPN de Teste`)
 - Em **Tipo**, selecione **L2TP/IPsec PSK** (_pre shared key_, chave pré-compartilhada)
@@ -45,25 +45,25 @@ Preencha as informações sobre a VPN de acordo com as orientações a seguir, m
 
 Quando terminar, toque em **Salvar**. Feito isso, a VPN passa a aparecer na lista de VPNs:
 
-{% include image.html src='/files/2021/04/android-vpn-06.jpg' %}
+{{< image src="/files/2021/04/android-vpn-06.jpg" >}}
 
 Toque na VPN recém-criada e depois em **Conectar**:
 
-{% include image.html src='/files/2021/04/android-vpn-07.jpg' %}
+{{< image src="/files/2021/04/android-vpn-07.jpg" >}}
 
 Após alguns segundos, o sistema mostra que está **Conectado** à VPN:
 
-{% include image.html src='/files/2021/04/android-vpn-08.jpg' %}
+{{< image src="/files/2021/04/android-vpn-08.jpg" >}}
 
 Se souber de algum servidor _web_ na rede local da VPN, você pode testar a conexão abrindo o navegador e acessando esse servidor. Nesse exemplo, eu testo a conexão com a VPN acessando um servidor _web_ [Apache] que instalei no meu _notebook_:
 
-{% include image.html src='/files/2021/04/android-vpn-09.jpg' %}
+{{< image src="/files/2021/04/android-vpn-09.jpg" >}}
 
 Você também pode fazer algum outro teste sugerido pelo administrador da rede.
 
 Quando não precisar mais usar a VPN, volte às configurações de **VPN**, toque na VPN e depois em **Desconectar**:
 
-{% include image.html src='/files/2021/04/android-vpn-10.jpg' %}
+{{< image src="/files/2021/04/android-vpn-10.jpg" >}}
 
 [android]:          https://www.android.com/
 [vpn]:              {{% ref "post/2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec" %}}

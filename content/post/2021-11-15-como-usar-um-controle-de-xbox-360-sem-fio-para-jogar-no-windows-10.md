@@ -7,13 +7,13 @@ image: /files/2021/11/xbox360-wireless.jpg
 title: Como usar um controle de Xbox 360 sem fio para jogar no Windows 10
 ---
 
-{% include image.html src='/files/2021/11/xbox360-wireless.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless.jpg" >}}
 
 Se você tem um controle sem fio para [Xbox 360], pode querer usá-lo com o PC também. Como ele possui muitos botões, pode ser compatível com vários jogos. Inclusive, pode ser usado para emular os controles de vários _videogames_.
 
 [Xbox 360]: https://pt.wikipedia.org/wiki/Xbox_360
 
-{% include image.html src='/files/2021/11/360_controller.svg' caption='Controle para Xbox 360. Fonte: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:360_controller.svg).' %}
+{{< image src="/files/2021/11/360_controller.svg" >}}
 
 Porém, diferente dos controles com fio, que usam o padrão USB, e dos [controles sem fio para modelos mais novos de Xbox][controle-xbox-one], que usam o padrão [Bluetooth][makeuseof], esse modelo de [controle sem fio para o Xbox 360][controle-xbox-360] usa um protocolo sem fio proprietário de 2,4 GHz, precisando de um receptor sem fio para ser usado no computador.
 
@@ -56,19 +56,19 @@ Até pelo nome que ele recebeu do Windows, por óbvio, não está.
 
 Na **Área de Trabalho**, clique com o botão direito do _mouse_ em **Este Computador** e clique em **Propriedades**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-01.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-01.jpg" >}}
 
 Na janela que abre, **Sobre**, clique em **Gerenciador de Dispositivos**, à direita:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-02.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-02.jpg" >}}
 
 No **Gerenciador de Dispositivos**, expanda **Outros dispositivos**, clique com o botão direito no **Dispositivo desconhecido** e clique em **Propriedades**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-03.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-03.jpg" >}}
 
 Na tela seguinte, clique no botão **Alterar Configurações**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-04.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-04.jpg" >}}
 
 Forneça a senha do usuário administrador.
 
@@ -76,29 +76,29 @@ O botão **Atualizar Driver** nessa mesma tela se torna disponível. Clique nele
 
 No assistente que se abre, clique em **Procurar drivers no meu computador**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-05.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-05.jpg" >}}
 
 Na tela seguinte, clique em **Permitir que eu escolha em uma lista de drivers disponíveis em meu computador**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-06.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-06.jpg" >}}
 
 Na lista, selecione o tipo **Periféricos do XBOX 360** e clique em **Avançar**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-07.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-07.jpg" >}}
 
 Na tela seguinte, selecione o modelo **Xbox 360 Wireless Receiver for Windows**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-08.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-08.jpg" >}}
 
 (tem alguns com nomes parecidos, na dúvida eu escolhi o mais recente, o último na lista)
 
 No aviso que aparece, pode clicar em **Sim**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-09.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-09.jpg" >}}
 
 Finalmente, a instalação do _driver_ foi concluída. Pode **Fechar** o assistente:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-10.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-10.jpg" >}}
 
 Pode ser necessário reiniciar o computador.
 
@@ -111,7 +111,7 @@ Se você tiver um Xbox 360 por perto, recomendo desligá-lo e desconectá-lo da 
 3. No controle sem fio, pressione e solte o botão de conexão, na parte de cima, a luz dele começa a piscar
 4. Ambas as luzes deixam de piscar quando o controle se conecta ao receptor. A luz fixa acesa no controle passa a indicar sua posição (uma de 4 possíveis).
 
-{% include image.html src='/files/2021/11/xbox360-wireless-11.png' %}
+{{< image src="/files/2021/11/xbox360-wireless-11.png" >}}
 
 Para conectar mais controles, siga esses 4 passos novamente. Em tese, você pode conectar até 4 controles (eu, particularmente, só testei até 2).
 
@@ -119,7 +119,7 @@ Para conectar mais controles, siga esses 4 passos novamente. Em tese, você pode
 
 Provavelmente a forma mais fácil de testar o controle é abrir o navegador e acessar o _site_ [gamepad-tester.com](https://gamepad-tester.com/). Pressione um botão no controle para começar o teste:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-12.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-12.jpg" >}}
 
 Mexa os eixos e aperte os botões e confira a animação na tela.
 
@@ -131,15 +131,15 @@ Abra a seção **Dispositivos** e clique em **Dispositivos e impressoras**, à d
 
 Clique com o botão direito no controle e clique em **Configurações do controlador de jogo**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-13.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-13.jpg" >}}
 
 Selecione o controlador e clique em **Propriedades**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-14.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-14.jpg" >}}
 
 Mexa os eixos e aperte os botões e confira a animação na tela:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-15.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-15.jpg" >}}
 
 ## Opcional: instalando o programa do receptor
 
@@ -151,21 +151,21 @@ Diferente do _driver_, o programa que veio no CD é compatível com Windows 10.
 
 Insira o CD no leitor de CD do computador, abra a pasta **Software** dentro dele e inicie o programa **setupstb.exe** (o outro não funcionou pra mim):
 
-{% include image.html src='/files/2021/11/xbox360-wireless-16.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-16.jpg" >}}
 
 Marque a opção **Aceito este contrato** e toque a instalação no "padrão Windows" ("avançar, avançar, avançar..."):
 
-{% include image.html src='/files/2021/11/xbox360-wireless-17.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-17.jpg" >}}
 
 Quando a instalação terminar, pode ser necessário reiniciar o computador.
 
 Para iniciar o programa do controle, abra o **menu Iniciar** e procure por **Status do Microsoft Xbox 360 Accessories**:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-18.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-18.jpg" >}}
 
 Eis o programa funcionando:
 
-{% include image.html src='/files/2021/11/xbox360-wireless-19.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-19.jpg" >}}
 
 Caso o programa do CD não funcione pra você, ou caso seu receptor não tenha vindo com um CD, pesquisando na Internet eu encontrei esse mesmo programa para baixar no _site_ [TechSpot]. Funciona no Windows 10 (eu testei), só não tem a tradução pro português (é em inglês).
 
@@ -179,7 +179,7 @@ A título de curiosidade, se você aperta o botão **Guia** (_guide_) no control
 
 [2amgaming]: https://blog.2amgaming.com/2020/01/barra-de-jogos-xbox-windows-10/
 
-{% include image.html src='/files/2021/11/xbox360-wireless-20.jpg' %}
+{{< image src="/files/2021/11/xbox360-wireless-20.jpg" >}}
 
 ## Referências
 

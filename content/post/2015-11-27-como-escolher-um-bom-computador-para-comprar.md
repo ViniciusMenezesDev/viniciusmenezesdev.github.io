@@ -7,7 +7,7 @@ title: Como escolher um bom computador para comprar?
 ---
  
 
-{% include image.html src="/files/2015/11/black-friday.jpg" %}
+{{< image src="/files/2015/11/black-friday.jpg" >}}
 
 Começou a [Black Friday][black-friday]! Muitos consumidores anseiam pela oportunidade de fazer um bom negócio e adquirir um bom computador com excelente custo benefício. No entanto, como escolher o melhor dentre tantos anúncios aparentemente interessantes? Será que o barato de hoje pode custar caro amanhã?
 
@@ -23,7 +23,7 @@ Você não precisa comprar um computador com grande poder computacional, que ger
 
 A que me refiro quando falo em "algo complexo"? Para um computador doméstico, **jogos**, por exemplo, são atividades complexas: exigem que o computador faça muitos cálculos e processe muitas regras ao mesmo tempo. Além disso, ele deve responder rapidamente (de preferência, em tempo real) aos comandos de quem joga. Se você deseja um computador para jogar, especialmente se está de olho nos últimos lançamentos em jogos (os jogos "pesados"), se prepare para desembolsar uma boa grana.
 
-{% include image.html src="/files/2015/11/jogos.jpg" caption="Jogos geralmente exigem do computador" %}
+{{< image src="/files/2015/11/jogos.jpg" >}}
 
 Também poderia citar como exemplos de atividades complexas, que exigem muito do computador: **produção de conteúdo multimídia** (edição de sons, fotos e vídeos) e **programação** (desenvolvimento de aplicativos e *sites*).
 
@@ -49,7 +49,7 @@ Começarei a falar agora sobre como avaliar os componentes do computador. Se alg
 
 Como [sabemos]({{% ref "post/2012-04-09-componentes-de-um-computador-hardware-e-software" %}}), o processador é o principal componente de um computador. Não apenas o principal, ele é também o mais rápido. Assim, ele é o maior (porém não o único) responsável pelo desempenho do computador. Não podemos esperar muito de um computador se seu processador é lento.
 
-{% include image.html src="/files/2012/04/processador.jpg" caption="Processador: o componente do computador que mais influencia no seu desempenho" %}
+{{< image src="/files/2012/04/processador.jpg" >}}
 
 Há várias características que influenciam o desempenho de um processador, mas, para simplificar, vamos nos ater às que mais aparecem nos anúncios: frequência de operação, memória cache e quantidade de núcleos.
 

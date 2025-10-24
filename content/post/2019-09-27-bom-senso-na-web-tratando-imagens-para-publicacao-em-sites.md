@@ -31,15 +31,15 @@ Essa semana eu estava vendo a programação do [festival Florianópolis Audiovis
 
 Então me dei conta que o motivo da lentidão eram as imagens, que demoravam pra carregar:
 
-{% include image.html src="/files/2019/09/famdetodos-01.jpg" %}
+{{< image src="/files/2019/09/famdetodos-01.jpg" >}}
 
 Eis que decidi abrir uma imagem em uma nova guia, de curiosidade:
 
-{% include image.html src="/files/2019/09/famdetodos-02.jpg" caption="Página: [http://www.famdetodos.com.br/programacao/26](http://www.famdetodos.com.br/programacao/26)" %}
+{{< image src="/files/2019/09/famdetodos-02.jpg" >}}
 
 Olha o tamanho da imagem original:
 
-{% include image.html src="/files/2019/09/famdetodos-03.jpg" %}
+{{< image src="/files/2019/09/famdetodos-03.jpg" >}}
 
 Isso mesmo, pasme: 5616 x 3744 _pixels_!
 
@@ -53,13 +53,13 @@ Agora o tamanho em _bytes_: são 868,9 kB em uma única imagem!
 
 Sabe o Prezão da Claro com franquia diária de 100 MB? Aquele que a Anitta faz propaganda?
 
-{% include image.html src="/files/2019/09/prezao.jpg" %}
+{{< image src="/files/2019/09/prezao.jpg" >}}
 
 Nesse ritmo, não daria pra ver a sinopse dos 121 filmes da programação em um dia só...
 
 Aliás, a página inicial do _site_ levou 2 minutos pra carregar no meu _notebook_, em uma conexão com largura de banda de 35 Mb/s! Ao todo, foram 18,8 MB transferidos:
 
-{% include image.html src="/files/2019/09/famdetodos-04.jpg" caption="Página: [http://www.famdetodos.com.br/](http://www.famdetodos.com.br/)" %}
+{{< image src="/files/2019/09/famdetodos-04.jpg" >}}
 
 Só pra "pisar o pé" nesse _site_, você já queimaria 20% da franquia do seu prezão...
 
@@ -99,11 +99,11 @@ Abra com o IrfanView a imagem que deseja tratar. Como exemplo, vou usar aquela i
 
 Para redimensioná-la, abra o menu **Imagem** (_Image_) e clique na opção **Redimensionar/Reamostrar** (_Resize/Resample_), ou, se preferir, tecle **Ctrl + F**:
 
-{% include image.html src="/files/2019/09/redimensionar-01.jpg" %}
+{{< image src="/files/2019/09/redimensionar-01.jpg" >}}
 
 Para não distorcer a imagem ao redimensionar, certifique-se de que a opção **Manter proporções** (_Preserve aspect ratio_) esteja marcada:
 
-{% include image.html src="/files/2019/09/redimensionar-02.jpg" %}
+{{< image src="/files/2019/09/redimensionar-02.jpg" >}}
 
 Selecione a opção **Definir novo tamanho** (_Set new size_) e informe, usando os campos **Largura** (_Width_) ou **Altura** (_Height_) as dimensões desejadas. Note que, ao mudar uma dimensão, o IrfanView automaticamente calcula a outra para que não haja distorção.
 
@@ -127,11 +127,11 @@ Observe que a compressão tem um preço: para reduzir o tamanho do arquivo, a qu
 
 Para salvar a imagem em um formato apropriado pra _web_ usando compressão, abra o menu **Arquivo** (_File_) e clique na opção **Salvar para Web** (_Save for Web_):
 
-{% include image.html src="/files/2019/09/salvar-para-web-01.jpg" %}
+{{< image src="/files/2019/09/salvar-para-web-01.jpg" >}}
 
 Infelizmente, essa tela não tem tradução. A imagem original (_Initial image_) é exibida à esquerda e a imagem otimizada (_Optimized image_), à direita. Também aparecem nessa tela o tamanho da imagem original e o tamanho estimado da imagem otimizada:
 
-{% include image.html src="/files/2019/09/salvar-para-web-02.jpg" %}
+{{< image src="/files/2019/09/salvar-para-web-02.jpg" >}}
 
 Comece selecionando um formato, abaixo das imagens: **JPEG**, **GIF** ou **PNG**.
 
@@ -149,7 +149,7 @@ Quando estiver satisfeito com o balanço entre qualidade da imagem e tamanho do 
 
 Veja como ficou a imagem tratada:
 
-{% include image.html src="/files/2019/09/imagem_tratada.jpg" style="width: 253px; height: 168px;" %}
+{{< image src="/files/2019/09/imagem_tratada.jpg" >}}
 
 Na verdade, ela é maior que isso: aqui estou exibindo a imagem tratada no mesmo tamanho em que ela é exibida na página original (253 x 168 _pixels_), mas você pode abrir a imagem tratada em uma nova guia e ver seu tamanho real (640 x 427 _pixels_).
 

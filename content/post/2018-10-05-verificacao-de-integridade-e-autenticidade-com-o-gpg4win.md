@@ -22,7 +22,7 @@ Comumente as distribuições Linux disponibilizam somas de verificação [SHA-25
 
 Nesse *post*, você verá como fazer essas verificações com o [**Gpg4win**][gpg4win], um *software* livre gratuito para [Windows][windows]. Como referência, aqui uso a versão 3.1.3, [lançada em 31/08/2018][gpg4win-release-notes]. Como exemplo, verificaremos uma imagem ISO da distribuição [openSUSE Leap][opensuse-leap].
 
-{% include image.html src="/files/2018/10/gpg4win.png" %}
+{{< image src="/files/2018/10/gpg4win.png" >}}
 
 Embora usemos aqui o exemplo da imagem ISO, qualquer arquivo pode ser verificado, contanto que a soma de verificação e a assinatura digital estejam disponíveis. É o caso, por exemplo, do instalador do programa [VeraCrypt][veracrypt]. Curiosamente, [é possível usar o Gpg4win para verificar o instalador do próprio Gpg4win][gnupg-wiki] (no caso de uma atualização).
 
@@ -42,7 +42,7 @@ O processo pode variar de acordo com a distribuição, mas geralmente segue essa
 
 Baixe o Gpg4win do seu *site* oficial: [https://www.gpg4win.org/][gpg4win]
 
-{% include image.html src="/files/2018/10/gpg4win-01.jpg" %}
+{{< image src="/files/2018/10/gpg4win-01.jpg" >}}
 
 Em se tratando de segurança da informação, sempre obtenha os arquivos dos seus respectivos *sites* oficiais. Nesse *post*, não vou fornecer nenhum *link* para *download* direto.
 
@@ -66,7 +66,7 @@ Para verificar a assinatura do instalador do Gpg4win, clique com o botão direit
 
 Compare os valores informados pelo Windows com os presentes no *site* do Gpg4win:
 
-{% include image.html src="/files/2018/10/gpg4win-02.png" %}
+{{< image src="/files/2018/10/gpg4win-02.png" >}}
 
 Se os valores conferem, você baixou o instalador corretamente. Execute-o como administrador e faça a instalação, no estivo Avançar, Avançar, Concluir...
 
@@ -76,7 +76,7 @@ Baixe a imagem de instalação via rede do openSUSE Leap, assim como o arquivo d
 
 [https://software.opensuse.org/distributions/leap][download-leap]
 
-{% include image.html src="/files/2018/10/gpg4win-03.png" %}
+{{< image src="/files/2018/10/gpg4win-03.png" >}}
 
 Escolhi a imagem de instalação via rede por ser o menor arquivo, apenas para exemplo.
 
@@ -89,51 +89,51 @@ Quando acabar, você deve ver dois arquivos na pasta `Downloads`:
 
 Mais abaixo na página **Baixe o openSUSE**, na seção **Verifique seu download antes de usar**, clique no grande número em [hexadecimal][hexadecimal]:
 
-{% include image.html src="/files/2018/10/gpg4win-04.png" %}
+{{< image src="/files/2018/10/gpg4win-04.png" >}}
 
 Na página seguinte, clique no outro número, menor, também em hexadecimal (curiosamente, não é outro número, são os 8 últimos dígitos do anterior, como se fosse um resumo):
 
-{% include image.html src="/files/2018/10/gpg4win-05.png" %}
+{{< image src="/files/2018/10/gpg4win-05.png" >}}
 
 A página seguinte mostra a chave pública do Projeto openSUSE em formato de texto.
 
 Selecione tudo entre `-----BEGIN PGP PUBLIC KEY BLOCK-----` e `-----END PGP PUBLIC KEY BLOCK-----` e copie:
 
-{% include image.html src="/files/2018/10/gpg4win-06.png" %}
+{{< image src="/files/2018/10/gpg4win-06.png" >}}
 
 Inicie o aplicativo [**Kleopatra**][kleopatra], incluso no Gpg4win, vá no menu **Ferramentas**, aponte para **Área de transferência**, e clique em **Importação do certificado**:
 
-{% include image.html src="/files/2018/10/gpg4win-07.png" %}
+{{< image src="/files/2018/10/gpg4win-07.png" >}}
 
 Você agora deve ver a chave pública do openSUSE importada no Kleopatra, que oferece para assinar a chave, marcando-a como confiável, vamos por enquanto clicar em **Não**:
 
-{% include image.html src="/files/2018/10/gpg4win-08.png" %}
+{{< image src="/files/2018/10/gpg4win-08.png" >}}
 
 Isso na verdade é opcional, volto a explicar no final.
 
 Faça um duplo clique na chave e confira a impressão digital (*fingerprint*) com a presente no *site* do openSUSE. Se os números conferem, você importou com sucesso a chave pública do openSUSE para o Kleopatra:
 
-{% include image.html src="/files/2018/10/gpg4win-09.png" %}
+{{< image src="/files/2018/10/gpg4win-09.png" >}}
 
 ## 4) Verificando a integridade da imagem ISO
 
 Na tela principal do Kleopatra, vá no menu **Arquivo** e clique em **Verificar arquivos de soma de verificação**:
 
-{% include image.html src="/files/2018/10/gpg4win-10.png" %}
+{{< image src="/files/2018/10/gpg4win-10.png" >}}
 
 Informe a localização do arquivo que contém a soma de verificação (`openSUSE-Leap-15.0-NET-x86_64.iso.sha256`).
 
 Na tela seguinte, se a soma de verificação confere, o arquivo da imagem ISO (`openSUSE-Leap-15.0-NET-x86_64.iso`) é destacado na cor verde:
 
-{% include image.html src="/files/2018/10/gpg4win-11.png" %}
+{{< image src="/files/2018/10/gpg4win-11.png" >}}
 
 Na parte inferior da janela, aparece **Ocorreu um erro**. Essa mensagem é exibida provavelmente porque o Kleopatra não interpreta nesse momento as linhas referentes à assinatura GPG. Se tiver curiosidade, você pode ver essas linhas abrindo o arquivo da soma de verificação usando um programa como o [Notepad++][notepad]:
 
-{% include image.html src="/files/2018/10/gpg4win-12.png" %}
+{{< image src="/files/2018/10/gpg4win-12.png" >}}
 
 Se a soma de verificação não confere, o arquivo da imagem ISO é destacado na cor vermelha. Clicando em **Mostrar**, é possível ver na última linha *checksums did NOT match* (somas de verificação NÃO conferem):
 
-{% include image.html src="/files/2018/10/gpg4win-13.png" %}
+{{< image src="/files/2018/10/gpg4win-13.png" >}}
 
 Se isso acontecer, você deve tentar baixar a imagem ISO novamente.
 
@@ -141,19 +141,19 @@ Se isso acontecer, você deve tentar baixar a imagem ISO novamente.
 
 Na tela principal do Kleopatra, vá no menu **Arquivo** e clique em **Descriptografar/verificar**:
 
-{% include image.html src="/files/2018/10/gpg4win-14.png" %}
+{{< image src="/files/2018/10/gpg4win-14.png" >}}
 
 Informe a localização do arquivo que contém a soma de verificação.
 
 Se a chave não foi assinada (etapa que o Kleopatra nos ofereceu, mas pulamos antes) e a verificação da assinatura confere, o Kleopatra mostra uma mensagem neutra, que não parece uma mensagem nem de sucesso nem de erro:
 
-{% include image.html src="/files/2018/10/gpg4win-15.png" %}
+{{< image src="/files/2018/10/gpg4win-15.png" >}}
 
 O ideal seria assinar a chave, como explicarei a seguir, mas realmente penso que é um passo a mais e opcional. Se você é do tipo tranquilo, pode ficar satisfeito com a mensagem acima e usar a imagem ISO tranquilamente. Veja como uma assinatura inválida parece.
 
 Independente de a chave ter sido assinada ou não, se a verificação da assinatura falha, o Kleopatra mostra **Assinatura inválida**, em vermelho:
 
-{% include image.html src="/files/2018/10/gpg4win-16.png" %}
+{{< image src="/files/2018/10/gpg4win-16.png" >}}
 
 Se isso acontecer, você deve tentar baixar a imagem ISO novamente.
 
@@ -171,27 +171,27 @@ Para assinar a chave pública do openSUSE, você precisa antes criar um par de c
 
 Na tela principal do Kleopatra, vá no menu **Arquivo** e clique em **Novo Par de Chaves**:
 
-{% include image.html src="/files/2018/10/gpg4win-17.png" %}
+{{< image src="/files/2018/10/gpg4win-17.png" >}}
 
 Na primeira tela do **Assistente de Criação de Pares de Chaves**, clique em **Criar um par de chaves OpenGPG pessoal**:
 
-{% include image.html src="/files/2018/10/gpg4win-18.png" %}
+{{< image src="/files/2018/10/gpg4win-18.png" >}}
 
 Na tela seguinte, preencha os campos **Nome** e **E-mail** e clique em **Next** (Avançar, esqueceram de traduzir esse botão):
 
-{% include image.html src="/files/2018/10/gpg4win-19.png" %}
+{{< image src="/files/2018/10/gpg4win-19.png" >}}
 
 Confirme seus dados e clique em **Criar**:
 
-{% include image.html src="/files/2018/10/gpg4win-20.png" %}
+{{< image src="/files/2018/10/gpg4win-20.png" >}}
 
 Crie uma senha (*passphrase*) para a nova chave, digite de novo no campo abaixo para se certificar que não digitou errado, e clique em **OK**:
 
-{% include image.html src="/files/2018/10/gpg4win-21.png" %}
+{{< image src="/files/2018/10/gpg4win-21.png" >}}
 
 Kleopatra informa que **O par de chaves foi criado com sucesso**. Clique em **Terminar**:
 
-{% include image.html src="/files/2018/10/gpg4win-22.png" %}
+{{< image src="/files/2018/10/gpg4win-22.png" >}}
 
 Sua chave pessoal agora aparece na tela principal do Kleopatra. Agora você pode utilizá-la para assinar a chave pública do openSUSE.
 
@@ -199,29 +199,29 @@ Sua chave pessoal agora aparece na tela principal do Kleopatra. Agora você pode
 
 Na tela principal do Kleopatra, selecione a chave pública do openSUSE e clique em **Certificar**:
 
-{% include image.html src="/files/2018/10/gpg4win-23.png" %}
+{{< image src="/files/2018/10/gpg4win-23.png" >}}
 
 Na tela seguinte, selecione a opção **Foram verificadas as impressões digitais** (de fato, já fizemos isso lá atrás) e clique em **Next** (Avançar):
 
-{% include image.html src="/files/2018/10/gpg4win-24.png" %}
+{{< image src="/files/2018/10/gpg4win-24.png" >}}
 
 Na tela seguinte, você pode manter a opção padrão marcada (**Certificar somente para mim mesmo**) e clicar em **Certificar**:
 
-{% include image.html src="/files/2018/10/gpg4win-25.png" %}
+{{< image src="/files/2018/10/gpg4win-25.png" >}}
 
 Digite a senha da sua chave e clique em **OK**:
 
-{% include image.html src="/files/2018/10/gpg4win-26.png" %}
+{{< image src="/files/2018/10/gpg4win-26.png" >}}
 
 A última tela do assistente confirma que você certificou a chave pública do Projeto openSUSE. Clique em **Terminar**:
 
-{% include image.html src="/files/2018/10/gpg4win-27.png" %}
+{{< image src="/files/2018/10/gpg4win-27.png" >}}
 
 ## 6.3) Verificando novamente a autentiticade da imagem ISO
 
 Repita a verificação de autentiticade da imagem ISO (seção 5). Veja que agora a mensagem apresentada pelo Kleopatra é bem mais assertiva, transmite bem mais segurança:
 
-{% include image.html src="/files/2018/10/gpg4win-28.png" %}
+{{< image src="/files/2018/10/gpg4win-28.png" >}}
 
 Repare na última frase: **A assinatura é válida e a validade do certificado é completamente confiável**.
 

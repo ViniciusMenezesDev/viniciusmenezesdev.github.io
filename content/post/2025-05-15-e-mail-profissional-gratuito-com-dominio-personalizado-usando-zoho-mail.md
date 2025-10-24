@@ -4,7 +4,7 @@ image: /files/2025/05/zoho-mail-dominio.jpg
 title: E-mail profissional gratuito com domínio personalizado usando Zoho Mail
 ---
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio.jpg" >}}
 
 Se você é autônomo ou tem um negócio próprio, mesmo que pequeno, ter um _e-mail_ personalizado com domínio próprio (como `seunome@suaempresa.com.br`) traz diversas vantagens. A principal delas é que transmite uma imagem mais profissional do que um _e-mail_ gratuito como `@gmail.com` ou `@hotmail.com`, comumente usados para comunicações pessoais. Também ajuda com a consistência da sua marca, mantendo sua presença digital coerente (redes sociais, _site_, _e-mail_ com o mesmo nome/dominio). Além de gerar confiança: clientes, parceiros e empregadores costumam confiar mais em _e-mails_ com domínio próprio, pois parecem mais autênticos e menos amadores.
 
@@ -24,25 +24,25 @@ Você pode seguir este tutorial mesmo que tenha registrado o domínio em outro l
 
 Acesse sua conta no [Registro.br] e, no **Painel**, clique no domínio:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-01.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-01.jpg" >}}
 
 Na seção **DNS**, clique em **Configurar endereçamento**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-02.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-02.jpg" >}}
 
 A configuração de DNS do Registro.br por padrão é simplificada, tornando mais fácil configurar o DNS:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-03.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-03.jpg" >}}
 
 Essas opções provavelmente são suficientes para muitas pessoas, mas aqui precisaremos fazer mais configurações. Clique em **Modo avançado**.
 
 Leia o alerta apresentado e clique em **Confirmar**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-04.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-04.jpg" >}}
 
 Agora, conforme alertado, aguarde o prazo para a alteração ser feita. Note que essa tela dá uma previsão mais exata, em horas, minutos e segundos:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-05.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-05.jpg" >}}
 
 Note também que o _link_ **Configurar zona DNS** está desabilitado (não é possível clicar nele).
 
@@ -52,29 +52,29 @@ Enquanto aguarda, comece o cadastro no Zoho Mail.
 
 Acesse a página do [Zoho Mail] e clique no _link_ **Preços**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-06.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-06.jpg" >}}
 
 Em **Plano gratuito vitalício**, clique em **Inscreva-se já**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-07.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-07.jpg" >}}
 
 Na tela seguinte, digite seu **Nome**, um **Endereço de e-mail** para contato e uma **Senha** para a conta que está criando e clique em **Inscrever-se**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-08.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-08.jpg" >}}
 
 O Zoho Mail apresenta um assistente para configurar o domínio:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-09.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-09.jpg" >}}
 
 Como já temos um domínio registrado, clique em **Adicionar agora**.
 
 Forneça as informações solicitadas (domínio, nome da organização e setor) e clique em **Adicionar agora**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-10.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-10.jpg" >}}
 
 Na tela seguinte, clique em **Prosseguir para a verificação do domínio**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-11.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-11.jpg" >}}
 
 ## Verificação do domínio
 
@@ -82,17 +82,17 @@ Antes de configurar propriamente as entradas DNS para envio e recebimento de _e-
 
 A tela seguinte apresenta a entrada TXT que precisa ser adicionada no servidor DNS:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-12.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-12.jpg" >}}
 
 Clique no ícone para copiar o **Valor/conteúdo do TXT**.
 
 Passado o prazo de 2 horas, volte ao Registro.br e clique em **Configurar zona DNS**. Clique em **Nova entrada**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-13.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-13.jpg" >}}
 
 Em **Tipo**, selecione **TXT**:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-14.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-14.jpg" >}}
 
 Deixe o campo **Nome** vazio.
 
@@ -102,13 +102,13 @@ Por fim, clique em **Adicionar** e, depois, em **Salvar alterações**.
 
 Essa alteração na configuração do domínio precisa ser propagada para servidores DNS no mundo todo, o que pode levar desde alguns minutos a algumas horas, ou até mesmo dias. Você pode acompanhar a propagação com o auxílio de alguma ferramenta como o [whatsmydns.net]:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-15.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-15.jpg" >}}
 
 Quando a propagação estiver concluída (ou, pelo menos, bem adiantada), volte ao Zoho Mail e clique em **Verificar registro TXT**.
 
 Se o Zoho Mail conseguiu obter a entrada TXT do servidor DNS, ele informa na tela seguinte que a propriedade do domínio foi verificada:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-16.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-16.jpg" >}}
 
 Defina o endereço de _e-mail_ da primeira e mais importante conta do domínio, a conta do administrador. Pode ser algo como `contato@antoniomedeiros.dev`, `advogada@renatamonte.com.br` ou `admin@seudominio.com`.
 
@@ -118,39 +118,39 @@ Quando terminar, clique em **Criar**.
 
 As duas telas seguintes do assistente não tem relação com a configuração do domínio, em ambas você pode prosseguir para a tela seguinte:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-17.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-17.jpg" >}}
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-18.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-18.jpg" >}}
 
 ## Configurando o e-mail no DNS
 
 A tela seguinte traz mais configurações para fazermos no DNS:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-19.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-19.jpg" >}}
 
 Essas entradas, sim, são responsáveis pelo envio e recebimento de _e-mails_ propriamente. Replique-as no Registro.br e salve as alterações:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-20.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-20.jpg" >}}
 
 Novamente, aguarde a propagação dessas alterações. Quando terminar, volte ao assistente de configuração do Zoho Mail e clique no botão **Verificar todos os registros**.
 
 Se tudo deu certo, o assistente mostra uma mensagem de sucesso:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-21.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-21.jpg" >}}
 
 Novamente, você pode avançar para as telas seguintes. Essas últimas telas do assistente não tem relação com a configuração do domínio.
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-22.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-22.jpg" >}}
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-23.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-23.jpg" >}}
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-24.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-24.jpg" >}}
 
 Configuração concluída, clique em **Verifique sua caixa de entrada**.
 
 Eis a caixa de entrada do Zoho Mail:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-25.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-25.jpg" >}}
 
 ## Testando envio e recebimento de e-mails
 
@@ -158,15 +158,15 @@ Se deu tudo certo, já temos um _e-mail_ profissional funcionando, capaz de envi
 
 Clique em **Novo e-mail**, redija e envie uma mensagem para outro endereço de _e-mail_ (seu _e-mail_ pessoal, por exemplo):
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-26.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-26.jpg" >}}
 
 Verifique que o _e-mail_ foi recebido do outro lado e o responda:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-27.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-27.jpg" >}}
 
 Verifique no seu _e-mail_ profissional que a resposta foi recebida:
 
-{% include image.html src='/files/2025/05/zoho-mail-dominio-28.jpg' %}
+{{< image src="/files/2025/05/zoho-mail-dominio-28.jpg" >}}
 
 ## Conclusão
 

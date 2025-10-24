@@ -8,7 +8,7 @@ Instalou o [Windows](http://www.microsoft.com/pt-br/windows) 8/8.1/10 e não con
 
 A mensagem de erro que apareceu para mim quando eu tentei acessar a partição NTFS com meus arquivos pessoais foi a seguinte:
 
-{% include image.html src="/files/2015/09/inicializacao-rapida-0.png" %}
+{{< image src="/files/2015/09/inicializacao-rapida-0.png" >}}
 
 Transcrevendo:
 
@@ -32,21 +32,21 @@ A maneira mais simples de desativar a inicialização rápida é pelo Painel de 
 
 2. Clique em **Opções de Energia**
 
-{% include image.html src="/files/2015/09/inicializacao-rapida-1.png" %}
+{{< image src="/files/2015/09/inicializacao-rapida-1.png" >}}
 
 3. Clique em **Escolher a função dos botões de energia**
 
-{% include image.html src="/files/2015/09/inicializacao-rapida-2.png" %}
+{{< image src="/files/2015/09/inicializacao-rapida-2.png" >}}
 
 4. Clique em **Alterar configurações não disponíveis no momento**
 
-{% include image.html src="/files/2015/09/inicializacao-rapida-3.png" %}
+{{< image src="/files/2015/09/inicializacao-rapida-3.png" >}}
 
 5. Se o Windows pedir permissão para continuar, clique em **Sim**
 
 6. Desmarque a opção **Ligar inicialização rápida (recomendado)** e clique em **Salvar alterações**
 
-{% include image.html src="/files/2015/09/inicializacao-rapida-4.png" %}
+{{< image src="/files/2015/09/inicializacao-rapida-4.png" >}}
 
 7. Pronto! Se desejar, pode fechar a janela.
 
@@ -58,7 +58,7 @@ Se você é do tipo que gosta de alterar as configurações do Windows à moda a
 
 2. Clique com o botão direito em **regedit** e clique em **Executar como administrador**
 
-    {% include image.html src="/files/2015/09/inicializacao-rapida-5.png" %}
+    {{< image src="/files/2015/09/inicializacao-rapida-5.png" >}}
 
 3. Navegue até a chave de registro **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power**
 
@@ -87,7 +87,7 @@ Pensando em tornar a inicialização do Windows mais rápida, a Microsoft decidi
 
 Você pode ter uma ideia do ganho de desempenho trazido pela inicialização rápida, em comparação à "inicialização fria" (*cold boot*, como batizaram a inicialização tradicional), vendo essa imagem, encontrada em [um *blog* da MSDN](http://blogs.msdn.com/b/b8/archive/2011/09/08/delivering-fast-boot-times-in-windows-8.aspx):
 
-{% include image.html src="/files/2015/09/inicializacao-rapida-6.png" %}
+{{< image src="/files/2015/09/inicializacao-rapida-6.png" >}}
 
 Infelizmente, o que pode ser muito bom para quem usa apenas o Windows, pode ser um problema para quem usa também o Linux: ao iniciar o Linux após ter desligado o computador pelo Windows 8/8.1/10, o sistema não consegue montar as partições NTFS com permissões de leitura e escrita, pois entende que o computador foi hibernado e o Windows ainda está utilizando essas partições (se você entendeu como funciona a inicialização rápida, deve concordar que a visão do Linux não está de toda errada, não é mesmo?).
 

@@ -22,7 +22,7 @@ Se você tem outro roteador, como o [MikroTik] do qual tenho falado nos meus úl
 
 Tentando usar uma linguagem menos técnica, tornar o modem da operadora uma _bridge_ na prática seria como anulá-lo, ele passa a fazer apenas o "leva e traz" de dados na rede, enquanto quem faz o "trabalho pesado" mesmo é o roteador conectado a ele.
 
-{% include image.html src="/files/2020/08/modem-bridge.jpg" %}
+{{< image src="/files/2020/08/modem-bridge.jpg" >}}
 
 Se você, assim como eu, confia mais no seu roteador do que no equipamento da operadora, configurar o modem em modo _bridge_ pode trazer mais segurança para a rede da sua casa.
 
@@ -51,17 +51,17 @@ Abra o navegador e acesse a interface _web_ do _modem_ da operadora. O endereço
 
 No caso do modem HUMAX HG100R-L4, o endereço IP é `192.168.0.1` e o _login_ e senha estão em uma etiqueta no próprio modem:
 
-{% include image.html src="/files/2020/08/modem-bridge-01.png" %}
+{{< image src="/files/2020/08/modem-bridge-01.png" >}}
 
 A tela inicial resume as informações da conexão e traz as configurações mais comuns, que são o nome e a senha da rede Wi-Fi. Acesse as configurações avançadas clicando em **Advanced Network Settings** (configurações avançadas de rede):
 
-{% include image.html src="/files/2020/08/modem-bridge-02.jpg" %}
+{{< image src="/files/2020/08/modem-bridge-02.jpg" >}}
 
 ### Fazendo backup da configuração atual
 
 Nas configurações avançadas, selecione **básico** no menu à esquerda, depois **Back Up**. Selecione **Salve Status Atual** e clique em **aplicar** para baixar a configuração atual do modem:
 
-{% include image.html src="/files/2020/08/modem-bridge-03.jpg" %}
+{{< image src="/files/2020/08/modem-bridge-03.jpg" >}}
 
 O navegador vai baixar um arquivo chamado `GatewaySettings.bin`. Salve esse arquivo em um local seguro, que você se lembre depois, pro caso de precisar restaurar o _backup_.
 
@@ -69,13 +69,13 @@ O navegador vai baixar um arquivo chamado `GatewaySettings.bin`. Salve esse arqu
 
 Na interface _web_ do modem, selecione **Sem fio** no menu à esquerda, depois **Rede Primária**. À direita, marque a opção **Inválido** e depois clique em **aplicar**:
 
-{% include image.html src="/files/2020/08/modem-bridge-04.jpg" %}
+{{< image src="/files/2020/08/modem-bridge-04.jpg" >}}
 
 ### Ativando o modo bridge
 
 Ainda nas configurações avançadas do modem, selecione **básico** no menu à esquerda, depois **Definir**. Role a página à direita até encontrar a opção **Modo Switch** e defina-a como **Bridge**:
 
-{% include image.html src="/files/2020/08/modem-bridge-05.jpg" %}
+{{< image src="/files/2020/08/modem-bridge-05.jpg" >}}
 
 Chegamos ao ponto de não retorno. Clique em **aplicar** para ativar o modo _bridge_.
 
@@ -101,11 +101,11 @@ Se seu roteador estava configurado para obter [DHCP], deve ter recebido um ender
 
 No caso do MikroTik, para verificar o endereço IP obtido, inicie o [WinBox][mikrotik]. Na janela do WinBox, à esquerda, expanda o menu **IP**, depois clique no item **Addresses** (endereços):
 
-{% include image.html src="/files/2020/08/modem-bridge-06.jpg" %}
+{{< image src="/files/2020/08/modem-bridge-06.jpg" >}}
 
 No meu exemplo, o MikroTik obteve o endereço IP `100.64.198.110/19`:
 
-{% include image.html src="/files/2020/08/modem-bridge-07.jpg" %}
+{{< image src="/files/2020/08/modem-bridge-07.jpg" >}}
 
 (se a notação `/19` é nova para você — eu só a conheci quando tive a oportunidade de trabalhar com redes — ela quer dizer que os primeiros 19 _bits_ do endereço IP identificam a rede, para mais informações procure saber sobre [CIDR])
 
@@ -125,9 +125,9 @@ A _carrier-grade_ NAT impossibilita a hospedagem de serviços e o redirecionamen
 
 Em 2015, eu tive um problema com o modem ARRIS TG862 da NET: um vírus invadiu o modem e mudou os endereços dos servidores DNS. Com isso, vários _sites_ passaram a exibir anúncios bastante irritantes e inconvenientes em russo, como os das imagens abaixo.
 
-{% include image.html src="/files/2020/08/arris-tg862-malware-1.jpg" caption="(fonte da imagem: Clube do Hardware)" %}
+{{< image src="/files/2020/08/arris-tg862-malware-1.jpg" >}}
 
-{% include image.html src="/files/2020/08/arris-tg862-malware-2.jpg" caption="(fonte da imagem: [Comunidade do Hardware.com.br](https://www.hardware.com.br/comunidade/adware-redirecionando/1372966/))" %}
+{{< image src="/files/2020/08/arris-tg862-malware-2.jpg" >}}
 
 Isso acontecia porque o servidor DNS farsante redirecionava as requisições ao [Google Analytics][analytics] (um serviço usado por muitos _sites_) para outro servidor que não era o do [Google], fazendo com que o navegador baixasse o _script_ dos anúncios em russo, em vez do _script_ requisitado pelo _site_, que era o do Google Analytics.
 

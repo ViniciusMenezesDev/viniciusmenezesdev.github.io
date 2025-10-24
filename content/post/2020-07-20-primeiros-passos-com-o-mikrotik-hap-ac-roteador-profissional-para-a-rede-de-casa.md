@@ -23,7 +23,7 @@ Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidade de conh
 
 Como me mudei recentemente, decidi aproveitar a oportunidade para reconfigurá-lo e escrever alguns tutoriais mostrando suas funcionalidades.
 
-{% include image.html src="/files/2020/07/mikrotik-hap.jpg" caption="MikroTik hAP ac lite TC" %}
+{{< image src="/files/2020/07/mikrotik-hap.jpg" >}}
 
 O [MikroTik hAP ac lite TC][mikrotik-hap] é um roteador e ponto de acesso sem fio (_access point_) doméstico. Ele fornece 5 portas Ethernet de 10/100Mbps, rede sem fio Wi-Fi 802.11 a/b/g/n/ac em duas frequências (_dual band_) de 2,4GHz e 5GHz ao mesmo tempo e ainda tem uma porta USB que pode ser usada para conectar um modem 3G/4G. Ele pode ser ligado por PoE (Power over Ethernet) na porta 1, assim como fornece uma porta PoE, a porta 5, que pode ser usada para ligar um dispositivo PoE, como uma câmera IP.
 
@@ -39,7 +39,7 @@ Para os tutoriais, vou usar o [Linux Kamarada 15.1][kamarada-15.1], mas note que
 
 São poucas as conexões do MikroTik: usando um cabo de rede Ethernet, conecte a porta 1 do MikroTik ao modem da operadora. Também conecte a fonte de alimentação ao MikroTik e a uma fonte de energia (como uma tomada na parede, um filtro de linha ou um _nobreak_).
 
-{% include image.html src="/files/2020/07/mikrotik-conexoes.jpg" %}
+{{< image src="/files/2020/07/mikrotik-conexoes.jpg" >}}
 
 Note que o MikroTik não tem botão de liga/desliga. Então, ao plugar a fonte de alimentação, ele já liga. Se um dia você precisar desligá-lo, basta desconectar a fonte de alimentação.
 
@@ -49,7 +49,7 @@ Após alguns segundos ligando, o MikroTik já fornece uma rede Wi-Fi.
 
 Abra as configurações de Wi-Fi do sistema e conecte-o à rede do MikroTik (note que ela vem aberta de fábrica, sem senha):
 
-{% include image.html src="/files/2020/07/mikrotik-01.jpg" %}
+{{< image src="/files/2020/07/mikrotik-01.jpg" >}}
 
 No meu caso, ele fornece duas redes: MikroTik-86349A (2,4GHz) e MikroTik-86349B (5GHz).
 
@@ -61,7 +61,7 @@ Abra o navegador e acesse `192.168.88.1`.
 
 No primeiro acesso, a tela **Quick Set** (configuração rápida) já vem selecionada:
 
-{% include image.html src="/files/2020/07/mikrotik-02.jpg" %}
+{{< image src="/files/2020/07/mikrotik-02.jpg" >}}
 
 O mais importante nessa tela é a seção **Wireless** (rede sem fio). Forneça um nome para as redes (**Network Name**) e também uma senha (**WiFi Password**). A senha deve conter pelo menos 8 caracteres.
 
@@ -95,15 +95,15 @@ Já é possível acessar o MikroTik pelo seu novo endereço (`10.0.0.1`).
 
 Abra o navegador e acesse [10.0.0.1](http://10.0.0.1/). Perceba que agora a interface _web_ exige senha:
 
-{% include image.html src="/files/2020/07/mikrotik-03.jpg" %}
+{{< image src="/files/2020/07/mikrotik-03.jpg" >}}
 
 Digite a senha que você definiu para a configuração do MikroTik e clique em **Login**.
 
 Dentro da interface _web_, selecione **WebFig** para ter acesso à interface mais completa:
 
-{% include image.html src="/files/2020/07/mikrotik-04.jpg" %}
+{{< image src="/files/2020/07/mikrotik-04.jpg" >}}
 
-{% include image.html src="/files/2020/07/mikrotik-05.jpg" %}
+{{< image src="/files/2020/07/mikrotik-05.jpg" >}}
 
 ## Download do programa WinBox
 
@@ -113,7 +113,7 @@ O WinBox é um programa para Windows, mas pode ser executado no [Linux] por meio
 
 Para baixar o WinBox, na interface _web_ do MikroTik, no menu à esquerda, clique em **WinBox** (é uma das últimas opções):
 
-{% include image.html src="/files/2020/07/mikrotik-06.jpg" %}
+{{< image src="/files/2020/07/mikrotik-06.jpg" >}}
 
 Com isso, seu navegador baixará o executável `winbox.exe`.
 
@@ -125,15 +125,15 @@ No meu caso, vou criar uma pasta `programas` dentro da minha pasta pessoal (`/ho
 
 Para abrir o WinBox, tanto no Linux Kamarada quanto no Windows, é só dar duplo clique no `winbox.exe`:
 
-{% include image.html src="/files/2020/07/mikrotik-07.jpg" %}
+{{< image src="/files/2020/07/mikrotik-07.jpg" >}}
 
-{% include image.html src="/files/2020/07/mikrotik-08.png" %}
+{{< image src="/files/2020/07/mikrotik-08.png" >}}
 
 No Linux Kamarada, para facilitar iniciar o WinBox pelo menu **Atividades**, vamos criar um arquivo `.desktop` para o WinBox.
 
 Salve a imagem a seguir na mesma pasta onde está o `winbox.exe`:
 
-{% include image.html src="/files/2020/07/winbox.svg" style="max-width: 256px;" caption="Você pode clicar com o botão direito do mouse [nesse link](/files/2020/07/winbox.svg) e usar a opção **Salvar link como...** Fonte da imagem: [Free SVG](https://freesvg.org/winbox-app-icon)" %}
+{{< image src="/files/2020/07/winbox.svg" >}}
 
 Abra o aplicativo **Editor de texto** ([gedit]), copie e cole o seguinte conteúdo:
 
@@ -151,13 +151,13 @@ Salve esse arquivo em `~/.local/share/applications` com o nome de `winbox.deskto
 
 Com isso, você já deve ser capaz de abrir o menu **Atividades** e iniciar o WinBox por ele:
 
-{% include image.html src="/files/2020/07/mikrotik-09.jpg" %}
+{{< image src="/files/2020/07/mikrotik-09.jpg" >}}
 
 ## Acessando o MikroTik pelo WinBox
 
 Ao ser iniciado, o WinBox busca dispositivos MikroTik no mesmo [domínio de _broadcast_][broadcast-domain] da camada 2 (enlace) e os lista na aba **Neighbors** (vizinhos):
 
-{% include image.html src="/files/2020/07/mikrotik-10.png" %}
+{{< image src="/files/2020/07/mikrotik-10.png" >}}
 
 Se seu dispositivo MikroTik aparece nessa lista, dê um duplo clique nele.
 
@@ -173,7 +173,7 @@ Digite a senha (**Password**) que você definiu para a configuração do MikroTi
 
 Note como o WinBox é bem semelhante à interface _web_:
 
-{% include image.html src="/files/2020/07/mikrotik-11.png" %}
+{{< image src="/files/2020/07/mikrotik-11.png" >}}
 
 A janela mostrada na imagem acima é a lista de interfaces de rede do MikroTik. Para abri-la, clique no item **Interfaces** no menu à esquerda.
 
@@ -187,7 +187,7 @@ Como exemplo, vejamos como o MikroTik pode nos mostrar informações sobre a vel
 
 Dê um duplo clique na interface **ether1** (a interface onde está conectado o modem da operadora) e, na janela que aparece, mude para a aba **Traffic**:
 
-{% include image.html src="/files/2020/07/mikrotik-12.png" %}
+{{< image src="/files/2020/07/mikrotik-12.png" >}}
 
 Para gerar tráfego de rede, abra um vídeo no [YouTube] ou [Netflix], ou use serviços de teste de velocidade como o [Minha Conexão][minhaconexao] ou o [Speedtest]. Observe no gráfico o tráfego aumentando.
 
@@ -199,11 +199,11 @@ Uma vez, eu já usei uma captura dessa tela para reclamar de conexão lenta à o
 
 O MikroTik mostra informações detalhadas sobre os dispositivos conectados às redes Wi-Fi. Para vê-las, no menu à esquerda, clique em **Wireless** (sem fio), depois selecione a aba **Registration** (registro):
 
-{% include image.html src="/files/2020/07/mikrotik-13.png" %}
+{{< image src="/files/2020/07/mikrotik-13.png" >}}
 
 Se você não consegue identificar um dispositivo, o _site_ [MAC Vendors][mac-vendors] pode ajudar:
 
-{% include image.html src="/files/2020/07/mikrotik-14.jpg" %}
+{{< image src="/files/2020/07/mikrotik-14.jpg" >}}
 
 O [endereço MAC][mac] de cada dispositivo é único, gravado em seu _hardware_ e atribuído pelo fabricante da interface de rede. É formado por um conjunto de 6 _bytes_. Na representação legível para nós, seres humanos, cada _byte_ é representado por dois algarismos em [hexadecimal] e separado dos demais por dois pontos (`:`). Os três primeiros _bytes_ identificam o fabricante e os três últimos, o dispositivo em si.
 

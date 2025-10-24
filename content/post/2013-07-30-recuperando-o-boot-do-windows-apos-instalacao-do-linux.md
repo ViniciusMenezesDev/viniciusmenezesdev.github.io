@@ -48,19 +48,19 @@ Na busca por soluções, encontrei [este site](http://www.howtogeek.com/howto/33
 
 1. Iniciei o computador pelo DVD de instalação do Windows 7. Na tela inicial, escolhi meu idioma (que não é inglês, quero reconhecer [o crédito do autor das imagens](http://www.howtogeek.com/howto/33433/restore-the-windows-boot-loader-after-an-ubuntu-update/)) e cliquei em “Avançar”:
 
-{% include image.html src="/files/2013/07/windows-startup-recovery2.jpg" %}
+{{< image src="/files/2013/07/windows-startup-recovery2.jpg" >}}
 
 2. Em seguida, cliquei em “Reparar o computador”:
 
-{% include image.html src="/files/2013/07/windows-startup-recovery3.jpg" %}
+{{< image src="/files/2013/07/windows-startup-recovery3.jpg" >}}
 
 3. Nessa tela, escolhi a primeira opção, não selecionei nada na lista, e cliquei em “Avançar”:
 
-{% include image.html src="/files/2013/07/windows-startup-recovery4.png" %}
+{{< image src="/files/2013/07/windows-startup-recovery4.png" >}}
 
 4. Finalmente, nessa tela, diferentemente do autor, escolhi a primeira opção, “Startup Recovery”:
 
-{% include image.html src="/files/2013/07/windows-startup-recovery5.png" %}
+{{< image src="/files/2013/07/windows-startup-recovery5.png" >}}
 
 A instalação executou seus procedimentos de manutenção, após os quais reiniciei o computador. Ainda nada de Windows, e agora ele não exibia mais nem o menu do GRUB2, acusando que havia múltiplas partições ativas.
 

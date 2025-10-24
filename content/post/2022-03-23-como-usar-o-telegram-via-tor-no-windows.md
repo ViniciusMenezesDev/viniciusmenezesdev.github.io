@@ -4,7 +4,7 @@ image: /files/2022/03/telegram-tor-windows.png
 title: Como usar o Telegram via Tor no Windows
 ---
 
-{% include image.html src='/files/2022/03/telegram-tor-windows.png' %}
+{{< image src="/files/2022/03/telegram-tor-windows.png" >}}
 
 Se por qualquer motivo você for impedido de usar o [Telegram] -- por exemplo, se você está de mudança ou viajando para um dos [países que censuram o Telegram][telegram-censorship] -- você verá hoje nessa dica como pode usá-lo por meio da [Rede Tor] no [Windows].&nbsp;
 
@@ -56,33 +56,33 @@ Para baixar versões traduzidas -- inclusive há uma tradução para o Portuguê
 
 Abra o Navegador Tor e aguarde-o conectar à Rede Tor:
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-01.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-01.jpg" >}}
 
 Certifique-se de que o navegador está de fato conectado à Rede Tor acessando:
 
 - [https://check.torproject.org/](https://check.torproject.org/)
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-02.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-02.jpg" >}}
 
 Agora inicie o Telegram e abra o menu clicando no ícone com três linhas horizontais, no canto superior esquerdo da janela:
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-03.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-03.jpg" >}}
 
 No menu, clique em **Configurações**:
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-04.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-04.jpg" >}}
 
 Nas configurações, clique em **Avançado**:
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-05.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-05.jpg" >}}
 
 Na seção **Dados e Armazenamento**, clique em **Tipo de conexão**:
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-06.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-06.jpg" >}}
 
 Nas **Configurações de proxy**, selecione **Usar proxy customizado**:
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-07.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-07.jpg" >}}
 
 Na tela seguinte, preencha as configurações dessa forma:
 
@@ -90,19 +90,19 @@ Na tela seguinte, preencha as configurações dessa forma:
 - Em **Nome do host**, informe `localhost`;
 - Em **Porta**, informe `9150`.
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-08.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-08.jpg" >}}
 
 Por fim, clique em **Salvar**.
 
 De volta às **Configurações de proxy**, certifique-se de que o Telegram conseguiu se conectar ao _proxy_ (note o **online**):
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-09.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-09.jpg" >}}
 
 Pronto. Pode fechar todas as configurações e seguir usando o Telegram normalmente.
 
 Um ícone de escudo no canto inferior esquerdo da janela indica que o Telegram está conectado ao _proxy_ (nesse caso, à Rede Tor):
 
-{% include image.html src='/files/2022/03/telegram-tor-windows-10.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-windows-10.jpg" >}}
 
 Clicando nele, você pode facilmente acessar as configurações de _proxy_.
 

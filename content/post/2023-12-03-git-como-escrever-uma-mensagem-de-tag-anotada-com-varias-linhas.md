@@ -22,7 +22,7 @@ Sempre que lanço uma nova versão de um projeto cujo código-fonte é controlad
 [material-jekyll]: https://gitlab.com/antoniomedeiros/material-jekyll/-/tags
 [Linux Kamarada]: https://linuxkamarada.com/
 
-{% include image.html src="/files/2023/12/material-jekyll-tags-before.png" %}
+{{< image src="/files/2023/12/material-jekyll-tags-before.png" >}}
 
 Mas, para o lançamento da versão 3.0, eu queria escrever uma mensagem mais longa, em algumas linhas, que resumisse as principais alterações e explicasse o porquê do [incremento da versão maior][semver].
 
@@ -64,7 +64,7 @@ Com esse comando, o Git abriu meu editor de texto (o padrão do [Linux], o [Vim]
 [Linux]: https://www.vivaolinux.com.br/linux/
 [Vim]: https://www.vim.org/
 
-{% include image.html src="/files/2023/12/multiline-git-tag-messages.jpg" %}
+{{< image src="/files/2023/12/multiline-git-tag-messages.jpg" >}}
 
 Depois, enviei essa _tag_ para o servidor remoto:
 
@@ -74,4 +74,4 @@ $ git push origin v3.0.0
 
 E agora você pode vê-la listada nas [_tags_ do projeto **material-jekyll**][material-jekyll]:
 
-{% include image.html src="/files/2023/12/material-jekyll-tags-after.png" %}
+{{< image src="/files/2023/12/material-jekyll-tags-after.png" >}}

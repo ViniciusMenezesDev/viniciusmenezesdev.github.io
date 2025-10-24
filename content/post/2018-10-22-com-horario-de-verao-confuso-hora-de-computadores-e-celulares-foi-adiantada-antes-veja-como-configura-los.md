@@ -19,7 +19,7 @@ O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publ
 
 {% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
-{% include image.html src="/files/2018/10/data-hora.jpg" %}
+{{< image src="/files/2018/10/data-hora.jpg" >}}
 
 Do sábado para o domingo muita gente viu [os relógios do computador e do celular se adiantarem em 1 hora sozinhos][cb], com o suposto início do horário de verão. Ocorre que desde o ano passado já [é a terceira vez que o governo brasileiro altera a data de início do horário de verão em 2018][g1]. Quem estava com seus dispositivos devidamente configurados e atualizados não teve problemas. Nesse *post* você vai entender o que aconteceu e como se prevenir.
 
@@ -56,13 +56,13 @@ A razão para essa última decisão foi um protesto da Associação Brasileira d
 
 Portanto, desde o ano passado, o início do horário de verão no Brasil em 2018 já teve 3 mudanças: passou de 21/10 para 04/11, depois para 18/11, e por fim foi mantido em 04/11.
 
-{% include image.html src="/files/2018/10/mapa-horario-de-verao-2018-2019.jpg" caption="Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa emprestado do *blog* [Linux Kamarada](https://linuxkamarada.com/pt/2018/10/22/mantenha-a-hora-do-android-sempre-certa/) e derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))" %}
+{{< image src="/files/2018/10/mapa-horario-de-verao-2018-2019.jpg" >}}
 
 ## Como saber a hora certa
 
 Você pode verificar se a data e a hora do seu computador ou celular estão corretas acessando o *site* do projeto [NTP.br][ntpbr], que mantém servidores de hora que os computadores podem consultar para sincronizar seus relógios:
 
-{% include image.html src="/files/2018/10/ntpbr-hora-certa.jpg" %}
+{{< image src="/files/2018/10/ntpbr-hora-certa.jpg" >}}
 
 Agora que você já está a par do que aconteceu e conferiu a hora do seu computador e celular, vamos ver como configurá-los.
 
@@ -70,15 +70,15 @@ Agora que você já está a par do que aconteceu e conferiu a hora do seu comput
 
 Para configurar a data e hora do seu computador Windows em casa, clique no **menu Iniciar**, depois em **Configurações**:
 
-{% include image.html src="/files/2018/10/data-hora-windows-1.jpg" %}
+{{< image src="/files/2018/10/data-hora-windows-1.jpg" >}}
 
 Na tela **Configurações do Windows**, clique em **Hora e Idioma**:
 
-{% include image.html src="/files/2018/10/data-hora-windows-2.png" %}
+{{< image src="/files/2018/10/data-hora-windows-2.png" >}}
 
 Em **Fuso horário**, selecione **(UTC-03:00) Brasília**:
 
-{% include image.html src="/files/2018/10/data-hora-windows-3.jpg" %}
+{{< image src="/files/2018/10/data-hora-windows-3.jpg" >}}
 
 Se você mora na região Sul, Sudeste ou Centro-Oeste, regiões que adotam o horário de verão, ative a opção **Ajustar automaticamente para o horário de verão**. Se você mora no Nordeste ou no Norte, desative essa opção.
 
@@ -86,17 +86,17 @@ Depois, clique em **Configurações adicionais de data, hora e região** à dire
 
 Na janela que aparece, clique em **Data e Hora**:
 
-{% include image.html src="/files/2018/10/data-hora-windows-4.png" %}
+{{< image src="/files/2018/10/data-hora-windows-4.png" >}}
 
 Na caixa de diálogo **Data e Hora**, selecione a aba **Horário na Internet** e clique em **Alterar configurações**:
 
-{% include image.html src="/files/2018/10/data-hora-windows-5.png" %}
+{{< image src="/files/2018/10/data-hora-windows-5.png" >}}
 
 Pode ser que o sistema peça a senha do usuário administrador. Você deve fornecê-la para continuar.
 
 Certifique-se de que a opção **Sincronizar com um servidor de horário na Internet** esteja marcada:
 
-{% include image.html src="/files/2018/10/data-hora-windows-6.png" %}
+{{< image src="/files/2018/10/data-hora-windows-6.png" >}}
 
 No campo **Servidor**, informe o endereço `pool.ntp.br`.
 
@@ -114,7 +114,7 @@ Para verificar se há atualizações disponíveis, clique no **menu Iniciar**, d
 
 Instale todas as atualizações disponíveis até que o Windows informe **Você está atualizado**:
 
-{% include image.html src="/files/2018/10/windows-atualizado.jpg" %}
+{{< image src="/files/2018/10/windows-atualizado.jpg" >}}
 
 ## Windows na empresa
 
@@ -159,7 +159,7 @@ Antes de ajustar a configuração de data e hora propriamente dita, [a Apple rec
 
 Para verificar se esse é o caso, toque em **Ajustes** > **Geral** > **Atualização de Software**. Deve aparecer na tela **Seu software está atualizado**:
 
-{% include image.html src="/files/2018/10/data-hora-ios-1.jpg" %}
+{{< image src="/files/2018/10/data-hora-ios-1.jpg" >}}
 
 Se, diferente disso, for informado que há uma atualização disponível, você deve instalá-la.
 
@@ -171,21 +171,21 @@ Usando a versão mais recente do iOS, é recomendado que você obtenha as config
 
 Para determinar o fuso horário, o iOS utiliza a localização do dispositivo. Vá em **Ajustes** > **Privacidade** > **Serviços de Localização** e ative os **Serviços de Localização**:
 
-{% include image.html src="/files/2018/10/data-hora-ios-2.jpg" %}
+{{< image src="/files/2018/10/data-hora-ios-2.jpg" >}}
 
 Na mesma tela, deslize a lista de aplicativos até o final e toque em **Serviços do Sistema**.
 
 Na tela seguinte, habilite o **Ajuste de Fuso Horário**:
 
-{% include image.html src="/files/2018/10/data-hora-ios-3.jpg" %}
+{{< image src="/files/2018/10/data-hora-ios-3.jpg" >}}
 
 Por fim, toque em **Ajustes** > **Geral** > **Data e Hora** e ative a opção **Automaticamente**:
 
-{% include image.html src="/files/2018/10/data-hora-ios-4.jpg" %}
+{{< image src="/files/2018/10/data-hora-ios-4.jpg" >}}
 
 Se você vir um alerta indicando que informações atualizadas de fuso horário estão disponíveis, reinicie o dispositivo para obter as novas informações. Como no meu celular não apareceu essa mensagem, vou tomar a captura de tela emprestada do [*site* da Apple][apple3]:
 
-{% include image.html src="/files/2018/10/data-hora-ios-5.jpg" %}
+{{< image src="/files/2018/10/data-hora-ios-5.jpg" >}}
 
 Verifique se o dispositivo mostra o fuso horário correto em **Fuso Horário**. No meu caso, ele mostra **Sâo Paulo** porque estou no sul do Brasil, uma região que adota o horário de verão.
 
@@ -195,7 +195,7 @@ Se depois de todas essas configurações sua data, hora ou fuso horário ainda e
 
 Para isso, desative a opção **Automaticamente** e configure o fuso horário, a data e a hora conforme sua necessidade:
 
-{% include image.html src="/files/2018/10/data-hora-ios-6.jpg" %}
+{{< image src="/files/2018/10/data-hora-ios-6.jpg" >}}
 
 Provavelmente você desejará mudar o fuso horário se mora em uma região que não adota o horário de verão. Nesse caso, selecione um fuso horário que também não adote o horário de verão (por exemplo, **Fortaleza**).
 
@@ -203,7 +203,7 @@ Provavelmente você desejará mudar o fuso horário se mora em uma região que n
 
 Você pode usar o mapa de fusos horários disponível em [timeanddate.com][timeanddate] para encontrar uma cidade com um fuso horário que atenda a suas necessidades. Passe o *mouse* em uma cidade para ver sua data e hora atuais:
 
-{% include image.html src="/files/2018/10/timeanddate.jpg" %}
+{{< image src="/files/2018/10/timeanddate.jpg" >}}
 
 ## Referências
 

@@ -10,11 +10,11 @@ title: Como configurar as atualizações automáticas do Windows 10
 
 Precisou reiniciar o computador, estava com pressa e se esbarrou nas atualizações do [Windows][windows] 10?
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-00.jpg" %}
+{{< image src="/files/2015/12/windows-atualizacoes-00.jpg" >}}
 
 Pior: ele passou um tempão tentando instalar as atualizações, depois falhou e passou mais outra eternidade desfazendo o trabalho?
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-01.jpg" %}
+{{< image src="/files/2015/12/windows-atualizacoes-01.jpg" >}}
 
 Veja aqui como ter um pouco mais de controle sobre as atualizações do Windows.
 
@@ -28,7 +28,7 @@ As versões anteriores do Windows ofereciam maior controle sobre o processo de a
 
 **Observação:** por mais que seja possível adiar ou ignorar as atualizações do Windows, elas continuam sendo necessárias. É importante que regularmente você reserve um tempo para verificar se há novas atualizações e deixar o computador instalá-las. Pode ser que o sistema solicite a obtenção de atualizações, como já aconteceu comigo:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-02.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-02.png" >}}
 
 ## Configurar a conexão como limitada
 
@@ -36,11 +36,11 @@ Quando você informa ao Windows que a conexão que você está usando é limitad
 
 Para isso, clique no botão **Iniciar**, no canto inferior esquerdo da tela, e depois clique em **Configurações**. Na tela que aparece, clique em **Rede e Internet** e depois em **Wi-Fi**. Depois da lista de redes Wi-Fi disponíveis, clique em **Opções avançadas**. Você chegará à seguinte tela, na qual pode ativar ou desativar a conexão limitada:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-03.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-03.png" >}}
 
 Depois de ativar a conexão limitada, se você acessar as configurações do Windows Update (menu **Iniciar**, **Configurações**, **Atualização e segurança**, **Windows Update**), perceberá que o Windows oferece a possibilidade de buscar atualizações apenas quando desejado, clicando no botão **Verificar se há atualizações**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-04.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-04.png" >}}
 
 Para baixar e instalar atualizações com essa configuração ativada, você pode:
 
@@ -54,21 +54,21 @@ Com frequência, após a instalação de atualizações, é preciso reiniciar o 
 
 Para isso, clique no botão **Iniciar**, no canto inferior esquerdo da tela, e depois clique em **Configurações**. Na tela que aparece, clique em **Atualização e segurança** e depois em **Windows Update**. Clique em **Opções avançadas**. Você chegará à seguinte tela, na qual pode selecionar **Avisar antes de agendar reinicialização** em vez de **Automático (recomendado)**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-05.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-05.png" >}}
 
 Feito isso, quando o Windows começar a instalar atualizações, você será solicitado a informar um horário para que ele possa reiniciar o computador e continuar a atualização:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-06.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-06.png" >}}
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-07.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-07.png" >}}
 
 ## Bloquear atualizações específicas
 
 Se seu problema é causado por apenas uma atualização, uma boa alternativa é impedir que o sistema instale apenas a atualização indesejada. Para isso, a [Microsoft][microsoft] lançou o pacote de solução de problemas **Mostrar ou ocultar atualizações**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-08.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-08.png" >}}
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-09.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-09.png" >}}
 
 Para mais informações, consulte a [base de dados de conhecimento da Microsoft][microsoft-kb3073930].
 
@@ -78,7 +78,7 @@ Se você utiliza uma edição profissional do Windows, pode [adiar atualizaçõe
 
 Para configurar o Windows Update para adiar atualizações, clique no botão **Iniciar**, no canto inferior esquerdo da tela, e depois clique em **Configurações**. Na tela que aparece, clique em **Atualização e segurança** e depois em **Windows Update**. Clique em **Opções avançadas**. Você chegará à seguinte tela, na qual pode ativar a opção **Adiar atualizações**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-05.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-05.png" >}}
 
 ## Configurar atualizações pela política de grupo
 
@@ -86,25 +86,25 @@ Se você utiliza uma edição profissional do Windows, pode configurar as atuali
 
 Para acessar o editor de política de grupo, abra o menu **Iniciar**, pesquise por **gpedit.msc** e execute o editor de política de grupo como administrador:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-10.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-10.png" >}}
 
 Na estrutura de árvore da esquerda, navegue para **Configuração do Computador**, **Modelos Administrativos**, **Componentes do Windows**, **Windows Update**. À direita, localize o item **Configurar Atualizações Automáticas** e clique duas vezes nele:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-11.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-11.png" >}}
 
 Na tela que aparece, selecione **Habilitado** e em **Opções** configure como desejar. Você pode selecionar, por exemplo, **Avisar antes de baixar e de instalar qualquer atualização**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-12.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-12.png" >}}
 
 **Observação:** nessa mesma tela, se você selecionar **Desabilitado**, em vez de **Habilitado**, desativará as atualizações do Windows por completo.
 
 Clique em **OK** e feche o editor de política de grupo. Agora acesse as configurações do Windows Update (menu **Iniciar**, **Configurações**, **Atualização e segurança**, **Windows Update**) e clique em **Verificar se há atualizações**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-04.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-04.png" >}}
 
 Logo em seguida, quando o Windows começar a buscar atualizações, clique em **Opções avançadas**. Observe nessa tela a mensagem **Algumas configurações são gerenciadas pela sua organização**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-13.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-13.png" >}}
 
 Observe também que não é possível escolher como as atualizações são instaladas: essa opção está desabilitada, mostrando a configuração escolhida no editor de política de grupo.
 
@@ -116,7 +116,7 @@ Nas edições profissionais do Windows, também é possível fazer a configuraç
 
 Abra o **menu Iniciar**, pesquise por **regedit** e execute o editor de registro como administrador:
 
-{% include image.html src="/files/2015/09/inicializacao-rapida-5.png" %}
+{{< image src="/files/2015/09/inicializacao-rapida-5.png" >}}
 
 Navegue até a chave de registro **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU**. Caso essas duas últimas chaves não existam, você terá que criá-las: navegue até a chave **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows**, dentro dela crie uma chave **WindowsUpdate** e, dentro desta, uma chave **AU**.
 
@@ -128,15 +128,15 @@ Modifique (se necessário, antes, crie) o valor **AUOptions**, do tipo **REG_DWO
 
 Clique em **OK** e feche o editor de registro:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-14.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-14.png" >}}
 
 Agora acesse as configurações do Windows Update (menu **Iniciar**, **Configurações**, **Atualização e segurança**, **Windows Update**) e clique em **Verificar se há atualizações**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-04.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-04.png" >}}
 
 Logo em seguida, quando o Windows começar a buscar atualizações, clique em **Opções avançadas**. Observe nessa tela a mensagem **Algumas configurações são gerenciadas pela sua organização**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-13.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-13.png" >}}
 
 Observe também que não é possível escolher como as atualizações são instaladas: essa opção está desabilitada, mostrando a configuração correspondente ao valor existente na chave de registro.
 
@@ -148,15 +148,15 @@ Uma solução extrema é desativar o serviço do Windows Update, de modo que o W
 
 Para desativar o serviço do Windows Update, abra o menu **Iniciar**, pesquise por **services.msc** e execute o gerenciador de serviços como administrador:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-15.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-15.png" >}}
 
 Na lista de serviços, procure pelo serviço **Windows Update** (ele deve ser um dos últimos) e clique duas vezes nele:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-16.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-16.png" >}}
 
 Na tela que aparece, em **Tipo de inicialização** selecione **Desativado** e clique em **OK**:
 
-{% include image.html src="/files/2015/12/windows-atualizacoes-17.png" %}
+{{< image src="/files/2015/12/windows-atualizacoes-17.png" >}}
 
 Pronto, pode fechar o gerenciador de serviços.
 

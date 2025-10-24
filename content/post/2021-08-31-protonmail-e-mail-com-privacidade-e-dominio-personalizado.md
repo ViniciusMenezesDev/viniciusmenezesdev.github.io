@@ -4,7 +4,7 @@ image: /files/2021/08/protonmail.jpg
 title: 'ProtonMail: e-mail com privacidade e domínio personalizado'
 ---
 
-{% include image.html src='/files/2021/08/protonmail.jpg' %}
+{{< image src="/files/2021/08/protonmail.jpg" >}}
 
 O [ProtonMail] é um serviço de _e-mail_ com foco em privacidade, criptografia, segurança e facilidade de uso. É oferecido pela empresa Proton Technologies AG, sediada em Genebra, na Suíça. O que o torna especial, diferente dos demais, para ser indicado por _sites_ como [Privacidade.Digital] e [Security-in-a-Box]? Seu foco em privacidade. Seus criadores o idealizaram após as revelações de Edward Snowden sobre a NSA e ele foi lançado em [2014]. Além de contar com recursos como criptografia de ponta a ponta e autenticação dupla, o ProtonMail está na Suíça, país conhecido por suas fortes leis de privacidade.
 
@@ -34,19 +34,19 @@ Para esse tutorial, vou assumir que você já possui uma conta no ProtonMail e j
 
 Comece fazendo _login_ no [ProtonMail]. Em seguida, acesse as configurações:
 
-{% include image.html src='/files/2021/08/pm01.jpg' %}
+{{< image src="/files/2021/08/pm01.jpg" >}}
 
 No menu à esquerda, clique em **Nomes de domínio**. Depois, à direita, clique em **Adicionar domínio**:
 
-{% include image.html src='/files/2021/08/pm02.jpg' %}
+{{< image src="/files/2021/08/pm02.jpg" >}}
 
 Informe o **Nome do domínio** (no meu exemplo, `antoniomedeiros.dev`) e clique em **Próximo**:
 
-{% include image.html src='/files/2021/08/pm03.jpg' %}
+{{< image src="/files/2021/08/pm03.jpg" >}}
 
 A tela seguinte apresenta uma entrada que você deve adicionar à configuração de DNS do seu domínio para que o ProtonMail possa verificar que de fato ele te pertence:
 
-{% include image.html src='/files/2021/08/pm04.jpg' %}
+{{< image src="/files/2021/08/pm04.jpg" >}}
 
 Copie o valor dessa entrada e adicione-a à configuração de DNS do seu domínio.
 
@@ -54,56 +54,56 @@ Como exemplo, mostrarei como fazer essa configuração na [Namecheap], já que r
 
 Comece fazendo _login_ na [Namecheap]. Depois vá em **Account** (conta) > **Dashboard** (painel de controle) > **Domain List** (lista de domínios). Na linha referente ao domínio que você quer configurar, clique em **Manage** (gerenciar):
 
-{% include image.html src='/files/2021/08/pm05.jpg' %}
+{{< image src="/files/2021/08/pm05.jpg" >}}
 
 Na tela seguinte, abra a guia **Advanced DNS** (DNS avançado), clique em **Add New Record** (adicionar novo registro) e adicione a entrada de DNS fornecida pelo ProtonMail:
 
-{% include image.html src='/files/2021/08/pm06.jpg' %}
+{{< image src="/files/2021/08/pm06.jpg" >}}
 
 Feito o ajuste na configuração de DNS, de volta ao ProtonMail, clique em **Próximo**.
 
 É bem provável que o ProtonMail apresente uma mensagem de erro, porque demora um tempo até a nova configuração de DNS ser propagada em todo o mundo:
 
-{% include image.html src='/files/2021/08/pm07.jpg' %}
+{{< image src="/files/2021/08/pm07.jpg" >}}
 
 Você pode acompanhar a propagação -- que pode demorar alguns minutos, horas ou até mesmo dias -- com o auxílio de alguma ferramenta como o [whatsmydns.net](https://www.whatsmydns.net/):
 
-{% include image.html src='/files/2021/08/pm08.jpg' %}
+{{< image src="/files/2021/08/pm08.jpg" >}}
 
 No meu caso, tive a impressão que a propagação podia estar demorando mais que o normal. Então, entrei em contato com o suporte da Namecheap -- mais um motivo porque os indico, o suporte nunca me deixou na mão -- e eles sugeriram fazer um ajuste na minha configuração: mudar a entrada de CNAME para ALIAS. Isso não é relacionado ao ProtonMail, mas pensei que poderia ser útil compartilhar:
 
-{% include image.html src='/files/2021/08/pm09.jpg' %}
+{{< image src="/files/2021/08/pm09.jpg" >}}
 
 Aí foi que a nova configuração de DNS começou a propagar para o mundo:
 
-{% include image.html src='/files/2021/08/pm10.jpg' %}
+{{< image src="/files/2021/08/pm10.jpg" >}}
 
 Quando servidores de DNS da Suíça (em inglês, _Switzerland_) já conheciam a configuração nova, consegui avançar no ProtonMail. Note que o assistente vai marcando as etapas conforme verifica que deram certo:
 
-{% include image.html src='/files/2021/08/pm11.jpg' %}
+{{< image src="/files/2021/08/pm11.jpg" >}}
 
 Agora vem a configuração das entradas MX, as mais importantes para os _e-mails_.
 
 Na Namecheap, elas podem ser adicionadas naquela mesma tela, mais abaixo:
 
-{% include image.html src='/files/2021/08/pm12.jpg' %}
+{{< image src="/files/2021/08/pm12.jpg" >}}
 
 Repita isso para as próximas etapas da configuração: avançar no assistente do ProtonMail, copiar as entradas DNS, adicioná-las à configuração do domínio e aguardar a propagação.
 
 A seguir, mostro as telas do assistente apenas para que você tenha uma ideia do que encontrará pela frente:
 
-{% include image.html src='/files/2021/08/pm13.jpg' %}
-{% include image.html src='/files/2021/08/pm14.jpg' %}
-{% include image.html src='/files/2021/08/pm15.jpg' %}
+{{< image src="/files/2021/08/pm13.jpg" >}}
+{{< image src="/files/2021/08/pm14.jpg" >}}
+{{< image src="/files/2021/08/pm15.jpg" >}}
 
 Ao final, quando terminar de configurar o domínio, clique em **Adicionar Endereço**:
 
-{% include image.html src='/files/2021/08/pm16.jpg' %}
+{{< image src="/files/2021/08/pm16.jpg" >}}
 
 Para referência, eis como ficou a minha configuração de DNS no final:
 
-{% include image.html src='/files/2021/08/pm17.jpg' %}
-{% include image.html src='/files/2021/08/pm18.jpg' %}
+{{< image src="/files/2021/08/pm17.jpg" >}}
+{{< image src="/files/2021/08/pm18.jpg" >}}
 
 (lembrando que nem todas essas entradas são relacionadas ao ProtonMail, algumas são referentes ao [GitLab Pages], [onde hospedo meus _sites_][onde-hospedo])
 
@@ -114,15 +114,15 @@ Para referência, eis como ficou a minha configuração de DNS no final:
 
 Na tela **Usuários e endereços**, clique em **Adicionar endereço**:
 
-{% include image.html src='/files/2021/08/pm19.jpg' %}
+{{< image src="/files/2021/08/pm19.jpg" >}}
 
 Defina o **Endereço** (por exemplo, `contato@antoniomedeiros.dev`) e um **Nome de exibição** (como `Antônio Medeiros`) e clique em **Salvar endereço**:
 
-{% include image.html src='/files/2021/08/pm20.jpg' %}
+{{< image src="/files/2021/08/pm20.jpg" >}}
 
 Selecione um algoritmo (de **Alta segurança**, **Segurança máxima** ou **Última geração**) para gerar as chaves de criptografia para o seu novo endereço de _e-mail_:
 
-{% include image.html src='/files/2021/08/pm21.jpg' %}
+{{< image src="/files/2021/08/pm21.jpg" >}}
 
 Tenha em mente que as chaves são geradas no seu computador, e que esse processo pode travar o navegador (embora não tenha acontecido comigo), por isso não faça isso em um _tablet_ ou _smartphone_, mas em um _desktop_.
 
@@ -130,7 +130,7 @@ Clique em **Enviar**. Quando o a geração de chaves terminar, clique em **Concl
 
 Feito isso, seu novo endereço de _e-mail_ estará pronto para uso:
 
-{% include image.html src='/files/2021/08/pm22.jpg' %}
+{{< image src="/files/2021/08/pm22.jpg" >}}
 
 ## Testando o e-mail personalizado
 
@@ -140,11 +140,11 @@ Se você possui alguma outra conta de _e-mail_ (no [Gmail], por exemplo), pode t
 
 [Gmail]: https://gmail.com/
 
-{% include image.html src='/files/2021/08/pm23.jpg' %}
+{{< image src="/files/2021/08/pm23.jpg" >}}
 
 Note que você também pode fazer _login_ no ProtonMail com o endereço de _e-mail_ do seu domínio:
 
-{% include image.html src='/files/2021/08/pm24.jpg' %}
+{{< image src="/files/2021/08/pm24.jpg" >}}
 
 ## Referências
 

@@ -10,19 +10,19 @@ Se você usa [Windows] e deseja conectar seu computador à [VPN do roteador Mikr
 
 Abra o **menu Iniciar** e clique em **Configurações**:
 
-{% include image.html src='/files/2021/04/windows-vpn-01.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-01.jpg" >}}
 
 Entre na categoria **Rede e Internet**.
 
 Na tela seguinte, à esquerda, selecione **VPN**. À direita, clique em **Adicionar uma conexão VPN**:
 
-{% include image.html src='/files/2021/04/windows-vpn-02.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-02.jpg" >}}
 
 {% include ad1.html %}
 
 Preencha as informações sobre a VPN de acordo com as orientações a seguir, mas também de acordo com as orientações de quem configurou a VPN (os exemplos se referem ao tutorial sobre [como configurar VPN no roteador MikroTik][vpn]):
 
-{% include image.html src='/files/2021/04/windows-vpn-03.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-03.jpg" >}}
 
 - Em **Provedor VPN**, você pode deixar **Windows (interno)**, que é a opção padrão
 - Em **Nome da conexão**, forneça um nome que te permita identificar a VPN, pode ser o nome que você quiser (exemplo: `VPN de Teste`)
@@ -39,25 +39,25 @@ Quando terminar, clique em **Salvar**.
 
 De volta às **Configurações**, clique na conexão recém-criada e depois em **Conectar**:
 
-{% include image.html src='/files/2021/04/windows-vpn-04.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-04.jpg" >}}
 
 Após alguns segundos ou minutos, o Windows mostra que está **Conectado** à VPN:
 
-{% include image.html src='/files/2021/04/windows-vpn-05.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-05.jpg" >}}
 
 Você pode testar a conexão com o comando **ping**, "fazendo um pingue" para algum endereço na rede local da VPN:
 
-{% include image.html src='/files/2021/04/windows-vpn-06.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-06.jpg" >}}
 
 Se souber de algum servidor _web_ na rede local da VPN, você também pode testar a conexão abrindo o navegador e acessando esse servidor. Nesse exemplo, eu testo a conexão com a VPN acessando a interface _web_ da minha impressora:
 
-{% include image.html src='/files/2021/04/windows-vpn-07.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-07.jpg" >}}
 
 Quando não precisar mais usar a VPN, você pode voltar às **Configurações** e clicar no botão **Desconectar**.
 
 Uma vez configurada a VPN, outra forma de conectar e desconectar é usando o ícone de rede próximo do relógio:
 
-{% include image.html src='/files/2021/04/windows-vpn-08.jpg' %}
+{{< image src="/files/2021/04/windows-vpn-08.jpg" >}}
 
 [windows]:  https://www.microsoft.com/pt-br/windows/
 [vpn]:      {{% ref "post/2021-04-09-mikrotik-como-criar-uma-vpn-com-l2tp-e-ipsec" %}}

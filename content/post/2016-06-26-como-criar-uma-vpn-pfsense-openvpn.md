@@ -16,7 +16,7 @@ O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publ
 
 {% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
-{% include image.html src="/files/2016/06/pfsense-vpn-01.png" %}
+{{< image src="/files/2016/06/pfsense-vpn-01.png" >}}
 
 O [pfSense][pfsense] é uma solução de *firewall* incrível, não só pela quantidade de recursos que oferece, como também pela facilidade para configurá-lo. Ele permite criar VPNs utilizando, dentre outros protocolos, o [OpenVPN][openvpn], que é [livre][software-livre], versátil e seguro sem abrir mão da praticidade, motivos pelos quais é amplamente difundido.
 
@@ -26,13 +26,13 @@ Uma **rede privada virtual** (do inglês *Virtual Private Network*, ou VPN) esta
 
 Ela funciona assim: os dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo). Mas eles precisam se comunicar e possuem conexão com a Internet. Então, eles estabelecem na rede mundial um circuito por onde trocam informações de forma privada. É como uma ligação telefônica que não pudesse ser grampeada.
 
-{% include image.html src="/files/2016/06/pfsense-vpn-02.jpg" caption="Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada" %}
+{{< image src="/files/2016/06/pfsense-vpn-02.jpg" >}}
 
 Para quem utiliza esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita **virtual**). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos computadores no meio do caminho entre um e outro, porque os dois computadores que estabelecem a VPN utilizam criptografia para se comunicar (por isso, essa rede é dita **privada**).
 
 Porque a informação trafega por um circuito cujo conteúdo não pode ser lido pelos computadores que ajudam a formar o circuito, nem pelos que estão fora dele, apenas pelos computadores nas pontas (o remetente e o destinatário), a VPN também é conhecida como **túnel**.
 
-{% include image.html src="/files/2016/06/pfsense-vpn-03.png" caption="Um túnel é bem assim: só quem está dentro dele vê o que por ele passa" %}
+{{< image src="/files/2016/06/pfsense-vpn-03.png" >}}
 
 Tentando explicar de forma simples, uma VPN é isso.
 
@@ -40,7 +40,7 @@ Com VPNs, podemos fazer algumas coisas interessantes, como por exemplo: em casa 
 
 O Psiphon, que apresentei em [outro post][psiphon], é um exemplo interessante de VPN: ele cria um túnel entre seu computador e algum computador anônimo situado em algum lugar bem distante no mundo e redireciona todo o seu tráfego de Internet por esse computador anônimo. Dessa forma, o Psiphon permite que você utilize a Internet de forma anônima.
 
-{% include image.html src="/files/2015/12/vpn.png" %}
+{{< image src="/files/2015/12/vpn.png" >}}
 
 Um uso prático disso é burlar bloqueios e censuras. Recentemente, [o WhatsApp foi bloqueado no Brasil][whatsapp] e muitos internautas recorreram a VPNs como o Psiphon para conseguir usar o aplicativo nos seus celulares. VPNs como essas são muito utilizadas em países com governos autoritários, como a [China][china].
 
@@ -75,7 +75,7 @@ Primeiro, precisamos de uma **autoridade certificadora** (do inglês *Certificat
 
 Clique em **Save**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-04.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-04.jpg" >}}
 
 Depois, precisamos de um certificado para o servidor. De volta à tela **Certificate Manager**, clique na aba **Certificates** e clique no botão **Add**. Preencha o cadastro com as informações a seguir:
 
@@ -92,7 +92,7 @@ Depois, precisamos de um certificado para o servidor. De volta à tela **Certifi
 
 Clique em **Save**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-05.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-05.jpg" >}}
 
 Precisamos também cadastrar os usuários que utilizarão a VPN (*login* e senha) e criar certificados para esses usuários. Vá em **System**, **User Manager** e clique no botão **Add**. Preencha o cadastro com as informações a seguir:
 
@@ -107,21 +107,21 @@ Em **Certificate**, marque **Click to create a user certificate** para que ele g
 
 Clique em **Save**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-06.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-06.jpg" >}}
 
 Agora vamos à configuração da VPN propriamente dita.
 
 Vá em **VPN**, **OpenVPN** e clique na aba **Wizards**. É iniciado então o **OpenVPN Remote Access Server Setup**. Na primeira tela, **Select an Authentication Backend Type**, escolha **Local User Access**, e clique em **Next**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-07.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-07.jpg" >}}
 
 Na segunda tela, **Choose a Certificate Authority (CA)**, selecione a autoridade cerficadora que foi criada anteriormente (**MINHACASA_CA**) e clique em **Next**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-08.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-08.jpg" >}}
 
 Na terceira tela, **Choose a Server Certificate**, selecione o certificado de servidor que foi criado anteriormente (**VPN de teste**) e clique em **Next**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-09.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-09.jpg" >}}
 
 Na tela seguinte, **Server Setup**, vamos configurar o servidor da VPN. Aqui, você deve preencher de acordo com as configurações da rede do seu servidor (a rede da sua empresa, por exemplo). Vejamos algumas configurações:
 
@@ -155,17 +155,17 @@ Há alguns campos que podem ser preenchidos caso você necessite configurar o cl
 
 Perceba que essa tela é extensa, mas nela estão quase todas as configurações da VPN:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-10.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-10.jpg" >}}
 
 Quando terminar de configurar a VPN, clique em **Next**.
 
 Na penúltima tela do assistente, **Firewall Rule Configuration**, certifique-se de que as duas opções **Firewall Rule** e **OpenVPN rule** estejam marcadas. Com isso, o pfSense criará automaticamente as regras de *firewall* necessárias para que a VPN funcione. Clique em **Next**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-11.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-11.jpg" >}}
 
 A última tela apenas informa que a VPN foi criada. Clique em **Finish**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-12.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-12.jpg" >}}
 
 ## Exportando o *software* cliente
 
@@ -173,7 +173,7 @@ O pfSense é capaz de exportar o *software* e os arquivos de configuração que 
 
 Caso você ainda não o tenha instalado, vá em **System**, **Package Manager**, na aba **Available Packages**, busque por esse pacote e o instale clicando no botão **Install**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-13.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-13.jpg" >}}
 
 Com o utilitário instalado, vá em **VPN**, **OpenVPN**, aba **Client Export**.
 
@@ -183,7 +183,7 @@ Mais abaixo, no final da página, na linha correspondente ao usuário que deve a
 
 Vou demonstrar como conectar à VPN um computador cujo sistema operacional é o Windows 10 de 64 *bits*. Nesse caso, clique no botão **x64-win6** para exportar o cliente correspondente:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-14.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-14.jpg" >}}
 
 O *download* do instalador do cliente é iniciado. Esse arquivo (cujo nome deve ser algo parecido com **firewall-udp-1194-vinyanalista-install.exe**) deve ser copiado ou movido para o computador cliente.
 
@@ -193,23 +193,23 @@ Também vou demonstrar como conectar à VPN um celular com sistema Android. Voc�
 
 No computador cliente, execute o instalador do cliente OpenVPN, baixado do pfSense. A instalação é bem simples. Aqui, mais uma vez, é *next*, *next*, *next*:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-15.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-15.jpg" >}}
 
 Terminada a instalação, para iniciar o cliente OpenVPN, abra o **menu Iniciar**, clique em **Todos os programas**, depois em **OpenVPN** e, por fim, em **OpenVPN GUI**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-16.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-16.jpg" >}}
 
 O cliente OpenVPN é iniciado. Observe seu ícone na área de notificação:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-17.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-17.jpg" >}}
 
 Dê dois clique nesse ícone. O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense e clique em **OK**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-18.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-18.jpg" >}}
 
 Se conseguir se conectar, o cliente OpenVPN mostra uma notificação com o endereço IP que foi atribuído ao computador dentro da rede privada virtual. Observe também que o ícone do cliente muda sua cor para verde, indicando que está conectado:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-19.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-19.jpg" >}}
 
 Como teste, você pode abrir o **Prompt de comando** do Windows e verificar a conectividade com algum computador na rede da outra ponta da VPN:
 
@@ -236,7 +236,7 @@ C:\Users\Vinicius>
 
 Quando não precisar usar mais a VPN, clique com o botão direito do *mouse* no ícone do cliente OpenVPN e em seguida clique em **Sair**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-20.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-20.jpg" >}}
 
 ### Solução de problemas
 
@@ -297,33 +297,33 @@ Para conectar um celular com Android à VPN que acabamos de criar no nosso *fire
 
 Comece instalando o OpenVPN Connect pela Play Store:
 
-{% include image.html src="/files/2015/12/google-play.png" link="https://play.google.com/store/apps/details?id=net.openvpn.openvpn" caption="Clique para obter o OpenVPN Connect na Play Store" %}
+{{< image src="/files/2015/12/google-play.png" >}}
 
 Se ainda não passou, passe agora para o celular o arquivo de configuração exportado pelo pfSense.
 
 No celular, abra o **menu de Aplicativos** e toque no **OpenVPN Connect**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-21.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-21.jpg" >}}
 
 O cliente OpenVPN para Android é iniciado:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-22.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-22.jpg" >}}
 
 Toque no **botão de opções** (o com 3 pontos que aparece no canto superior direito da tela), em seguida em **Import** e, por último, em **Import Profile from SD card**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-23.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-23.jpg" >}}
 
 Localize o arquivo de configuração na memória interna ou no cartão de memória do seu celular, toque nele e depois em **Select**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-24.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-24.jpg" >}}
 
 O cliente solicita usuário e senha para se conectar com a VPN. Informe o usuário e a senha que você configurou no pfSense. Opcionalmente, marque a opção **Save** para que ele memorize o usuário e a senha. Por fim, toque em **Connect**:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-25.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-25.jpg" >}}
 
 Se conseguir se conectar, o cliente OpenVPN passa a exibir o *status* da conexão. Observe que ele fixa um ícone na área de notificação, indicando que está conectado:
 
-{% include image.html src="/files/2016/06/pfsense-vpn-26.jpg" %}
+{{< image src="/files/2016/06/pfsense-vpn-26.jpg" >}}
 
 Quando não precisar usar mais a VPN, volte ao cliente OpenVPN e toque em **Disconnect**.
 

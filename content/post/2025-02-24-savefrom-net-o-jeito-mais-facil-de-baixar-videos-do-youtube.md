@@ -11,7 +11,7 @@ image: /files/2025/02/youtube.jpg
 title: 'SaveFrom.net: o jeito mais fácil de baixar vídeos do YouTube'
 ---
 
-{% include image.html src='/files/2025/02/youtube.jpg' caption='Imagem por [@natanaelginting / Freepik](https://br.freepik.com/fotos-gratis/pilha-de-logotipos-de-botao-de-reproducao-3d_1191373.htm)' %}
+{{< image src="/files/2025/02/youtube.jpg" >}}
 
 Você já quis ou precisou baixar vídeos do [YouTube]? Seja para assistir um vídeo durante uma viagem (onde nem sempre você tem sinal de Internet), seja para guardar consigo uma cópia dos vídeos que você publicou, ou qualquer que seja a sua situação, baixar vídeos do YouTube pode ser bastante conveniente.
 
@@ -40,14 +40,14 @@ Continuando... por exemplo, suponhamos que você queira baixar este vídeo:
 
 - [Unboxing e teste do PinePhone - o smartphone que roda Linux - Linux Kamarada](https://www.youtube.com/watch?v=Jo9nL-p2J6I)
 
-{% include image.html src='/files/2025/02/savefrom-01.jpg' %}
+{{< image src="/files/2025/02/savefrom-01.jpg" >}}
 
 Na barra de endereços, adicione `ss` na frente de `youtube.com` e tecle **Enter**:
 
-{% include image.html src='/files/2025/02/savefrom-02.png' %}
+{{< image src="/files/2025/02/savefrom-02.png" >}}
 
 A página do serviço [SaveFrom.net] é aberta, basta clicar em **Baixar**:
 
-{% include image.html src='/files/2025/02/savefrom-03.jpg' %}
+{{< image src="/files/2025/02/savefrom-03.jpg" >}}
 
 Agora é só aguardar alguns segundos ou minutos, dependendo da velocidade da sua conexão, e pronto: o vídeo já estará na memória do seu dispositivo e poderá ser assistido _offline_. Espero que essa dica tenha sido útil. Faça bom proveito!

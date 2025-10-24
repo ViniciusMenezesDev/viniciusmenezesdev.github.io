@@ -17,7 +17,7 @@ O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publ
 
 {% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
-{% include image.html src="/files/2021/01/iphone-vs-android-01.jpg" %}
+{{< image src="/files/2021/01/iphone-vs-android-01.jpg" >}}
 
 Se você está pensando em comprar um celular novo, pode ser que esteja se perguntando: compro um _smartphone_ com [Android] ou um [iPhone]? Durante um tempo eu usei Android, depois passei um tempo usando iPhone, e agora estou voltando para o Android. Então decidi escrever esse texto para compartilhar minha experiência e possivelmente ajudar quem está em dúvida a se decidir por um ou por outro.
 
@@ -41,7 +41,7 @@ Embora no geral eu conseguisse usar bem os celulares, por um motivo ou outro eu 
 
 Frustrado com o Android, decidi dar uma chance ao iPhone, do qual até então só tinha ouvido falar bem. Usei um [iPhone SE][iphone-se] de 2017 a 2019 e um [iPhone 8][iphone-8] de 2019 até agora.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-02.jpg" %}
+{{< image src="/files/2021/01/iphone-vs-android-02.jpg" >}}
 
 Conheço pessoas que fizeram uma viagem de ida sem volta para o mundo da [Apple]: compraram um dos produtos, gostaram, e daí foram comprando a família inteira — iPhone, [iPad], [Mac], [MacBook], [Apple Watch][watch], [Apple TV][tv], etc.
 
@@ -53,13 +53,13 @@ O problema é se você tem um _notebook_ com [Linux], como eu. Mesmo quem usa [W
 
 Ao conectar um Android à USB do computador, você pode escolher se ele vai apenas carregar, transferir apenas fotos ou transferir arquivos em geral, nesse caso toda a memória interna aparece como se fosse um _pendrive_. É fácil mover e copiar fotos e arquivos do Android para o computador e vice-versa. Já ao conectar um iPhone, apenas as fotos aparecem (como uma câmera) e ele também carrega. Usando o cabo USB, é possível copiar e mover fotos do iPhone para o computador, mas não o contrário.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-03.jpg" caption="Quando o Android é conectado à USB do computador, ele aparece como um pendrive" %}
+{{< image src="/files/2021/01/iphone-vs-android-03.jpg" >}}
 
 Há também um problema com o formato das fotos. O Android armazena as fotos no formato [JPG], que se tornou praticamente universal, e as fotos são transferidas para o computador assim como estão. O iPhone armazena as fotos no formato [HEIC] e na transferência converte ou não essas fotos conforme o sistema operacional do computador. Se é um Mac, as fotos são copiadas como HEIC mesmo. Se é Windows ou Linux, as fotos são convertidas para JPG durante a cópia. É assim desde o [iOS 11][ios-11] e o [macOS High Sierra][macos-high-sierra].
 
 Ocorre que para mim essa conversão nunca funcionou com o Linux e em algum momento parou de funcionar também com o Windows. Acabou que desativei essa conversão (indo em **Ajustes** > **Fotos**) e passei a copiar as fotos como HEIC mesmo. Porém no Windows eu precisaria instalar uma [extensão][hevc-windows] que custa R$ 3,45 para conseguir abrir fotos HEIC. No Linux, instalando alguns pacotes, o [GIMP] consegue abrir fotos HEIC. Mas ele é pesado, é como se eu tivesse que abrir o [Photoshop] toda vez que quisesse apenas ver uma foto.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-04.jpg" caption="Abrir fotos do iPhone no Linux? Só com o GIMP..." %}
+{{< image src="/files/2021/01/iphone-vs-android-04.jpg" >}}
 
 Transferir arquivos (como PDFs e DOCs) do computador para o iPhone e vice-versa também é complicado. O Android é simples para transferir arquivos como um _pendrive_ e dispõe de _apps_ gerenciadores de arquivos que permitem acessar todos os arquivos e pastas da memória interna. Já no [iOS] o acesso à memória interna não é transparente. Não há forma de acessar todos os arquivos e pastas, nem via computador, nem via _app_. O iOS cria uma pasta na memória interna para cada _app_ e cada _app_ consegue ver apenas sua própria pasta.
 
@@ -67,11 +67,11 @@ No Windows, é possível copiar arquivos de/para as pastas dos _apps_ do iOS por
 
 Como os arquivos dos _apps_ são isolados, até transferir arquivos entre _apps_ — por exemplo, responder um _e-mail_ no _app_ [Gmail] anexando um arquivo que está na pasta do _app_ Dropbox —  é complicado. Isso passou a ser possível com a introdução do _app_ **Arquivos** no iOS 11.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-05.jpg" caption="iTunes no Windows e Arquivos no iOS" %}
+{{< image src="/files/2021/01/iphone-vs-android-05.jpg" >}}
 
 Transferir músicas do computador para o celular no caso do Android é simples, é o mesmo funcionamento do _pendrive_. No caso do iOS, só pode ser feito por meio do iTunes. Usuários do Linux então tem que recorrer a mais uma solução de contorno, que pode ser o _app_ do [VLC] para iOS, que permite iniciar um servidor _web_ no iPhone e então transferir as músicas por meio do navegador do computador. Outra opção, mais simples, é usar um serviço de _streaming_ de música como o [Spotify], cujos assinantes podem baixar músicas para o celular.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-06.jpg" caption="VLC para iOS permite transferir músicas pela rede e é uma alternativa ao iTunes" %}
+{{< image src="/files/2021/01/iphone-vs-android-06.jpg" >}}
 
 Passar fotos, arquivos ou até músicas via Bluetooth não seria uma opção? No Android, sim, seria mais uma opção. No iPhone, se o outro dispositivo é um computador com Windows ou Linux ou um celular com Android, não. O iPhone pareia normalmente com caixas de som e fones de ouvido Bluetooth, mas quando o assunto é transferência de arquivos, dispositivos da Apple só transferem arquivos entre si por meio do [AirDrop].
 
@@ -79,7 +79,7 @@ Quando eu queria trocar fotos com pessoas que usavam celulares Android, eu recor
 
 Para dados e carregamento, a maioria dos _smartphones_ com Android usa um cabo micro-USB, alguns mais novos estão vindo com cabo USB-C. Enquanto isso, o iPhone usa um cabo [Lightning], que só dispositivos da Apple usam. O ruim disso é que eu precisava de um cabo Lightning só pra carregar o iPhone e um cabo micro-USB pra carregar todos os outros _gadgets_ (caixa de som, fone de ouvido, _power bank_, etc). Também se por acaso eu esquecesse o cabo Lightning em casa, no trabalho tinha que procurar outro usuário de iPhone pra me emprestar o mesmo cabo. A maioria dos colegas só tinha cabo micro-USB.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-07.jpg" caption="Um cabo só pro iPhone, outro cabo pra todos os demais gadgets..." %}
+{{< image src="/files/2021/01/iphone-vs-android-07.jpg" >}}
 
 Com relação a aplicativos, a loja da [Google] (a [Play Store][play]) [tem mais _apps_][mobilegrowthassociation] que a loja da Apple (a [AppStore]): 2,56 milhões versus 1,84 milhões, respectivamente.
 
@@ -103,17 +103,17 @@ Claro também que, em termos de especificações, o iPhone SE é muito superior 
 
 Não apenas o iPhone é caro, mas seus acessórios também. A boa notícia é que, se você não fizer questão que os acessórios sejam originais, é possível encontrar os mesmos acessórios fabricados por marcas alternativas a uma fração do preço da loja oficial da Apple.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-08.jpg" caption="Corre! Aproveita a &quot;promoção&quot;! Frete &quot;grátis&quot; e 10% de &quot;desconto&quot; à vista... que piada..." %}
+{{< image src="/files/2021/01/iphone-vs-android-08.jpg" >}}
 
 ## Resumo e conclusão
 
 Eu já me convenci que não existe _smartphone_ perfeito. Tanto no mundo do Android quanto no mundo do iPhone você pode encontrar _smartphones_ muito bons. O iPhone tende a apresentar melhores _hadware_ e _software_, maior durabilidade, mas também um preço muito maior. Já o Android tem preços mais em conta, especificações que já atendem, e o usuário tem mais liberdade pra fazer o que bem entende com o celular. Pra mim, liberdade vale mais.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-09.jpg" %}
+{{< image src="/files/2021/01/iphone-vs-android-09.jpg" >}}
 
 E por isso decidi dar uma chance ao _smartphone_ [Multilaser MS80X][multilaser-ms80x]. Tenho um _tablet_ da [Multilaser] que já dura 4 anos e ainda funciona muito bem, o [Multilaser M10A][multilaser-m10a]. Na época, os _tablets_ Android mais comuns eram os da [Samsung], mas esse da Multilaser tinha melhores especificações e era mais em conta. Minha percepção foi a mesma com relação ao MS80X. [Comparado com o iPhone 8][comparacao-2], ele não é de todo melhor, mas também não é de todo pior.
 
-{% include image.html src="/files/2021/01/iphone-vs-android-10.jpg" %}
+{{< image src="/files/2021/01/iphone-vs-android-10.jpg" >}}
 
 Quanto ao iPhone 8, ainda vou segurar mais um pouco. Vai levar um tempo até eu conseguir fazer _backup_ de todas as fotos em um formato que todos os demais aparelhos da casa que não apenas o próprio iPhone consigam abrir...
 

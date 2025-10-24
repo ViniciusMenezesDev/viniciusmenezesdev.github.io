@@ -44,7 +44,7 @@ Comece [excluindo a página](https://en.support.wordpress.com/pages/edit-pages-s
 
 Depois, mude a ordem em que as páginas aparecem na navegação. Para isso, acesse a área administrativa e vá em **Páginas**. Então, passe o *mouse* sobre a página "Sobre" e clique em "Edição rápida". Mude o valor do campo **Ordem** para 1 e clique em **Atualizar**.
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-7.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-7.png" >}}
 
 Mude a ordem da página "Notícias" para 2 e a da página "Contato" para 3. A ordem da página "Início" deve ser mantida como 0.
 
@@ -72,7 +72,7 @@ Vamos copiar as regras de uma classe do Bootstrap para estilizar uma classe do W
 
 Agora sim nossa barra de navegação está completa:
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-8.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-8.png" >}}
 
 Vamos seguir criando *templates* diferenciados para páginas e *posts*.
 
@@ -273,7 +273,7 @@ A função [site_url()](https://developer.wordpress.org/reference/functions/site
 
 Agora que temos um *link* para a página inicial em nossa barra de navegação, podemos remover o *link* para a página "Início". Podemos fazer isso adicionando mais uma opção na chamada à função `wp_list_pages()`, a opção `exclude`. Antes de utilizá-la, teremos que descobrir o ID da página "Início". Para isso, acesse a página pela área administrativa, como se fosse editá-la, e observe o endereço na barra de endereços do navegador:
 
-{% include image.html src="/files/2015/08/wordpress-bootstrap-9.png" %}
+{{< image src="/files/2015/08/wordpress-bootstrap-9.png" >}}
 
 Nesse exemplo, a página "Início" tem o ID igual a 4 (no seu *site* pode ser diferente). De posse desse ID, atualize a chamada à função `wp_list_pages()` para (substituindo 4 pelo ID da sua página inicial):
 

@@ -4,7 +4,7 @@ image: /files/2017/01/pfsense-ad-01.png
 title: pfSense autenticando no Active Directory (AD)
 ---
 
-{% include image.html src="/files/2017/01/pfsense-ad-01.png" %}
+{{< image src="/files/2017/01/pfsense-ad-01.png" >}}
 
 Se possuímos em uma mesma rede [pfSense][pfsense] e [Active Directory][ad] (AD), algumas possibilidades interessantes surgem, como: permitir que os administradores da rede (e apenas eles) acessem o pfSense com seus *logins* e senhas do AD; permitir acesso remoto via VPN utilizando os mesmos *logins* e senhas do AD; e exigir *login* e senha do AD para que se possa navegar na rede Wi-Fi (ou em qualquer outra rede).
 
@@ -16,19 +16,19 @@ A interface *web* utilizada para configurar o pfSense é chamada de **webConfigu
 
 Para acessá-la, devemos fornecer nome de usuário (*username*) e senha (*password*):
 
-{% include image.html src="/files/2017/01/pfsense-ad-02.png" %}
+{{< image src="/files/2017/01/pfsense-ad-02.png" >}}
 
 Podemos configurá-la para que esse acesso utilize as mesmas credenciais do AD.
 
 Para isso, precisaremos criar uma conta de usuário no AD para o pfSense, para que ele possa se conectar ao AD e validar as credenciais fornecidas na tela de *login*:
 
-{% include image.html src="/files/2017/01/pfsense-ad-03.png" %}
+{{< image src="/files/2017/01/pfsense-ad-03.png" >}}
 
 Observe que o pfSense precisa de uma conta só para ele porque [o AD, por padrão, não permite conexão anônima (*anonymous bind*)][anonymous-bind]. Essa conta pode ser uma conta de usuário simples, não precisa de privilégios elevados.
 
 Recomendo que você utilize uma senha aleatória gerada pelo *site* [RANDOM.ORG][random.org]. Você pode verificar que ela é segura no *site* [How Secure Is My Password?][how-secure-is-my-password] Desative a alteração de senha no próximo *logon* e também a expiração da senha:
 
-{% include image.html src="/files/2017/01/pfsense-ad-04.png" %}
+{{< image src="/files/2017/01/pfsense-ad-04.png" >}}
 
 Agora acesse a interface *web* do pfSense com um usuário local (por [padrão][pfsense-configuracoes-padrao], caso você não tenha alterado após a instalação, nome de usuário **admin** e senha **pfsense**, se você não alterou essa senha, recomendo que altere).
 
@@ -53,7 +53,7 @@ Para as demais opções, o padrão deve ser suficiente. Talvez você precise alt
 
 Abaixo você pode ver o formulário completo, depois de preenchido:
 
-{% include image.html src="/files/2017/01/pfsense-ad-05.jpg" %}
+{{< image src="/files/2017/01/pfsense-ad-05.jpg" >}}
 
 Clique em **Save**.
 
@@ -63,7 +63,7 @@ Para isso, vá em **Diagnostics**, **Authentication**.
 
 Em **Authentication Server**, selecione o AD que você acabou de cadastrar. Informe um nome de usuário e senha e clique em **Test**:
 
-{% include image.html src="/files/2017/01/pfsense-ad-06.png" %}
+{{< image src="/files/2017/01/pfsense-ad-06.png" >}}
 
 Se você digitou corretamente o nome de usuário e a senha, o pfSense deve mostrar uma mensagem de sucesso e listar os grupos do usuário, como na imagem acima.
 
@@ -79,7 +79,7 @@ Preencha o formulário com as informações sobre o grupo:
 - **Scope:** selecione **Remote**
 - **Description**: Administradores da rede (um texto apenas para informação)
 
-{% include image.html src="/files/2017/01/pfsense-ad-07.png" %}
+{{< image src="/files/2017/01/pfsense-ad-07.png" >}}
 
 Clique em **Save**.
 
@@ -89,7 +89,7 @@ Na sessão **Assigned Privileges**, clique no botão **Add**.
 
 Selecione o privilégio **WebCfg - All pages** e clique em **Save**:
 
-{% include image.html src="/files/2017/01/pfsense-ad-08.jpg" %}
+{{< image src="/files/2017/01/pfsense-ad-08.jpg" >}}
 
 De volta à tela anterior, clique em **Save**.
 
@@ -97,13 +97,13 @@ Finalmente, vamos dizer que o AD é onde o pfSense deve buscar os usuários.
 
 Clique na aba **Settings**. Em **Authentication Server**, selecione o AD. Clique em **Save**:
 
-{% include image.html src="/files/2017/01/pfsense-ad-09.png" %}
+{{< image src="/files/2017/01/pfsense-ad-09.png" >}}
 
 Faça *log out* do webConfigurator e entre de novo, dessa vez utilizando sua conta do AD (deve ser uma conta pertencente ao grupo configurado). Deve funcionar.
 
 Se você fizer um teste utilizando uma conta do AD sem permissões previamente concedidas, o pfSense informará que não há uma página configurada para o usuário e oferecerá somente a opção de fazer *log out*:
 
-{% include image.html src="/files/2017/01/pfsense-ad-10.png" %}
+{{< image src="/files/2017/01/pfsense-ad-10.png" >}}
 
 Você pode conceder diferentes permissões a diferentes grupos de usuários, por exemplo:
 
@@ -111,7 +111,7 @@ Você pode conceder diferentes permissões a diferentes grupos de usuários, por
     - WebCfg - Status: DHCP leases
     - WebCfg - Services: Wake-on-LAN
 
-{% include image.html src="/files/2017/01/pfsense-ad-11.jpg" %}
+{{< image src="/files/2017/01/pfsense-ad-11.jpg" >}}
 
 - Programadores (grupo **TI-DESENV**, assim nomeado porque o pfSense não aceita um nome de grupo maior que 16 caracteres) podem acessar as configurações do portal de captura (*captive portal*) para personalizar as páginas HTML do portal de captura, para isso são necessárias as permissões:
     - WebCfg - Services: Captive portal
@@ -119,7 +119,7 @@ Você pode conceder diferentes permissões a diferentes grupos de usuários, por
     - WebCfg - Services: Captive portal: File Manager
     - WebCfg - Services: Captive portal Zones
 
-{% include image.html src="/files/2017/01/pfsense-ad-12.jpg" %}
+{{< image src="/files/2017/01/pfsense-ad-12.jpg" >}}
 
 Observe que, depois de tudo isso, ainda é possível entrar no webConfigurator com o usuário local **admin** do pfSense. Por isso, é importante mudar a senha dele.
 
@@ -135,7 +135,7 @@ Clique no ícone do lápis para editar o servidor OpenVPN.
 
 No campo **Backend for authentication**, em vez de **Local Database**, selecione o AD:
 
-{% include image.html src="/files/2017/01/pfsense-ad-13.jpg" %}
+{{< image src="/files/2017/01/pfsense-ad-13.jpg" >}}
 
 Clique no botão **Save**, ao final da página.
 
@@ -145,7 +145,7 @@ Vá em **VPN**, **OpenVPN**, aba **Client Export**.
 
 Na linha referente a um usuário local qualquer (seguindo o exemplo do [*post* anterior][vpn], **vinyanalista**), clique no botão **Others**, abaixo de **Inline Configurations**, para baixar um arquivo contendo a configuração do cliente OpenVPN:
 
-{% include image.html src="/files/2017/01/pfsense-ad-14.jpg" %}
+{{< image src="/files/2017/01/pfsense-ad-14.jpg" >}}
 
 Ele deve se chamar algo como **firewall-udp-1194-vinyanalista-config.ovpn**. Você pode renomeá-lo para, por exemplo, **vpn-da-minhacasa.ovpn**.
 
@@ -153,7 +153,7 @@ No computador cliente (veremos aqui instruções para [Windows][windows]), baixe
 
 Terminada a instalação, copie o arquivo de configuração para a pasta onde o cliente OpenVPN guarda suas configurações:
 
-{% include image.html src="/files/2017/01/pfsense-ad-15.jpg" %}
+{{< image src="/files/2017/01/pfsense-ad-15.jpg" >}}
 
 No computador que eu utilizei, o caminho para essa pasta foi **C:\Arquivos de Programas\OpenVPN\config**.
 

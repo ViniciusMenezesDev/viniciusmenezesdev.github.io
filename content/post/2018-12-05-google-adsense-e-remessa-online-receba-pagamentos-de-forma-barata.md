@@ -7,7 +7,7 @@ image: /files/2018/12/adsense-remessa-online.jpg
 title: 'Google Adsense e Remessa Online: receba pagamentos de forma barata'
 ---
 
-{% include image.html src="/files/2018/12/adsense-remessa-online.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online.jpg" >}}
 
 O [Google AdSense][adsense] é o serviço de anúncios do [Google]. Com ele, se você tem um *site* ou *blog*, pode exibir anúncios do Google e receber dinheiro conforme os anúncios são visualizados e clicados (você pode ver anúncios do AdSense aqui no meu *blog*).
 
@@ -23,7 +23,7 @@ Além de pagamentos do Google AdSense, você pode usá-la para enviar ou receber
 
 Você pode confiar na Remessa Online: ela atende mais de 63.500 usuários e é credenciada pelo [Banco Central do Brasil][bcb] para intermediar transferências internacionais. Você pode conferir avaliações da Remessa Online em diversos *sites*, como [Reclame Aqui][reclame-aqui], [Google][google-remessa-online] e [Facebook][facebook]. Você também pode simular valores antes de transferir na [página inicial][remessa-online]:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-01.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-01.jpg" >}}
 
 O custo (*spread*) da Remessa Online é menor que o dos bancos, o IOF é o mesmo e no recebimento do exterior não são cobradas quaisquer outras taxas. Na simulação, clique em **Veja as Taxas** para mais informações.
 
@@ -51,7 +51,7 @@ Depois, clique em **Acessar/Cadastrar**, no canto superior direito da página.
 
 Preencha o formulário com seus dados (nome completo, CPF, *e-mail*, senha), leia e aceite os termos de uso e clique em **Cadastrar**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-02.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-02.jpg" >}}
 
 A Remessa Online vai te pedir que envie seus documentos digitalizados: um documento de identificação com foto (RG ou CNH) frente e verso e um comprovante de residência. Não vou entrar em detalhes sobre o cadastro, porque ele é autoexplicativo. Siga as instruções na tela e você terminará na área cadastrada, chamada de painel (*dashboard*).
 
@@ -63,15 +63,15 @@ Uma vez que criou e acessou sua conta, você deve criar uma história.
 
 Em seu painel na Remessa Online, em **Histórias**, clique em **Novo recebimento**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-03.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-03.jpg" >}}
 
 A Remessa Online explica o passo-a-passo do cadastro da história. Clique em **Continuar**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-04.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-04.jpg" >}}
 
 Na primeira tela, preencha os campos com os dados da sua conta bancária:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-05.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-05.jpg" >}}
 
 Interessante que a Remessa Online já aceita os novíssimos [Banco Inter][inter] (código 077) e [Nubank] (Nu Pagamentos, código 260).
 
@@ -83,25 +83,25 @@ Na segunda tela, a Remessa Online questiona sobre quem vai enviar o dinheiro.
 
 Selecione **Uma empresa**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-06.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-06.jpg" >}}
 
 Em seguida, selecione **Google AdSense**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-07.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-07.jpg" >}}
 
 A Remessa Online explica os limites e prazos das operações:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-08.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-08.jpg" >}}
 
 Leia-os, marque a opção **Concordo com os termos e condições** e clique em **Continuar**.
 
 Selecione a moeda **Dólar Americano**, dê um nome para a história (eu dei o nome de `Google AdSense`) e clique em **Continuar**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-09.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-09.jpg" >}}
 
 Na última tela, com a história criada, a Remessa Online informa os dados que você deve passar para o AdSense para receber seu pagamento:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-10.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-10.jpg" >}}
 
 Lembrando que não é necessário criar novas histórias para os próximos pagamentos: essa história será usada para o primeiro pagamento e todos os seguintes.
 
@@ -111,7 +111,7 @@ Se você já atingiu o limite mínimo para pagamento no [AdSense][adsense] (100 
 
 Faça *login* na sua conta do [AdSense] e clique em **Pagamentos**, à esquerda. Em seguida, clique em **Gerenciar formas de pagamento**, à direita. Por fim, clique em **Adicionar forma de pagamento**. Você terminará nesta tela:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-11.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-11.jpg" >}}
 
 Preencha o campo **ID do beneficiário** com seu CPF e os demais campos com os dados fornecidos pela Remessa Online. Quando terminar, clique em **Salvar**.
 
@@ -125,33 +125,33 @@ Seus ganhos mensais do AdSense são acumulados até que atinjam o limite mínimo
 
 Quando o AdSense te pagar, ele vai te enviar um *e-mail*:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-12.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-12.jpg" >}}
 
 Quando receber esse *e-mail*, faça *login* na sua conta do [AdSense] e clique em **Pagamentos**, à esquerda. Em seguida, clique em **Transações**, à direita.
 
 Clique no *link* referente ao pagamento para abrir o recibo (*invoice*):
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-13.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-13.jpg" >}}
 
 Use o comando **Imprimir** do navegador para gerar um PDF do recibo:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-14.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-14.jpg" >}}
 
 Acesse sua conta da [Remessa Online][remessa-online] e clique na história do AdSense:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-15.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-15.jpg" >}}
 
 Em seguida, clique em **Enviar comprovante**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-16.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-16.jpg" >}}
 
 Preencha o **Valor transferido pelo remetente** com o valor informado no recibo do AdSense, anexe o recibo e clique em **Enviar comprovante**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-17.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-17.jpg" >}}
 
 Perceba que sua solicitação agora está **Em análise**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-18.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-18.jpg" >}}
 
 Aguarde a Remessa Online confirmar o crédito na conta dela. Pode demorar até 3 dias úteis.
 
@@ -159,7 +159,7 @@ Aguarde a Remessa Online confirmar o crédito na conta dela. Pode demorar até 3
 
 Quando a Remessa Online reconhecer seu pagamento na conta dela, te enviará um *e-mail*:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-19.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-19.jpg" >}}
 
 Acesse sua conta da [Remessa Online][remessa-online] e clique na história do AdSense.
 
@@ -169,11 +169,11 @@ Perceba que há um **Saldo disponível para resgate**. Clique em **Resgatar sald
 
 Selecione a remessa que quer resgatar à esquerda, verifique o valor e prazo para o resgate à direita (2 dias úteis), informe o **Cupom de desconto** (`AV0342`), clique em **Validar cupom** e, por fim, clique em **Resgatar agora**:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-20.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-20.jpg" >}}
 
 Você verá uma tela parecida com esta mostrando o resumo do resgate:
 
-{% include image.html src="/files/2018/12/adsense-remessa-online-21.jpg" %}
+{{< image src="/files/2018/12/adsense-remessa-online-21.jpg" >}}
 
 Agora é só aguardar o valor do resgate entrar na sua conta bancária até o prazo estimado. Confira seu extrato bancário!
 

@@ -7,7 +7,7 @@ title: 'O que é VPN e a forma mais fácil de usá-la no Windows: por meio do Na
   Tor'
 ---
 
-{% include image.html src='/files/2024/09/tor-browser-windows.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows.jpg" >}}
 
 A busca por VPNs [cresceu recentemente][poder360] no Brasil, segundo dados do [Google Trends]. Mas afinal, o que é VPN, e por que alguém iria quer usar isso?
 
@@ -15,25 +15,25 @@ A sigla **[VPN]** vem do inglês _Virtual Private Network_, que quer dizer **Red
 
 A VPN funciona assim: dois computadores pertencem, a princípio, a redes diferentes (eles podem estar em prédios, cidades ou até mesmo países diferentes, por exemplo), mas ambos estão conectados à Internet. Então, eles estabelecem na rede mundial um circuito criptografado por onde trocam informações de forma privada. Seria como uma ligação telefônica que não pudesse ser grampeada.
 
-{% include image.html src='/files/2016/06/pfsense-vpn-02.jpg' caption='Apesar de estarem conectados à Internet, dois computadores em uma VPN se comunicam de forma privada' %}
+{{< image src="/files/2016/06/pfsense-vpn-02.jpg" >}}
 
 Para quem usa esses computadores, é imperceptível que eles estão distantes. É como se eles estivessem conectados diretamente por um cabo, apesar de esse cabo não existir de verdade (por isso, essa rede é dita **virtual**). E a comunicação, apesar de ocorrer pela Internet, não pode ser lida pelos demais computadores da rede, porque esses dois computadores usam criptografia para se comunicar (por isso, rede **privada**). Porque a informação trafega por esse circuito criptografado que não pode ser interceptado, a VPN também é conhecida como **túnel**.
 
-{% include image.html src='/files/2016/06/pfsense-vpn-03.png' caption='Um túnel é bem assim: só quem está dentro dele vê o que por ele passa' %}
+{{< image src="/files/2016/06/pfsense-vpn-03.png" >}}
 
 Um uso prático de VPNs é burlar censuras a _sites_. Normalmente, quando acessamos um _site_, nossa comunicação com o servidor desse _site_ é roteada pela infraestrutura de rede da operadora, que pode estar bloqueando o acesso ao _site_ (por ordem do governo, por exemplo). Tem VPNs que permitem que o computador na outra ponta, que pode estar em outro país, faça o trabalho do roteador da operadora, então conseguimos, assim, acessar o _site_ como se estivéssemos em outro país.
 
-{% include image.html src='/files/2015/12/vpn.png' %}
+{{< image src="/files/2015/12/vpn.png" >}}
 
 Essas VPNs são usadas sobretudo em [países com governos autoritários][china] em que os cidadãos são proibidos de ter acesso a _sites_ ou aplicativos considerados impróprios pelo ditador no poder. É preocupante que a busca por VPNs esteja crescendo no Brasil, assim como a menção ao nosso país na [Declaração de Westminster], assinada por vários ativistas defensores da [liberdade de expressão], incluindo [Julian Assange], [Edward Snowden], [Glenn Greenwald] e [Jordan Peterson].
 
 Se você sente necessidade de usar uma VPN, quero te apresentar hoje uma que é baseada em [_software_ livre][free-sw] e que pode ser usada gratuitamente por qualquer pessoa em qualquer lugar do mundo.
 
-{% include image.html src='/files/2024/09/tor.svg' %}
+{{< image src="/files/2024/09/tor.svg" >}}
 
 O **[Projeto Tor]** (sigla de _The Onion Router_, "o roteador cebola", em uma tradução livre) mantém uma rede de túneis ao redor do mundo -- a **Rede Tor** -- pela qual trafegam dados de seus usuários de forma anônima, criptografada, privada, segura e livre de censura. A menção à cebola vem do fato de que a informação dentro dessa rede circula de forma compartimentada. A Rede Tor emprega várias camadas de criptografia para garantir que cada computador no meio do caminho só saiba o suficiente para levar a informação adiante até o próximo:
 
-{% include image.html src='/files/2024/09/how-tor-works.png' caption='Fonte da imagem: [manual do Navegador Tor](https://tb-manual.torproject.org/pt-BR/about/)' %}
+{{< image src="/files/2024/09/how-tor-works.png" >}}
 
 A forma mais fácil de se conectar à Rede Tor e usá-la no [Windows] é por meio do **[Navegador Tor]** (_Tor Browser_), que é uma versão do [Mozilla Firefox] modificada para trafegar dados somente dentro da Rede Tor. Ao usar o Navegador Tor, você navega sem ser identificado ou rastreado, para os sites seu endereço IP aparece diferente, como se estivesse em outro país.
 
@@ -51,29 +51,29 @@ Para baixar o Navegador Tor, acesse o _site_ oficial do Projeto Tor e clique em 
 
 - <https://www.torproject.org/pt-BR/download/>
 
-{% include image.html src='/files/2024/09/tor-browser-windows-01.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-01.jpg" >}}
 
 O _download_ do instalador do Navegador Tor será iniciado automaticamente.
 
 Quando o download terminar, abra-o:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-02.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-02.jpg" >}}
 
 A primeira tela do instalador pede para selecionar um idioma:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-03.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-03.jpg" >}}
 
 O **Português Brasileiro** já deve vir selecionado por padrão. Apenas clique em **OK**.
 
 Faça a instalação como normalmente é no Windows (famoso **Avançar, Avançar, Avançar...**):
 
-{% include image.html src='/files/2024/09/tor-browser-windows-04.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-04.jpg" >}}
 
-{% include image.html src='/files/2024/09/tor-browser-windows-05.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-05.jpg" >}}
 
 E, por fim, clique em **Concluir**:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-06.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-06.jpg" >}}
 
 Na sequência, o Navegador Tor é iniciado automaticamente pela primeira vez.
 
@@ -81,15 +81,15 @@ Na sequência, o Navegador Tor é iniciado automaticamente pela primeira vez.
 
 Essa é a tela inicial do Navegador Tor, ainda não conectado à Rede Tor e, portanto, ainda não pronto para uso:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-07.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-07.jpg" >}}
 
 Clique em **Conectar**. Aguarde a conexão com a Rede Tor ser estabelecida:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-08.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-08.jpg" >}}
 
 A tela seguinte indica que o Navegador Tor está conectado à Rede Tor e, portanto, pronto para ser usado:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-09.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-09.jpg" >}}
 
 ## Testando a conexão com a Rede Tor
 
@@ -97,7 +97,7 @@ Sempre antes de começar a usar o Navegador Tor, convém testar se ele está de 
 
 - <https://check.torproject.org/>
 
-{% include image.html src='/files/2024/09/tor-browser-windows-10.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-10.jpg" >}}
 
 A página deve informar: **"Parabéns. Este navegador está configurado para usar Tor."** (ou o equivalente a isso em inglês, como na imagem) Se essa mensagem aparece para você, já é seguro usar o Navegador Tor para acessar os _sites_ que você precisa acessar.
 
@@ -109,11 +109,11 @@ Quando você instala o Navegador Tor no Windows, ele é iniciado automaticamente
 
 Sempre que você quiser usar o Navegador Tor novamente, pode iniciá-lo a partir do atalho que é criado pelo instalador na **Área de Trabalho**:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-11.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-11.jpg" >}}
 
 Você também pode iniciá-lo a partir do **Menu Iniciar**:
 
-{% include image.html src='/files/2024/09/tor-browser-windows-12.jpg' %}
+{{< image src="/files/2024/09/tor-browser-windows-12.jpg" >}}
 
 ## Leitura adicional recomendada
 

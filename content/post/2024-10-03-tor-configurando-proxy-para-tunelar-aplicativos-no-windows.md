@@ -8,7 +8,7 @@ image: /files/2024/10/tor-windows.jpg
 title: 'Tor: configurando proxy para tunelar aplicativos no Windows'
 ---
 
-{% include image.html src='/files/2024/10/tor-windows.jpg' %}
+{{< image src="/files/2024/10/tor-windows.jpg" >}}
 
 Vimos o que é **[VPN]**, **[Rede Tor][VPN]** e a forma mais fácil de usá-la no [Windows], que é por meio do **[Navegador Tor][VPN]** (_Tor Browser_), que é uma versão do [Mozilla Firefox] modificada para trafegar dados somente dentro da Rede Tor. Como nos computadores (_desktops_ e _notebooks_) é mais comum acessarmos serviços _online_ por meio do navegador, em vez de aplicativos (como é o caso com dispositivos móveis -- _smartphones_ e _tablets_), o Navegador Tor é a melhor forma de começar a usar a Rede Tor no Windows.
 
@@ -24,19 +24,19 @@ Antes de começar, inicie o Navegador Tor e certifique-se de que ele está conec
 
 Com o Navegador Tor iniciado e conectado à Rede Tor, abra o **Menu Iniciar**, pesquise por **Opções da Internet** e clique na opção correspondente:
 
-{% include image.html src='/files/2024/10/tor-browser-proxy-01.jpg' %}
+{{< image src="/files/2024/10/tor-browser-proxy-01.jpg" >}}
 
 Mude para a aba **Conexões** e clique no botão **Configurações da LAN**:
 
-{% include image.html src='/files/2024/10/tor-browser-proxy-02.jpg' %}
+{{< image src="/files/2024/10/tor-browser-proxy-02.jpg" >}}
 
 Marque a opção **Usar um servidor proxy para a rede local** e clique em **Avançadas**:
 
-{% include image.html src='/files/2024/10/tor-browser-proxy-03.jpg' %}
+{{< image src="/files/2024/10/tor-browser-proxy-03.jpg" >}}
 
 Em **Socks**, informe `127.0.0.1`. Ao lado, em **Porta**, informe `9150`:
 
-{% include image.html src='/files/2024/10/tor-browser-proxy-04.jpg' %}
+{{< image src="/files/2024/10/tor-browser-proxy-04.jpg" >}}
 
 Clique em **OK** em todas as caixas de diálogo para fechá-las.
 
@@ -46,7 +46,7 @@ Como [vimos][VPN], sempre antes de começar a usar a Rede Tor, convém testar se
 
 Como agora qualquer aplicativo do sistema consegue acessar a Rede Tor, podemos fazer esse teste com outro navegador, a exemplo do [Microsoft Edge], que já vem instalado de fábrica no Windows:
 
-{% include image.html src='/files/2024/10/tor-browser-proxy-05.jpg' %}
+{{< image src="/files/2024/10/tor-browser-proxy-05.jpg" >}}
 
 ## Usando outros navegadores com o Tor
 
@@ -74,31 +74,31 @@ Baixe o **Pacote Tor Expert** (_Tor Expert Bundle_) acessando o _site_ do Tor em
 
 Clique no _link_ referente à versão **Estável** para **Windows (x86_64)**:
 
-{% include image.html src='/files/2024/10/tor-service-01.jpg' %}
+{{< image src="/files/2024/10/tor-service-01.jpg" >}}
 
 Você vai baixar um arquivo compactado. Crie uma pasta `C:\Tor` e extraia o conteúdo do arquivo baixado para ela usando um programa como o [7-Zip]. Ao final, você terá isto:
 
-{% include image.html src='/files/2024/10/tor-service-02.jpg' %}
+{{< image src="/files/2024/10/tor-service-02.jpg" >}}
 
 Note o executável `tor.exe` dentro de `C:\Tor\tor`. Esse é o cliente Tor.
 
 Abra o **Menu Iniciar**, pesquise por `cmd` e execute o **Prompt de Comando** como administrador:
 
-{% include image.html src='/files/2024/10/tor-service-03.jpg' %}
+{{< image src="/files/2024/10/tor-service-03.jpg" >}}
 
 Mude para a pasta `C:\Tor\tor` e execute o `tor.exe`:
 
-{% include image.html src='/files/2024/10/tor-service-04.jpg' %}
+{{< image src="/files/2024/10/tor-service-04.jpg" >}}
 
 O cliente Tor pode levar alguns segundos ou minutos para iniciar:
 
-{% include image.html src='/files/2024/10/tor-service-05.jpg' %}
+{{< image src="/files/2024/10/tor-service-05.jpg" >}}
 
 Perceba ao final: `Bootstrapped 100% (done): Done`. Isso indica que a conexão com a Rede Tor foi estabelecida e a VPN está pronta para ser usada.
 
 Configure o _proxy_ indo nas Opções da Internet, da mesma forma como você fez antes, apenas mude a porta para `9050`:
 
-{% include image.html src='/files/2024/10/tor-service-06.jpg' %}
+{{< image src="/files/2024/10/tor-service-06.jpg" >}}
 
 Teste a conexão com a Rede Tor acessando [check.torproject.org](https://check.torproject.org/) no navegador de sua preferência. Se o Navegador Tor estiver aberto, recomendo que você o feche antes de fazer o teste, para se certificar de que a conexão está sendo tunelada pelo cliente Tor, e não pelo Navegador Tor.
 
@@ -114,17 +114,17 @@ Na sequência, execute:
 > tor.exe --service install
 ```
 
-{% include image.html src='/files/2024/10/tor-service-07.jpg' %}
+{{< image src="/files/2024/10/tor-service-07.jpg" >}}
 
 Note: `Service installed successfully` (Serviço instalado com sucesso)
 
 Para se certificar de que o serviço foi instalado, abra o **Menu Iniciar**, pesquise por `serviços` e abra o aplicativo **Serviços**:
 
-{% include image.html src='/files/2024/10/tor-service-08.jpg' %}
+{{< image src="/files/2024/10/tor-service-08.jpg" >}}
 
 Perceba o serviço **Tor Win32 Service** com **Status** = **Em Execução** e **Tipo de Inicialização** = **Automático**:
 
-{% include image.html src='/files/2024/10/tor-service-09.jpg' %}
+{{< image src="/files/2024/10/tor-service-09.jpg" >}}
 
 Pronto! Feito isso, seu sistema estará sempre pronto para usar a Rede Tor.
 

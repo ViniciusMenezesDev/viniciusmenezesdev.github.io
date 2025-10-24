@@ -4,7 +4,7 @@ image: /files/2024/05/gitlab-personal-access-tokens.jpg
 title: Autenticando sem senha no GitLab por meio de Personal Access Token
 ---
 
-{% include image.html src="/files/2024/05/gitlab-personal-access-tokens.jpg" %}
+{{< image src="/files/2024/05/gitlab-personal-access-tokens.jpg" >}}
 
 Se você trabalha com [Git] e [GitLab], provavelmente já quis usá-lo sem senha, por um motivo ou por outro. Talvez porque é incômodo ter que digitar a senha toda vez que faz um **[git pull]** ou **[git push]**. Uma vez eu escrevi para o _blog_ do [Linux Kamarada] um tutorial contendo uma possível solução para isso, que é [usar o Git com chaves SSH][git-ssh]. Mas nem sempre essa é a melhor solução possível. Se você precisa acessar [registros de pacotes privados do PyPI][gitlab-docs-pypi] ou [registros de contêineres privados do Docker][gitlab-docs-docker] no GitLab, o melhor para isso é criar e usar um _[personal access token]_ (_token_ de acesso pessoal).&nbsp;
 
@@ -20,15 +20,15 @@ Veja a seguir como criar e usar um _personal access token_.
 
 Usando seu navegador preferido, acesse sua conta do [GitLab]. Na barra lateral à esquerda, clique no seu avatar e, depois, em **Preferences** (preferências):
 
-{% include image.html src="/files/2024/05/gitlab-personal-access-token-1.jpg" %}
+{{< image src="/files/2024/05/gitlab-personal-access-token-1.jpg" >}}
 
 Na barra lateral à esquerda, clique em **Access Tokens**. Depois, na página, à direita, clique em **Add new token** (adicionar novo _token_):
 
-{% include image.html src="/files/2024/05/gitlab-personal-access-token-2.jpg" %}
+{{< image src="/files/2024/05/gitlab-personal-access-token-2.jpg" >}}
 
 Digite um nome para o _token_ (**Token name**) e defina uma data de expiração (**Expiration date**) para o _token_, que não deve ser superior a 1 ano (por exemplo, se hoje estamos em `2024-05-27`, você pode digitar `2025-05-26` para que o _token_ tenha validade de 1 ano):
 
-{% include image.html src="/files/2024/05/gitlab-personal-access-token-3.jpg" %}
+{{< image src="/files/2024/05/gitlab-personal-access-token-3.jpg" >}}
 
 Em **Select scopes** (selecione escopos), defina quais ações poderão ser feitas usando esse _token_. Na dúvida, marque apenas a opção **api**, mas tenha em mente que esse é o nível de permissão máximo. Se quiser mais informações sobre cada uma dessas opções, consulte a [documentação do GitLab][gitlab-docs-scopes].
 
@@ -36,7 +36,7 @@ Mais abaixo, nessa mesma página, clique no botão **Create personal access toke
 
 A página seguinte informa que o _token_ foi criado:
 
-{% include image.html src="/files/2024/05/gitlab-personal-access-token-4.jpg" %}
+{{< image src="/files/2024/05/gitlab-personal-access-token-4.jpg" >}}
 
 Você pode vê-lo clicando no ícone do olho e copiá-lo usando o ícone do lado. Não deixe essa página sem ter copiado esse _token_ para algum outro lugar, pois não terá como vê-lo novamente. Se for preciso, você terá que criar outro _token_.
 

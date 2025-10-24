@@ -4,7 +4,7 @@ image: /files/2015/10/celular-roubado-00.jpg
 title: 'Meu celular foi roubado: e agora, o que faço?'
 ---
 
-{% include image.html src="/files/2015/10/celular-roubado-00.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-00.jpg" >}}
 
 Em primeiro lugar, não se culpe e **procure manter a calma**. Feito isso, siga as dicas que apresento aqui para tentar restringir ao máximo a ação do bandido, se possível até mesmo recuperar o celular. Você também pode seguir essas dicas se perdeu seu celular. Algumas dicas podem funcionar também com *tablets*.
 
@@ -38,7 +38,7 @@ Uma das ferramentas que podem te ajudar é o [Gerenciador de dispositivos Androi
 
 Quando você entra no *site* com a sua conta do Google, que deve ser a mesma configurada no celular, o Gerenciador de dispositivos Android começa a procurá-lo. Se ele estiver conectado à Internet, a posição aproximada dele será mostrada no mapa. A ferramenta também indica a última vez em que o celular foi visto conectado:
 
-{% include image.html src="/files/2015/10/celular-roubado-01.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-01.jpg" >}}
 
 Se o seu celular foi localizado com sucesso, é possível fazê-lo [tocar, bloquear ou apagar a memória](https://support.google.com/accounts/answer/6160500?hl=pt-BR) clicando em um dos botões disponíveis na tela.
 
@@ -48,7 +48,7 @@ Note que você só pode usar o Gerenciador de dispositivos Android se [configuro
 
 Alguns fabricantes, a exemplo da [Samsung](http://www.samsung.com/br/home/), vendem os celulares com sistemas de localização já instalados de fábrica, como o [Find My Mobile](https://findmymobile.samsung.com/).
 
-{% include image.html src="/files/2015/10/celular-roubado-02.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-02.jpg" >}}
 
 Se seu celular possui um sistema como esse, pode ser que ele ofereça mais opções que o Gerenciador de dispositivos Android. Nesse caso, consulte o manual do seu celular para ver o que pode ser feito.
 
@@ -56,7 +56,7 @@ Se seu celular possui um sistema como esse, pode ser que ele ofereça mais opç�
 
 Se seu celular possui instalado o [Avast Anti-Theft](https://www.avast.com/pt-br/anti-theft) (a solução antifurto gratuita mais completa que conheço, e que uso no meu celular), você pode localizá-lo e/ou controlá-lo remotamente acessando a sua [conta do Avast](https://my.avast.com/pt-br/) ou enviando mensagens SMS para ele.
 
-{% include image.html src="/files/2015/10/celular-roubado-03.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-03.jpg" >}}
 
 Para indicar ao Avast que seu celular foi perdido (ou roubado), você pode usar outro celular para enviar para o seu celular (para o seu próprio número) um SMS com o seguinte conteúdo:
 
@@ -82,23 +82,23 @@ Também é possível enviar comandos SMS para o celular perdido usando o [Avast 
 
 1. Abra o Avast Mobile Security e selecione **mais ferramentas**:
 
-{% include image.html src="/files/2015/10/celular-roubado-04.png" %}
+{{< image src="/files/2015/10/celular-roubado-04.png" >}}
 
 2. Selecione **Anti-Theft**:
 
-{% include image.html src="/files/2015/10/celular-roubado-05.png" %}
+{{< image src="/files/2015/10/celular-roubado-05.png" >}}
 
 3. Selecione **Controle remoto via SMS**:
 
-{% include image.html src="/files/2015/10/celular-roubado-06.png" %}
+{{< image src="/files/2015/10/celular-roubado-06.png" >}}
 
 4. A lista de comandos possíveis aparece:
 
-{% include image.html src="/files/2015/10/celular-roubado-07.png" %}
+{{< image src="/files/2015/10/celular-roubado-07.png" >}}
 
 5. Clicando em um deles (`LOST`, por exemplo), o Avast te auxiliará a enviar a mensagem SMS com o comando:
 
-{% include image.html src="/files/2015/10/celular-roubado-08.png" %}
+{{< image src="/files/2015/10/celular-roubado-08.png" >}}
 
 Ao utilizar o Avast Anti-Theft para controlar seu celular perdido, você deve estar atento a alguns detalhes:
 
@@ -123,7 +123,7 @@ Se você trabalha em uma empresa que utiliza o [Microsoft Exchange](https://prod
 
 5. Clique em **Apagar Dispositivo**:
 
-{% include image.html src="/files/2015/10/celular-roubado-09.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-09.jpg" >}}
 
 ### Outras opções
 
@@ -171,7 +171,7 @@ Para mostrar um exemplo, vejamos como é possível bloquear o acesso de um celul
 
 4. Na lista, selecione o celular roubado e clique em **Bloquear**:
 
-{% include image.html src="/files/2015/10/celular-roubado-10.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-10.jpg" >}}
 
 ## 5) Mudar as senhas das contas e encerrar as sessões abertas
 
@@ -181,13 +181,13 @@ Nesse momento, é importante que você altere a senha de **todas** as suas conta
 
 Você pode começar alterando as senhas das contas utilizadas pelos aplicativos. Se seu celular é um Android, você pode ver a [lista dos seus aplicativos](https://play.google.com/apps) no [Google Play](https://play.google.com/) para se certificar de não esquecer de nenhum:
 
-{% include image.html src="/files/2015/10/celular-roubado-11.jpg" caption="O Facebook e o Foursquare são dois exemplos de aplicativos cujas contas você deve mudar a senha" %}
+{{< image src="/files/2015/10/celular-roubado-11.jpg" >}}
 
 Alguns serviços, a exemplo do [Facebook](https://www.facebook.com/) e do [Google](https://www.google.com.br/), permitem que você encerre as sessões abertas em todos os dispositivos, para assegurar que ninguém utiliza sua conta.
 
 Ao [mudar a senha do Facebook](https://pt-br.facebook.com/help/748385731848104), ele oferece essa possibilidade:
 
-{% include image.html src="/files/2015/10/celular-roubado-12.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-12.jpg" >}}
 
 Ao [mudar a senha do Google](https://support.google.com/mail/answer/41078?hl=pt-BR), automaticamente todas as sessões abertas são desconectadas.
 
@@ -203,7 +203,7 @@ Para [verificar os usuários e senhas salvas no Mozilla Firefox](https://support
 
 4. Clique no botão **Senhas memorizadas** para que o Gerenciador de Senhas seja aberto:
 
-{% include image.html src="/files/2015/10/celular-roubado-13.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-13.jpg" >}}
 
 Para [verificar os usuários e senhas salvas no Google Chrome](https://support.google.com/chrome/answer/95606?hl=pt-BR):
 
@@ -215,7 +215,7 @@ Para [verificar os usuários e senhas salvas no Google Chrome](https://support.g
 
 4. Em **Senhas e formulários**, clique em **Gerenciar senhas**. Uma caixa de diálogo com uma lista de senhas salvas é exibida:
 
-{% include image.html src="/files/2015/10/celular-roubado-14.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-14.jpg" >}}
 
 Essa página apresenta instruções para os navegadores [Internet Explorer](http://windows.microsoft.com/pt-br/internet-explorer/), [Opera](http://www.opera.com/pt-br) e [Safari](http://www.apple.com/br/safari/):
 
@@ -244,7 +244,7 @@ Você ainda tem a caixa na qual veio seu aparelho, quando foi comprado? Se sim, 
 
 Nem sempre é tão óbvio descobrir qual dos números impressos na caixa é o IMEI. Veja nessa caixa de um [Samsung Galaxy S4 Mini Duos](http://www.samsung.com/latin_en/consumer/mobile-devices/smartphones/galaxy-s/GT-I9192ZWLTPA) que o número IMEI aparece desacompanhado de um rótulo que o identifique:
 
-{% include image.html src="/files/2015/10/celular-roubado-15.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-15.jpg" >}}
 
 Além disso, já que esse celular suporta o uso de até dois *chips*, esse adesivo deveria apresentar dois números IMEI.
 
@@ -254,7 +254,7 @@ O [Painel do Google](https://support.google.com/accounts/answer/162744?hl=pt-BR)
 
 Entre com a conta do Google associada ao seu celular Android e expanda a seção **Android** para ver informações sobre o(s) seu(s) dispositivo(s) Android. No meio dessas informações, deve estar o número IMEI do seu celular:
 
-{% include image.html src="/files/2015/10/celular-roubado-16.jpg" %}
+{{< image src="/files/2015/10/celular-roubado-16.jpg" >}}
 
 ### Outros lugares
 
@@ -294,7 +294,7 @@ Você pode habilitar a restauração das configurações dos aplicativos quando 
 
 3. Marque a caixa ao lado de **Restauração automática**:
 
-{% include image.html src="/files/2015/10/celular-roubado-17.png" %}
+{{< image src="/files/2015/10/celular-roubado-17.png" >}}
 
 Uma vez que tudo esteja em ordem, não custa lembrar de **reforçar os cuidados**. Afinal de contas, moramos no Brasil...
 

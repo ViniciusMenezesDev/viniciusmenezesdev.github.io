@@ -4,7 +4,7 @@ image: /files/2022/03/telegram-tor-ios.png
 title: Como usar o Telegram via Tor no iOS (iPhone e iPad)
 ---
 
-{% include image.html src='/files/2022/03/telegram-tor-ios.png' %}
+{{< image src="/files/2022/03/telegram-tor-ios.png" >}}
 
 Se por qualquer motivo você for impedido de usar o [Telegram] -- por exemplo, se você está de mudança ou viajando para um dos [países que censuram o Telegram][telegram-censorship] -- você verá hoje nessa dica como pode usá-lo por meio da [Rede Tor] em dispositivos móveis com [iOS] ([iPhone] e [iPad]).&nbsp;
 
@@ -64,11 +64,11 @@ O **Orbot** também pode ser instalado pela App Store:
 
 Para acessar o Telegram via Tor, primeiro abra o Orbot e toque em **Start** ("começar"):
 
-{% include image.html src='/files/2022/03/telegram-tor-ios-01.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-ios-01.jpg" >}}
 
 Aguarde-o conectar à Rede Tor e estar pronto para uso (note o **connected**, "conectado"):
 
-{% include image.html src='/files/2022/03/telegram-tor-ios-02.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-ios-02.jpg" >}}
 
 (note também o ícone de VPN, no canto superior esquerdo da tela)
 
@@ -76,7 +76,7 @@ Certifique-se de que o sistema está de fato conectado à Rede Tor acessando [ch
 
 [Safari]: https://apps.apple.com/br/app/safari/id1146562112
 
-{% include image.html src='/files/2022/03/telegram-tor-ios-03.jpg' %}
+{{< image src="/files/2022/03/telegram-tor-ios-03.jpg" >}}
 
 (note o **This browser is configured to use Tor**, "Este navegador está configurado para usar o Tor")
 
