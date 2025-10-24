@@ -22,7 +22,7 @@ Uma solução para quem não deseja ficar sem usar o serviço de mensagens é ut
 
 O Psiphon burla a censura ou bloqueio imposta ao seu computador ou dispositivo móvel (*smartphone* ou *tablet*) por meio de uma conexão em forma de [túnel][vpn] que ele estabelece com algum outro computador anônimo em algum outro lugar do mundo. Ele atravessa os dados que chegam e saem de você por esse túnel. Dessa maneira, os dados evitam o caminho comum, que está bloqueado, e passam por outro caminho, que não está censurado.
 
-{{< image src="/files/2015/12/vpn.png" >}}
+{% include image.html src="/files/2015/12/vpn.png" %}
 
 ## Instalando e usando o Psiphon no Android
 

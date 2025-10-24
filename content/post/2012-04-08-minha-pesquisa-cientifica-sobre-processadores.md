@@ -18,7 +18,7 @@ O _site_ passou por uma revisão de _links_ quebrados. Alguns _links_ nessa publ
 
 {% include update.html date="02/08/2023" message=revisao_links_quebrados %}
 
-{{< image src="/files/2012/04/processador.jpg" >}}
+{% include image.html src="/files/2012/04/processador.jpg" %}
 
 Estava apenas aguardando uma oportunidade de divulgar a pesquisa científica que desenvolvi no IFS no período de 2007 a 2009, e penso que a hora é agora (com a prova de Arquitetura de Computadores I chegando aí, hein?), então disponibilizei o [trabalho no Scribd](http://pt.scribd.com/doc/88465424/) e estou aqui para falar um pouco mais sobre ele. O resumo do trabalho diz o seguinte:
 

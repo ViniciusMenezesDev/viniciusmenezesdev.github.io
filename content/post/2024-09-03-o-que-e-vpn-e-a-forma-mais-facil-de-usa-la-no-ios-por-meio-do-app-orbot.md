@@ -22,13 +22,13 @@ Para quem usa esses computadores, é imperceptível que eles estão distantes. �
 
 Um uso prático de VPNs é burlar censuras a _sites_. Normalmente, quando acessamos um _site_, nossa comunicação com o servidor desse _site_ é roteada pela infraestrutura de rede da operadora, que pode estar bloqueando o acesso ao _site_ (por ordem do governo, por exemplo). Tem VPNs que permitem que o computador na outra ponta, que pode estar em outro país, faça o trabalho do roteador da operadora, então conseguimos, assim, acessar o _site_ como se estivéssemos em outro país.
 
-{{< image src="/files/2015/12/vpn.png" >}}
+{% include image.html src='/files/2015/12/vpn.png' %}
 
 Essas VPNs são usadas sobretudo em [países com governos autoritários][china] em que os cidadãos são proibidos de ter acesso a _sites_ ou aplicativos considerados impróprios pelo ditador no poder. É preocupante que a busca por VPNs esteja crescendo no Brasil, assim como a menção ao nosso país na [Declaração de Westminster], assinada por vários ativistas defensores da [liberdade de expressão], incluindo [Julian Assange], [Edward Snowden], [Glenn Greenwald] e [Jordan Peterson].
 
 Se você sente necessidade de usar uma VPN, quero te apresentar hoje uma que é baseada em [_software_ livre][free-sw] e que pode ser usada gratuitamente por qualquer pessoa em qualquer lugar do mundo.
 
-{{< image src="/files/2024/09/tor.svg" >}}
+{% include image.html src='/files/2024/09/tor.svg' %}
 
 O **[Projeto Tor]** (sigla de _The Onion Router_, "o roteador cebola", em uma tradução livre) mantém uma rede de túneis ao redor do mundo -- a **Rede Tor** -- pela qual trafegam dados de seus usuários de forma anônima, criptografada, privada, segura e livre de censura. A menção à cebola vem do fato de que a informação dentro dessa rede circula de forma compartimentada. A Rede Tor emprega várias camadas de criptografia para garantir que cada computador no meio do caminho só saiba o suficiente para levar a informação adiante até o próximo:
 

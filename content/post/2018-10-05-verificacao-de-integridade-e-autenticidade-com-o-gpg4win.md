@@ -22,7 +22,7 @@ Comumente as distribuições Linux disponibilizam somas de verificação [SHA-25
 
 Nesse *post*, você verá como fazer essas verificações com o [**Gpg4win**][gpg4win], um *software* livre gratuito para [Windows][windows]. Como referência, aqui uso a versão 3.1.3, [lançada em 31/08/2018][gpg4win-release-notes]. Como exemplo, verificaremos uma imagem ISO da distribuição [openSUSE Leap][opensuse-leap].
 
-{{< image src="/files/2018/10/gpg4win.png" >}}
+{% include image.html src="/files/2018/10/gpg4win.png" %}
 
 Embora usemos aqui o exemplo da imagem ISO, qualquer arquivo pode ser verificado, contanto que a soma de verificação e a assinatura digital estejam disponíveis. É o caso, por exemplo, do instalador do programa [VeraCrypt][veracrypt]. Curiosamente, [é possível usar o Gpg4win para verificar o instalador do próprio Gpg4win][gnupg-wiki] (no caso de uma atualização).
 

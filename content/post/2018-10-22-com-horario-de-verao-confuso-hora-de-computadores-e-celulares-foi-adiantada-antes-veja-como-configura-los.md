@@ -203,7 +203,7 @@ Provavelmente você desejará mudar o fuso horário se mora em uma região que n
 
 Você pode usar o mapa de fusos horários disponível em [timeanddate.com][timeanddate] para encontrar uma cidade com um fuso horário que atenda a suas necessidades. Passe o *mouse* em uma cidade para ver sua data e hora atuais:
 
-{{< image src="/files/2018/10/timeanddate.jpg" >}}
+{% include image.html src="/files/2018/10/timeanddate.jpg" %}
 
 ## Referências
 
