@@ -38,17 +38,19 @@ Nas imagens a seguir, você verá o DNS Benchmark sendo usado no [Linux Kamarada
 
 ## Baixando o DNS Benchmark
 
-Para baixar o DNS Benchmark, acesse seu _site_ oficial em:
+{% capture v2 %}
 
-- <https://www.grc.com/dns/benchmark.htm>
+Quando eu escrevi este tutorial, o DNS Benchmark estava na versão 1 e era gratuito.
 
-E clique no _link_ **Download now** (Baixar agora):
+A versão mais atual do DNS Benchmark, a versão 2, é paga. A [página oficial do programa](https://www.grc.com/dns/benchmark.htm) lista as inúmeras novidades da versão mais nova. Se você tiver esse dinheiro sobrando (9,95 dólares, algo como 55 reais, na cotação atual), comprá-la pode ser uma boa opção.
 
-{% include image.html src='/files/2024/09/dns-benchmark-01.jpg' %}
+Caso queira baixar a versão 1, felizmente encontrei no meu computador o exato mesmo programa que usei neste tutorial, você pode baixar uma cópia clicando neste _link_: [`DNSBench.exe`](/files/2025/12/DNSBench.exe).
 
-Quando o _download_ do programa terminar, você já pode abri-lo:
+Quando o _download_ do programa terminar, você já pode abri-lo.
 
-{% include image.html src='/files/2024/09/dns-benchmark-02.jpg' %}
+{% endcapture %}
+
+{% include update.html date="30/12/2025" message=v2 %}
 
 ## Rodando o DNS Benchmark
 
