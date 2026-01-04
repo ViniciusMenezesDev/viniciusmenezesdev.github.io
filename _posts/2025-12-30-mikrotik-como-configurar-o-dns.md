@@ -77,7 +77,7 @@ Agora que você configurou o DNS do seu roteador MikroTik, lembre-se de [fazer _
 [bridge]:           {% post_url 2022-10-02-configurando-o-modem-sagemcom-fast-3895-em-modo-bridge %}
 [Google Analytics]: https://analytics.google.com/
 [Cloudflare]:       https://1.1.1.1/pt-BR/dns/
-[DHCP]:             https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
+[DHCP]:             {% post_url 2026-01-03-mikrotik-fixando-enderecos-ip-via-dhcp %}
 [ping]:             https://pt.wikipedia.org/wiki/Ping
 [Linux Kamarada]:   https://linuxkamarada.com/pt/2025/10/12/linux-kamarada-muda-sua-base-para-o-manjaro/
 [Windows]:          https://www.google.com/search?q=como+verificar+qual+servidor+dns+estou+usando+no+windows
