@@ -99,6 +99,8 @@ Ficam evidentes as características da rede de 5 GHz: em comparação com a faix
 
 Neste artigo, analisei apenas as faixas de 2,4 GHz e 5 GHz porque meu roteador não suporta a faixa de 6 GHz. Mas meu celular suporta essa faixa e tive a curiosidade de analisá-la usando o WiFiAnalyzer. Aparentemente, ela está completamente livre na minha vizinhança, não tem ninguém usando ainda. Quem sabe no futuro, quando eu fizer um _upgrade_ de roteador, escrevo sobre a faixa de 6 GHz.
 
+{% include image.html src="/files/2026/01/wifi-analyzer-13.jpg" caption="Gráfico da faixa de 6 GHz: ninguém usando, será?" %}
+
 Note que as configurações que apresentei aqui são específicas para a realidade dos meus aparelhos e das redes Wi-Fi ao redor da minha casa. Para configurar sua rede Wi-Fi da melhor forma, você deve fazer suas próprias análises usando o aplicativo WiFiAnalyzer e configurar seu roteador de acordo.
 
 Também note que não temos controle sobre os pontos de acesso Wi-Fi dos vizinhos, que provavelmente estão no modo automático, de modo que com o passar do tempo as frequências das redes podem mudar. Então, vale a pena de tempos em tempos repetir essas análises com o WiFiAnalyzer.
