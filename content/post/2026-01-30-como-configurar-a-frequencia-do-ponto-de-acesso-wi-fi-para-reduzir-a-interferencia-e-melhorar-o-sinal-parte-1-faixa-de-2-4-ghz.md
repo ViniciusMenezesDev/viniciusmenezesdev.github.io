@@ -8,6 +8,8 @@ title: 'Como configurar a frequência do ponto de acesso Wi-Fi para reduzir a in
 
 Seu celular lista várias redes Wi-Fi onde você mora? Como saber se as redes dos vizinhos não estão interferindo na sua? Em grandes cidades com cada vez mais prédios, esse cenário é cada vez mais comum. Este artigo apresenta um aplicativo que te permite analisar a ocupação do espectro Wi-Fi e sugere a melhor configuração para o seu roteador.
 
+<!--more-->
+
 As tecnologias sem fio se tornaram onipresentes: celulares **[4G]**, _notebooks_ com **[Wi-Fi]**, **[TVs]** analógicas, digitais, fones de ouvido **[Bluetooth]**, rádios **[AM]/[FM]**. Certamente você usa no seu dia-a-dia senão todas, algumas dessas tecnologias. No passado, os aparelhos eram conectados principalmente por fios, que geravam bagunça e poluição visual. Hoje, a bagunça e a poluição continuam existindo, só não são mais visíveis: os aparelhos atuais se conectam principalmente por **[ondas de rádio]**.
 
 As ondas de rádio diferem principalmente quanto à sua **frequência** (o quão "rápida" é a onda), que determina seu alcance e a quantidade de dados transmitidos. Ondas de baixa frequência, como as usadas pelas rádios AM, alcançam grandes distâncias (por isso essas rádios são mais comuns no interior), mas transmitem pouca informação (daí a qualidade inferior do som). Ondas de frequência intermediária, como FM e TV, equilibram alcance e qualidade. Já ondas de alta frequência, como Wi-Fi e Bluetooth, permitem transmitir grandes volumes de dados em alta velocidade, porém têm alcance menor e sofrem mais interferências de obstáculos (como paredes e portas).
