@@ -1,4 +1,28 @@
+title = 'Vinícius Menezes'
 theme = 'beautifulhugo'
+
+[Services]
+    [Services.Disqus]
+        shortname = 'vinyanalista'
+    [Services.GoogleAnalytics]
+        id = 'G-D2R5BBD31G'
+
+[Params]
+    subtitle = 'Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)'
+    logo = '/apple-touch-icon.png'
+    favicon = '/favicon.ico'
+    rss = true
+    comments = true
+    hideAuthor = true
+
+[Params.author]
+    name = 'Vinícius Menezes'
+    facebook = "viniciusmenezesdev"
+    twitter = "vinimenezesdev"
+    instagram = "viniciusmenezesdev"
+    linkedin = "viniciusmenezesdev"
+    github = "viniciusmenezesdev"
+    gitlab = "viniciusmenezesdev"
 
 [markup.goldmark.renderer]
     unsafe = true
