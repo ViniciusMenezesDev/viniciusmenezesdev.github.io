@@ -2,7 +2,34 @@ baseURL: https://antoniomedeiros.dev
 disablePathToLower: true
 languageCode: en-us
 title: Antônio Medeiros
+theme: stack
+
+Params:
+  showtoc: true
+  article:
+    toc: true
+  widgets:
+    page:
+      - type: toc
+  sidebar:
+    avatar: 'images/antonio-hantei.jpg'
+    subtitle: 'Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)'
+
+menu:
+  main:
+    - identifier: github
+      name: GitHub
+      url: 'https://github.com/viniciusmenezesdev'
+      weight: 20
+      params:
+        icon: github
+    - identifier: linkedin
+      name: LinkedIn
+      url: 'https://www.linkedin.com/in/viniciusmenezesdev'
+      weight: 30
+      params:
+        icon: linkedin
 
 caches:
-    images:
-        dir: :cacheDir/images
+  images:
+    dir: :cacheDir/images
