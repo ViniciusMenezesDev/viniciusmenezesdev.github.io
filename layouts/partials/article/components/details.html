@@ -30,7 +30,7 @@
             {{ end }}
 
             {{ if and ($IsList) ($Page.Truncated) }}
-                <a href="{{ $Page.RelPermalink }}">Read more &raquo;</a>
+                <a href="{{ $Page.RelPermalink }}">{{ i18n "read_more" }} &rsaquo;</a>
             {{ end }}
         </h3>
         {{ end }}

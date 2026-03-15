@@ -1,10 +1,13 @@
 baseURL: https://antoniomedeiros.dev
-disablePathToLower: true
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+disableDefaultLanguageRedirect: false
+disableLanguages: []
 languageCode: en-us
 title: Antônio Medeiros
 theme: stack
 
-Params:
+params:
   showtoc: true
   article:
     toc: true
@@ -13,7 +16,30 @@ Params:
       - type: toc
   sidebar:
     avatar: 'images/antonio-hantei.jpg'
-    subtitle: 'Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)'
+    subtitle: 'Here I try to share some of my experiences as an IT student and professional :)'
+  opengraph:
+    twitter:
+      site: ViniMenezesDev
+
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 1
+    permalinks:
+      page:
+        post: /article/:slug/
+  pt:
+    contentDir: content/pt
+    languageCode: pt-br
+    languageName: Português Brasileiro
+    weight: 2
+    permalinks:
+      page:
+        post: /artigo/:slug/
+    params:
+      sidebar:
+        subtitle: 'Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)'
 
 menu:
   main:
