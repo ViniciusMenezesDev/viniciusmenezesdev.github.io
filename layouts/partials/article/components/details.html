@@ -21,12 +21,19 @@
             </a>
         </h2>
     
+        {{ if or ($Page.Params.description) (and ($IsList) ($Page.Summary)) }}
         <h3 class="article-subtitle">
-            {{ $Page.Summary | plainify }}
-            {{ if $Page.Truncated }}
+            {{ if $Page.Params.description }}
+                {{ $Page.Params.description }}
+            {{ else }}
+                {{ $Page.Summary | plainify }}
+            {{ end }}
+
+            {{ if and ($IsList) ($Page.Truncated) }}
                 <a href="{{ $Page.RelPermalink }}">Read more &raquo;</a>
             {{ end }}
         </h3>
+        {{ end }}
     </div>
 
     {{ $showReadingTime := $Page.Params.readingTime | default (.Site.Params.article.readingTime) }}
