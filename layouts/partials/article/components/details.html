@@ -21,11 +21,12 @@
             </a>
         </h2>
     
-        {{ with $Page.Params.description }}
         <h3 class="article-subtitle">
-            {{ . }}
+            {{ $Page.Summary | plainify }}
+            {{ if $Page.Truncated }}
+                <a href="{{ $Page.RelPermalink }}">Read more &raquo;</a>
+            {{ end }}
         </h3>
-        {{ end }}
     </div>
 
     {{ $showReadingTime := $Page.Params.readingTime | default (.Site.Params.article.readingTime) }}
