@@ -42,19 +42,50 @@ languages:
         subtitle: 'Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)'
 
 menu:
-  main:
-    - identifier: github
-      name: GitHub
-      url: 'https://github.com/viniciusmenezesdev'
-      weight: 20
+  social:
+    - identifier: facebook
+      name: Facebook
+      url: https://facebook.com/viniciusmenezesdev
       params:
-        icon: github
+        icon: fontawesome-facebook
+    - identifier: x
+      name: X (Twitter)
+      url: https://x.com/vinimenezesdev
+      params:
+        icon: fontawesome-x-twitter
+    - identifier: instagram
+      name: Instagram
+      url: https://instagram.com/viniciusmenezesdev
+      params:
+        icon: fontawesome-instagram
     - identifier: linkedin
       name: LinkedIn
-      url: 'https://www.linkedin.com/in/viniciusmenezesdev'
-      weight: 30
+      url: https://www.linkedin.com/in/viniciusmenezesdev
       params:
-        icon: linkedin
+        icon: fontawesome-linkedin
+    - identifier: github
+      name: GitHub
+      url: https://github.com/viniciusmenezesdev
+      params:
+        icon: fontawesome-github
+    - identifier: gitlab
+      name: GitLab
+      url: https://gitlab.com/viniciusmenezesdev
+      params:
+        icon: fontawesome-gitlab
+  # main:
+  #   - identifier: github
+  #     name: GitHub
+  #     url: 'https://github.com/viniciusmenezesdev'
+  #     weight: 20
+  #     params:
+  #       icon: github
+  #   - identifier: linkedin
+  #     name: LinkedIn
+  #     url: 'https://www.linkedin.com/in/viniciusmenezesdev'
+  #     weight: 30
+  #     params:
+  #       icon: linkedin
 
 caches:
   images:
