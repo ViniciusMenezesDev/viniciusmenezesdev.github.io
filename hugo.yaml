@@ -12,6 +12,12 @@ params:
   article:
     toc: true
   widgets:
+    homepage:
+      - type: search
+      - type: archives
+        params:
+          limit: 5
+      - type: tag-cloud
     page:
       - type: toc
   sidebar:
