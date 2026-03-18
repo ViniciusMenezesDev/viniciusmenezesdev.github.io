@@ -47,32 +47,32 @@ menu:
       name: Facebook
       url: https://facebook.com/viniciusmenezesdev
       params:
-        icon: fontawesome-facebook
+        icon: brand-facebook
     - identifier: x
       name: X (Twitter)
       url: https://x.com/vinimenezesdev
       params:
-        icon: fontawesome-x-twitter
+        icon: brand-x
     - identifier: instagram
       name: Instagram
       url: https://instagram.com/viniciusmenezesdev
       params:
-        icon: fontawesome-instagram
+        icon: brand-instagram
     - identifier: linkedin
       name: LinkedIn
       url: https://www.linkedin.com/in/viniciusmenezesdev
       params:
-        icon: fontawesome-linkedin
+        icon: brand-linkedin
     - identifier: github
       name: GitHub
       url: https://github.com/viniciusmenezesdev
       params:
-        icon: fontawesome-github
+        icon: brand-github
     - identifier: gitlab
       name: GitLab
       url: https://gitlab.com/viniciusmenezesdev
       params:
-        icon: fontawesome-gitlab
+        icon: brand-gitlab
   # main:
   #   - identifier: github
   #     name: GitHub
