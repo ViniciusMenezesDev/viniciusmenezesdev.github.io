@@ -250,7 +250,7 @@ Observe que a IA do GitHub Copilot ainda teve a iniciativa de fazer algo que nã
 
 [ChatGPT]:              https://chatgpt.com/
 [GitHub Copilot]:       https://github.com/features/copilot?locale=pt-BR
-[GitHub]:               https://github.com/ViniMenezesDev
+[GitHub]:               https://github.com/ViniciusMenezesDev
 [Visual Studio Code]:   https://linuxkamarada.com/pt/2025/03/16/conheca-o-visual-studio-code-vs-code-o-ambiente-de-desenvolvimento-do-momento/
 [OpenAI]:               https://openai.com/pt-BR/
 [copilot]:              https://github.com/copilot

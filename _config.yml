@@ -231,7 +231,7 @@ baseurl: ""
 #################
 
 # Site title
-title: "Vini Menezes"
+title: "Vinicius Menezes"
 
 # Site description
 description: "Aqui tento compartilhar um pouco das minhas experiências como estudante e profissional de TI :)"
@@ -324,23 +324,23 @@ facebook:
 # GitHub username
 # Example: jekyll, if your GitHub URL is https://github.com/jekyll
 # Default: not set (GitHub URL is not displayed)
-github_username: "ViniMenezesDev"
+github_username: "ViniciusMenezesDev"
 
 # GitLab username
 # Example: username, if your GitLab URL is https://gitlab.com/username
 # Default: not set (GitLab URL is not displayed)
-gitlab_username: "ViniMenezesDev"
+gitlab_username: "ViniciusMenezesDev"
 
 # Instagram username
 # Example: username, if your Instagram URL is https://instagram.com/username
 # Default: not set (Instagram URL is not displayed)
-instagram_username: "ViniMenezesDev"
+instagram_username: "ViniciusMenezesDev"
 
 # LinkedIn username
 # Example: username, if your LinkedIn public profile URL is
 # https://www.linkedin.com/in/username
 # Default: not set (LinkedIn public profile URL is not displayed)
-linkedin_username: "ViniMenezesDev"
+linkedin_username: "ViniciusMenezesDev"
 
 # Telegram username
 # Example: username, if your Telegram link is https://t.me/username
