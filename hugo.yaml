@@ -35,9 +35,8 @@ languages:
     permalinks:
       page:
         post: /article/:slug/
-  pt:
-    contentDir: content/pt
-    languageCode: pt-br
+  pt-br:
+    contentDir: content/pt-br
     languageName: Português Brasileiro
     weight: 2
     permalinks:
