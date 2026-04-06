@@ -2,6 +2,8 @@
 date: "2025-11-25T08:20:00Z"
 image: /files/2025/11/mikrotik-hap-ac3.jpg
 title: 'MikroTik: como atualizar o software do roteador'
+tags:
+- mikrotik
 ---
 
 Atualizações de _software_ sempre são importantes para corrigir falhas de segurança e problemas de desempenho que são identificados nos sistemas, além de trazer novas funcionalidades e suporte a novas tecnologias, permitindo que você aproveite o máximo do equipamento, seja ele um computador, um celular, ou... um [roteador Wi-Fi da MikroTik][MikroTik]!

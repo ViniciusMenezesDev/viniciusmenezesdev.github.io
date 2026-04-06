@@ -2,6 +2,8 @@
 date: "2026-01-30T20:00:00Z"
 image: /files/2026/01/wifi-analyzer.jpg
 title: 'Como configurar a frequência do ponto de acesso Wi-Fi para reduzir a interferência e melhorar o sinal - parte 1: faixa de 2,4 GHz'
+tags:
+- mikrotik
 ---
 
 {{< image src="/files/2026/01/wifi-analyzer.jpg" >}}

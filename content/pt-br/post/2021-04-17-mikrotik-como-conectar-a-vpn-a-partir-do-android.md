@@ -4,6 +4,8 @@ excerpt: Se você usa Android e deseja conectar seu smartphone ou tablet à VPN 
   MikroTik que configuramos em um post anterior, siga as instruções desse texto.
 image: /files/2021/04/android-vpn.jpg
 title: 'MikroTik: como conectar à VPN a partir do Android'
+tags:
+- mikrotik
 ---
 
 {{< image src="/files/2021/04/android-vpn.jpg" >}}

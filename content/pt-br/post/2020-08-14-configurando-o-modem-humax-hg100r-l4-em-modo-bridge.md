@@ -6,6 +6,8 @@ excerpt: Uma bridge (“ponte”, em inglês) é um dispositivo de rede que une 
   a rede de casa e a rede da operadora em espaços de endereços IP diferentes.
 image: /files/2020/08/modem-bridge.jpg
 title: Configurando o modem HUMAX HG100R-L4 em modo bridge
+tags:
+- mikrotik
 ---
 
 {% capture revisao_links_quebrados %}

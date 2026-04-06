@@ -2,6 +2,8 @@
 date: "2026-01-06T23:30:00Z"
 image: /files/2025/11/mikrotik-hap-ac3.jpg
 title: 'MikroTik: sincronizando e fornecendo data e hora com o protocolo NTP'
+tags:
+- mikrotik
 ---
 
 O protocolo **[NTP]** (do inglês _Network Time Protocol_, protocolo de hora para redes) é usado para sincronizar automaticamente os relógios dos dispositivos de uma rede (como servidores, computadores, celulares, roteadores e outros) a partir de referências de tempo confiáveis, que são servidores de tempo na Internet ou na rede local. No Brasil, a data e hora oficiais brasileiras podem ser sincronizadas via NTP com os servidores de hora do [NTP.br].

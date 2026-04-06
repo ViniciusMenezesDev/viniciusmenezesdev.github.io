@@ -2,6 +2,8 @@
 date: "2026-01-30T20:05:00Z"
 image: /files/2026/01/wifi-analyzer.jpg
 title: 'Como configurar a frequência do ponto de acesso Wi-Fi para reduzir a interferência e melhorar o sinal - parte 2: faixa de 5 GHz'
+tags:
+- mikrotik
 ---
 
 Vimos na [parte 1] deste artigo os diferentes tipos de ondas de rádio existentes, como evoluíram os padrões de Wi-Fi, as faixas de frequências usadas por esses padrões e como analisar o uso do espectro na vizinhança usando o aplicativo [WiFiAnalyzer] para [Android] e o WinBox, que é o utilitário de configuração do roteador [MikroTik]. Começamos nossa análise e configuração pela faixa de 2,4 GHz e agora na parte 2 vamos analisar e configurar a faixa de 5 GHz.

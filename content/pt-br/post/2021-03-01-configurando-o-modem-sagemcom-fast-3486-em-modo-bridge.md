@@ -6,6 +6,8 @@ excerpt: Uma bridge (“ponte”, em inglês) é um dispositivo de rede que une 
   a rede de casa e a rede da operadora em espaços de endereços IP diferentes.
 image: /files/2021/03/modem-bridge-sagemcom.jpg
 title: Configurando o modem Sagemcom F@ST 3486 em modo bridge
+tags:
+- mikrotik
 ---
 
 {% capture revisao_links_quebrados %}

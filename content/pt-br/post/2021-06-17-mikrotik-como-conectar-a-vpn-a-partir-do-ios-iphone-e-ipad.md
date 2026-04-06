@@ -5,6 +5,8 @@ excerpt: Se você usa um dispositivo com iOS (um iPhone ou um iPad) e deseja con
   desse texto.
 image: /files/2021/06/ios-vpn.jpg
 title: 'MikroTik: como conectar à VPN a partir do iOS (iPhone e iPad)'
+tags:
+- mikrotik
 ---
 
 {{< image src="/files/2021/06/ios-vpn.jpg" >}}

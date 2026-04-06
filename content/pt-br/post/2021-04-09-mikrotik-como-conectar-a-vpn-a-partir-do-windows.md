@@ -4,6 +4,8 @@ excerpt: Se você usa Windows e deseja conectar seu computador à VPN do roteado
   que configuramos no post anterior, siga as instruções desse texto.
 image: /files/2021/04/windows-vpn-08.jpg
 title: 'MikroTik: como conectar à VPN a partir do Windows'
+tags:
+- mikrotik
 ---
 
 Se você usa [Windows] e deseja conectar seu computador à [VPN do roteador MikroTik][vpn] que configuramos no [_post_ anterior][vpn], siga as instruções a seguir.

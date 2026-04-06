@@ -2,6 +2,8 @@
 date: "2025-12-05T19:50:00Z"
 image: /files/2025/11/mikrotik-hap-ac3.jpg
 title: 'MikroTik: como exportar e fazer backup da configuração'
+tags:
+- mikrotik
 ---
 
 O roteador [MikroTik] permite tanto [exportar] quanto fazer _[backup]_ da sua configuração. É possível exportar toda a configuração ou parte dela para um arquivo de texto (um _script_), que pode ser útil para replicar a mesma configuração em outros roteadores, documentar a rede, comparar mudanças ao longo do tempo e diagnosticar problemas (quando você posta uma dúvida no [fórum do MikroTik], comumente te pedem esse _script_ para estudar sua configuração). Já o _backup_ é um arquivo binário, que permite recuperar completa e rapidamente a configuração do roteador em caso de falhas.

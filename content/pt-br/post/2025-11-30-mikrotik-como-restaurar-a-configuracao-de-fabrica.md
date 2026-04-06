@@ -2,6 +2,8 @@
 date: "2025-11-30T22:45:00Z"
 image: /files/2025/11/mikrotik-reset-button.jpg
 title: 'MikroTik: como restaurar a configuração de fábrica'
+tags:
+- mikrotik
 ---
 
 Restaurar a configuração de fábrica de um roteador [MikroTik] é útil quando é mais rápido ou seguro começar do zero do que tentar consertar problemas na configuração atual, como configurações antigas ou bagunçadas, erros que quebram o acesso ou a conectividade, ou perda de senha. Também é útil quando se quer preparar o equipamento para outra casa ou pessoa, ou para restaurar a configuração padrão após [atualizações].

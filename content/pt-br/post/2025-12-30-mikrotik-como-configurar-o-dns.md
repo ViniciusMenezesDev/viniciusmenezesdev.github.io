@@ -2,6 +2,8 @@
 date: "2025-12-30T02:00:00Z"
 image: /files/2025/11/mikrotik-hap-ac3.jpg
 title: 'MikroTik: como configurar o DNS'
+tags:
+- mikrotik
 ---
 
 Você pode querer usar um servidor [DNS] diferente do padrão da sua operadora de Internet por diversos motivos. Alternativas independentes geralmente fornecem respostas mais rápidas, maior privacidade, menos interferência (por exemplo, de governos, censurando _sites_), menos redirecionamentos, e ainda podem oferecer recursos extras como bloqueio de _sites_ maliciosos ou controles para os pais, melhorando a experiência e a segurança da navegação.&nbsp;

@@ -2,6 +2,8 @@
 date: "2021-04-09T10:00:00Z"
 image: /files/2021/04/mikrotik-vpn-depois.jpg
 title: 'MikroTik: como criar uma VPN com L2TP e IPsec'
+tags:
+- mikrotik
 ---
 
 Final de semana chegando, você quer jogar com seus amigos, mas estão todos em suas casas, talvez até mesmo em cidades diferentes. O jogo requer que todos os computadores estejam na mesma rede local. O que fazer nesse caso? Se você tem um roteador [MikroTik], como o que já foi assunto de alguns _posts_ aqui no _blog_, uma opção é levantar uma VPN nele.

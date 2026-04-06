@@ -2,6 +2,8 @@
 date: "2026-01-03T21:30:00Z"
 image: /files/2025/11/mikrotik-hap-ac3.jpg
 title: 'MikroTik: fixando endereços IP via DHCP'
+tags:
+- mikrotik
 ---
 
 O protocolo **[DHCP]** (do inglês _Dynamic Host Configuration Protocol_, protocolo de configuração dinâmica de _host_) serve para configurar automaticamente dispositivos quando são conectados à rede. Para que um computador (ou celular, ou _smart_ TV, etc.) possa se comunicar com outros computadores na mesma rede e na Internet, precisa de um endereço IP para si, assim como saber os endereços IP do _gateway_ e do [DNS]. Você pode definir essas configurações manualmente ou, o que é mais comum no caso de redes domésticas, obtê-las automaticamente do modem da operadora. Isso torna a conexão mais simples, evita erros de configuração e permite que vários dispositivos usem a rede ao mesmo tempo de forma organizada.
