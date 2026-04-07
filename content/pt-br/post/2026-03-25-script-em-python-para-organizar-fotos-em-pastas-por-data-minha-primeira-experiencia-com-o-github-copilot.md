@@ -2,6 +2,7 @@
 date: '2026-03-25T22:00:00'
 image: /files/2026/03/github-copilot-pt.jpg
 title: 'Script em Python para organizar fotos em pastas por data: minha primeira experiência com o GitHub Copilot'
+translationKey: github-copilot
 ---
 
 {{< image src="/files/2026/03/github-copilot-pt.jpg" >}}
@@ -14,7 +15,7 @@ O GitHub Copilot é um assistente de programação baseado em inteligência arti
 
 É possível usar o [GitHub Copilot no navegador][copilot], assim como o ChatGPT, mas eu estava mais interessado em ver como usá-lo no VS Code.
 
-**O problema a ser resolvido:** eu tenho uma pasta com várias fotos que desejo organizar. Para isso, quero agrupar as fotos por data, colocando as fotos batidas em um mesmo dia na mesma pasta. Essas fotos foram batidas por celulares diferentes. Dependendo do celular, ele nomeia o arquivo com a data e a hora da foto (por exemplo, `20251104_111341.jpg`), ou com números sequenciais (`IMG_7128.JPG`, `IMG_7129.JPG`, `IMG_7130.JPG`...) No primeiro caso, é mais fácil descobrir a data em que a foto foi batida: basta olhar para o nome do arquivo. No segundo caso, é necessário examinar os metadados [EXIF] registrados pelo celular no arquivo de imagem para determinar a data da foto.
+**O problema a ser resolvido:** eu tenho uma pasta com várias fotos que desejo organizar. Para isso, quero agrupar as fotos por data, colocando as fotos batidas em um mesmo dia na mesma pasta. Essas fotos foram batidas por celulares diferentes. Dependendo do celular, ele nomeia o arquivo com a data e a hora da foto (por exemplo, `20251116_174828.jpg`), ou com números sequenciais (`IMG_2248.JPG`, `IMG_2249.JPG`, `IMG_2250.JPG`...) No primeiro caso, é mais fácil descobrir a data em que a foto foi batida: basta olhar para o nome do arquivo. No segundo caso, é necessário examinar os metadados [EXIF] registrados pelo celular no arquivo de imagem para determinar a data da foto.
 
 {{< image src="/files/2026/03/github-copilot-01-pt.jpg" caption="Dependendo do modelo de celular, o nome do arquivo não contém a data da foto, é preciso examinar os metadados." >}}
 
@@ -74,7 +75,7 @@ Instale a dependência do _script_ (instrução dada pelo próprio GitHub Copilo
 $ pip install Pillow
 ```
 
-Note que se você estiver usando o Linux Kamarada ou o [Manjaro], o comando é diferente:
+Note que se você estiver usando o [Linux Kamarada][Linux] ou o [Manjaro], o comando é diferente:
 
 ```
 $ pamac install python-pillow
