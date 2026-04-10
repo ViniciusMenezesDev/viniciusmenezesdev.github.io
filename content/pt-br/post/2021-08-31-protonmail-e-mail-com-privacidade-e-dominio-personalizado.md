@@ -2,6 +2,7 @@
 date: "2021-08-31T23:59:00Z"
 image: /files/2021/08/protonmail.jpg
 title: 'ProtonMail: e-mail com privacidade e domínio personalizado'
+translationKey: protonmail
 ---
 
 {{< image src="/files/2021/08/protonmail.jpg" >}}
@@ -15,7 +16,7 @@ O [ProtonMail] é um serviço de _e-mail_ com foco em privacidade, criptografia,
 
 O ProtonMail pode ser usado de graça. Nesse caso, ele oferece uma caixa de entrada de até 500MB para que você possa experimentar o serviço. [Planos pagos][protonmail-support-1] também estão disponíveis com mais capacidade (começando com 5GB) e mais recursos. É possível contratá-los usando cartão de crédito ou [Bitcoin][protonmail-support-2]. O ProtonMail se sustenta das vendas dos planos e, por isso, não precisa bisbilhotar os _e-mails_ dos usuários a fim de direcionar-lhes propaganda -- como [o Gmail faz][bisbilhotando].
 
-[bisbilhotando]: https://protonmail.com/blog/google-privacy-problem/
+[bisbilhotando]: https://proton.me/blog/google-privacy-problem
 
 E se eu te disser que um dos recursos extras do ProtonMail pago é a possibilidade de configurar um [domínio personalizado][protonmail-support-3] para o seu _e-mail_? (como `contato@meusite.com`) Já pensou unir o útil ao agradável? Armazenar suas mensagens em um provedor de _e-mail_ seguro e poder ser contatado por um endereço com ar de profissional.
 
@@ -107,7 +108,7 @@ Para referência, eis como ficou a minha configuração de DNS no final:
 
 (lembrando que nem todas essas entradas são relacionadas ao ProtonMail, algumas são referentes ao [GitLab Pages], [onde hospedo meus _sites_][onde-hospedo])
 
-[GitLab Pages]: https://docs.gitlab.com/ee/user/project/pages/
+[GitLab Pages]: https://docs.gitlab.com/user/project/pages/
 [onde-hospedo]: {{% ref "2021-03-24-o-que-fazer-depois-de-mudar-o-endereco-do-site-parte-1-visitantes-e-google" %}}
 
 ## Configurando o endereço
