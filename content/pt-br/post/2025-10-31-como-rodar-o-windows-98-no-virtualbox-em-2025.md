@@ -2,6 +2,7 @@
 date: "2025-10-31T01:20:00Z"
 image: /files/2025/10/windows98.jpg
 title: Como rodar o Windows 98 no VirtualBox em 2025
+translationKey: win98-virtualbox
 ---
 
 {{< image src="/files/2025/10/windows98.jpg" >}}
@@ -13,6 +14,7 @@ Note que não vou aqui apresentar um passo a passo minucioso como normalmente co
 Caso você não conheça o VirtualBox, os seguintes tutoriais podem te ajudar:
 
 - [VirtualBox: a forma mais fácil de conhecer o Linux sem precisar instalá-lo][linuxkamarada-virtualbox]
+- [Instalando o VirtualBox no Linux][virtualbox-linux]
 - [Dicas para usar o VirtualBox no dia a dia][dicas-virtualbox]
 
 Para referência futura (se você estiver lendo esse tutorial no futuro, pode ser que precise fazer algo diferente), no momento estou usando o VirtualBox versão 7.2.2 (lançado em [10 de setembro de 2025][virtualbox-changelog]) instalado no [Linux Kamarada][manjaro-kamarada]. O VirtualBox também pode ser usado no [Windows] e, se esse é o seu caso, o passo-a-passo a seguir muito provavelmente é parecido. Também observo que esse tutorial serve tanto para o Windows 98 quanto para o Windows 98 SE.
@@ -42,21 +44,21 @@ O _site_ [My Abandonware] é uma boa referência: os jogos que eles disponibiliz
 
 ## Sugestões de jogos para Windows 98
 
-{% include youtube.html id="OK10BIt_2vM" %}
+{{< youtube OK10BIt_2vM >}}
 
 [**Astérix & Obélix**][obelix] é um jogo de plataforma lançado em 1996 para [MS-DOS] e Windows, baseado nos famosos personagens das histórias em quadrinhos francesas. Desenvolvido pela Infogrames, o jogo permite controlar Astérix ou Obélix em fases inspiradas nos quadrinhos, viajando pelo Império Romano. O estilo lembra bastante os jogos de plataforma clássicos da época, com gráficos coloridos em 2D e trilha sonora animada. Apesar de simples, ele conquistou fãs por sua fidelidade ao humor e à estética das HQs originais.
 
-{% include youtube.html id="bmwGe34A8EE" %}
+{{< youtube bmwGe34A8EE >}}
 
 [**Beast Wars: Transformers**][beast-wars] é um jogo de ação em 3D lançado em 1998 para Windows (e também para [PlayStation]), baseado no desenho de mesmo nome da franquia [Transformers]. Publicado pela Hasbro Interactive, o jogo coloca o jogador no controle de personagens das facções Maximals ou Predacons, podendo alternar entre a forma animal e robô durante as missões. Com gráficos impressionantes para a época, o jogo é lembrado com carinho pelos fãs da série por trazer o universo de Beast Wars para o PC.
 
-{% include youtube.html id="Nax_ZOdOIIM" %}
+{{< youtube Nax_ZOdOIIM >}}
 
 [**Mario & Luigi**][mario] (mais conhecido simplesmente como "Mario") é um jogo gratuito para MS-DOS amplamente divulgado nos anos 2000. Criado por Mike Wiering da [Wiering Software] e inspirado no [Super Mario], o jogo apresenta gráficos 2D simples, seis fases e jogabilidade clássica de plataforma, com pulo, corrida e super poderes. Ele não é um jogo oficial licenciado pela [Nintendo], mas sim um _fangame_ (jogo criado por fãs). Começou como um projeto pessoal para praticar programação em Turbo Pascal e seu [código-fonte][mario-src] está disponível.
 
 Aliás, se você gosta de jogos nesse estilo, a [Wiering Software] tem outros jogos que vale a pena conferir.
 
-{% include youtube.html id="SDPhiQEWWcw" %}
+{{< youtube SDPhiQEWWcw >}}
 
 [**3D Pinball: Space Cadet**][pinball] é um clássico jogo de fliperama incluído no [Microsoft Plus! for Windows 95][plus] e mais tarde no [Windows XP]. Publicado pela [Microsoft], ele fazia parte do pacote [Full Tilt! Pinball], que trazia outras mesas além da Space Cadet. No jogo, o objetivo é subir de patente em uma missão espacial, cumprindo tarefas e acumulando pontos em uma mesa temática cheia de luzes e efeitos sonoros. Apesar de simples, ficou famoso por ser um dos jogos mais populares pré-instalados no Windows.
 
@@ -167,7 +169,7 @@ Remova a imagem ISO do Windows 98 do leitor de DVD virtual e insira a imagem ISO
 
 {{< image src="/files/2025/10/windows98-07.png" >}}
 
-Depois, reinicie o computador.
+Depois, reinicie a máquina virtual.
 
 Conecte um _pendrive_ no seu computador (certifique-se de que não tenha nenhum arquivo importante nele e que possa formatá-lo) e passe-o para a máquina virtual:
 
@@ -278,13 +280,14 @@ Para ver como rodar o Windows 98 no VirtualBox e depois para escrever esse tutor
 [VirtualBox]:               https://linuxkamarada.com/pt/2019/07/12/20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2/#13-virtualbox
 [Linux Kamarada]:           https://linuxkamarada.com/
 [linuxkamarada-virtualbox]: https://linuxkamarada.com/pt/2019/10/08/virtualbox-a-forma-mais-facil-de-conhecer-o-linux-sem-precisar-instala-lo/
+[virtualbox-linux]:         https://linuxkamarada.com/pt/2019/10/16/instalando-o-virtualbox-no-linux/
 [dicas-virtualbox]:         https://linuxkamarada.com/pt/2019/10/30/dicas-para-usar-o-virtualbox-no-dia-a-dia/
 [virtualbox-changelog]:     https://www.virtualbox.org/wiki/Changelog
 [manjaro-kamarada]:         https://linuxkamarada.com/pt/2025/10/12/linux-kamarada-muda-sua-base-para-o-manjaro/
 [Windows]:                  https://www.microsoft.com/pt-br/windows/
 [Abandonware]:              https://pt.wikipedia.org/wiki/Abandonware
 [Tyrian]:                   https://pt.wikipedia.org/wiki/Tyrian#OpenTyrian
-[GOG.com]:                  https://www.gog.com/en/
+[GOG.com]:                  https://www.gog.com/
 [Steam]:                    https://store.steampowered.com/
 [My Abandonware]:           https://www.myabandonware.com/
 [obelix]:                   https://www.myabandonware.com/game/asterix-obelix-38o
@@ -311,7 +314,7 @@ Para ver como rodar o Windows 98 no VirtualBox e depois para escrever esse tutor
 [tecnoblog]:                https://tecnoblog.net/especiais/como-desativar-smb-v1-windows/
 [learn.microsoft]:          https://learn.microsoft.com/pt-br/windows-server/storage/file-server/troubleshoot/smbv1-not-installed-by-default-in-windows
 [wiki.archlinux]:           https://wiki.archlinux.org/title/Samba#Restrict_protocols_for_better_security
-[CDBurnerXP]:               https://cdburnerxp.se/
+[CDBurnerXP]:               https://cdburnerxp.com
 [Brasero]:                  https://wiki.gnome.org/Apps/Brasero
 [ftp]:                      https://pt.wikipedia.org/wiki/Protocolo_de_Transfer%C3%AAncia_de_Arquivos
 [FileZilla]:                https://filezilla-project.org/
