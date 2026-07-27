@@ -50,7 +50,7 @@ Em seguida, copie e cole esse texto no _prompt_ e tecle **Enter**:
 
 > Crie um _script_ em Python que agrupe fotos na pasta atual com base na data em que foram tiradas. Essa data pode ser obtida de metadados EXIF, de preferência, quando estiverem disponíveis, ou do nome do arquivo (`YYYYMMDD`, por exemplo: `20251116_174828.jpg`). Para cada foto na pasta atual, o _script_ deve determinar a data em que a foto foi tirada, criar uma pasta `YYYY-MM-DD` caso não exista e mover a foto para essa pasta.
 
-Após um tempo "pensando", o GitHub Copilot cria o arquivo na pasta do projeto e ainda dá explicações sobre o código à direita:
+Após um tempo "pensando", o GitHub Copilot cria o arquivo na pasta do projeto e ainda dá explicações sobre o código à direita (você pode conferir o _script_ completo no final deste artigo):
 
 {{< image src="/files/2026/03/github-copilot-04-pt.jpg" >}}
 
@@ -99,11 +99,19 @@ Após a execução do _script_, passa a estar assim:
 
 {{< image src="/files/2026/03/github-copilot-07-pt.png" >}}
 
-Confira a seguir o _script_ gerado pelo GitHub Copilot:
+É impressionante ver como graças a IA conseguimos conversar com o computador em linguagem humana natural, e como ela pode nos ajudar a resolver problemas do cotidiano. Mas note que, como diz o ditado, "até para perguntar, é preciso saber": a resposta da IA só é tão boa quanto é a nossa pergunta. Se eu não soubesse da existência dos metadados EXIF e/ou não explicasse bem o problema a ser resolvido, talvez a IA não teria gerado um _script_ que me atendesse tão perfeitamente.
+
+## O script gerado
+
+Confira a seguir o _script_ gerado pelo GitHub Copilot.
+
+Observe que a IA do GitHub Copilot ainda teve a iniciativa de fazer algo que não pedimos, mas nos ajuda: se não for possível obter a data da foto nem do nome do arquivo, nem dos metadados EXIF, o _script_ vai considerar a data de modificação do arquivo.
+
+**Atualização (27/07/2026):** pedi para o GitHub Copilot modificar o _script_ de modo que ele crie subpastas para o ano (`YYYY`), o mês (`YYYY-MM`) e o dia (`YYYY-MM-DD`). A versão a seguir já contém essa modificação.
 
 ```python
 #!/usr/bin/env python3
-"""Organizar fotos em subpastas YYYY-MM-DD por data de captura.
+"""Organizar fotos em subpastas YYYY / YYYY-MM / YYYY-MM-DD por data de captura.
 
 - EXIF DateTimeOriginal / DateTime são prioridade (quando disponíveis).
 - Se EXIF não estiver presente, tenta extrair de nome de arquivo YYYYMMDD ou YYYYMMDDHHMMSS.
@@ -212,23 +220,26 @@ def process_directory(folder: Path):
             if date is None:
                 date = get_file_mod_date(entry)
 
-            target_dir = folder / date.strftime('%Y-%m-%d')
-            target_dir.mkdir(parents=True, exist_ok=True)
+            year_dir = folder / date.strftime('%Y')
+            month_dir = year_dir / date.strftime('%Y-%m')
+            day_dir = month_dir / date.strftime('%Y-%m-%d')
 
-            dest = target_dir / entry.name
+            day_dir.mkdir(parents=True, exist_ok=True)
+
+            dest = day_dir / entry.name
             if dest.exists():
                 # evita sobrescrever: cria nome alternativo
                 base = entry.stem
                 i = 1
                 while True:
-                    candidate = target_dir / f"{base}_{i}{entry.suffix}"
+                    candidate = day_dir / f"{base}_{i}{entry.suffix}"
                     if not candidate.exists():
                         dest = candidate
                         break
                     i += 1
 
             shutil.move(str(entry), str(dest))
-            print(f"Movido: {entry.name} -> {target_dir.name}/{dest.name}")
+            print(f"Movido: {entry.name} -> {day_dir.relative_to(folder).as_posix()}/{dest.name}")
 
 
 def main():
@@ -241,10 +252,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
-Observe que a IA do GitHub Copilot ainda teve a iniciativa de fazer algo que não pedimos, mas nos ajuda: se não for possível obter a data da foto nem do nome do arquivo, nem dos metadados EXIF, o _script_ vai considerar a data de modificação do arquivo.
-
-É impressionante ver como graças a IA conseguimos conversar com o computador em linguagem humana natural, e como ela pode nos ajudar a resolver problemas do cotidiano. Mas note que, como diz o ditado, "até para perguntar, é preciso saber": a resposta da IA só é tão boa quanto é a nossa pergunta. Se eu não soubesse da existência dos metadados EXIF e/ou não explicasse bem o problema a ser resolvido, talvez a IA não teria gerado um _script_ que me atendesse tão perfeitamente.
 
 [ChatGPT]:              https://chatgpt.com/
 [GitHub Copilot]:       https://github.com/features/copilot?locale=pt-BR

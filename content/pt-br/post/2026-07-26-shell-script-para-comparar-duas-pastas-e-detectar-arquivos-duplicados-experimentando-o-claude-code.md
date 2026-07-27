@@ -62,7 +62,7 @@ Perceba que:
 
 Depois de criar uma conta no [Claude], assinar o [plano], instalar a [extensão] no VS Code e entrar com minha conta na extensão, detalhei para o Claude Code o _script_ que eu queria:
 
-> Tenho duas pastas A e B com arquivos duplicados, mas pode haver arquivos que só existam em A, assim como arquivos que só existam em B. Escreva um shell script que receba os caminhos de A e B como argumentos. Para cada arquivo X em A (portanto, caminho A/X), verifique a existência de um arquivo B/X (com o mesmo nome X na pasta B). Se for encontrado, compare as somas de verificação de A/X e B/X. Se forem iguais, mova A/X para A/duplicados/X (crie a pasta A/duplicados caso não exista) e B/X para B/duplicados/X (da mesma forma, crie a pasta B/duplicados caso não exista). Se não forem iguais, mova A/X para A/unicos/X e B/X para B/unicos/X. Se não for encontrado um arquivo B/X, mova A/X para A/unicos/X. Ao final, se restarem arquivos em B que não estejam nas pastas B/duplicados nem B/unicos, mova-os para a pasta B/unicos. Quando o script estiver pronto, teste-o com as pastas pasta1 e pasta2 na pasta atual.
+> Tenho duas pastas `A` e `B` com arquivos duplicados, mas pode haver arquivos que só existam em `A`, assim como arquivos que só existam em `B`. Escreva um _shell script_ que receba os caminhos de `A` e `B` como argumentos. Para cada arquivo `X` em `A` (portanto, caminho `A/X`), verifique a existência de um arquivo `B/X` (com o mesmo nome `X` na pasta `B`). Se for encontrado, compare as [somas de verificação] de `A/X` e `B/X`. Se forem iguais, mova `A/X` para `A/duplicados/X` (crie a pasta `A/duplicados` caso não exista) e `B/X` para `B/duplicados/X` (da mesma forma, crie a pasta `B/duplicados` caso não exista). Se não forem iguais, mova `A/X` para `A/unicos/X` e `B/X` para `B/unicos/X`. Se não for encontrado um arquivo `B/X`, mova `A/X` para `A/unicos/X`. Ao final, se restarem arquivos em `B` que não estejam nas pastas `B/duplicados` nem `B/unicos`, mova-os para a pasta `B/unicos`. Quando o _script_ estiver pronto, teste-o com as pastas `pasta1` e `pasta2` na pasta atual.
 
 {{< image src="/files/2026/07/claude-03-pt.jpg" >}}
 
@@ -108,7 +108,9 @@ E é claro que o Claude Code pode ser usado para muito mais do que escrever simp
 
 ## O script gerado
 
-Como prometido, aqui está o _script_ que eu gerei com o Claude Code, que pode ser útil para mais alguém:
+Como prometido, aqui está o _script_ que eu gerei com o Claude Code, que pode ser útil para mais alguém.
+
+**Atualização (27/07/2026):** pedi para o Claude Code modificar o _script_ de modo a considerar apenas os arquivos na própria pasta, sem percorrer as subpastas. A versão a seguir já contém essa modificação.
 
 ```bash
 #!/usr/bin/env bash
@@ -142,26 +144,19 @@ checksum() {
     sha256sum "$1" | awk '{print $1}'
 }
 
-# Percorre os arquivos de A, ignorando as subpastas duplicados/unicos (para
-# permitir reexecucao segura do script).
-find "$A" -type f \
-    -not -path "$A/duplicados/*" \
-    -not -path "$A/unicos/*" \
-    -print0 |
+# Percorre apenas os arquivos diretamente dentro de A (sem descer em
+# subpastas, o que ja exclui duplicados/unicos e permite reexecucao segura).
+find "$A" -maxdepth 1 -type f -print0 |
 while IFS= read -r -d '' fileA; do
     X="${fileA#"$A"/}"
     fileB="$B/$X"
 
-    mkdir -p "$(dirname "$A/duplicados/$X")" "$(dirname "$A/unicos/$X")"
-
     if [ -f "$fileB" ]; then
         if [ "$(checksum "$fileA")" = "$(checksum "$fileB")" ]; then
-            mkdir -p "$(dirname "$B/duplicados/$X")"
             mv "$fileA" "$A/duplicados/$X"
             mv "$fileB" "$B/duplicados/$X"
             echo "Duplicado: $X"
         else
-            mkdir -p "$(dirname "$B/unicos/$X")"
             mv "$fileA" "$A/unicos/$X"
             mv "$fileB" "$B/unicos/$X"
             echo "Diferente: $X"
@@ -172,15 +167,11 @@ while IFS= read -r -d '' fileA; do
     fi
 done
 
-# Move para B/unicos qualquer arquivo restante em B que nao esteja em
-# duplicados nem unicos (ou seja, arquivos que so existiam em B).
-find "$B" -type f \
-    -not -path "$B/duplicados/*" \
-    -not -path "$B/unicos/*" \
-    -print0 |
+# Move para B/unicos qualquer arquivo restante diretamente em B (arquivos
+# que so existiam em B, ja que os demais foram tratados no loop acima).
+find "$B" -maxdepth 1 -type f -print0 |
 while IFS= read -r -d '' fileB; do
     X="${fileB#"$B"/}"
-    mkdir -p "$(dirname "$B/unicos/$X")"
     mv "$fileB" "$B/unicos/$X"
     echo "So em B: $X"
 done
@@ -197,6 +188,7 @@ echo "Concluido."
 [GitHub Copilot]:       {{% ref "2026-03-25-script-em-python-para-organizar-fotos-em-pastas-por-data-minha-primeira-experiencia-com-o-github-copilot" %}}
 [plano]:                https://claude.com/pricing
 [Claude]:               https://claude.ai/
+[somas de verificação]: https://linuxkamarada.com/pt/2018/10/06/verificacao-de-integridade-e-autenticidade-com-sha-256-e-gpg/
 [vibe coding]:          https://www.alura.com.br/empresas/artigos/vibe-coding
 [Windows 98]:           {{% ref "2025-10-31-como-rodar-o-windows-98-no-virtualbox-em-2025" %}}
 [GNOME Hearts]:         https://www.jejik.com/gnome-hearts
