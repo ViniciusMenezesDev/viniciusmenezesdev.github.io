@@ -109,6 +109,8 @@ Observe que a IA do GitHub Copilot ainda teve a iniciativa de fazer algo que nã
 
 **Atualização (27/07/2026):** pedi para o GitHub Copilot modificar o _script_ de modo que ele crie subpastas para o ano (`YYYY`), o mês (`YYYY-MM`) e o dia (`YYYY-MM-DD`). A versão a seguir já contém essa modificação.
 
+**Atualização (26/10/2026):** [integrei esse _script_ ao gerenciador de arquivos do GNOME (Arquivos/Nautilus)][kamarada] de modo que consigo organizar as fotos clicando com o botão direito do _mouse_. Para mais informações, consulte [esse artigo][kamarada].
+
 ```python
 #!/usr/bin/env python3
 """Organizar fotos em subpastas YYYY / YYYY-MM / YYYY-MM-DD por data de captura.
@@ -269,3 +271,4 @@ if __name__ == '__main__':
 [Eclipse]:              https://marketplace.eclipse.org/content/github-copilot#details
 [alias]:                https://linuxkamarada.com/pt/2019/03/17/como-criar-comandos-personalizados-no-linux/
 [Manjaro]:              https://manjaro.org/
+[kamarada]:             https://linuxkamarada.com/pt/2026/10/25/nautilus-arquivos-como-adicionar-funcionalidades-e-automatizar-tarefas-do-dia-a-dia-com-scripts-personalizados/
