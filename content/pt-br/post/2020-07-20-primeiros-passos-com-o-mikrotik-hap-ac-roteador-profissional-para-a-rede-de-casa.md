@@ -9,6 +9,7 @@ excerpt: Entre 2016 e 2017 trabalhei como analista de redes e tive a oportunidad
 image: /files/2020/07/mikrotik-hap.jpg
 title: 'Primeiros passos com o MikroTik hAP ac: roteador profissional para a rede
   de casa'
+translationKey: mikrotik-hap
 tags:
 - mikrotik
 ---
