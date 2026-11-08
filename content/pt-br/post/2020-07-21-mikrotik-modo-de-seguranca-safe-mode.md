@@ -2,6 +2,7 @@
 date: "2020-07-21T09:00:00Z"
 image: /files/2020/07/RB952Ui-5ac2nD-TC.png
 title: 'MikroTik: modo de segurança (Safe Mode)'
+translationKey: mikrotik-safe-mode
 tags:
 - mikrotik
 ---
