@@ -2,6 +2,7 @@
 date: "2025-11-25T08:20:00Z"
 image: /files/2025/11/mikrotik-hap-ac3.jpg
 title: 'MikroTik: como atualizar o software do roteador'
+translationKey: mikrotik-update-software
 tags:
 - mikrotik
 ---
